@@ -56,7 +56,7 @@
     host.width = 1024;
     // size of the final PNG
     
-    host.debug = true; // change this to false when it's finished
+    host.debug = false; // change this to false when it's finished
     // enables debug messages in console
     
     host.fore = "#000000";
@@ -78,8 +78,8 @@
         a: 2
       },
       f: {
-        b: 0.1,
-        a: 0.5
+        b: 0,
+        a: 0.75
       },
       v: {
         b: 2,
@@ -206,7 +206,7 @@
           }
           for(let l = 0; l < paragraph.sentences[s].words[w].letters.length; l++){
             tempArray[l*2] = paragraph.sentences[s].words[w].letters[l];
-            tempArray[(l*2)+1] = "-";
+            tempArray[(l*2)+1] = "BUFFER";
           }
           paragraph.sentences[s].words[w].letters = tempArray;
           tempArray = [];
@@ -283,7 +283,6 @@
       // now angles is an array of relative angles
       // we just need to make them absolute
       var relativeAngleSum = angles.reduce((a, b) => a + b, 0)/* + buffer * word.letters.length*/; // this is the same as =SUM(angles)
-      console.log(relativeAngleSum);
       // angleSum is now a number that we need to make equal to 2PI
       // to do that we need to multiply by 2PI/angleSum
       // this is the multiplier that will convert relative angles to absolute angles
@@ -291,9 +290,8 @@
       for(let a = 0; a < angles.length; a++){
         angles[a] = angles[a] * 2 * Math.PI / relativeAngleSum;
       }
-      console.log(angles.reduce((a, b) => a + b, 0));
-      //var buff = buffer * 2 * Math.PI / relativeAngleSum;
-      //console.log(angles,buff,angles.reduce((a, b) => a + b, 0) + buff * word.letters.length);
+      // we also need to pass down the absolute angle for a vowel
+      var vAngle = host.settings.v.a * 2 * Math.PI / relativeAngleSum;
       for(let l = 0; l < word.letters.length; l++){
         // B is the sum of all previous letter angles and their buffers
         var B;
@@ -313,7 +311,7 @@
         }
         
         report("("+l+") Rendering letter "+word.letters[l][0].value+" with subtension "+angles[l]+" at angle "+B.toDeg());
-        renderLetter(word.letters[l],s_,w_,l,angles[l],radius/*,buff*/);
+        renderLetter(word.letters[l],s_,w_,l,angles[l],vAngle,radius);
         
         word.letters[l].d = word.letters[l][0].path;
         word.letters[l].transform = ["rotate(",B.toDeg(),",",0,",",radius,")"].join("");
@@ -409,7 +407,7 @@
       return paragraph.sentences[s_].words[w_].letters[l_][0].relativeAngle;
     };
     
-    var renderLetter = function(letter,s_,w_,l_,angleSubtended,wordRadius){
+    var renderLetter = function(letter,s_,w_,l_,angleSubtended,angleSubtendedByVowel,wordRadius){
       tempArray = paragraph.sentences[s_].words[w_].letters[l_];
       // we know A and b so now we can work out r
       // var r = (wordRadius*Math.cos(90-(angleSubtended/2)))/(b*Math.cos(90-(angleSubtended/2))+1);
@@ -425,10 +423,10 @@
           // if the letter is unfull, render to where it crosses the line (k_1)
           path.push("A R R 0 0 1 k1x k1y");
           // next we render from k_1 to k_2 via the curve of the letter itself.
-          if(tempArray[0].b >= 0){ // because otherwise it goes bad
-            path.push("A r r 0 0 0 k2x k2y");
-          } else {
+          if(tempArray[0].block == "s"){ // because otherwise it goes bad
             path.push("A r r 0 1 0 k2x k2y");
+          } else {
+            path.push("A r r 0 0 0 k2x k2y");
           }
           // then we go via the word circle to k_4
           path.push("A R R 0 0 1 k4x k4y");
@@ -513,8 +511,8 @@
       path = path.replace(/k0y/g,k0y);
       
       var r = (wordRadius*Math.cos(Math.PI/2-N))/(tempArray[0].b*Math.cos(Math.PI/2-N)+1);
-      var w = r * host.settings.v.r;
-      // I want w to be one third of r for a standard letter, where b = 0.
+      var w = (wordRadius*Math.cos(Math.PI/2-angleSubtendedByVowel/2))/4;
+      // I want w to be one quarter of r for a standard letter, where b = 0. the standard letter is the v block.
       
       var r0x = k0x + 0;
       path = path.replace(/r0x/g,r0x);
@@ -524,7 +522,7 @@
       var vx = r0x + 0;
       path = path.replace(/vx/g,vx);
       var vy;
-      if(tempArray[0].block == "v"){
+      /*if(tempArray[0].block == "v"){
         if(tempArray.length == 2){
           vy = k0y + (tempArray[1].vert * r);
         } else {
@@ -536,7 +534,50 @@
         } else {
           vy = r0y + (tempArray[0].vert * r);
         }  
+      }*/
+      // the location of vy varies based on both the block of the primary and the value of the vowel.
+      // the most sensible way to do this would be using case
+      // when vert is -1, just outside word-circle for all blocks
+      // when vert is 0, middle of l:C for s,p; on w:C for d,f,v
+      // when vert is 1, on l:C for s,p,d,f; just inside w:C for v
+      
+      switch(tempArray[tempArray.length-1].vert){
+        case -1:
+          vy = k0y - 2*w;
+          break;
+        case 0:
+          switch(tempArray[0].block){
+            case "s":
+            case "p":
+              vy = r0y;
+              break;
+            case "d":
+            case "f":
+            case "v":
+              vy = k0y;
+              break;
+            default:
+          }
+          break;
+        case 1:
+          switch(tempArray[0].block){
+            case "s":
+            case "p":
+            case "d":
+            case "f":
+              vy = r0y + r;
+              break;
+            case "v":
+              vy = k0y + 2*w;
+              break;
+            default:
+          }
+          break;
+        default:
+          vy = k0y; // this shouldn't happen, but just in case
       }
+      
+      
       path = path.replace(/vy/g,vy);
       
       path = path.replace(/2r/g,2*r);
@@ -733,7 +774,7 @@
       {value: "GH", block: "f", dots: 1, lines: 3},
       {value: "C", block: "p", dots: 4, lines: 0}, // discouraged characters
       {value: "Q", block: "f", dots: 4, lines: 0}, // maybe even remove these in favour of else?
-      {value: "-", block: "buffer"}
+      {value: "BUFFER", block: "buffer"}
     ];
     // I'm gonna write the formula here too
     // because each block has its circle at a different height, circles of the same radius will subtend a different angle
