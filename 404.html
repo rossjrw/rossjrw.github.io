@@ -47,13 +47,14 @@ permalink: /404.html
 						addEvent(window, 'resize', resizer);
 						addEvent(window, 'orientationchange', resizer);
 					};
-					if (typeof el.length !== "undefined")
+					try (el.length) {
 						for(var i=0; i<el.length; i++)
 							fit(el[i]);
-					else
+					} catch {
 						fit(el);
 					// return set of elements
 					return el;
+					}
 				};
 			})();
 			window.fitText(document.getElementById("yeet"));
