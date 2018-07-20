@@ -47,10 +47,10 @@ permalink: /404.html
 						addEvent(window, 'resize', resizer);
 						addEvent(window, 'orientationchange', resizer);
 					};
-					try (el.length) {
+					try {
 						for(var i=0; i<el.length; i++)
 							fit(el[i]);
-					} catch {
+					} catch(error) {
 						fit(el);
 					// return set of elements
 					return el;
