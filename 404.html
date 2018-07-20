@@ -47,7 +47,7 @@ permalink: /404.html
 						addEvent(window, 'resize', resizer);
 						addEvent(window, 'orientationchange', resizer);
 					};
-					if (el.length)
+					if (typeof el.length !== "undefined")
 						for(var i=0; i<el.length; i++)
 							fit(el[i]);
 					else
