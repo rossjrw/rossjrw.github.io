@@ -47,20 +47,21 @@ permalink: /404.html
 						addEvent(window, 'resize', resizer);
 						addEvent(window, 'orientationchange', resizer);
 					};
-					try {
+					if (el.length)
 						for(var i=0; i<el.length; i++)
 							fit(el[i]);
-					} catch(error) {
+					else
 						fit(el);
 					// return set of elements
 					return el;
-					}
 				};
 			})();
-			window.fitText(document.getElementById("yeet"));
 		</script>
 	</head>
 	<body>
 		<div id="yeet" style="font-family: Arial;">404</div>
+		<script>
+			window.fitText(document.getElementById("yeet"));
+		</script>
 	</body>
 </html>
