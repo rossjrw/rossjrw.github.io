@@ -13,10 +13,8 @@
 <script lang="ts">
 import Corner from '@/components/Corner.vue'
 import Header from '@/components/Header.vue'
-import ProjectList from '@/components/ProjectList'
+import ProjectList from '@/components/ProjectList.vue'
 import Footer from '@/components/Footer.vue'
-
-import { getProjects } from '@/getProjects'
 
 export default {
   name: "App",
@@ -25,7 +23,6 @@ export default {
   },
   data(): Record<string,unknown> {
     return {
-      projects: getProjects(),
       categories: [
         {
           title: "completed projects",

@@ -20,8 +20,10 @@
     "src/**/*.ts",
     "src/**/*.vue"
   ],
-  "files": [
-    "src/shims-vue.d.ts"
+  "types": [
+    "node",
+    "src/shims-vue.d.ts",
+    "src/shims-raw-loader.d.ts"
   ],
   "exclude": [
     "node_modules"
