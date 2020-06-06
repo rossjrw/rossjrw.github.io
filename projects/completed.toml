@@ -1,0 +1,65 @@
+[[project]]
+name = "Faux Coffee Shop"
+date = "2017"
+desc = """
+a neograph based loosely on the Coffee Shop Code"""
+[[project.link]]
+name = "check it out"
+href = "/neograph"
+
+[[project]]
+name = "The Pipeworks"
+date = "2016, 2017"
+desc = """
+dystopian-themed online board game"""
+[[project.link]]
+name = "board"
+href = "https://docs.google.com/spreadsheets/d/1G0XCT7KVrhxvwK1Tv-7TBZiYjiwX9NlSijeQNuWlEec/edit?usp=sharing"
+[[project.link]]
+name = "rules"
+href = "https://docs.google.com/document/d/1Dwu1WJfo7OCM7y66ucyw6y37SK-96s2T4UIwTDTBZaQ/edit?usp=sharing"
+
+[[project]]
+name = "SCP-3939"
+date = "2018"
+desc = """
+a multiple choice story published on the SCP Foundation"""
+[[project.link]]
+name = "check it out"
+href = "http://scp-wiki.net/scp-3939"
+
+[[project]]
+name = "SCP-3211"
+date = "2018"
+desc = """
+text-based antimeme simulator"""
+[[project.link]]
+name = "check it out"
+href = "http://scp-wiki.net/scp-3211"
+
+[[project]]
+name = "Text gradient generator"
+date = "2018"
+desc = """
+browser-based tool for making textual BBCode gradients"""
+[[project.link]]
+name = "check it out"
+href = "/text-gradient"
+
+[[project]]
+name = "Black Highlighter"
+date = "2019"
+desc = """
+modernised CSS theme for SCP wiki"""
+[[project.link]]
+name = "check it out"
+href = "https://github.com/Nu-SCPTheme/Black-Highlighter"
+
+[[project]]
+name = "Regex Series Replace"
+date = "2020"
+desc = """
+browser-based tool for sharing a regex replacment series"""
+[[project.link]]
+name = "check it out"
+href = "/series-replace"

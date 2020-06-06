@@ -1,0 +1,26 @@
+[[project]]
+name = "Automafia"
+date = "2016"
+desc = """
+an attempt to automate Mafia and my first ever project"""
+[[project.link]]
+name = "check it out"
+href = "https://theyrecoming.neocities.org/mafia/automafia.html"
+
+[[project]]
+name = "Gallifreyo"
+date = "2017–2018"
+desc = """
+browser-based Gallifreyan translator"""
+[[project.link]]
+name = "check it out"
+href = "/gallifreyo"
+
+[[project]]
+name = "Maitreya.aic"
+date = "2018–2019"
+desc = """
+browser-based text adventure-ish game"""
+[[project.link]]
+name = "check it out"
+href = "/maitreya"
