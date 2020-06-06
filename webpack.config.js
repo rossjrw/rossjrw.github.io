@@ -49,6 +49,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
+      title: "rossjrw",
       template: './src/template.ejs',
     }),
   ],
