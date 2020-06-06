@@ -1,6 +1,7 @@
 [[project]]
 name = "Faux Coffee Shop"
 date = "2017"
+tags = [ "completed" ]
 desc = """
 a neograph based loosely on the Coffee Shop Code"""
 [[project.link]]
@@ -10,6 +11,7 @@ href = "/neograph"
 [[project]]
 name = "The Pipeworks"
 date = "2016, 2017"
+tags = [ "completed" ]
 desc = """
 dystopian-themed online board game"""
 [[project.link]]
@@ -22,6 +24,7 @@ href = "https://docs.google.com/document/d/1Dwu1WJfo7OCM7y66ucyw6y37SK-96s2T4UIw
 [[project]]
 name = "SCP-3939"
 date = "2018"
+tags = [ "completed" ]
 desc = """
 a multiple choice story published on the SCP Foundation"""
 [[project.link]]
@@ -31,6 +34,7 @@ href = "http://scp-wiki.net/scp-3939"
 [[project]]
 name = "SCP-3211"
 date = "2018"
+tags = [ "completed" ]
 desc = """
 text-based antimeme simulator"""
 [[project.link]]
@@ -40,6 +44,7 @@ href = "http://scp-wiki.net/scp-3211"
 [[project]]
 name = "Text gradient generator"
 date = "2018"
+tags = [ "completed" ]
 desc = """
 browser-based tool for making textual BBCode gradients"""
 [[project.link]]
@@ -49,6 +54,7 @@ href = "/text-gradient"
 [[project]]
 name = "Black Highlighter"
 date = "2019"
+tags = [ "completed" ]
 desc = """
 modernised CSS theme for SCP wiki"""
 [[project.link]]
@@ -58,8 +64,63 @@ href = "https://github.com/Nu-SCPTheme/Black-Highlighter"
 [[project]]
 name = "Regex Series Replace"
 date = "2020"
+tags = [ "completed" ]
 desc = """
 browser-based tool for sharing a regex replacment series"""
 [[project.link]]
 name = "check it out"
 href = "/series-replace"
+
+
+
+[[project]]
+name = "TARS"
+date = "2019–"
+tags = [ "working" ]
+desc = """
+social media promotion automator via IRC interface"""
+[[project.link]]
+name = "check it out"
+href = "/tars/help"
+
+[[project]]
+name = "cluedo"
+date = "2019–"
+tags = [ "working" ]
+desc = """
+browser-based offset-multiplayer game, like Moirai"""
+[[project.link]]
+name = "check it out"
+href = "/cluedo"
+
+
+
+[[project]]
+name = "Automafia"
+date = "2016"
+tags = [ "unfinished", "abandoned" ]
+desc = """
+an attempt to automate Mafia and my first ever project"""
+[[project.link]]
+name = "check it out"
+href = "https://theyrecoming.neocities.org/mafia/automafia.html"
+
+[[project]]
+name = "Gallifreyo"
+date = "2017–2018"
+tags = [ "unfinished" ]
+desc = """
+browser-based Gallifreyan translator"""
+[[project.link]]
+name = "check it out"
+href = "/gallifreyo"
+
+[[project]]
+name = "Maitreya.aic"
+date = "2018–2019"
+tags = [ "unfinished" ]
+desc = """
+browser-based text adventure-ish game"""
+[[project.link]]
+name = "check it out"
+href = "/maitreya"
