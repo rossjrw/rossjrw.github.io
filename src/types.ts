@@ -3,8 +3,10 @@ export interface State {
 }
 
 export interface Project {
+  id: number
   name: string
   date: string
+  tags: string[]
   desc: string
   link: ProjectLink[]
 }

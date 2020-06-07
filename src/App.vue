@@ -5,7 +5,7 @@
     <ProjectList v-for="category in categories"
                  :key="category.tag"
                  :title="category.title"
-                 :tag="category.tag"/>
+                 :filter-by-tag="category.tag"/>
     <Footer></Footer>
   </div>
 </template>
