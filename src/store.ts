@@ -5,17 +5,20 @@ Vue.use(Vuex)
 
 import toml from "toml"
 
-import { State, Project } from './types'
+import { State, Project, ProjectList } from './types'
 import projects from '!!raw-loader!./projects.toml'
+
+function makeProjectList(projects: Project[]): ProjectList {
+  return projects.reduce(
+    (acc: ProjectList, project: Project, index: number) => {
+      acc[index] = project
+      return acc
+    }, {})
+}
 
 export default new Vuex.Store({
   strict: process.env.NODE_ENV !== 'production',
   state: {
-    projects: toml.parse(projects).map(
-      (project: Project, index: number) => {
-        project.id = index
-        return project
-      }
-    )
+    projects: makeProjectList(toml.parse(projects).project)
   } as State
 })

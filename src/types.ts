@@ -1,9 +1,12 @@
 export interface State {
-  projects: Project[]
+  projects: ProjectList
+}
+
+export interface ProjectList {
+  [id: number]: Project
 }
 
 export interface Project {
-  id: number
   name: string
   date: string
   tags: string[]

@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1 class="title is-1">
-      <Project v-for="(project, index) in selectedProjects"
-               :key="index"/>
+      <!-- <Project v-for="(project, index) in selectedProjects" -->
+      <!--          :key="index"/> -->
     </h1>
   </div>
 </template>
