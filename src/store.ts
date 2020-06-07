@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 import toml from "toml"
 
-import { State, Project, ProjectList } from './types'
+import { State, Project, ProjectList } from '@/types'
 import projects from '!!raw-loader!./projects.toml'
 
 function makeProjectList(projects: Project[]): ProjectList {

@@ -1,23 +1,35 @@
 <template>
   <div>
-    <h1 class="title is-1">
-      <!-- <Project v-for="(project, index) in selectedProjects" -->
-      <!--          :key="index"/> -->
-    </h1>
+    <h1 class="title is-1">{{title}}</h1>
+    <Project v-for="(project, key) in selectedProjects"
+             :key="key"/>
   </div>
 </template>
 
 <script lang="ts">
+import { includes, pickBy } from "lodash"
+
 import Project from '@/components/Project.vue'
+import { ProjectList } from '@/types'
 
 export default {
   name: "ProjectList",
   components: {
     Project
   },
-  props: ["title", "filter-by-tag"],
-  data(): Record<string,unknown> {
-    return {}
+  props: ["title", "filterByTag"],
+  computed: {
+    selectedProjects: {
+      get(): ProjectList {
+        return pickBy(this.$store.state.projects,
+          value => {
+            const i = includes(value.tags, this.filterByTag)
+            console.log(value, this.filterByTag, i)
+            return i
+          }
+        )
+      }
+    }
   }
 }
 </script>
