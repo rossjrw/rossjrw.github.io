@@ -1,11 +1,13 @@
 <template>
   <div>
-    heheh
+
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: "Project"
+  name: "Project",
+  props: ["project"],
+
 }
 </script>
