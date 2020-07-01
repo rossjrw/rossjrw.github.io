@@ -71,6 +71,19 @@ browser-based tool for sharing a regex replacment series"""
 name = "check it out"
 href = "/series-replace"
 
+[[project]]
+name = "SCUTTLE API wrapper"
+date = "2020"
+tags = [ "completed", "utility" ]
+desc = """
+Python wrapper around SCUTTLE API"""
+[[project.link]]
+name = "check it out"
+href = "https://pypi.org/project/python-scuttle"
+[[project.link]]
+name = "SCUTTLE"
+href = "https://github.com/scuttle/scuttle"
+
 
 
 [[project]]
