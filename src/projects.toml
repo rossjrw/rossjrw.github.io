@@ -84,6 +84,15 @@ href = "https://pypi.org/project/python-scuttle"
 name = "SCUTTLE"
 href = "https://github.com/scuttle/scuttle"
 
+[[project]]
+name = "Ur"
+date = "2020"
+tages = [ "completed" ]
+desc = """
+The Royal Game of Ur, on my GitHub profile"""
+[[project.link]]
+name = "check it out"
+href = "https://github.com/rossjrw/rossjrw"
 
 
 [[project]]
