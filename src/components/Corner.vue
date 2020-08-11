@@ -20,6 +20,12 @@
   </a>
 </template>
 
+<script lang="ts">
+import Vue from "vue"
+
+export default Vue.extend({})
+</script>
+
 <style>
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;

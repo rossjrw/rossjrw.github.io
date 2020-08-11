@@ -8,12 +8,13 @@
 </template>
 
 <script lang="ts">
+import Vue from "vue"
 import { includes, pickBy } from "lodash"
 
 import Project from '@/components/Project.vue'
 import { ProjectList } from '@/types'
 
-export default {
+export default Vue.extend({
   name: "ProjectList",
   components: {
     Project
@@ -32,5 +33,5 @@ export default {
       }
     }
   }
-}
+})
 </script>

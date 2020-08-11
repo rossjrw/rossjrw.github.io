@@ -11,12 +11,14 @@
 </template>
 
 <script lang="ts">
+import Vue from "vue"
+
 import Corner from '@/components/Corner.vue'
 import Header from '@/components/Header.vue'
 import ProjectList from '@/components/ProjectList.vue'
 import Footer from '@/components/Footer.vue'
 
-export default {
+export default Vue.extend({
   name: "App",
   components: {
     Corner, Header, ProjectList, Footer
@@ -39,5 +41,5 @@ export default {
       ]
     }
   }
-}
+})
 </script>

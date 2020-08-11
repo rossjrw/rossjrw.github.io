@@ -1,10 +1,10 @@
-import './root.scss'
 import Vue from "vue"
 
-import App from './App.vue'
-import store from './store'
+import '@/root.scss'
+import App from '@/components/App.vue'
+import store from '@/store'
 
-const vm = new Vue({
+new Vue({
   el: '#app',
   template: '<App/>',
   components: { App },
