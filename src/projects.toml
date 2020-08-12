@@ -118,16 +118,6 @@ href = "/cluedo"
 
 
 [[project]]
-name = "Automafia"
-date = "2016"
-tags = [ "unfinished", "abandoned" ]
-desc = """
-an attempt to automate Mafia and my first ever project"""
-[[project.link]]
-name = "check it out"
-href = "https://theyrecoming.neocities.org/mafia/automafia.html"
-
-[[project]]
 name = "Gallifreyo"
 date = "2017–2018"
 tags = [ "unfinished" ]
@@ -146,3 +136,15 @@ browser-based text adventure-ish game"""
 [[project.link]]
 name = "check it out"
 href = "/maitreya"
+
+
+
+[[project]]
+name = "Automafia"
+date = "2016"
+tags = [ "abandoned" ]
+desc = """
+an attempt to automate Mafia and my first ever project"""
+[[project.link]]
+name = "check it out"
+href = "https://theyrecoming.neocities.org/mafia/automafia.html"
