@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <Corner></Corner>
-    <Header></Header>
-    <ProjectList v-for="category in categories"
-                 :key="category.tag"
-                 :title="category.title"
-                 :filter-by-tag="category.tag"/>
-    <Footer></Footer>
+    <GithubCorner url="https://github.com/rossjrw/rossjrw.github.io"
+                  colorScheme="black"/>
+    <div class="section">
+      <div class="container">
+        <Header/>
+        <ProjectList v-for="category in categories"
+                     :key="category.tag"
+                     :title="category.title"
+                     :filter-by-tag="category.tag"/>
+        <Footer/>
+      </div>
+    </div>
   </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import Vue from "vue"
+import GithubCorner from "vue-github-corners"
 
-import Corner from '@/components/Corner.vue'
 import Header from '@/components/Header.vue'
 import ProjectList from '@/components/ProjectList.vue'
 import Footer from '@/components/Footer.vue'
@@ -21,9 +26,9 @@ import Footer from '@/components/Footer.vue'
 export default Vue.extend({
   name: "App",
   components: {
-    Corner, Header, ProjectList, Footer
+    GithubCorner, Header, ProjectList, Footer
   },
-  data(): Record<string,unknown> {
+  data() {
     return {
       categories: [
         {
