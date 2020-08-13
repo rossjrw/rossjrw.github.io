@@ -35,9 +35,9 @@ type Tag =
   // Other tags
   | "utility"
 
-type Technology =
+export type Technology =
   // Language
-  | "Python" | "PHP" | "Vimscript" | "FORTRAN"
+  | "Python" | "PHP" | "VimScript" | "FORTRAN"
   | "JavaScript" | "TypeScript" | "CoffeeScript"
   // Frameworks
   | "Vue.js" | "AngularJS" | "jQuery"

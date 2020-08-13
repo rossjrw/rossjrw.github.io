@@ -104,7 +104,7 @@ href = "black-highlighter-logo.svg"
 name = "Regex Series Replace"
 date = [[2020]]
 tags = ["completed", "utility"]
-tech = ["TypeScript", "Vue", "Webpack"]
+tech = ["TypeScript", "Vue.js", "Webpack"]
 desc = """
 browser-based tool for sharing a regex replacment series"""
 [[project.link]]
