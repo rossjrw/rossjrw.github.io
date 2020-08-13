@@ -31,13 +31,16 @@ type Tag =
 
 type Technology =
   // Language
-  | "Python" | "Javascript" | "Typescript" | "PHP" | "Vimscript" | "FORTRAN"
+  | "Python" | "PHP" | "Vimscript" | "FORTRAN"
+  | "JavaScript" | "TypeScript" | "CoffeeScript"
   // Frameworks
-  | "Vue.js" | "AngularJS"
+  | "Vue.js" | "AngularJS" | "jQuery"
   // Build tools
-  | "Gulp.js" | "Webpack"
-  // Other?
+  | "Gulp.js" | "Webpack" | "GitHub Actions"
+  // Miscellaneous
   | "CSS" | "SVG" | "Regex" | "Spreadsheets"
+  // Even more miscellaneous
+  | "Fiction"
 
 export type TechnologyColours = {
   [tech in Technology]: string
