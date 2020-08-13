@@ -42,7 +42,11 @@ export default Vue.extend({
         {
           title: "unfinished projects",
           tag: "unfinished"
-        }
+        },
+        {
+          title: "the graveyard",
+          tag: "abandoned",
+        },
       ]
     }
   }
