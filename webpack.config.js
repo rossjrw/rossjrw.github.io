@@ -35,6 +35,15 @@ module.exports = {
         use: [
           'vue-style-loader',
           'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: [
+                require("postcss-grid-kiss")(),
+              ],
+            }
+          }
         ],
       },
       {

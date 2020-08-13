@@ -1,36 +1,49 @@
 <template>
-  <div class="project">
-    <div class="project-image-main"
+  <div class="prj">
+    <div class="prj-img-main card"
          v-if="hasImage('main')">
       <img :src="getImage(project.image, 'main').default"/>
     </div>
-    <div class="project-image-mobile"
+    <div class="prj-img-mobile card"
          v-if="hasImage('mobile')">
       <img :src="getImage(project.image, 'mobile').default"/>
     </div>
-    <div class="project-name">
-      <p class="title">
-      {{project.name}}
-      </p>
+    <div class="prj-info card">
+      <div class="card-content">
+        <div class="prj-name">
+          <p class="title">
+          {{project.name}}
+          </p>
+        </div>
+        <div class="prj-date">
+          <p class="subtitle">
+          {{prettyDate}}
+          </p>
+        </div>
+        <div class="prj-desc">
+          <p class="content">
+          {{project.desc}}
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="project-date">
-      <p class="subtitle">
-      {{prettyDate}}
-      </p>
+    <div class="prj-meta">
+      <div class="prj-tech">
+        <p v-for="(tech, index) in colouredTech"
+           :key="tech.name">
+        <span class="icon">
+          <PolyBullet :shape="index + 3"
+              :colour="tech.colour"/>
+        </span>
+        {{tech.name}}
+        </p>
+      </div>
+      <div class="prj-link">
+        <p>
+        not yet
+        </p>
+      </div>
     </div>
-    <div class="project-desc">
-      <p class="content">
-      {{project.desc}}
-      </p>
-    </div>
-    <p v-for="(tech, index) in colouredTech"
-       :key="tech.name">
-    <span class="icon">
-      <PolyBullet :shape="index + 3"
-                  :colour="tech.colour"/>
-    </span>
-    {{tech.name}}
-    </p>
   </div>
 </template>
 
@@ -73,5 +86,17 @@ export default Vue.extend({
 </script>
 
 <style>
-
+.prj {
+  grid-grap: 1rem;
+  grid-kiss:
+  "  +---------------+  +-----------------+  +-----------+  +-------------+  "
+  "  |               |  |                 |  |           |  |             |  "
+  "  |               |  |                 |  |           |  |             |  "
+  "  |               |  |                 |  |     ↓     |  |      ↓      |  "
+  "  | .prj-img-main |  | .prj-img-mobile |  | .prj-info |  |→ .prj-meta ←|  "
+  "  |               |  |                 |  |     ↑     |  |      ↑      |  "
+  "  |               |  |                 |  |           |  |             |  "
+  "  |               |  |                 |  |           |  |             |  "
+  "  +-----18rem-----+  +------9rem-------+  +-----------+  +-------------+  "
+}
 </style>
