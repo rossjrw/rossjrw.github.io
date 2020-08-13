@@ -51,3 +51,5 @@ type Technology =
 export type TechnologyColours = {
   [tech in Technology]: string
 }
+
+export type Shape = "3" | "4" | "5" | "6"

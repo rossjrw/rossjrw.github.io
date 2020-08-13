@@ -84,7 +84,7 @@ href = "gradient.png"
 name = "Black Highlighter"
 date = [[2019]]
 tags = ["completed"]
-tags = ["CSS", "Gulp.js"]
+tech = ["CSS", "Gulp.js"]
 desc = """
 modernised CSS theme for SCP wiki"""
 [[project.link]]
@@ -98,13 +98,13 @@ type = "mobile"
 href = "bhl-mobile.png"
 [[project.image]]
 type = "logo"
-href = "black-highlighter-logo.svg""
+href = "black-highlighter-logo.svg"
 
 [[project]]
 name = "Regex Series Replace"
 date = [[2020]]
 tags = ["completed", "utility"]
-tags = ["TypeScript", "Vue", "Webpack"]
+tech = ["TypeScript", "Vue", "Webpack"]
 desc = """
 browser-based tool for sharing a regex replacment series"""
 [[project.link]]
@@ -173,7 +173,7 @@ href = "gallifreyo.png"
 
 [[project]]
 name = "Maitreya.aic"
-date = [[2018–2019]]
+date = [[2018, 2019]]
 tags = ["unfinished"]
 tech = ["CoffeeScript", "AngularJS", "CSS"]
 desc = """
