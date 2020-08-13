@@ -1,3 +1,9 @@
+# Images:
+# main: must be 1:1.
+# mobile: must be 1:2.
+# logo: should be fairly wide and flat.
+
+
 [[project]]
 name = "Faux Coffee Shop"
 date = [[2017]]
@@ -8,6 +14,9 @@ a neograph based loosely on the Coffee Shop Code"""
 [[project.link]]
 name = "check it out"
 href = "/neograph"
+[[project.image]]
+type = "main"
+href = "neograph.png"
 
 [[project]]
 name = "The Pipeworks"
@@ -22,6 +31,12 @@ href = "https://docs.google.com/spreadsheets/d/1G0XCT7KVrhxvwK1Tv-7TBZiYjiwX9NlS
 [[project.link]]
 name = "rules"
 href = "https://docs.google.com/document/d/1Dwu1WJfo7OCM7y66ucyw6y37SK-96s2T4UIwTDTBZaQ/edit?usp=sharing"
+[[project.image]]
+type = "main"
+href = "pipeworks-board.png"
+[[project.image]]
+type = "logo"
+href = "pipeworks-logo.png"
 
 [[project]]
 name = "SCP-3939"
@@ -33,6 +48,9 @@ a multiple choice story published on the SCP Foundation"""
 [[project.link]]
 name = "check it out"
 href = "http://scp-wiki.net/scp-3939"
+[[project.image]]
+type = "main"
+href = "3939.png"
 
 [[project]]
 name = "SCP-3211"
@@ -44,6 +62,9 @@ text-based antimeme simulator"""
 [[project.link]]
 name = "check it out"
 href = "http://scp-wiki.net/scp-3211"
+[[project.image]]
+type = "main"
+href = "3211.png"
 
 [[project]]
 name = "Text gradient generator"
@@ -55,6 +76,9 @@ browser-based tool for making textual BBCode gradients"""
 [[project.link]]
 name = "check it out"
 href = "/text-gradient"
+[[project.image]]
+type = "main"
+href = "gradient.png"
 
 [[project]]
 name = "Black Highlighter"
@@ -66,6 +90,15 @@ modernised CSS theme for SCP wiki"""
 [[project.link]]
 name = "check it out"
 href = "https://github.com/Nu-SCPTheme/Black-Highlighter"
+[[project.image]]
+type = "main"
+href = "bhl-desktop.png"
+[[project.image]]
+type = "mobile"
+href = "bhl-mobile.png"
+[[project.image]]
+type = "logo"
+href = "black-highlighter-logo.svg""
 
 [[project]]
 name = "Regex Series Replace"
@@ -77,6 +110,9 @@ browser-based tool for sharing a regex replacment series"""
 [[project.link]]
 name = "check it out"
 href = "/series-replace"
+[[project.image]]
+type = "main"
+href = "regex-series-replace.png"
 
 [[project]]
 name = "SCUTTLE API wrapper"
@@ -102,6 +138,9 @@ The Royal Game of Ur, on my GitHub profile"""
 [[project.link]]
 name = "check it out"
 href = "https://github.com/rossjrw/rossjrw"
+[[project.image]]
+type = "main"
+href = "ur.png"
 
 
 
@@ -126,6 +165,9 @@ browser-based Gallifreyan translator"""
 [[project.link]]
 name = "check it out"
 href = "/gallifreyo"
+[[project.image]]
+type = "main"
+href = "gallifreyo.png"
 
 
 
@@ -139,6 +181,12 @@ browser-based text adventure-ish game"""
 [[project.link]]
 name = "check it out"
 href = "/maitreya"
+[[project.image]]
+type = "main"
+href = "maitreya.png"
+[[project.image]]
+type = "logo"
+href = "maitreya-logo.png"
 
 
 
@@ -152,3 +200,6 @@ an attempt to automate Mafia and my first ever programming project"""
 [[project.link]]
 name = "check it out"
 href = "https://theyrecoming.neocities.org/mafia/automafia.html"
+[[project.image]]
+type = "main"
+href = "automafia.png"

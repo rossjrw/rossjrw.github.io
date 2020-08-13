@@ -13,10 +13,16 @@ export type Project =  {
   tech?: Technology[]
   desc: string
   link: ProjectLink[]
+  image?: ProjectImage[]
 }
 
-export type ProjectLink = {
+type ProjectLink = {
   name: string
+  href: string
+}
+
+type ProjectImage = {
+  type: "main" | "logo" | "mobile"
   href: string
 }
 
