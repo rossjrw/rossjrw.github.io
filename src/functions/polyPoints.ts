@@ -12,7 +12,7 @@ export function polyPoints (
   const size = 100
   const points: [number, number][] = range(0, parseInt(shape)).map(
     index => {
-      const angle = index * 2 * Math.PI / parseInt(shape)
+      const angle = index * 2 * Math.PI / parseInt(shape) - Math.PI / 2
       return [
         Math.cos(angle) * size/2 + size/2,
         Math.sin(angle) * size/2 + size/2,

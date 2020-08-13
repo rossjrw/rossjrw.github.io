@@ -25,6 +25,6 @@ export default Vue.extend({
 
 <style>
 .poly-bullet {
-  height: 40%;
+  height: 50%;
 }
 </style>
