@@ -17,7 +17,7 @@ export type ProjectList = {
 
 export type Project =  {
   name: string
-  date: string
+  date: number[][]
   tags: Tag[]
   desc: string
   link: ProjectLink[]

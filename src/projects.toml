@@ -1,6 +1,6 @@
 [[project]]
 name = "Faux Coffee Shop"
-date = "2017"
+date = [[2017]]
 tags = [ "completed" ]
 desc = """
 a neograph based loosely on the Coffee Shop Code"""
@@ -10,7 +10,7 @@ href = "/neograph"
 
 [[project]]
 name = "The Pipeworks"
-date = "2016, 2017"
+date = [[2016], [2017]]
 tags = [ "completed" ]
 desc = """
 dystopian-themed online board game"""
@@ -23,7 +23,7 @@ href = "https://docs.google.com/document/d/1Dwu1WJfo7OCM7y66ucyw6y37SK-96s2T4UIw
 
 [[project]]
 name = "SCP-3939"
-date = "2018"
+date = [[2018]]
 tags = [ "completed" ]
 desc = """
 a multiple choice story published on the SCP Foundation"""
@@ -33,7 +33,7 @@ href = "http://scp-wiki.net/scp-3939"
 
 [[project]]
 name = "SCP-3211"
-date = "2018"
+date = [[2018]]
 tags = [ "completed" ]
 desc = """
 text-based antimeme simulator"""
@@ -43,7 +43,7 @@ href = "http://scp-wiki.net/scp-3211"
 
 [[project]]
 name = "Text gradient generator"
-date = "2018"
+date = [[2018]]
 tags = [ "completed" ]
 desc = """
 browser-based tool for making textual BBCode gradients"""
@@ -53,7 +53,7 @@ href = "/text-gradient"
 
 [[project]]
 name = "Black Highlighter"
-date = "2019"
+date = [[2019]]
 tags = [ "completed" ]
 desc = """
 modernised CSS theme for SCP wiki"""
@@ -63,8 +63,8 @@ href = "https://github.com/Nu-SCPTheme/Black-Highlighter"
 
 [[project]]
 name = "Regex Series Replace"
-date = "2020"
-tags = [ "completed" ]
+date = [[2020]]
+tags = [ "completed", "utility" ]
 desc = """
 browser-based tool for sharing a regex replacment series"""
 [[project.link]]
@@ -73,7 +73,7 @@ href = "/series-replace"
 
 [[project]]
 name = "SCUTTLE API wrapper"
-date = "2020"
+date = [[2020]]
 tags = [ "completed", "utility" ]
 desc = """
 Python wrapper around SCUTTLE API"""
@@ -86,7 +86,7 @@ href = "https://github.com/scuttle/scuttle"
 
 [[project]]
 name = "Ur"
-date = "2020"
+date = [[2020]]
 tages = [ "completed" ]
 desc = """
 The Royal Game of Ur, on my GitHub profile"""
@@ -95,9 +95,10 @@ name = "check it out"
 href = "https://github.com/rossjrw/rossjrw"
 
 
+
 [[project]]
 name = "TARS"
-date = "2019–"
+date = [[2019]]
 tags = [ "working" ]
 desc = """
 social media promotion automator via IRC interface"""
@@ -106,30 +107,20 @@ name = "check it out"
 href = "/tars/help"
 
 [[project]]
-name = "cluedo"
-date = "2019–"
-tags = [ "working" ]
-desc = """
-browser-based offset-multiplayer game, like Moirai"""
-[[project.link]]
-name = "check it out"
-href = "/cluedo"
-
-
-
-[[project]]
 name = "Gallifreyo"
-date = "2017–2018"
-tags = [ "unfinished" ]
+date = [[2017, 2018], [2020]]
+tags = [ "working" ]
 desc = """
 browser-based Gallifreyan translator"""
 [[project.link]]
 name = "check it out"
 href = "/gallifreyo"
 
+
+
 [[project]]
 name = "Maitreya.aic"
-date = "2018–2019"
+date = [[2018–2019]]
 tags = [ "unfinished" ]
 desc = """
 browser-based text adventure-ish game"""
@@ -141,7 +132,7 @@ href = "/maitreya"
 
 [[project]]
 name = "Automafia"
-date = "2016"
+date = [[2016]]
 tags = [ "abandoned" ]
 desc = """
 an attempt to automate Mafia and my first ever project"""
