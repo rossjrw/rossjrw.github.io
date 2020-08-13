@@ -1,8 +1,27 @@
 <template>
   <div class="project">
-    <div class="image"
-         v-if="hasMainImage()">
-      <img :src="getImgUrl(project.image, 'main').default"/>
+    <div class="project-image-main"
+         v-if="hasImage('main')">
+      <img :src="getImage(project.image, 'main').default"/>
+    </div>
+    <div class="project-image-mobile"
+         v-if="hasImage('mobile')">
+      <img :src="getImage(project.image, 'mobile').default"/>
+    </div>
+    <div class="project-name">
+      <p class="title">
+      {{project.name}}
+      </p>
+    </div>
+    <div class="project-date">
+      <p class="subtitle">
+      {{prettyDate}}
+      </p>
+    </div>
+    <div class="project-desc">
+      <p class="content">
+      {{project.desc}}
+      </p>
     </div>
     <p v-for="(tech, index) in colouredTech"
        :key="tech.name">
@@ -33,17 +52,26 @@ export default Vue.extend({
         return { name: tech, colour: techColour(tech) }
       })
     },
+    prettyDate() {
+      let date = this.project.date.map(date => date.join("–")).join(", ")
+      if (this.project.tags.includes("working")) date += "–"
+      return date
+    },
   },
   methods: {
-    getImgUrl(image, type) {
+    hasImage(type) {
+      return 'image' in this.project && this.project.image.some(
+        image => image.type === type
+      )
+    },
+    getImage(image, type) {
       const url = image.filter(image => image.type === type)[0].href
       return require('@/assets/' + url)
-    },
-    hasMainImage() {
-      return 'image' in this.project && this.project.image.some(
-        image => image.type === "main"
-      )
     },
   },
 })
 </script>
+
+<style>
+
+</style>

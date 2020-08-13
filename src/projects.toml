@@ -175,7 +175,7 @@ href = "gallifreyo.png"
 name = "Maitreya.aic"
 date = [[2018, 2019]]
 tags = ["unfinished"]
-tech = ["CoffeeScript", "AngularJS", "CSS"]
+tech = ["CoffeeScript", "AngularJS", "CSS", "Gulp.js"]
 desc = """
 browser-based text adventure-ish game"""
 [[project.link]]
