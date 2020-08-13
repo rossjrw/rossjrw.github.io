@@ -18,7 +18,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.tsx?$/,
+        test: /\.ts$/,
         use: 'babel-loader',
         exclude: /node_modules/,
       },
@@ -41,6 +41,12 @@ module.exports = {
         test: /\.toml$/,
         use: [
           'raw-loader',
+        ],
+      },
+      {
+        test: /\.(png|jpg|svg)$/,
+        use: [
+          'file-loader',
         ],
       },
     ],

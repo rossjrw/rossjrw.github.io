@@ -1,6 +1,9 @@
 <template>
-  <div>
-    {{project.name}} {{project.date}}
+  <div class="project">
+    <div class="image"
+         v-if="hasMainImage()">
+      <img :src="getImgUrl(project.image, 'main').default"/>
+    </div>
     <p v-for="(tech, index) in colouredTech"
        :key="tech.name">
     <span class="icon">
@@ -29,6 +32,17 @@ export default Vue.extend({
       return this.project.tech.map(tech => {
         return { name: tech, colour: techColour(tech) }
       })
+    },
+  },
+  methods: {
+    getImgUrl(image, type) {
+      const url = image.filter(image => image.type === type)[0].href
+      return require('@/assets/' + url)
+    },
+    hasMainImage() {
+      return 'image' in this.project && this.project.image.some(
+        image => image.type === "main"
+      )
     },
   },
 })
