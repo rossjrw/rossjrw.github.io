@@ -1,5 +1,6 @@
 <template>
-  <div class="project">
+  <div class="project"
+       :style="{ backgroundImage: gradientMesh }">
     <div class="project-item project-img-main card"
          v-if="hasImage('main')">
       <img :src="getImage(project.image, 'main').default"/>
@@ -57,6 +58,7 @@ import Vue from "vue"
 
 import PolyBullet from '@/components/PolyBullet.vue'
 import { techColour } from '@/functions/techColours'
+import { gradientMesh } from '@/functions/gradientMesh'
 
 export default Vue.extend({
   name: "Project",
@@ -74,6 +76,11 @@ export default Vue.extend({
       let date = this.project.date.map(date => date.join("–")).join(", ")
       if (this.project.tags.includes("working")) date += "–"
       return date
+    },
+    gradientMesh() {
+      let colours = this.project.back
+      if (!colours) colours = ["red", "yellow", "blue", "green"]
+      return gradientMesh(colours)
     },
   },
   methods: {
@@ -94,6 +101,7 @@ export default Vue.extend({
 .project {
   display: flex;
   align-items: center;
+  margin: 4rem 0;
 }
 
 .project-img-main {

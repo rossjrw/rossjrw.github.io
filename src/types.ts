@@ -12,6 +12,7 @@ export type Project =  {
   tags: Tag[]
   tech?: Technology[]
   desc: string
+  back?: Colours
   link: ProjectLink[]
   image?: ProjectImage[]
 }
@@ -52,4 +53,6 @@ export type TechnologyColours = {
   [tech in Technology]: string
 }
 
-export type Shape = "3" | "4" | "5" | "6"
+export type Colours = [Colour, Colour, Colour, Colour]
+
+type Colour = string | [number, number, number]

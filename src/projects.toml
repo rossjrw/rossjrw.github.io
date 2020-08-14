@@ -178,6 +178,7 @@ tags = ["unfinished"]
 tech = ["CoffeeScript", "AngularJS", "CSS", "Gulp.js"]
 desc = """
 browser-based text adventure-ish game"""
+back = ["#1488cc", "#1a73c6", "#205dbf", "#2b32b2"]
 [[project.link]]
 name = "check it out"
 href = "/maitreya"
