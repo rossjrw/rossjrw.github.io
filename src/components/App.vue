@@ -10,6 +10,7 @@
     <ProjectList v-for="category in categories"
                  :key="category.tag"
                  :title="category.title"
+                 :subtitle="category.subtitle"
                  :filter-by-tag="category.tag"/>
     <Footer/>
   </div>
@@ -32,20 +33,24 @@ export default Vue.extend({
     return {
       categories: [
         {
+          tag: "completed",
           title: "completed projects",
-          tag: "completed"
+          subtitle: "finished projects, ready for you and the world",
         },
         {
+          tag: "working",
           title: "working projects",
-          tag: "working"
+          subtitle: "stuff I'm still working on — shhh tell no one",
         },
         {
+          tag: "unfinished",
           title: "unfinished projects",
-          tag: "unfinished"
+          subtitle: "these were never finished, but I may return to them",
         },
         {
-          title: "the graveyard",
           tag: "abandoned",
+          title: "the graveyard",
+          subtitle: "abandoned projects that I will never touch again",
         },
       ]
     }

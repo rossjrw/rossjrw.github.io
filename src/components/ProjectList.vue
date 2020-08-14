@@ -1,8 +1,11 @@
 <template>
   <div>
-    <h1 class="title is-1 has-text-centered">
+    <p class="title is-1 has-text-centered">
       {{title}}
-    </h1>
+    </p>
+    <p class="subtitle is-5 has-text-centered">
+      {{subtitle}}
+    </p>
     <Project v-for="(project, projectId) in selectedProjects"
              :key="projectId"
              :project="project"/>
@@ -21,7 +24,7 @@ export default Vue.extend({
   components: {
     Project
   },
-  props: ["title", "filterByTag"],
+  props: ["title", "subtitle", "filterByTag"],
   computed: {
     selectedProjects: {
       get(): ProjectList {
