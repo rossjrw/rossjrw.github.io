@@ -1,34 +1,36 @@
 <template>
-  <div class="prj">
-    <div class="prj-img-main card"
+  <div class="project">
+    <div class="project-item project-img-main card"
          v-if="hasImage('main')">
       <img :src="getImage(project.image, 'main').default"/>
     </div>
-    <div class="prj-img-mobile card"
+    <div class="project-item project-img-mobile card"
          v-if="hasImage('mobile')">
       <img :src="getImage(project.image, 'mobile').default"/>
     </div>
-    <div class="prj-info card">
-      <div class="card-content">
-        <div class="prj-name">
-          <p class="title">
-          {{project.name}}
-          </p>
-        </div>
-        <div class="prj-date">
-          <p class="subtitle">
-          {{prettyDate}}
-          </p>
-        </div>
-        <div class="prj-desc">
-          <p class="content">
-          {{project.desc}}
-          </p>
+    <div class="project-item project-info">
+      <div class="card">
+        <div class="card-content">
+          <div class="project-name">
+            <p class="title">
+            {{project.name}}
+            </p>
+          </div>
+          <div class="project-date">
+            <p class="subtitle">
+            {{prettyDate}}
+            </p>
+          </div>
+          <div class="project-desc">
+            <p class="content">
+            {{project.desc}}
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="prj-meta">
-      <div class="prj-tech">
+    <div class="project-item project-meta">
+      <div class="project-tech">
         <p v-for="(tech, index) in colouredTech"
            :key="tech.name">
         <span class="icon">
@@ -38,7 +40,7 @@
         {{tech.name}}
         </p>
       </div>
-      <div class="prj-link">
+      <div class="project-link">
         <p>
         not yet
         </p>
@@ -86,17 +88,27 @@ export default Vue.extend({
 </script>
 
 <style>
-.prj {
-  grid-grap: 1rem;
-  grid-kiss:
-  "  +---------------+  +-----------------+  +-----------+  +-------------+  "
-  "  |               |  |                 |  |           |  |             |  "
-  "  |               |  |                 |  |           |  |             |  "
-  "  |               |  |                 |  |     ↓     |  |      ↓      |  "
-  "  | .prj-img-main |  | .prj-img-mobile |  | .prj-info |  |→ .prj-meta ←|  "
-  "  |               |  |                 |  |     ↑     |  |      ↑      |  "
-  "  |               |  |                 |  |           |  |             |  "
-  "  |               |  |                 |  |           |  |             |  "
-  "  +-----18rem-----+  +------9rem-------+  +-----------+  +-------------+  "
+.project {
+  display: flex;
+  align-items: center;
+}
+
+.project-img-main {
+  flex: 0 1 18rem;
+}
+.project-img-mobile {
+  flex: 0 1 9rem;
+}
+.project-info, .project-meta {
+  flex: 1 1 0;
+}
+
+.project-item {
+  margin: 1rem;
+}
+
+.project-img-main img, .project-img-mobile img {
+  /* Remove sliver of whitespace below image */
+  display: block;
 }
 </style>
