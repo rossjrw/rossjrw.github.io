@@ -33,17 +33,20 @@
       <div class="project-tech">
         <p v-for="(tech, index) in colouredTech"
            :key="tech.name">
-        <span class="icon">
-          <PolyBullet :shape="index + 3"
-              :colour="tech.colour"/>
-        </span>
-        {{tech.name}}
+          <span class="icon">
+            <PolyBullet :shape="index + 3"
+                        :colour="tech.colour"/>
+          </span>
+          {{tech.name}}
         </p>
       </div>
       <div class="project-link">
-        <p>
-        not yet
-        </p>
+        <a v-for="link in project.link"
+           :key="link.href"
+           class="button is-rounded is-link is-inverted"
+           :href="link.href">
+          {{link.name}}
+        </a>
       </div>
     </div>
   </div>
