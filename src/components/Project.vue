@@ -22,11 +22,8 @@
             {{prettyDate}}
             </p>
           </div>
-          <div class="project-desc">
-            <p class="content">
-            {{project.desc}}
-            </p>
-          </div>
+          <div class="project-desc content"
+               v-html="description"/>
         </div>
       </div>
     </div>
@@ -55,6 +52,7 @@
 
 <script lang="ts">
 import Vue from "vue"
+import marked from "marked"
 
 import PolyBullet from '@/components/PolyBullet.vue'
 import { techColour } from '@/functions/techColours'
@@ -86,6 +84,9 @@ export default Vue.extend({
         new Array(3).fill(200),
       ]
       return gradientMesh(colours)
+    },
+    description() {
+      return marked(this.project.desc)
     },
   },
   methods: {

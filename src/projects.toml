@@ -10,7 +10,8 @@ date = [[2017]]
 tags = ["completed"]
 tech = ["JavaScript", "AngularJS"]
 desc = """
-a neograph based loosely on the Coffee Shop Code"""
+a neograph based loosely on the
+[Coffee Shop Code](https://redd.it/5rzi22)"""
 [[project.link]]
 name = "check it out"
 href = "/neograph"
