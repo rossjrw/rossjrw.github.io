@@ -5,13 +5,13 @@
     <div class="section">
       <div class="container">
         <Header/>
-        <ProjectList v-for="category in categories"
-                     :key="category.tag"
-                     :title="category.title"
-                     :filter-by-tag="category.tag"/>
-        <Footer/>
       </div>
     </div>
+    <ProjectList v-for="category in categories"
+                 :key="category.tag"
+                 :title="category.title"
+                 :filter-by-tag="category.tag"/>
+    <Footer/>
   </div>
 </template>
 

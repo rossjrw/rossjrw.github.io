@@ -79,7 +79,12 @@ export default Vue.extend({
     },
     gradientMesh() {
       let colours = this.project.back
-      if (!colours) colours = ["red", "yellow", "blue", "green"]
+      if (!colours) colours = [
+        new Array(3).fill(250),
+        new Array(3).fill(245),
+        new Array(3).fill(240),
+        new Array(3).fill(200),
+      ]
       return gradientMesh(colours)
     },
   },
@@ -102,6 +107,7 @@ export default Vue.extend({
   display: flex;
   align-items: center;
   margin: 4rem 0;
+  padding: 1rem 4rem;
 }
 
 .project-img-main {
@@ -115,7 +121,10 @@ export default Vue.extend({
 }
 
 .project-item {
-  margin: 1rem;
+  margin-left: 2rem;
+}
+.project-img-mobile {
+  margin-left: 1rem;
 }
 
 .project-img-main img, .project-img-mobile img {

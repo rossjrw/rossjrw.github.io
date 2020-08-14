@@ -12,10 +12,13 @@ export function gradientMesh (
    * Starting colours should be ordered from light to dark.
    */
   const points = ["top left", "top right", "bottom left", "bottom right"]
-  const gradients = zip(colours, points).map(([colour, point]) => {
+  colours = colours.map(colour => {
     if (typeof colour !== 'string') {
-      colour = `rgba(${colour.join(", ")}, 0)`
+      colour = `rgba(${colour.join(", ")}, 1)`
     }
+    return colour
+  }) as Colours
+  const gradients = zip(colours, points).map(([colour, point]) => {
     const ellipse = `ellipse farthest-side at ${point}, ${colour}, transparent`
     return `radial-gradient(${ellipse})`
   })

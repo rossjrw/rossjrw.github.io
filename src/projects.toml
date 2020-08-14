@@ -25,6 +25,7 @@ tags = ["completed"]
 tech = ["Spreadsheets", "Fiction"]
 desc = """
 dystopian-themed online board game"""
+back = [[40, 40, 40], [191, 144, 0], [40, 40, 40], [40, 40, 40]]
 [[project.link]]
 name = "board"
 href = "https://docs.google.com/spreadsheets/d/1G0XCT7KVrhxvwK1Tv-7TBZiYjiwX9NlSijeQNuWlEec/edit?usp=sharing"
@@ -59,6 +60,7 @@ tags = ["completed"]
 tech = ["Fiction", "JavaScript", "jQuery"]
 desc = """
 text-based antimeme simulator"""
+back = [[250, 250, 250], [245, 245, 245], [240, 240, 240], [243, 87, 87]]
 [[project.link]]
 name = "check it out"
 href = "http://scp-wiki.net/scp-3211"
@@ -73,6 +75,7 @@ tags = ["completed"]
 tech = ["JavaScript", "AngularJS"]
 desc = """
 browser-based tool for making textual BBCode gradients"""
+back = ["#db8e5a", "#31acfa", "#333", "#333"]
 [[project.link]]
 name = "check it out"
 href = "/text-gradient"
@@ -87,6 +90,7 @@ tags = ["completed"]
 tech = ["CSS", "Gulp.js"]
 desc = """
 modernised CSS theme for SCP wiki"""
+back = [[100, 46, 44], [100, 3, 15], [66, 66, 72], [66, 66, 72]]
 [[project.link]]
 name = "check it out"
 href = "https://github.com/Nu-SCPTheme/Black-Highlighter"
@@ -135,6 +139,7 @@ tags = ["completed"]
 tech = ["TypeScript", "SVG", "GitHub Actions"]
 desc = """
 The Royal Game of Ur, on my GitHub profile"""
+back = [[243, 186, 124], [206, 143, 75], [175, 111, 43], [106, 58, 0]]
 [[project.link]]
 name = "check it out"
 href = "https://github.com/rossjrw/rossjrw"

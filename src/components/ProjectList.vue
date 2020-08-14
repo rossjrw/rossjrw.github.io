@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="title is-1">{{title}}</h1>
+    <h1 class="title is-1 has-text-centered">
+      {{title}}
+    </h1>
     <Project v-for="(project, projectId) in selectedProjects"
              :key="projectId"
              :project="project"/>
