@@ -12,14 +12,18 @@
     <div class="project-item project-info">
       <div class="card">
         <div class="card-content">
-          <div class="project-name">
-            <p class="title">
-            {{project.name}}
+          <div class="project-name has-text-centered">
+            <img :src="getImage(project.image, 'logo').default"
+                 :alt="project.name"
+                 v-if="hasImage('logo')"/>
+            <p class="title"
+               v-else>
+              {{project.name}}
             </p>
           </div>
-          <div class="project-date">
+          <div class="project-date has-text-centered">
             <p class="subtitle">
-            {{prettyDate}}
+              {{prettyDate}}
             </p>
           </div>
           <div class="project-desc content"
@@ -126,6 +130,15 @@ export default Vue.extend({
 }
 .project-img-mobile {
   margin-left: 1rem;
+}
+
+/* Limit the range of logo sizes */
+.project-name {
+  min-height: 2rem;
+}
+.project-name img {
+  max-height: 8rem;
+  max-width: 18rem;
 }
 
 .project-img-main img, .project-img-mobile img {
