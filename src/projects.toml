@@ -10,8 +10,11 @@ date = [[2017]]
 tags = ["completed"]
 tech = ["JavaScript", "AngularJS"]
 desc = """
-a neograph based loosely on the
-[Coffee Shop Code](https://redd.it/5rzi22)"""
+A tool and font I use to help me remember a handwritten neograph I designed,
+which was visually inspired by the [Coffee Shop Code](https://redd.it/5rzi22).
+I use it for writing notes, when it's something personal that I don't want
+others to read. So why is it open source?
+"""
 [[project.link]]
 name = "check it out"
 href = "/neograph"
@@ -25,7 +28,15 @@ date = [[2016], [2017]]
 tags = ["completed"]
 tech = ["Spreadsheets", "Fiction"]
 desc = """
-dystopian-themed online board game"""
+A multiplayer board game hosted on Google Sheets. Played with 11 players and
+lasted for a month, once in 2016 and again in 2017, though it could handle
+more.
+
+Players are split into teams, with some players embedded into other
+teams as spies. Betrayal is encouraged. Could be played either team-vs-team or
+cooperatively against the board and host, depending on how player-player
+relations develop.
+"""
 back = [[40, 40, 40], [191, 144, 0], [40, 40, 40], [40, 40, 40]]
 [[project.link]]
 name = "board"
@@ -44,9 +55,15 @@ href = "pipeworks-logo.png"
 name = "SCP-3939"
 date = [[2018]]
 tags = ["completed"]
-tech = ["Fiction"]
+tech = ["Fiction", "Spreadsheets"]
 desc = """
-a multiple choice story published on the SCP Foundation"""
+A story published on the SCP Wiki. A multiple-choice adventure 65 pages and
+19,000 words long. Although the end is always the same, there are many paths
+leading there. You are a disgraced researcher trapped in a hell of your own
+making, trying to find your way out.
+
+Written on a spreadsheet and compiled into a web-ready format.
+"""
 [[project.link]]
 name = "check it out"
 href = "http://scp-wiki.net/scp-3939"
@@ -58,9 +75,16 @@ href = "3939.png"
 name = "SCP-3211"
 date = [[2018]]
 tags = ["completed"]
-tech = ["Fiction", "JavaScript", "jQuery"]
+tech = ["Fiction", "JavaScript", "jQuery", "Spreadsheets"]
 desc = """
-text-based antimeme simulator"""
+An article published on the SCP Wiki. Details a fictional entity that appears
+differently for each person who sees it: to emulate this for readers, I wrote
+many versions of the same article and present a random one to each reader. I
+use cookies to ensure that while every reader sees a different version, a
+single reader will only ever see one. The article can also only be read once.
+
+Written on a spreadsheet and compiled to JavaScript.
+"""
 back = [[250, 250, 250], [245, 245, 245], [240, 240, 240], [243, 87, 87]]
 [[project.link]]
 name = "check it out"
@@ -75,7 +99,9 @@ date = [[2018]]
 tags = ["completed"]
 tech = ["JavaScript", "AngularJS"]
 desc = """
-browser-based tool for making textual BBCode gradients"""
+An online tool for making a smooth colour gradient across a line of text.
+Outputs BBCode.  Useful for all 2 of the people who still use BBCode.
+"""
 back = ["#db8e5a", "#31acfa", "#333", "#333"]
 [[project.link]]
 name = "check it out"
@@ -90,7 +116,11 @@ date = [[2019]]
 tags = ["completed"]
 tech = ["CSS", "Gulp.js"]
 desc = """
-modernised CSS theme for SCP wiki"""
+A CSS theme built to replace the dated theme used by the SCP Wiki, using modern
+web standards and accessibility guidelines. While it was never officially
+adopted, it is currently used on thousands of articles and stories across the
+international SCP community.
+"""
 back = [[100, 46, 44], [100, 3, 15], [66, 66, 72], [66, 66, 72]]
 [[project.link]]
 name = "check it out"
@@ -111,7 +141,12 @@ date = [[2020]]
 tags = ["completed", "utility"]
 tech = ["TypeScript", "Vue.js", "Webpack"]
 desc = """
-browser-based tool for sharing a regex replacment series"""
+A tool for applying a series of regex find-and-replace rules to a block of
+text. Configured rules can be exported and imported with URL arguments.
+
+Made because I got sick of having to type out the same rules again and again
+when I have to make a series of replacements that I've already made before.
+"""
 [[project.link]]
 name = "check it out"
 href = "/series-replace"
@@ -125,7 +160,9 @@ date = [[2020]]
 tags = ["completed", "utility"]
 tech = ["Python"]
 desc = """
-Python wrapper around SCUTTLE API"""
+Python wrapper around the API for SCUTTLE, which is a web service that scrapes
+information from Wikidot, primarily for backing up the SCP Wiki.
+"""
 [[project.link]]
 name = "check it out"
 href = "https://pypi.org/project/python-scuttle"
@@ -139,7 +176,12 @@ date = [[2020]]
 tags = ["completed"]
 tech = ["TypeScript", "SVG", "GitHub Actions"]
 desc = """
-The Royal Game of Ur, on my GitHub profile"""
+A massively-multiplayer, asynchronous Royal Game of Ur that anyone with a
+GitHub account can play. The board is the README of the repository. Entirely
+automated with GitHub actions. Players make their moves by clicking links on
+the README, which creates an Issue in the repository, which triggers a GitHub
+action to make the move and update the board state. You can play!
+"""
 back = [[243, 186, 124], [206, 143, 75], [175, 111, 43], [106, 58, 0]]
 [[project.link]]
 name = "check it out"
@@ -156,7 +198,10 @@ date = [[2019]]
 tags = ["working"]
 tech = ["Python"]
 desc = """
-social media promotion automator via IRC interface"""
+An IRC bot originally built for automating social media posts for SCP Wiki
+staff, but mostly used as a Markov Chain generator for making almost-real
+sentences.
+"""
 [[project.link]]
 name = "check it out"
 href = "/tars/help"
@@ -167,7 +212,8 @@ date = [[2017, 2018], [2020]]
 tags = ["working"]
 tech = ["TypeScript", "Vue.js", "Webpack", "SVG"]
 desc = """
-browser-based Gallifreyan translator"""
+A Gallifreyan translator, based on a language made by fans of Doctor Who.
+"""
 [[project.link]]
 name = "check it out"
 href = "/gallifreyo"
@@ -181,9 +227,12 @@ href = "gallifreyo.png"
 name = "Maitreya.aic"
 date = [[2018, 2019]]
 tags = ["unfinished"]
-tech = ["CoffeeScript", "AngularJS", "CSS", "Gulp.js"]
+tech = ["Fiction", "CoffeeScript", "AngularJS", "Gulp.js"]
 desc = """
-browser-based text adventure-ish game"""
+A text adventure game, with vast scope for player agency. You are an artificial
+intelligence built to study a creature that lies beyond human comprehension.
+How you go about that, and perhaps what exactly you discover, is up to you.
+"""
 back = ["#1488cc", "#1a73c6", "#205dbf", "#2b32b2"]
 [[project.link]]
 name = "check it out"
@@ -203,7 +252,12 @@ date = [[2016]]
 tags = ["abandoned"]
 tech = ["JavaScript", "AngularJS"]
 desc = """
-an attempt to automate Mafia and my first ever programming project"""
+An attempt to automate Mafia, the social game of lies and betrayal. My first
+ever programming project. Began on a spreadsheet, but quickly grew too complex;
+it was this limitation that prompted me to begin learning JavaScript. It
+doesn't work and was never really a good idea, but the code contains fond
+memories.
+"""
 [[project.link]]
 name = "check it out"
 href = "https://theyrecoming.neocities.org/mafia/automafia.html"
