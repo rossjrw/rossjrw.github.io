@@ -1,54 +1,58 @@
 <template>
   <div class="project"
        :style="{ backgroundImage: gradientMesh }">
-    <div class="project-item project-img-main card"
-         v-if="hasImage('main')">
-      <img :src="getImage(project.image, 'main').default"/>
-    </div>
-    <div class="project-item project-img-mobile card"
-         v-if="hasImage('mobile')">
-      <img :src="getImage(project.image, 'mobile').default"/>
-    </div>
-    <div class="project-item project-info">
-      <div class="card">
-        <div class="card-content">
-          <div class="project-name has-text-centered">
-            <img :src="getImage(project.image, 'logo').default"
-                 :alt="project.name"
-                 v-if="hasImage('logo')"/>
-            <p class="title"
-               v-else>
-              {{project.name}}
-            </p>
+    <div class="project-container container">
+      <div class="project-item project-img-main card"
+           v-if="hasImage('main')">
+        <img :src="getImage(project.image, 'main').default"/>
+      </div>
+      <div class="project-item project-img-mobile card"
+           v-if="hasImage('mobile')">
+        <img :src="getImage(project.image, 'mobile').default"/>
+      </div>
+      <div class="project-item project-info">
+        <div class="card">
+          <div class="card-content">
+            <div class="project-name has-text-centered">
+              <img :src="getImage(project.image, 'logo').default"
+                   :alt="project.name"
+                   v-if="hasImage('logo')"/>
+              <p class="title"
+                 v-else>
+                {{project.name}}
+              </p>
+            </div>
+            <div class="project-date has-text-centered">
+              <p class="subtitle">
+                {{prettyDate}}
+              </p>
+            </div>
+            <div class="project-desc content"
+                 v-html="description"/>
           </div>
-          <div class="project-date has-text-centered">
-            <p class="subtitle">
-              {{prettyDate}}
-            </p>
-          </div>
-          <div class="project-desc content"
-               v-html="description"/>
         </div>
       </div>
-    </div>
-    <div class="project-item project-meta">
-      <div class="project-tech">
-        <p v-for="(tech, index) in colouredTech"
-           :key="tech.name">
-          <span class="icon">
-            <PolyBullet :shape="index + 3"
-                        :colour="tech.colour"/>
-          </span>
-          {{tech.name}}
-        </p>
-      </div>
-      <div class="project-link">
-        <a v-for="link in project.link"
-           :key="link.href"
-           class="button is-rounded is-link is-inverted"
-           :href="link.href">
-          {{link.name}}
-        </a>
+      <div class="project-item project-meta">
+        <div class="project-tech card is-inset mb-3">
+          <div class="card-content">
+            <p v-for="(tech, index) in colouredTech"
+               :key="tech.name">
+              <span class="icon">
+                <PolyBullet :shape="index + 3"
+                            :colour="tech.colour"/>
+              </span>
+              {{tech.name}}
+            </p>
+          </div>
+        </div>
+        <div class="project-links buttons">
+          <a v-for="link in project.link"
+             :key="link.href"
+             class="button is-rounded is-link is-inverted"
+             :href="link.href">
+            {{link.name}}
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -109,23 +113,35 @@ export default Vue.extend({
 
 <style>
 .project {
+  margin: 4rem 0;
+  padding: 0.5rem 4rem;
+}
+
+.project-container {
   display: flex;
   align-items: center;
-  margin: 4rem 0;
-  padding: 1rem 4rem;
+  justify-content: center;
+  align-content: space-between;
 }
 
 .project-img-main {
   flex: 0 1 18rem;
+  min-width: 12rem;
 }
 .project-img-mobile {
   flex: 0 1 9rem;
 }
-.project-info, .project-meta {
+.project-info {
   flex: 1 1 0;
+}
+.project-meta {
+  flex: 0 1 0;
+  min-width: 12rem;
 }
 
 .project-item {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   margin-left: 2rem;
 }
 .project-img-mobile {
@@ -144,5 +160,42 @@ export default Vue.extend({
 .project-img-main img, .project-img-mobile img {
   /* Remove sliver of whitespace below image */
   display: block;
+}
+
+.project-meta .card {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.project-links.buttons {
+  /* Already has flex from Bulma */
+  justify-content: center;
+}
+
+@media only screen and (max-width: 75rem) {
+  .project-img-mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 60rem) {
+  .project-container {
+    flex-wrap: wrap;
+  }
+  .project-info {
+    order: -1;
+    width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .project-info .card {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 45rem) {
+  .project {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 </style>
