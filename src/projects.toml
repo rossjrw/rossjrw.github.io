@@ -221,6 +221,24 @@ href = "/gallifreyo"
 type = "main"
 href = "gallifreyo.png"
 
+[[project]]
+name = "rossjrw.com"
+date = [[2020]]
+tags = ["working"]
+tech = ["Vue.js", "TypeScript", "Webpack"]
+desc = """
+A place where all of my projects are listed, and little else. There's also no
+semblance of personal information or contact details. Overall, a very useful
+site.
+"""
+back = [[224, 166, 52], [223, 190, 106], [131, 131, 131], [0, 0, 0]]
+[[project.link]]
+name = "check it out"
+href = "https://rossjrw.com"
+[[project.image]]
+type = "main"
+href = "website.png"
+
 
 
 [[project]]
