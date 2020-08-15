@@ -4,17 +4,17 @@
     <div class="project-container container">
       <div class="project-item project-img-main card"
            v-if="hasImage('main')">
-        <img :src="getImage(project.image, 'main').default"/>
+        <img :src="getImage(project.image, 'main')"/>
       </div>
       <div class="project-item project-img-mobile card"
            v-if="hasImage('mobile')">
-        <img :src="getImage(project.image, 'mobile').default"/>
+        <img :src="getImage(project.image, 'mobile')"/>
       </div>
       <div class="project-item project-info">
         <div class="card">
           <div class="card-content">
             <div class="project-name has-text-centered">
-              <img :src="getImage(project.image, 'logo').default"
+              <img :src="getImage(project.image, 'logo')"
                    :alt="project.name"
                    v-if="hasImage('logo')"/>
               <p class="title"
@@ -105,13 +105,17 @@ export default Vue.extend({
     },
     getImage(image, type) {
       const url = image.filter(image => image.type === type)[0].href
-      return require('@/assets/' + url)
+      return require('@/assets/projects/' + url)
     },
   },
 })
 </script>
 
 <style>
+.card {
+  border-radius: 0.5rem;
+}
+
 .project {
   margin: 4rem 0;
   padding: 0.5rem 4rem;
@@ -133,6 +137,7 @@ export default Vue.extend({
 }
 .project-info {
   flex: 1 1 0;
+  max-width: 50rem;
 }
 .project-meta {
   flex: 0 1 0;
@@ -154,7 +159,7 @@ export default Vue.extend({
 }
 .project-name img {
   max-height: 8rem;
-  max-width: 18rem;
+  max-width: min(18rem, 100%);
 }
 
 .project-img-main img, .project-img-mobile img {

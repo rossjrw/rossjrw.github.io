@@ -46,7 +46,13 @@ module.exports = {
       {
         test: /\.(png|jpg|svg)$/,
         use: [
-          'file-loader',
+          {
+            loader: 'file-loader',
+            options: {
+              // Make it so I don't have to do .default on images
+              esModule: false,
+            },
+          },
         ],
       },
     ],

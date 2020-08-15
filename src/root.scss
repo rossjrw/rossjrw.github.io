@@ -8,4 +8,8 @@
 // @import '~bulma/sass/elements/container.sass';
 // @import '~bulma/sass/elements/button.sass';
 // @import '~bulma/sass/grid/columns.sass';
-@import "~bulma/bulma.sass"
+@import "~bulma/bulma.sass";
+
+.card.is-inset {
+  box-shadow: inset $card-shadow;
+}

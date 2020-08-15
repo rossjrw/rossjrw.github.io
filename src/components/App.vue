@@ -2,11 +2,7 @@
   <div id="app">
     <GithubCorner url="https://github.com/rossjrw/rossjrw.github.io"
                   colorScheme="black"/>
-    <div class="section">
-      <div class="container">
-        <Header/>
-      </div>
-    </div>
+    <Header/>
     <ProjectList v-for="category in categories"
                  :key="category.tag"
                  :title="category.title"

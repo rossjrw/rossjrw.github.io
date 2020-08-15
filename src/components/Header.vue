@@ -1,16 +1,14 @@
 <template>
-  <section class="hero is-light">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title is-1">
-          rossjrw
-        </h1>
-        <h3 class="subtitle is-3">
-          hey look it's all my shit
-        </h3>
-      </div>
-    </div>
-  </section>
+  <div class="header has-text-centered">
+    <img class="card"
+         src="@/assets/rossjrw.png"/>
+    <p class="title is-2">
+      rossjrw
+    </p>
+    <p class="subtitle is-5">
+      Ross Williams
+    </p>
+  </div>
 </template>
 
 <script lang="ts">
@@ -18,3 +16,14 @@ import Vue from "vue"
 
 export default Vue.extend({})
 </script>
+
+<style>
+.header {
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+.header img {
+  max-width: 12rem;
+}
+</style>
