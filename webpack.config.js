@@ -26,7 +26,10 @@ module.exports = {
       { test: /\.toml$/, use: ['raw-loader'] },
       {
         test: /\.(png|jpg|svg)$/,
-        use: { loader: 'file-loader', options: { esModule: false } },
+        use: {
+          loader: 'file-loader',
+          options: { esModule: false, name: "[name].[ext]?[hash:5]" }
+        },
       },
     ],
   },
