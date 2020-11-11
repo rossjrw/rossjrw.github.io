@@ -7,22 +7,13 @@ const CnameWebpackPlugin = require('cname-webpack-plugin');
 module.exports = {
   entry: './src/index.ts',
   output: {
-    filename: 'bundle.[contenthash].js',
+    filename: 'bundle.js?[contenthash:5]',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
-      {
-        test: /\.vue$/,
-        use: [
-          'vue-loader',
-        ],
-      },
-      {
-        test: /\.ts$/,
-        use: 'babel-loader',
-        exclude: /node_modules/,
-      },
+      { test: /\.vue$/, use: 'vue-loader' },
+      { test: /\.ts$/, use: 'babel-loader', exclude: /node_modules/ },
       {
         test: /\.s[ac]ss$/,
         use: [
@@ -31,38 +22,17 @@ module.exports = {
           'sass-loader',
         ],
       },
-      {
-        test: /\.css$/,
-        use: [
-          'vue-style-loader',
-          'css-loader',
-        ],
-      },
-      {
-        test: /\.toml$/,
-        use: [
-          'raw-loader',
-        ],
-      },
+      { test: /\.css$/, use: ['vue-style-loader', 'css-loader'] },
+      { test: /\.toml$/, use: ['raw-loader'] },
       {
         test: /\.(png|jpg|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              // Make it so I don't have to do .default on images
-              esModule: false,
-            },
-          },
-        ],
+        use: { loader: 'file-loader', options: { esModule: false } },
       },
     ],
   },
   resolve: {
     extensions: ['.ts', '.js', '.vue'],
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
+    alias: { '@': path.resolve(__dirname, 'src') },
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -70,6 +40,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "rossjrw",
       template: './src/template.ejs',
+      meta: { viewport: "width=device-width, initial-scale=1" }
     }),
     new CnameWebpackPlugin({
       domain: "rossjrw.com",
