@@ -1,7 +1,6 @@
 <template>
   <div class="header has-text-centered">
-    <img class="card"
-         src="@/assets/rossjrw.png"/>
+    <img src="@/assets/logos/rossjrw.png"/>
     <p class="title is-2">
       rossjrw
     </p>
