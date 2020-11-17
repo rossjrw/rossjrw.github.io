@@ -65,7 +65,7 @@ import marked from "marked"
 import PolyBullet from "@/components/PolyBullet.vue"
 import { techColour } from "@/functions/techColours"
 import { gradientMesh } from "@/functions/gradientMesh"
-import { ProjectImage, ProjectImageType } from "@/types"
+import { ProjectImage, ProjectImageType, Technology } from "@/types"
 
 export default Vue.extend({
   name: "Project",
@@ -75,12 +75,14 @@ export default Vue.extend({
   },
   computed: {
     colouredTech() {
-      return this.project.tech.map(tech => {
+      return this.project.tech.map((tech: Technology) => {
         return { name: tech, colour: techColour(tech) }
       })
     },
     prettyDate() {
-      let date = this.project.date.map(date => date.join("–")).join(", ")
+      let date = (
+        this.project.date as number[][]
+      ).map(date => date.join("–")).join(", ")
       if (this.project.tags.includes("working")) date += "–"
       return date
     },
@@ -101,7 +103,7 @@ export default Vue.extend({
   methods: {
     hasImage(type: ProjectImageType) {
       return 'images' in this.project && this.project.images.some(
-        image => image.type === type
+        (image: ProjectImage) => image.type === type
       )
     },
     getImage(images: ProjectImage[], type: ProjectImageType) {
