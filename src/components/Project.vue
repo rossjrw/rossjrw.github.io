@@ -4,17 +4,17 @@
     <div class="project-container container">
       <div class="project-item project-img-main card"
            v-if="hasImage('main')">
-        <img :src="getImage(project.image, 'main')"/>
+        <img :src="getImage(project.images, 'main')"/>
       </div>
       <div class="project-item project-img-mobile card"
            v-if="hasImage('mobile')">
-        <img :src="getImage(project.image, 'mobile')"/>
+        <img :src="getImage(project.images, 'mobile')"/>
       </div>
       <div class="project-item project-info">
         <div class="card">
           <div class="card-content">
             <div class="project-name has-text-centered">
-              <img :src="getImage(project.image, 'logo')"
+              <img :src="getImage(project.images, 'logo')"
                    :alt="project.name"
                    v-if="hasImage('logo')"/>
               <p class="title"
@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="project-links buttons">
-          <a v-for="link in project.link"
+          <a v-for="link in project.links"
              :key="link.href"
              class="button is-rounded is-link is-inverted"
              :href="link.href">
@@ -62,9 +62,10 @@
 import Vue from "vue"
 import marked from "marked"
 
-import PolyBullet from '@/components/PolyBullet.vue'
-import { techColour } from '@/functions/techColours'
-import { gradientMesh } from '@/functions/gradientMesh'
+import PolyBullet from "@/components/PolyBullet.vue"
+import { techColour } from "@/functions/techColours"
+import { gradientMesh } from "@/functions/gradientMesh"
+import { ProjectImage, ProjectImageType } from "@/types"
 
 export default Vue.extend({
   name: "Project",
@@ -98,13 +99,13 @@ export default Vue.extend({
     },
   },
   methods: {
-    hasImage(type) {
-      return 'image' in this.project && this.project.image.some(
+    hasImage(type: ProjectImageType) {
+      return 'images' in this.project && this.project.images.some(
         image => image.type === type
       )
     },
-    getImage(image, type) {
-      const url = image.filter(image => image.type === type)[0].href
+    getImage(images: ProjectImage[], type: ProjectImageType) {
+      const url = images.filter(image => image.type === type)[0].href
       return require('@/assets/projects/' + url)
     },
   },

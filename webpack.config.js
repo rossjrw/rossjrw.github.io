@@ -23,7 +23,6 @@ module.exports = {
         ],
       },
       { test: /\.css$/, use: ['vue-style-loader', 'css-loader'] },
-      { test: /\.toml$/, use: ['raw-loader'] },
       {
         test: /\.(png|jpg|svg)$/,
         use: {

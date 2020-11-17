@@ -1,18 +1,16 @@
 import { range } from "lodash"
 
-import { Shape } from '@/types'
-
 export function polyPoints (
-  shape: Shape,
+  shape: number,
 ): string {
   /**
    * Takes a shape count and converts to polygon coordinates, relative to a
    * 100x100 viewBox.
    */
   const size = 100
-  const points: [number, number][] = range(0, parseInt(shape)).map(
+  const points: [number, number][] = range(0, shape).map(
     index => {
-      const angle = index * 2 * Math.PI / parseInt(shape) - Math.PI / 2
+      const angle = index * 2 * Math.PI / shape - Math.PI / 2
       return [
         Math.cos(angle) * size/2 + size/2,
         Math.sin(angle) * size/2 + size/2,

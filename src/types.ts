@@ -1,9 +1,5 @@
 export type State = {
-  projects: ProjectList
-}
-
-export type ProjectList = {
-  [id: number]: Project
+  projects: Project[]
 }
 
 export type Project =  {
@@ -13,8 +9,8 @@ export type Project =  {
   tech?: Technology[]
   desc: string
   back?: Colours
-  link: ProjectLink[]
-  image?: ProjectImage[]
+  links: ProjectLink[]
+  images?: ProjectImage[]
 }
 
 type ProjectLink = {
@@ -22,8 +18,10 @@ type ProjectLink = {
   href: string
 }
 
-type ProjectImage = {
-  type: "main" | "logo" | "mobile"
+export type ProjectImageType = 'main' | 'logo' | 'mobile'
+
+export type ProjectImage = {
+  type: ProjectImageType
   href: string
 }
 

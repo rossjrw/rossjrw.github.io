@@ -24,6 +24,5 @@ export function gradientMesh (
   })
   // gradients.push(`linear-gradient(to right, ${colours[0]}, ${colours[0]})`)
   gradients.push(`linear-gradient(to bottom, white, ${colours[0]})`)
-  console.log(gradients)
   return gradients.join(", ")
 }
