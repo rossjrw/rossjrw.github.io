@@ -1,12 +1,21 @@
 <template>
   <div class="header has-text-centered">
-    <img src="@/assets/logos/rossjrw.png"/>
-    <p class="title is-2">
-      rossjrw
-    </p>
-    <p class="subtitle is-5">
-      Ross Williams
-    </p>
+    <div class="logo-container">
+      <img src="@/assets/logos/rossjrw.png"/>
+    </div>
+    <div class="name-container">
+      <p class="title is-2">
+        rossjrw
+      </p>
+      <p class="subtitle is-5">
+        Ross Williams
+      </p>
+    </div>
+    <div class="bio-container">
+      <p>
+        Test
+      </p>
+    </div>
   </div>
 </template>
 
