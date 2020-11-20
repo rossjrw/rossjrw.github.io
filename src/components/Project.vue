@@ -1,6 +1,6 @@
 <template>
   <div class="project"
-       :style="{ backgroundImage: gradientMesh }">
+       :style="{ backgroundImage: projectBackground }">
     <div class="project-container container">
       <div class="project-item project-img-main card"
            v-if="hasImage('main')">
@@ -84,7 +84,7 @@ export default Vue.extend({
       if (this.project.tags.includes("working")) date += "–"
       return date
     },
-    gradientMesh() {
+    projectBackground() {
       let colours = this.project.back
       if (!colours) colours = [
         new Array(3).fill(250),
@@ -92,7 +92,12 @@ export default Vue.extend({
         new Array(3).fill(240),
         new Array(3).fill(200),
       ]
-      return gradientMesh(colours)
+      let background = gradientMesh(colours)
+      if (this.hasImage('back')) {
+        background += `, url(${this.getImage(this.project.images, 'back')})`
+      }
+      console.log(background)
+      return background
     },
     description() {
       return marked(this.project.desc)

@@ -18,7 +18,7 @@ type ProjectLink = {
   href: string
 }
 
-export type ProjectImageType = 'main' | 'logo' | 'mobile'
+export type ProjectImageType = 'main' | 'logo' | 'mobile' | 'back'
 
 export type ProjectImage = {
   type: ProjectImageType

@@ -10,7 +10,7 @@ export const projects: Project[] = [
     desc: compress`
       A tool and font I use to help me remember a handwritten neograph I
       designed, which was visually inspired by the [Coffee Shop
-      Code](https://redd.it/5rzi22).  I use it for writing notes, when it's
+      Code](https://redd.it/5rzi22). I use it for writing notes, when it's
       something personal that I don't want others to read. So why is it
       open source?
     `,
@@ -18,7 +18,8 @@ export const projects: Project[] = [
       { name: "check it out", href: "/neograph" }
     ],
     images: [
-      { type: "main", href: "neograph.png" }
+      { type: "main", href: "neograph.png" },
+      { type: "back", href: "neograph-background.svg" }
     ]
   },
   {
