@@ -2,8 +2,11 @@
   <div class="hero is-fullheight">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <div id="svg-preview">
-          <img :src="svgData">
+        <div id="svg-preview" class="level">
+          <img class="level-item" style="height: 200px" :src="svgData">
+          <img class="level-item" style="height: 120px" :src="svgData">
+          <img class="level-item" style="height: 60px" :src="svgData">
+          <img class="level-item" style="height: 30px" :src="svgData">
         </div>
         <form class="field">
           <LogoGeneratorColour v-for="(colour, name) in colours"
