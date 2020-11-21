@@ -35,11 +35,6 @@ export default Vue.extend({
   props: {
     name: String,
     value: String,
-  },
-  methods: {
-    getRandomColour: function () {
-      return `#${Math.floor(Math.random()*16777215).toString(16)}`
-    }
   }
 })
 </script>

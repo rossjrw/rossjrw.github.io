@@ -20,6 +20,11 @@
                  @click="setRandomColour()">
                 Randomise All
               </a>
+              <a class="button is-success is-outlined"
+                 :href="svgData"
+                 download>
+                Download SVG
+              </a>
             </div>
           </div>
         </form>
@@ -52,7 +57,6 @@ export default Vue.extend({
   },
   computed: {
     svgData: function () {
-      console.log("Updating")
       let svgData = logoSvg
       Object.entries(this.colours).forEach(
         ([name, colour]: [string, string]) => {
