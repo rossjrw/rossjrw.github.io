@@ -12,7 +12,16 @@
           <LogoGeneratorColour v-for="(colour, name) in colours"
                                :key="name"
                                :name="name"
-                               v-model="colours[name]"/>
+                               v-model="colours[name]"
+                               @randomise="setRandomColour(name)"/>
+          <div class="field-body">
+            <div class="field">
+              <a class="button is-link is-outlined"
+                 @click="setRandomColour()">
+                Randomise All
+              </a>
+            </div>
+          </div>
         </form>
       </div>
     </div>
@@ -47,7 +56,6 @@ export default Vue.extend({
       let svgData = logoSvg
       Object.entries(this.colours).forEach(
         ([name, colour]: [string, string]) => {
-          console.log(name, colour)
           svgData = svgData.replace(
             new RegExp(`(id="${name}"[\\s\\S]+?stop-color:)#[0-9a-f]{6}`),
             `$1${colour}`
@@ -57,6 +65,20 @@ export default Vue.extend({
       return URL.createObjectURL(
         new Blob([svgData], { type: 'image/svg+xml' })
       )
+    }
+  },
+  methods: {
+    setRandomColour: function (name?: string) {
+      if (name) {
+        this.colours[name] = this.getRandomColour()
+      } else {
+        Object.keys(this.colours).forEach(
+          (name: string) => { this.colours[name] = this.getRandomColour() }
+        )
+      }
+    },
+    getRandomColour: function () {
+      return `#${Math.floor(Math.random()*16777215).toString(16)}`
     }
   }
 })
