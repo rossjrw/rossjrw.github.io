@@ -1,5 +1,7 @@
 <template>
   <div class="hero is-fullheight">
+    <GithubCorner url="https://github.com/rossjrw/rossjrw.github.io"
+                  colorScheme="black"/>
     <div class="hero-body">
       <div class="container has-text-centered">
         <div id="svg-preview" class="level">
@@ -35,13 +37,14 @@
 
 <script lang="ts">
 import Vue from "vue"
+import GithubCorner from "vue-github-corners"
 
 import LogoGeneratorColour from "@/components/LogoGeneratorColour.vue"
 import logoSvg from "!!raw-loader!@/assets/logos/rossjrw.2020.inkscape.svg"
 
 export default Vue.extend({
   name: "LogoGenerator",
-  components: { LogoGeneratorColour },
+  components: { LogoGeneratorColour, GithubCorner },
   data() {
     return {
       colours: {
@@ -82,7 +85,7 @@ export default Vue.extend({
       }
     },
     getRandomColour: function () {
-      return `#${Math.floor(Math.random()*16777215).toString(16)}`
+      return `#${(Math.floor(Math.random()*2**24)).toString(16).padStart(6, 0)}`
     }
   }
 })
