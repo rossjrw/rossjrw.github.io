@@ -39,7 +39,8 @@
                :key="tech.name">
               <span class="icon">
                 <PolyBullet :shape="index + 3"
-                            :colour="tech.colour"/>
+                            :colour="tech.colour"
+                            :hasStroke="false"/>
               </span>
               {{tech.name}}
             </p>

@@ -5,7 +5,7 @@
     <polygon :points="points"
              :fill="colour"
              style="paint-order: stroke"
-             stroke="white"
+             :stroke="hasStroke ? 'white' : undefined"
              stroke-width="20"
              stroke-linejoin="round"/>
   </svg>
@@ -20,7 +20,7 @@ const BORDER_WIDTH = 10
 
 export default Vue.extend({
   name: "PolyBullet",
-  props: ["shape", "colour"],
+  props: ["shape", "colour", "hasStroke"],
   computed: {
     points() {
       return polyPoints(this.shape)
