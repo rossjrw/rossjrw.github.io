@@ -42,8 +42,8 @@ export const projects: Project[] = [
       { name: "rules", href: "https://docs.google.com/document/d/1Dwu1WJfo7OCM7y66ucyw6y37SK-96s2T4UIwTDTBZaQ/edit?usp=sharing" }
     ],
     images: [
-      { type: "main", href: "pipeworks-board.png" },
-      { type: "logo", href: "pipeworks-logo.png" }
+      { type: "main", href: "pipeworks/board.png" },
+      { type: "logo", href: "pipeworks/logo.png" }
     ]
 
   },
@@ -64,7 +64,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "http://scp-wiki.net/scp-3939" }
     ],
     images: [
-      { type: "main", href: "3939.png" }
+      { type: "main", href: "scp/3939.png" }
     ]
   },
   {
@@ -87,7 +87,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "http://scp-wiki.net/scp-3211" }
     ],
     images: [
-      { type: "main", href: "3211.png" }
+      { type: "main", href: "scp/3211.png" }
     ]
   },
   {
@@ -123,9 +123,9 @@ export const projects: Project[] = [
       { name: "check it out", href: "https://github.com/Nu-SCPTheme/Black-Highlighter" }
     ],
     images: [
-      { type: "main", href: "bhl-desktop.png" },
-      { type: "mobile", href: "bhl-mobile.png" },
-      { type: "logo", href: "black-highlighter-logo.svg" }
+      { type: "main", href: "scp/bhl/desktop.png" },
+      { type: "mobile", href: "scp/bhl/mobile.png" },
+      { type: "logo", href: "scp/bhl/logo.svg" }
     ]
   },
   {
@@ -247,8 +247,8 @@ export const projects: Project[] = [
       { name: "check it out", href: "/maitreya" }
     ],
     images: [
-      { type: "main", href: "maitreya.png" },
-      { type: "logo", href: "maitreya-logo.png" }
+      { type: "main", href: "scp/maitreya/maitreya.png" },
+      { type: "logo", href: "scp/maitreya/logo.png" }
     ]
   },
   {

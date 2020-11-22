@@ -30,7 +30,11 @@ module.exports = {
         test: /\.(png|jpg|svg)$/,
         use: {
           loader: 'file-loader',
-          options: { esModule: false, name: "[name].[ext]?[hash:5]" }
+          options: {
+            esModule: false,
+            name: "[path][name].[ext]?[hash:5]",
+            context: "src/assets/projects"
+          }
         },
       },
     ],
