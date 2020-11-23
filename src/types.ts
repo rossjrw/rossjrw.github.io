@@ -18,11 +18,12 @@ type ProjectLink = {
   href: string
 }
 
-export type ProjectImageType = 'main' | 'logo' | 'mobile'
+export type ProjectImageFunc = 'main' | 'logo' | 'mobile'
 
 export type ProjectImage = {
-  type: ProjectImageType
+  func: ProjectImageFunc
   href: string
+  fallback?: boolean
 }
 
 type Tag =

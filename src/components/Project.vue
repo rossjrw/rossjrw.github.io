@@ -3,20 +3,20 @@
        :style="{ backgroundImage: gradientMesh }">
     <div class="project-container container">
       <div class="project-item project-img-main card"
-           v-if="hasImage('main')">
-        <img :src="getImage(project.images, 'main')"/>
+           v-if="hasImage(project, 'main')">
+        <img :src="getImage(project, 'main')"/>
       </div>
       <div class="project-item project-img-mobile card"
-           v-if="hasImage('mobile')">
-        <img :src="getImage(project.images, 'mobile')"/>
+           v-if="hasImage(project, 'mobile')">
+        <img :src="getImage(project, 'mobile')"/>
       </div>
       <div class="project-item project-info">
         <div class="card">
           <div class="card-content">
             <div class="project-name has-text-centered">
-              <img :src="getImage(project.images, 'logo')"
+              <img :src="getImage(project, 'logo')"
                    :alt="project.name"
-                   v-if="hasImage('logo')"/>
+                   v-if="hasImage(project, 'logo')"/>
               <p class="title"
                  v-else>
                 {{project.name}}
@@ -64,9 +64,10 @@ import Vue from "vue"
 import marked from "marked"
 
 import PolyBullet from "@/components/PolyBullet.vue"
+import { hasImage, getImage } from "@/functions/images"
 import { techColour } from "@/functions/techColours"
 import { gradientMesh } from "@/functions/gradientMesh"
-import { ProjectImage, ProjectImageType, Technology } from "@/types"
+import { Technology } from "@/types"
 
 export default Vue.extend({
   name: "Project",
@@ -101,17 +102,7 @@ export default Vue.extend({
       return marked(this.project.desc)
     },
   },
-  methods: {
-    hasImage(type: ProjectImageType) {
-      return 'images' in this.project && this.project.images.some(
-        (image: ProjectImage) => image.type === type
-      )
-    },
-    getImage(images: ProjectImage[], type: ProjectImageType) {
-      const url = images.filter(image => image.type === type)[0].href
-      return require('@/assets/projects/' + url)
-    },
-  },
+  methods: { hasImage, getImage },
 })
 </script>
 
