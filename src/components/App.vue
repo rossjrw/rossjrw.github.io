@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<script lang="js">
+<script lang="ts">
 import Vue from "vue"
 import GithubCorner from "vue-github-corners"
 
