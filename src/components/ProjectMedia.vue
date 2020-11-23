@@ -1,10 +1,12 @@
 <template>
   <div>
     <video v-if="imageType(project, func) === 'webm'"
+           class="rounded-lg shadow-lg bg-cover"
            :src="getImage(project, func)"
            :style="{ backgroundImage: `url(${fallbackImage})` }"
            autoplay muted loop/>
     <img v-else
+         class="rounded-lg shadow-lg"
          :src="getImage(project, func)"/>
   </div>
 </template>
@@ -22,14 +24,3 @@ export default Vue.extend({
   methods: { hasImage, getImage, imageType },
 })
 </script>
-
-<style scoped lang="scss">
-* {
-  display: block;
-  border-radius: inherit;
-}
-
-video {
-  background-size: cover;
-}
-</style>

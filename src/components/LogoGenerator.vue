@@ -1,28 +1,31 @@
 <template>
-  <div class="hero is-fullheight">
+  <div class="h-screen">
     <GithubCorner url="https://github.com/rossjrw/rossjrw.github.io"
                   colorScheme="black"/>
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <div id="svg-preview" class="level">
-          <img class="level-item" style="height: 200px" :src="svgData">
-          <img class="level-item" style="height: 120px" :src="svgData">
-          <img class="level-item" style="height: 60px" :src="svgData">
-          <img class="level-item" style="height: 30px" :src="svgData">
+    <div class="py-12 px-6">
+      <div class="container mx-auto max-w-screen-lg">
+        <div class="flex items-center justify-evenly">
+          <img :src="svgData" class="h-48">
+          <img :src="svgData" class="h-28">
+          <img :src="svgData" class="h-14">
+          <img :src="svgData" class="h-8">
         </div>
-        <form class="field">
+        <form>
           <LogoGeneratorColour v-for="(colour, name) in colours"
                                :key="name"
                                :name="name"
                                v-model="colours[name]"
                                @randomise="setRandomColour(name)"/>
-          <div class="field-body">
-            <div class="field">
-              <a class="button is-link is-outlined"
-                 @click="setRandomColour()">
+          <div>
+            <div class="flex justify-center">
+              <button type="button"
+                      class="border border-blue-700 rounded px-5 py-2 m-1
+                             text-blue-700"
+                      @click="setRandomColour()">
                 Randomise All
-              </a>
-              <a class="button is-success is-outlined"
+              </button>
+              <a class="border border-green-500 rounded px-5 py-2 m-1
+                        text-green-500"
                  :href="svgData"
                  download>
                 Download SVG

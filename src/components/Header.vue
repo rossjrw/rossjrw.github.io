@@ -1,13 +1,14 @@
 <template>
-  <div class="header has-text-centered">
-    <img src="@/assets/logos/rossjrw.png"/>
-    <p class="title is-2">
+  <header class="p-12 mb-8 flex flex-col items-center">
+    <img class="max-h-48"
+         src="@/assets/logos/rossjrw.png"/>
+    <p class="text-4xl font-semibold text-center">
       rossjrw
     </p>
-    <p class="subtitle is-5">
+    <p class="text-xl mt-1 text-center">
       Ross Williams
     </p>
-  </div>
+  </header>
 </template>
 
 <script lang="ts">
@@ -15,14 +16,3 @@ import Vue from "vue"
 
 export default Vue.extend({})
 </script>
-
-<style>
-.header {
-  padding: 3rem;
-  margin-bottom: 2rem;
-}
-
-.header img {
-  max-width: 12rem;
-}
-</style>

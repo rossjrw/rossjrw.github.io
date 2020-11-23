@@ -18,14 +18,22 @@ module.exports = {
       { test: /\.vue$/, use: 'vue-loader' },
       { test: /\.ts$/, use: 'babel-loader', exclude: /node_modules/ },
       {
-        test: /\.s[ac]ss$/,
+        test: /\.css$/,
         use: [
           'vue-style-loader',
           'css-loader',
-          'sass-loader',
-        ],
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  'postcss-import', 'tailwindcss', 'autoprefixer'
+                ]
+              }
+            }
+          }
+        ]
       },
-      { test: /\.css$/, use: ['vue-style-loader', 'css-loader'] },
       {
         test: /\.(png|svg|webm)$/,
         use: {

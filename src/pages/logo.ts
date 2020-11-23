@@ -1,6 +1,6 @@
 import Vue from "vue"
 
-import "@/root.scss"
+import "@/root.css"
 import LogoGenerator from "@/components/LogoGenerator.vue"
 
 new Vue({
