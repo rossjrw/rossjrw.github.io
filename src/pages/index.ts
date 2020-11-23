@@ -1,6 +1,6 @@
 import Vue from "vue"
 
-import '@/root.scss'
+import '@/root.css'
 import App from '@/components/App.vue'
 import store from '@/store'
 
