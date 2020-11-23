@@ -18,7 +18,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "/neograph" }
     ],
     images: [
-      { type: "main", href: "neograph.png" }
+      { func: "main", href: "neograph.png" }
     ]
   },
   {
@@ -42,10 +42,10 @@ export const projects: Project[] = [
       { name: "rules", href: "https://docs.google.com/document/d/1Dwu1WJfo7OCM7y66ucyw6y37SK-96s2T4UIwTDTBZaQ/edit?usp=sharing" }
     ],
     images: [
-      { type: "main", href: "pipeworks/board.png" },
-      { type: "logo", href: "pipeworks/logo.png" }
+      { func: "main", href: "pipeworks/game.webm" },
+      { func: "main", href: "pipeworks/board.png", fallback: true },
+      { func: "logo", href: "pipeworks/logo.png" }
     ]
-
   },
   {
     name: "SCP-3939",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "http://scp-wiki.net/scp-3939" }
     ],
     images: [
-      { type: "main", href: "scp/3939.png" }
+      { func: "main", href: "scp/3939.png" }
     ]
   },
   {
@@ -87,7 +87,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "http://scp-wiki.net/scp-3211" }
     ],
     images: [
-      { type: "main", href: "scp/3211.png" }
+      { func: "main", href: "scp/3211.png" }
     ]
   },
   {
@@ -104,7 +104,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "/text-gradient" }
     ],
     images: [
-      { type: "main", href: "gradient.png" }
+      { func: "main", href: "gradient.png" }
     ]
   },
   {
@@ -123,9 +123,9 @@ export const projects: Project[] = [
       { name: "check it out", href: "https://github.com/Nu-SCPTheme/Black-Highlighter" }
     ],
     images: [
-      { type: "main", href: "scp/bhl/desktop.png" },
-      { type: "mobile", href: "scp/bhl/mobile.png" },
-      { type: "logo", href: "scp/bhl/logo.svg" }
+      { func: "main", href: "scp/bhl/desktop.png" },
+      { func: "mobile", href: "scp/bhl/mobile.png" },
+      { func: "logo", href: "scp/bhl/logo.svg" }
     ]
   },
   {
@@ -146,7 +146,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "/series-replace" }
     ],
     images: [
-      { type: "main", href: "regex-series-replace.png" }
+      { func: "main", href: "regex-series-replace.png" }
     ]
   },
   {
@@ -181,7 +181,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "https://github.com/rossjrw/rossjrw" }
     ],
     images: [
-      { type: "main", href: "ur.png" }
+      { func: "main", href: "ur.png" }
     ]
   },
   {
@@ -210,7 +210,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "/gallifreyo" }
     ],
     images: [
-      { type: "main", href: "gallifreyo.png" }
+      { func: "main", href: "gallifreyo.png" }
     ]
   },
   {
@@ -228,7 +228,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "https://rossjrw.com" }
     ],
     images: [
-      { type: "main", href: "website.png" }
+      { func: "main", href: "website.png" }
     ]
   },
   {
@@ -247,8 +247,8 @@ export const projects: Project[] = [
       { name: "check it out", href: "/maitreya" }
     ],
     images: [
-      { type: "main", href: "scp/maitreya/maitreya.png" },
-      { type: "logo", href: "scp/maitreya/logo.png" }
+      { func: "main", href: "scp/maitreya/maitreya.png" },
+      { func: "logo", href: "scp/maitreya/logo.png" }
     ]
   },
   {
@@ -267,7 +267,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "https://theyrecoming.neocities.org/mafia/automafia.html" }
     ],
     images: [
-      { type: "main", href: "automafia.png" }
+      { func: "main", href: "automafia.png" }
     ]
   }
 ]

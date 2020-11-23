@@ -4,7 +4,8 @@
     <div class="project-container container">
       <div class="project-item project-img-main card"
            v-if="hasImage(project, 'main')">
-        <img :src="getImage(project, 'main')"/>
+        <ProjectMedia :project="project"
+                      :func="'main'"/>
       </div>
       <div class="project-item project-img-mobile card"
            v-if="hasImage(project, 'mobile')">
@@ -64,6 +65,7 @@ import Vue from "vue"
 import marked from "marked"
 
 import PolyBullet from "@/components/PolyBullet.vue"
+import ProjectMedia from "@/components/ProjectMedia.vue"
 import { hasImage, getImage } from "@/functions/images"
 import { techColour } from "@/functions/techColours"
 import { gradientMesh } from "@/functions/gradientMesh"
@@ -72,9 +74,7 @@ import { Technology } from "@/types"
 export default Vue.extend({
   name: "Project",
   props: ["project"],
-  components: {
-    PolyBullet,
-  },
+  components: { PolyBullet, ProjectMedia },
   computed: {
     colouredTech() {
       return this.project.tech.map((tech: Technology) => {
