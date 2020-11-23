@@ -16,6 +16,7 @@ export type Project =  {
 type ProjectLink = {
   name: string
   href: string
+  colour?: 'green' | 'blue' | 'black'
 }
 
 export type ProjectImageFunc = 'main' | 'logo' | 'mobile'

@@ -49,8 +49,21 @@
         <div class="flex justify-center">
           <a v-for="link in project.links"
              :key="link.href"
-             class="bg-white rounded-full px-5 py-2 m-1 shadow-md
-                    text-blue-700 whitespace-nowrap"
+             class="rounded-full px-5 py-2 m-1 shadow-md z-0
+                    bg-gradient-to-r from-white to-white
+                    text-blue-700 whitespace-nowrap
+                    transform transition-all
+                    hover:text-white hover:scale-125 hover:z-10"
+             :class="[
+                      !('colour' in link) ?
+                      'hover:from-pink-600 hover:to-indigo-600' : null,
+                      link.colour === 'blue' ?
+                      'hover:from-blue-500 hover:to-indigo-600' : null,
+                      link.colour === 'green' ?
+                      'hover:from-green-500 hover:to-green-600' : null,
+                      link.colour === 'black' ?
+                      'hover:from-gray-500 hover:to-gray-700' : null,
+                     ]"
              :href="link.href">
             {{link.name}}
           </a>
