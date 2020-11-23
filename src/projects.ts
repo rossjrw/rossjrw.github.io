@@ -91,23 +91,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    name: "Text gradient generator",
-    date: [[2018]],
-    tags: ["completed"],
-    tech: ["JavaScript", "AngularJS"],
-    desc: compress`
-      An online tool for making a smooth colour gradient across a line of text.
-      Outputs BBCode. Useful for both of the people who still use BBCode.
-    `,
-    back: ["#db8e5a", "#31acfa", "#333", "#333"],
-    links: [
-      { name: "check it out", href: "/text-gradient" }
-    ],
-    images: [
-      { func: "main", href: "gradient.png" }
-    ]
-  },
-  {
     name: "Black Highlighter",
     date: [[2019]],
     tags: ["completed"],
