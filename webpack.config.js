@@ -33,7 +33,7 @@ module.exports = {
           options: {
             esModule: false,
             name: "[path][name].[ext]?[hash:5]",
-            context: "src/assets/projects"
+            context: "src/assets"
           }
         },
       },
