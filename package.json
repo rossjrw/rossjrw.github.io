@@ -70,5 +70,6 @@
       ],
       "babel-preset-typescript-vue"
     ]
-  }
+  },
+  "dependencies": {}
 }

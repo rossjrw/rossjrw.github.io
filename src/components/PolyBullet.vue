@@ -1,5 +1,5 @@
 <template>
-  <svg class="poly-bullet"
+  <svg class="h-4 relative top-0.5"
        viewBox="0 0 100 100"
        preserveAspectRatio="none">
     <polygon :points="points"
@@ -47,11 +47,3 @@ function polystring (points: [number, number][]): string {
   return points.map(point => point.join(",")).join(" ")
 }
 </script>
-
-<style>
-.poly-bullet {
-  height: 1rem;
-  position: relative;
-  top: 0.15rem;
-}
-</style>
