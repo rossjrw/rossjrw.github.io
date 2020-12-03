@@ -1,5 +1,6 @@
 <template>
-  <div id="app">
+  <div id="app"
+       class="text-gray-800">
     <GithubCorner url="https://github.com/rossjrw/rossjrw.github.io"
                   colorScheme="black"/>
     <Header/>
@@ -12,7 +13,7 @@
   </div>
 </template>
 
-<script lang="js">
+<script lang="ts">
 import Vue from "vue"
 import GithubCorner from "vue-github-corners"
 

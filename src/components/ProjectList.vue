@@ -1,9 +1,9 @@
 <template>
   <div>
-    <p class="title is-1 has-text-centered">
+    <p class="text-5xl font-semibold text-center px-8">
       {{title}}
     </p>
-    <p class="subtitle is-5 has-text-centered">
+    <p class="text-xl text-center mt-1 px-8">
       {{subtitle}}
     </p>
     <Project v-for="(project, projectId) in selectedProjects"

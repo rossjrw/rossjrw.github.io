@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer utilities {
+  .basis-full {
+    flex-basis: 100%;
+  }
+  .basis-none {
+    flex-basis: auto;
+  }
+}

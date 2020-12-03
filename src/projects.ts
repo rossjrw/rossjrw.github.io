@@ -18,8 +18,8 @@ export const projects: Project[] = [
       { name: "check it out", href: "/neograph" }
     ],
     images: [
-      { type: "main", href: "neograph.png" },
-      { type: "back", href: "neograph-background.svg" }
+      { func: "main", href: "neograph.png" },
+      { func: "back", href: "neograph-background.svg" }
     ]
   },
   {
@@ -39,14 +39,14 @@ export const projects: Project[] = [
     `,
     back: [[40, 40, 40], [191, 144, 0], [40, 40, 40], [40, 40, 40]],
     links: [
-      { name: "board", href: "https://docs.google.com/spreadsheets/d/1G0XCT7KVrhxvwK1Tv-7TBZiYjiwX9NlSijeQNuWlEec/edit?usp=sharing" },
-      { name: "rules", href: "https://docs.google.com/document/d/1Dwu1WJfo7OCM7y66ucyw6y37SK-96s2T4UIwTDTBZaQ/edit?usp=sharing" }
+      { name: "board", colour: "green", href: "https://docs.google.com/spreadsheets/d/1G0XCT7KVrhxvwK1Tv-7TBZiYjiwX9NlSijeQNuWlEec/edit?usp=sharing" },
+      { name: "rules", colour: "blue", href: "https://docs.google.com/document/d/1Dwu1WJfo7OCM7y66ucyw6y37SK-96s2T4UIwTDTBZaQ/edit?usp=sharing" }
     ],
     images: [
-      { type: "main", href: "pipeworks-board.png" },
-      { type: "logo", href: "pipeworks-logo.png" }
+      { func: "main", href: "pipeworks/game.webm" },
+      { func: "main", href: "pipeworks/board.png", fallback: true },
+      { func: "logo", href: "pipeworks/logo.png" }
     ]
-
   },
   {
     name: "SCP-3939",
@@ -65,7 +65,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "http://scp-wiki.net/scp-3939" }
     ],
     images: [
-      { type: "main", href: "3939.png" }
+      { func: "main", href: "scp/3939.png" }
     ]
   },
   {
@@ -88,24 +88,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "http://scp-wiki.net/scp-3211" }
     ],
     images: [
-      { type: "main", href: "3211.png" }
-    ]
-  },
-  {
-    name: "Text gradient generator",
-    date: [[2018]],
-    tags: ["completed"],
-    tech: ["JavaScript", "AngularJS"],
-    desc: compress`
-      An online tool for making a smooth colour gradient across a line of text.
-      Outputs BBCode. Useful for both of the people who still use BBCode.
-    `,
-    back: ["#db8e5a", "#31acfa", "#333", "#333"],
-    links: [
-      { name: "check it out", href: "/text-gradient" }
-    ],
-    images: [
-      { type: "main", href: "gradient.png" }
+      { func: "main", href: "scp/3211.png" }
     ]
   },
   {
@@ -121,12 +104,12 @@ export const projects: Project[] = [
     `,
     back: [[100, 46, 44], [100, 3, 15], [66, 66, 72], [66, 66, 72]],
     links: [
-      { name: "check it out", href: "https://github.com/Nu-SCPTheme/Black-Highlighter" }
+      { name: "GitHub", colour: "black", href: "https://github.com/Nu-SCPTheme/Black-Highlighter" }
     ],
     images: [
-      { type: "main", href: "bhl-desktop.png" },
-      { type: "mobile", href: "bhl-mobile.png" },
-      { type: "logo", href: "black-highlighter-logo.svg" }
+      { func: "main", href: "scp/bhl/desktop.png" },
+      { func: "mobile", href: "scp/bhl/mobile.png" },
+      { func: "logo", href: "scp/bhl/logo.svg" }
     ]
   },
   {
@@ -144,10 +127,11 @@ export const projects: Project[] = [
       before.
     `,
     links: [
-      { name: "check it out", href: "/series-replace" }
+      { name: "check it out", href: "/series-replace" },
+      { name: "GitHub", colour: "black", href: "https://github.com/rossjrw/series-replace" }
     ],
     images: [
-      { type: "main", href: "regex-series-replace.png" }
+      { func: "main", href: "regex-series-replace.png" }
     ]
   },
   {
@@ -182,7 +166,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "https://github.com/rossjrw/rossjrw" }
     ],
     images: [
-      { type: "main", href: "ur.png" }
+      { func: "main", href: "ur.png" }
     ]
   },
   {
@@ -196,7 +180,8 @@ export const projects: Project[] = [
       almost-real sentences.
     `,
     links: [
-      { name: "check it out", href: "/tars/help" }
+      { name: "check it out", href: "/tars/help" },
+      { name: "GitHub", colour: "black", href: "https://github.com/rossjrw/tars" }
     ]
   },
   {
@@ -208,10 +193,11 @@ export const projects: Project[] = [
       A Gallifreyan translator, based on a language made by fans of Doctor Who.
     `,
     links: [
-      { name: "check it out", href: "/gallifreyo" }
+      { name: "check it out", href: "/gallifreyo" },
+      { name: "GitHub", colour: "black", href: "https://github.com/rossjrw/gallifreyo" }
     ],
     images: [
-      { type: "main", href: "gallifreyo.png" }
+      { func: "main", href: "gallifreyo.png" }
     ]
   },
   {
@@ -226,10 +212,11 @@ export const projects: Project[] = [
     `,
     back: [[224, 166, 52], [223, 190, 106], [131, 131, 131], [0, 0, 0]],
     links: [
-      { name: "check it out", href: "https://rossjrw.com" }
+      { name: "check it out", href: "https://rossjrw.com" },
+      { name: "GitHub", colour: "black", href: "https://github.com/rossjrw/rossjrw.github.io" }
     ],
     images: [
-      { type: "main", href: "website.png" }
+      { func: "main", href: "website.png" }
     ]
   },
   {
@@ -245,11 +232,12 @@ export const projects: Project[] = [
     `,
     back: ["#1488cc", "#1a73c6", "#205dbf", "#2b32b2"],
     links: [
-      { name: "check it out", href: "/maitreya" }
+      { name: "check it out", href: "/maitreya" },
+      { name: "GitHub", colour: "black", href: "https://github.com/rossjrw/maitreya" }
     ],
     images: [
-      { type: "main", href: "maitreya.png" },
-      { type: "logo", href: "maitreya-logo.png" }
+      { func: "main", href: "scp/maitreya/maitreya.png" },
+      { func: "logo", href: "scp/maitreya/logo.png" }
     ]
   },
   {
@@ -268,7 +256,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "https://theyrecoming.neocities.org/mafia/automafia.html" }
     ],
     images: [
-      { type: "main", href: "automafia.png" }
+      { func: "main", href: "automafia.png" }
     ]
   }
 ]

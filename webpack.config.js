@@ -5,9 +5,12 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const CnameWebpackPlugin = require('cname-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: {
+    main: './src/pages/index.ts',
+    logo: './src/pages/logo.ts',
+  },
   output: {
-    filename: 'bundle.js?[contenthash:5]',
+    filename: 'bundle.[contenthash:5].js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -15,19 +18,31 @@ module.exports = {
       { test: /\.vue$/, use: 'vue-loader' },
       { test: /\.ts$/, use: 'babel-loader', exclude: /node_modules/ },
       {
-        test: /\.s[ac]ss$/,
+        test: /\.css$/,
         use: [
           'vue-style-loader',
           'css-loader',
-          'sass-loader',
-        ],
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  'postcss-import', 'tailwindcss', 'autoprefixer'
+                ]
+              }
+            }
+          }
+        ]
       },
-      { test: /\.css$/, use: ['vue-style-loader', 'css-loader'] },
       {
-        test: /\.(png|jpg|svg)$/,
+        test: /\.(png|svg|webm)$/,
         use: {
           loader: 'file-loader',
-          options: { esModule: false, name: "[name].[ext]?[hash:5]" }
+          options: {
+            esModule: false,
+            name: "[path][name].[ext]?[hash:5]",
+            context: "src/assets"
+          }
         },
       },
     ],
@@ -42,7 +57,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "rossjrw",
       template: './src/template.ejs',
-      meta: { viewport: "width=device-width, initial-scale=1" }
+      filename: 'index.html',
+      chunks: ['main'],
+      meta: { viewport: "width=device-width, initial-scale=1" },
+    }),
+    new HtmlWebpackPlugin({
+      title: "rossjrw · Logo Recolour Tool",
+      template: './src/template.ejs',
+      filename: 'logo/index.html',
+      chunks: ['logo'],
+      meta: { viewport: "width=device-width, initial-scale=1" },
     }),
     new CnameWebpackPlugin({
       domain: "rossjrw.com",

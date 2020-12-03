@@ -1,54 +1,69 @@
 <template>
-  <div class="project"
+  <div class="my-16 py-4 md:py-2 px-6"
        :style="{ backgroundImage: projectBackground }">
-    <div class="project-container container">
-      <div class="project-item project-img-main card"
-           v-if="hasImage('main')">
-        <img :src="getImage(project.images, 'main')"/>
+    <div class="container flex items-center justify-center mx-auto
+                flex-wrap lg:flex-nowrap">
+      <div class="p-0 my-2 flex-initial w-72
+                  flex-shrink-1 md:flex-shrink-0"
+           v-if="hasImage(project, 'main')">
+        <ProjectMedia :project="project"
+                      :func="'main'"/>
       </div>
-      <div class="project-item project-img-mobile card"
-           v-if="hasImage('mobile')">
-        <img :src="getImage(project.images, 'mobile')"/>
+      <div class="ml-4 flex-initial w-36
+                  hidden xl:block flex-shrink-1 md:flex-shrink-0"
+           v-if="hasImage(project, 'mobile')">
+        <img class="block rounded-lg shadow-lg"
+             :src="getImage(project, 'mobile')"/>
       </div>
-      <div class="project-item project-info">
+      <div class="my-2 md:ml-8 flex-1 max-w-4xl
+                  order-first basis-full flex justify-center
+                  lg:order-none lg:basis-none lg:block">
         <div class="card">
-          <div class="card-content">
-            <div class="project-name has-text-centered">
-              <img :src="getImage(project.images, 'logo')"
-                   :alt="project.name"
-                   v-if="hasImage('logo')"/>
-              <p class="title"
-                 v-else>
-                {{project.name}}
-              </p>
-            </div>
-            <div class="project-date has-text-centered">
-              <p class="subtitle">
-                {{prettyDate}}
-              </p>
-            </div>
-            <div class="project-desc content"
-                 v-html="description"/>
-          </div>
+          <img class="max-w-xs max-h-32 min-h-8 mx-auto"
+               :src="getImage(project, 'logo')"
+               :alt="project.name"
+               v-if="hasImage(project, 'logo')"/>
+          <p class="text-3xl font-semibold text-center"
+             v-else>
+            {{project.name}}
+          </p>
+          <p class="text-xl text-center">
+            {{prettyDate}}
+          </p>
+          <div v-html="description"/>
         </div>
       </div>
-      <div class="project-item project-meta">
-        <div class="project-tech card is-inset mb-3">
-          <div class="card-content">
-            <p v-for="(tech, index) in colouredTech"
-               :key="tech.name">
-              <span class="icon">
-                <PolyBullet :shape="index + 3"
-                            :colour="tech.colour"/>
-              </span>
-              {{tech.name}}
-            </p>
-          </div>
+      <div class="my-2 md:ml-8 flex-initial w-full md:w-48">
+        <div class="card bg-opacity-90 is-inset mb-3 hidden md:block">
+          <p class="whitespace-nowrap -ml-2"
+             v-for="(tech, index) in colouredTech"
+             :key="tech.name">
+            <span class="w-6 h-6 inline-flex justify-center items-center">
+              <PolyBullet :shape="index + 3"
+                          :colour="tech.colour"
+                          :hasStroke="false"/>
+            </span>
+            {{tech.name}}
+          </p>
         </div>
-        <div class="project-links buttons">
+        <div class="flex justify-center">
           <a v-for="link in project.links"
              :key="link.href"
-             class="button is-rounded is-link is-inverted"
+             class="rounded-full px-5 py-2 m-1 shadow-md z-0
+                    bg-gradient-to-r from-white to-white
+                    text-blue-700 whitespace-nowrap
+                    transform transition-all
+                    hover:text-white hover:scale-125 hover:z-10"
+             :class="[
+                      !('colour' in link) ?
+                      'hover:from-pink-600 hover:to-indigo-600' : null,
+                      link.colour === 'blue' ?
+                      'hover:from-blue-500 hover:to-indigo-600' : null,
+                      link.colour === 'green' ?
+                      'hover:from-green-500 hover:to-green-600' : null,
+                      link.colour === 'black' ?
+                      'hover:from-gray-500 hover:to-gray-700' : null,
+                     ]"
              :href="link.href">
             {{link.name}}
           </a>
@@ -63,24 +78,26 @@ import Vue from "vue"
 import marked from "marked"
 
 import PolyBullet from "@/components/PolyBullet.vue"
+import ProjectMedia from "@/components/ProjectMedia.vue"
+import { hasImage, getImage } from "@/functions/images"
 import { techColour } from "@/functions/techColours"
 import { gradientMesh } from "@/functions/gradientMesh"
-import { ProjectImage, ProjectImageType } from "@/types"
+import { Technology } from "@/types"
 
 export default Vue.extend({
   name: "Project",
   props: ["project"],
-  components: {
-    PolyBullet,
-  },
+  components: { PolyBullet, ProjectMedia },
   computed: {
     colouredTech() {
-      return this.project.tech.map(tech => {
+      return this.project.tech.map((tech: Technology) => {
         return { name: tech, colour: techColour(tech) }
       })
     },
     prettyDate() {
-      let date = this.project.date.map(date => date.join("–")).join(", ")
+      let date = (
+        this.project.date as number[][]
+      ).map(date => date.join("–")).join(", ")
       if (this.project.tags.includes("working")) date += "–"
       return date
     },
@@ -92,121 +109,27 @@ export default Vue.extend({
         new Array(3).fill(240),
         new Array(3).fill(200),
       ]
+      console.log(`${this.project.name} ${this.hasImage(this.project, 'back') ?
+        "does" : "doesn't"} have a background`)
       let background = gradientMesh(colours)
-      if (this.hasImage('back')) {
-        background += `, url(${this.getImage(this.project.images, 'back')})`
+      if (this.hasImage(this.project, 'back')) {
+        background += `, url(${this.getImage(this.project, 'back')})`
       }
-      console.log(background)
       return background
     },
     description() {
       return marked(this.project.desc)
     },
   },
-  methods: {
-    hasImage(type: ProjectImageType) {
-      return 'images' in this.project && this.project.images.some(
-        image => image.type === type
-      )
-    },
-    getImage(images: ProjectImage[], type: ProjectImageType) {
-      const url = images.filter(image => image.type === type)[0].href
-      return require('@/assets/projects/' + url)
-    },
-  },
+  methods: { hasImage, getImage },
 })
 </script>
 
 <style>
 .card {
-  border-radius: 0.5rem;
-}
-
-.project {
-  margin: 4rem 0;
-  padding: 0.5rem 4rem;
-}
-
-.project-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: space-between;
-}
-
-.project-img-main {
-  flex: 0 1 18rem;
-  min-width: 12rem;
-}
-.project-img-mobile {
-  flex: 0 1 9rem;
-}
-.project-info {
-  flex: 1 1 0;
-  max-width: 50rem;
-}
-.project-meta {
-  flex: 0 1 0;
-  min-width: 12rem;
-}
-
-.project-item {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-left: 2rem;
-}
-.project-img-mobile {
-  margin-left: 1rem;
-}
-
-/* Limit the range of logo sizes */
-.project-name {
-  min-height: 2rem;
-}
-.project-name img {
-  max-height: 8rem;
-  max-width: min(18rem, 100%);
-}
-
-.project-img-main img, .project-img-mobile img {
-  /* Remove sliver of whitespace below image */
-  display: block;
-}
-
-.project-meta .card {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-.project-links.buttons {
-  /* Already has flex from Bulma */
-  justify-content: center;
-}
-
-@media only screen and (max-width: 75rem) {
-  .project-img-mobile {
-    display: none;
-  }
-}
-@media only screen and (max-width: 60rem) {
-  .project-container {
-    flex-wrap: wrap;
-  }
-  .project-info {
-    order: -1;
-    width: 100%;
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .project-info .card {
-    max-width: 80%;
-  }
-}
-
-@media only screen and (max-width: 45rem) {
-  .project {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+  @apply bg-white;
+  @apply shadow-lg;
+  @apply rounded-lg;
+  @apply p-6;
 }
 </style>

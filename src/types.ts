@@ -16,13 +16,15 @@ export type Project =  {
 type ProjectLink = {
   name: string
   href: string
+  colour?: 'green' | 'blue' | 'black'
 }
 
-export type ProjectImageType = 'main' | 'logo' | 'mobile' | 'back'
+export type ProjectImageFunc = 'main' | 'logo' | 'mobile' | 'back'
 
 export type ProjectImage = {
-  type: ProjectImageType
+  func: ProjectImageFunc
   href: string
+  fallback?: boolean
 }
 
 type Tag =
