@@ -3,8 +3,8 @@
        :style="{ backgroundImage: projectBackground }">
     <div class="container flex items-center justify-center mx-auto
                 flex-wrap lg:flex-nowrap">
-      <div class="p-0 my-2 flex-initial w-72
-                  flex-shrink-1 md:flex-shrink-0"
+      <div class="p-0 my-2 flex-initial flex-shrink-1 md:flex-shrink-0"
+           :class="project.size === 'big' ? 'w-big' : 'w-72'"
            v-if="hasImage(project, 'main')">
         <ProjectMedia :project="project"
                       :func="'main'"/>
@@ -18,8 +18,9 @@
       <div class="my-2 md:ml-8 flex-1 max-w-4xl
                   order-first basis-full flex justify-center
                   lg:order-none lg:basis-none lg:block">
-        <div class="card">
-          <img class="max-w-xs max-h-32 min-h-8 mx-auto"
+        <div :class="project.size === 'big' ? undefined : 'card'">
+          <img class="max-w-xs max-h-32 min-h-8"
+               :class="project.size === 'big' ? undefined : 'mx-auto'"
                :src="getImage(project, 'logo')"
                :alt="project.name"
                v-if="hasImage(project, 'logo')"/>
@@ -56,13 +57,13 @@
                     hover:text-white hover:scale-125 hover:z-10"
              :class="[
                       !('colour' in link) ?
-                      'hover:from-pink-600 hover:to-indigo-600' : null,
+                      'hover:from-pink-600 hover:to-indigo-600' : undefined,
                       link.colour === 'blue' ?
-                      'hover:from-blue-500 hover:to-indigo-600' : null,
+                      'hover:from-blue-500 hover:to-indigo-600' : undefined,
                       link.colour === 'green' ?
-                      'hover:from-green-500 hover:to-green-600' : null,
+                      'hover:from-green-500 hover:to-green-600' : undefined,
                       link.colour === 'black' ?
-                      'hover:from-gray-500 hover:to-gray-700' : null,
+                      'hover:from-gray-500 hover:to-gray-700' : undefined,
                      ]"
              :href="link.href">
             {{link.name}}

@@ -3,5 +3,12 @@ module.exports = {
     extend: {
       zIndex: ['hover']
     }
+  },
+  theme: {
+    extend: {
+      width: {
+        'big': '30rem'
+      }
+    }
   }
 }

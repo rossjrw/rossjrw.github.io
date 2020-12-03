@@ -4,6 +4,7 @@ import { Project } from "@/types"
 export const projects: Project[] = [
   {
     name: "Faux Coffee Shop",
+    size: "small",
     date: [[2017]],
     tags: ["completed"],
     tech: ["JavaScript", "AngularJS"],
@@ -23,6 +24,7 @@ export const projects: Project[] = [
   },
   {
     name: "The Pipeworks",
+    size: "big",
     date: [[2016], [2017]],
     tags: ["completed"],
     tech: ["Spreadsheets", "Fiction"],
@@ -37,6 +39,7 @@ export const projects: Project[] = [
       relations develop.
     `,
     back: [[40, 40, 40], [191, 144, 0], [40, 40, 40], [40, 40, 40]],
+    fore: "light",
     links: [
       { name: "board", colour: "green", href: "https://docs.google.com/spreadsheets/d/1G0XCT7KVrhxvwK1Tv-7TBZiYjiwX9NlSijeQNuWlEec/edit?usp=sharing" },
       { name: "rules", colour: "blue", href: "https://docs.google.com/document/d/1Dwu1WJfo7OCM7y66ucyw6y37SK-96s2T4UIwTDTBZaQ/edit?usp=sharing" }
@@ -49,6 +52,7 @@ export const projects: Project[] = [
   },
   {
     name: "SCP-3939",
+    size: "normal",
     date: [[2018]],
     tags: ["completed"],
     tech: ["Fiction", "Spreadsheets"],
@@ -69,6 +73,7 @@ export const projects: Project[] = [
   },
   {
     name: "SCP-3211",
+    size: "normal",
     date: [[2018]],
     tags: ["completed"],
     tech: ["Fiction", "JavaScript", "jQuery", "Spreadsheets"],
@@ -83,6 +88,7 @@ export const projects: Project[] = [
       Written on a spreadsheet and compiled to JavaScript.
     `,
     back: [[250, 250, 250], [245, 245, 245], [240, 240, 240], [243, 87, 87]],
+    fore: "dark",
     links: [
       { name: "check it out", href: "http://scp-wiki.net/scp-3211" }
     ],
@@ -92,6 +98,7 @@ export const projects: Project[] = [
   },
   {
     name: "Black Highlighter",
+    size: "normal",
     date: [[2019]],
     tags: ["completed"],
     tech: ["CSS", "Gulp.js"],
@@ -102,6 +109,7 @@ export const projects: Project[] = [
       stories across the international SCP community.
     `,
     back: [[100, 46, 44], [100, 3, 15], [66, 66, 72], [66, 66, 72]],
+    fore: "light",
     links: [
       { name: "GitHub", colour: "black", href: "https://github.com/Nu-SCPTheme/Black-Highlighter" }
     ],
@@ -113,6 +121,7 @@ export const projects: Project[] = [
   },
   {
     name: "Regex Series Replace",
+    size: "small",
     date: [[2020]],
     tags: ["completed", "utility"],
     tech: ["TypeScript", "Vue.js", "Webpack"],
@@ -135,6 +144,7 @@ export const projects: Project[] = [
   },
   {
     name: "SCUTTLE API wrapper",
+    size: "normal",
     date: [[2020]],
     tags: ["completed", "utility"],
     tech: ["Python"],
@@ -149,6 +159,7 @@ export const projects: Project[] = [
   },
   {
     name: "Ur",
+    size: "normal",
     date: [[2020]],
     tags: ["completed"],
     tech: ["TypeScript", "SVG", "GitHub Actions"],
@@ -161,6 +172,7 @@ export const projects: Project[] = [
       state. You can play!
     `,
     back: [[243, 186, 124], [206, 143, 75], [175, 111, 43], [106, 58, 0]],
+    fore: "light",
     links: [
       { name: "check it out", href: "https://github.com/rossjrw/rossjrw" }
     ],
@@ -170,6 +182,7 @@ export const projects: Project[] = [
   },
   {
     name: "TARS",
+    size: "normal",
     date: [[2019]],
     tags: ["working"],
     tech: ["Python"],
@@ -185,6 +198,7 @@ export const projects: Project[] = [
   },
   {
     name: "Gallifreyo",
+    size: "normal",
     date: [[2017, 2018], [2020]],
     tags: ["working"],
     tech: ["TypeScript", "Vue.js", "Webpack", "SVG"],
@@ -201,6 +215,7 @@ export const projects: Project[] = [
   },
   {
     name: "rossjrw.com",
+    size: "normal",
     date: [[2020]],
     tags: ["working"],
     tech: ["Vue.js", "TypeScript", "Webpack"],
@@ -210,6 +225,7 @@ export const projects: Project[] = [
       a very useful site.
     `,
     back: [[224, 166, 52], [223, 190, 106], [131, 131, 131], [0, 0, 0]],
+    fore: "light",
     links: [
       { name: "check it out", href: "https://rossjrw.com" },
       { name: "GitHub", colour: "black", href: "https://github.com/rossjrw/rossjrw.github.io" }
@@ -220,6 +236,7 @@ export const projects: Project[] = [
   },
   {
     name: "Maitreya.aic",
+    size: "normal",
     date: [[2018, 2019]],
     tags: ["unfinished"],
     tech: ["Fiction", "CoffeeScript", "AngularJS", "Gulp.js"],
@@ -230,6 +247,7 @@ export const projects: Project[] = [
       discover, is up to you.
     `,
     back: ["#1488cc", "#1a73c6", "#205dbf", "#2b32b2"],
+    fore: "light",
     links: [
       { name: "check it out", href: "/maitreya" },
       { name: "GitHub", colour: "black", href: "https://github.com/rossjrw/maitreya" }
@@ -241,6 +259,7 @@ export const projects: Project[] = [
   },
   {
     name: "Automafia",
+    size: "normal",
     date: [[2016]],
     tags: ["abandoned"],
     tech: ["JavaScript", "AngularJS"],

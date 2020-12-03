@@ -4,11 +4,13 @@ export type State = {
 
 export type Project =  {
   name: string
+  size: 'small' | 'normal' | 'big'
   date: number[][]
   tags: Tag[]
   tech?: Technology[]
   desc: string
   back?: Colours
+  fore?: 'light' | 'dark'
   links: ProjectLink[]
   images?: ProjectImage[]
 }
