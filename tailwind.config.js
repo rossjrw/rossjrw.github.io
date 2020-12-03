@@ -5,10 +5,8 @@ module.exports = {
     }
   },
   theme: {
-    extend: {
-      width: {
-        'big': '30rem'
-      }
-    }
-  }
+    aspectRatio: { 'none': 0, '1/1': [1, 1], '1/2': [1, 2] },
+    extend: { width: { 'big': '30rem' } }
+  },
+  plugins: [ require("tailwindcss-aspect-ratio") ]
 }

@@ -1,12 +1,13 @@
 <template>
-  <div>
+  <div class="relative">
+    <div :class="aspectRatio"/>
     <video v-if="imageType(project, func) === 'webm'"
-           class="rounded-lg shadow-lg bg-cover"
+           class="absolute inset-0 rounded-lg shadow-lg bg-cover w-full h-full"
            :src="getImage(project, func)"
            :style="{ backgroundImage: `url(${fallbackImage})` }"
            autoplay muted loop controls/>
     <img v-else
-         class="rounded-lg shadow-lg"
+         class="absolute inset-0 rounded-lg shadow-lg"
          :src="getImage(project, func)"/>
   </div>
 </template>
@@ -19,7 +20,15 @@ import { hasImage, getImage, imageType } from "@/functions/images"
 export default Vue.extend({
   props: [ 'project', 'func' ],
   computed: {
-    fallbackImage() { return getImage(this.project, this.func, true) }
+    fallbackImage () { return getImage(this.project, this.func, true) },
+    aspectRatio () {
+      if (this.func === "main") {
+        return "aspect-ratio-1/1"
+      } else if (this.func === "mobile") {
+        return "aspect-ratio-1/2"
+      }
+      return "aspect-ratio-none"
+    }
   },
   methods: { hasImage, getImage, imageType },
 })
