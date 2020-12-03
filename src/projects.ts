@@ -18,8 +18,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "/neograph" }
     ],
     images: [
-      { func: "main", href: "neograph.png" },
-      { func: "back", href: "neograph-background.svg" }
+      { func: "main", href: "neograph.png" }
     ]
   },
   {

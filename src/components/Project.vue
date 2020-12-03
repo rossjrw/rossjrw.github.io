@@ -109,8 +109,6 @@ export default Vue.extend({
         new Array(3).fill(240),
         new Array(3).fill(200),
       ]
-      console.log(`${this.project.name} ${this.hasImage(this.project, 'back') ?
-        "does" : "doesn't"} have a background`)
       let background = gradientMesh(colours)
       if (this.hasImage(this.project, 'back')) {
         background += `, url(${this.getImage(this.project, 'back')})`
