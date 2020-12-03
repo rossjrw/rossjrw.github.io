@@ -4,7 +4,7 @@
            class="rounded-lg shadow-lg bg-cover"
            :src="getImage(project, func)"
            :style="{ backgroundImage: `url(${fallbackImage})` }"
-           autoplay muted loop/>
+           autoplay muted loop controls/>
     <img v-else
          class="rounded-lg shadow-lg"
          :src="getImage(project, func)"/>
