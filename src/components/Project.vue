@@ -15,9 +15,8 @@
         <img class="block rounded-lg shadow-lg"
              :src="getImage(project, 'mobile')"/>
       </div>
-      <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                  order-first basis-full flex justify-center
-                  lg:order-none lg:basis-none lg:block">
+      <div class="my-2 order-first basis-none flex justify-center
+                  md:ml-8 lg:order-none">
         <div :class="project.size === 'big' ? undefined : 'card'">
           <img class="max-w-xs max-h-32 min-h-8"
                :class="project.size === 'big' ? undefined : 'mx-auto'"
@@ -31,7 +30,8 @@
           <p class="text-xl text-center">
             {{prettyDate}}
           </p>
-          <div v-html="description"/>
+          <div class="max-w-prose"
+               v-html="description"/>
         </div>
       </div>
       <div class="my-2 md:ml-8 flex-initial w-full md:w-48">
