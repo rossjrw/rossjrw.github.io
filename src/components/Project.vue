@@ -15,9 +15,13 @@
         <img class="block rounded-lg shadow-lg"
              :src="getImage(project, 'mobile')"/>
       </div>
-      <div class="my-2 order-first basis-none flex justify-center
+      <div class="my-2 order-first basis-none flex justify-center flex-col
                   md:ml-8 lg:order-none">
-        <div :class="project.size === 'big' ? undefined : 'card'">
+        <div :class="[
+                      project.size === 'big' ? undefined : 'card',
+                      project.size === 'big' && project.fore === 'light' ?
+                        'text-gray-100' : undefined
+                     ]">
           <div class="flex items-center"
                :class="project.size === 'big' ? 'mb-6' : 'mb-2'">
             <img v-if="hasImage(project, 'logo')"
@@ -29,32 +33,29 @@
                class="text-4xl font-bold text-center lining-nums">
               {{project.name}}
             </p>
-            <p class="text-xl text-center lining-nums ml-4 opacity-70 -mb-2">
+            <p class="text-xl text-center lining-nums ml-4 opacity-80 -mb-2">
               {{prettyDate}}
             </p>
           </div>
           <div class="max-w-text oldstyle-nums space-y-2"
-               :class="[
-                        project.size === 'big' ? 'text-xl' : 'text-lg',
-                        project.size === 'big' && project.fore === 'light' ?
-                          'text-gray-100' : undefined
-                       ]"
+               :class="project.size === 'big' ? 'text-xl' : 'text-lg'"
                v-html="description"/>
+        </div>
+        <div class="hidden md:flex space-x-3 ml-2"
+             :class="project.size === 'big' ? 'mt-8' : 'mt-4'">
+          <p class="whitespace-nowrap rounded-full bg-white px-2 pb-1"
+               v-for="(tech, index) in colouredTech"
+               :key="tech.name">
+            <span class="w-4 h-6 inline-flex justify-center items-center">
+              <PolyBullet :shape="index + 3"
+                          :colour="tech.colour"
+                          :hasStroke="true"/>
+            </span>
+              {{tech.name}}
+          </p>
         </div>
       </div>
       <div class="my-2 md:ml-8 flex-initial w-full md:w-48">
-        <div class="card bg-opacity-90 is-inset mb-3 hidden md:block">
-          <p class="whitespace-nowrap -ml-2"
-             v-for="(tech, index) in colouredTech"
-             :key="tech.name">
-            <span class="w-6 h-6 inline-flex justify-center items-center">
-              <PolyBullet :shape="index + 3"
-                          :colour="tech.colour"
-                          :hasStroke="false"/>
-            </span>
-            {{tech.name}}
-          </p>
-        </div>
         <div class="flex justify-center">
           <a v-for="link in project.links"
              :key="link.href"
