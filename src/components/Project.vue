@@ -18,19 +18,20 @@
       <div class="my-2 order-first basis-none flex justify-center
                   md:ml-8 lg:order-none">
         <div :class="project.size === 'big' ? undefined : 'card'">
-          <img class="max-w-xs max-h-32 min-h-8"
-               :class="project.size === 'big' ? undefined : 'mx-auto'"
-               :src="getImage(project, 'logo')"
-               :alt="project.name"
-               v-if="hasImage(project, 'logo')"/>
-          <p class="text-3xl font-semibold text-center"
-             v-else>
-            {{project.name}}
-          </p>
-          <p class="text-xl text-center">
-            {{prettyDate}}
-          </p>
-          <div class="max-w-prose"
+          <div class="flex items-center mb-2">
+            <img v-if="hasImage(project, 'logo')"
+                 class="max-w-xs max-h-32 min-h-8"
+                 :src="getImage(project, 'logo')"
+                 :alt="project.name"/>
+            <p v-else
+               class="text-4xl font-bold text-center lining-nums">
+              {{project.name}}
+            </p>
+            <p class="text-xl text-center lining-nums ml-4 opacity-70 -mb-2">
+              {{prettyDate}}
+            </p>
+          </div>
+          <div class="max-w-text text-lg oldstyle-nums"
                v-html="description"/>
         </div>
       </div>
