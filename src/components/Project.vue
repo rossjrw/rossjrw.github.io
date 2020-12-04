@@ -18,9 +18,11 @@
       <div class="my-2 order-first basis-none flex justify-center
                   md:ml-8 lg:order-none">
         <div :class="project.size === 'big' ? undefined : 'card'">
-          <div class="flex items-center mb-2">
+          <div class="flex items-center"
+               :class="project.size === 'big' ? 'mb-6' : 'mb-2'">
             <img v-if="hasImage(project, 'logo')"
-                 class="max-w-xs max-h-32 min-h-8"
+                 class="max-h-32 min-h-8"
+                 :class="project.size === 'big' ? 'max-w-sm' : 'max-w-xs'"
                  :src="getImage(project, 'logo')"
                  :alt="project.name"/>
             <p v-else
@@ -31,7 +33,12 @@
               {{prettyDate}}
             </p>
           </div>
-          <div class="max-w-text text-lg oldstyle-nums"
+          <div class="max-w-text oldstyle-nums space-y-2"
+               :class="[
+                        project.size === 'big' ? 'text-xl' : 'text-lg',
+                        project.size === 'big' && project.fore === 'light' ?
+                          'text-gray-100' : undefined
+                       ]"
                v-html="description"/>
         </div>
       </div>
