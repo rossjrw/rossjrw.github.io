@@ -32,7 +32,7 @@ export const projects: Project[] = [
       A multiplayer board game hosted on Google Sheets. Played with 11 players
       and lasted for a month, once in 2016 and again in 2017, though it could
       handle more.
-
+      \n\n
       Players are split into teams, with some players embedded into other teams
       as spies. Betrayal is encouraged. Could be played either team-vs-team or
       cooperatively against the board and host, depending on how player-player
@@ -84,7 +84,7 @@ export const projects: Project[] = [
       one to each reader. I use cookies to ensure that while every reader sees
       a different version, a single reader will only ever see one. The
       article can also only be read once.
-
+      \n\n
       Written on a spreadsheet and compiled to JavaScript.
     `,
     back: [[250, 250, 250], [245, 245, 245], [240, 240, 240], [243, 87, 87]],
@@ -129,7 +129,7 @@ export const projects: Project[] = [
       A tool for applying a series of regex find-and-replace rules to a block
       of text. Configured rules can be exported and imported with URL
       arguments.
-
+      \n\n
       Made because I got sick of having to type out the same rules again and
       again when I have to make a series of replacements that I've already made
       before.
