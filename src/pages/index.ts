@@ -1,4 +1,5 @@
 import Vue from "vue"
+import "fontsource-lora"
 
 import '@/root.css'
 import App from '@/components/App.vue'

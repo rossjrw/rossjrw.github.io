@@ -1,6 +1,6 @@
 <template>
   <div id="app"
-       class="text-gray-800">
+       class="text-gray-800 font-serif">
     <GithubCorner url="https://github.com/rossjrw/rossjrw.github.io"
                   colorScheme="black"/>
     <Header/>
