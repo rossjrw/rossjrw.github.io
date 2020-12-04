@@ -47,7 +47,7 @@ export const projects: Project[] = [
     images: [
       { func: "main", href: "pipeworks/game.webm" },
       { func: "main", href: "pipeworks/board.png", fallback: true },
-      { func: "logo", href: "pipeworks/logo.png" }
+      { func: "logo", href: "pipeworks/logo.svg" }
     ]
   },
   {
