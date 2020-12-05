@@ -19,12 +19,13 @@
       <div class="my-2 order-first basis-none flex justify-center flex-col
                   md:ml-8 lg:order-none">
         <div :class="[
-                      project.size === 'big' ? '' : 'card',
+                      project.size === 'normal' && 'back' in project ?
+                        'bg-white rounded-lg shadow-lg p-6' : 'p-3',
                       project.size === 'big' && project.fore === 'light' ?
                         'text-gray-100' : ''
                      ]">
           <div class="flex items-center"
-               :class="project.size === 'big' ? 'mb-6' : 'mb-2'">
+               :class="project.size === 'big' ? 'mb-4' : 'mb-2'">
             <img v-if="hasImage(project, 'logo')"
                  class="max-h-32 min-h-8"
                  :class="project.size === 'big' ? 'max-w-sm' : 'max-w-xs'"
@@ -133,12 +134,3 @@ export default Vue.extend({
   methods: { hasImage, getImage },
 })
 </script>
-
-<style>
-.card {
-  @apply bg-white;
-  @apply shadow-lg;
-  @apply rounded-lg;
-  @apply p-6;
-}
-</style>

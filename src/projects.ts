@@ -236,7 +236,7 @@ export const projects: Project[] = [
   },
   {
     name: "Maitreya.aic",
-    size: "normal",
+    size: "big",
     date: [[2018, 2019]],
     tags: ["unfinished"],
     tech: ["Fiction", "CoffeeScript", "AngularJS", "Gulp.js"],
