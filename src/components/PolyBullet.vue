@@ -1,5 +1,5 @@
 <template>
-  <svg class="h-4 relative top-1"
+  <svg class="h-4 relative top-0.5"
        viewBox="0 0 100 100"
        preserveAspectRatio="none">
     <polygon :points="points"

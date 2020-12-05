@@ -73,5 +73,7 @@
       "babel-preset-typescript-vue"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "fontsource-aileron": "^3.0.1"
+  }
 }

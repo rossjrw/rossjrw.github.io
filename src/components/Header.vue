@@ -3,10 +3,10 @@
     <img class="max-h-48"
          src="@/assets/logos/rossjrw.png"/>
     <div>
-      <p class="text-4xl font-semibold text-center">
+      <p class="text-7xl font-semibold text-center tracking-tight">
         rossjrw
       </p>
-      <p class="text-xl mt-1 text-center">
+      <p class="text-3xl mt-1 text-center tracking-tight">
         Ross Williams
       </p>
     </div>

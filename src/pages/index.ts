@@ -1,5 +1,8 @@
 import Vue from "vue"
-import "fontsource-lora"
+import "fontsource-lora/latin-400.css"
+import "fontsource-aileron/latin-400.css"
+import "fontsource-aileron/latin-600.css"
+import "fontsource-aileron/latin-700.css"
 
 import '@/root.css'
 import App from '@/components/App.vue'

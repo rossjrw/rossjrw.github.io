@@ -1,5 +1,6 @@
 <template>
-  <div class="my-16 py-4 md:py-2 px-6"
+  <div class="my-16 py-4 px-6"
+       :class="project.size === 'big' ? 'py-8' : 'py-4'"
        :style="{ backgroundImage: projectBackground }">
     <div class="container flex items-center justify-center mx-auto
                 flex-wrap lg:flex-nowrap">
@@ -18,9 +19,9 @@
       <div class="my-2 order-first basis-none flex justify-center flex-col
                   md:ml-8 lg:order-none">
         <div :class="[
-                      project.size === 'big' ? undefined : 'card',
+                      project.size === 'big' ? '' : 'card',
                       project.size === 'big' && project.fore === 'light' ?
-                        'text-gray-100' : undefined
+                        'text-gray-100' : ''
                      ]">
           <div class="flex items-center"
                :class="project.size === 'big' ? 'mb-6' : 'mb-2'">
@@ -37,15 +38,15 @@
               {{prettyDate}}
             </p>
           </div>
-          <div class="max-w-text oldstyle-nums space-y-2"
-               :class="project.size === 'big' ? 'text-xl' : 'text-lg'"
+          <div class="max-w-text oldstyle-nums space-y-2 text-xl"
+               :class="project.tech.includes('Fiction') ? 'font-serif' : ''"
                v-html="description"/>
         </div>
         <div class="hidden md:flex space-x-3 ml-2"
              :class="project.size === 'big' ? 'mt-8' : 'mt-4'">
-          <p class="whitespace-nowrap rounded-full bg-white px-2 pb-1"
-               v-for="(tech, index) in colouredTech"
-               :key="tech.name">
+          <p class="whitespace-nowrap rounded-full bg-white pl-2 pr-3 pb-0.5"
+             v-for="(tech, index) in colouredTech"
+             :key="tech.name">
             <span class="w-4 h-6 inline-flex justify-center items-center">
               <PolyBullet :shape="index + 3"
                           :colour="tech.colour"
@@ -66,13 +67,13 @@
                     hover:text-white hover:scale-125 hover:z-10"
              :class="[
                       !('colour' in link) ?
-                      'hover:from-pink-600 hover:to-indigo-600' : undefined,
+                      'hover:from-pink-600 hover:to-indigo-600' : '',
                       link.colour === 'blue' ?
-                      'hover:from-blue-500 hover:to-indigo-600' : undefined,
+                      'hover:from-blue-500 hover:to-indigo-600' : '',
                       link.colour === 'green' ?
-                      'hover:from-green-500 hover:to-green-600' : undefined,
+                      'hover:from-green-500 hover:to-green-600' : '',
                       link.colour === 'black' ?
-                      'hover:from-gray-500 hover:to-gray-700' : undefined,
+                      'hover:from-gray-500 hover:to-gray-700' : '',
                      ]"
              :href="link.href">
             {{link.name}}
