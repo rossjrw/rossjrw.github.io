@@ -4,7 +4,7 @@ import { Project } from "@/types"
 export const projects: Project[] = [
   {
     name: "Faux Coffee Shop",
-    size: "small",
+    size: "normal",
     date: [[2017]],
     tags: ["completed"],
     tech: ["JavaScript", "AngularJS"],
@@ -52,7 +52,7 @@ export const projects: Project[] = [
   },
   {
     name: "SCP-3939",
-    size: "normal",
+    size: "small",
     date: [[2018]],
     tags: ["completed"],
     tech: ["Fiction", "Spreadsheets"],
@@ -73,7 +73,7 @@ export const projects: Project[] = [
   },
   {
     name: "SCP-3211",
-    size: "normal",
+    size: "small",
     date: [[2018]],
     tags: ["completed"],
     tech: ["Fiction", "JavaScript", "jQuery", "Spreadsheets"],
@@ -121,7 +121,7 @@ export const projects: Project[] = [
   },
   {
     name: "Regex Series Replace",
-    size: "small",
+    size: "normal",
     date: [[2020]],
     tags: ["completed", "utility"],
     tech: ["TypeScript", "Vue.js", "Webpack"],
@@ -144,7 +144,7 @@ export const projects: Project[] = [
   },
   {
     name: "SCUTTLE API wrapper",
-    size: "normal",
+    size: "small",
     date: [[2020]],
     tags: ["completed", "utility"],
     tech: ["Python"],
@@ -182,7 +182,7 @@ export const projects: Project[] = [
   },
   {
     name: "TARS",
-    size: "normal",
+    size: "small",
     date: [[2019]],
     tags: ["working"],
     tech: ["Python"],
@@ -198,7 +198,7 @@ export const projects: Project[] = [
   },
   {
     name: "Gallifreyo",
-    size: "normal",
+    size: "small",
     date: [[2017, 2018], [2020]],
     tags: ["working"],
     tech: ["TypeScript", "Vue.js", "Webpack", "SVG"],
