@@ -1,6 +1,11 @@
 <template>
-  <div class="my-16 py-4 px-6"
-       :class="project.size === 'big' ? 'py-8' : 'py-4'"
+  <div class="px-6"
+       :class="[
+                project.size === 'big' ? 'py-8' : 'py-4',
+                project.size === 'small' ?
+                  'col-span-1 rounded-lg shadow-lg m-4' :
+                  'col-span-2'
+               ]"
        :style="{ backgroundImage: projectBackground }">
     <div class="container flex items-center justify-center mx-auto
                 flex-wrap lg:flex-nowrap">
@@ -31,10 +36,10 @@
                  :class="project.size === 'big' ? 'max-w-sm' : 'max-w-xs'"
                  :src="getImage(project, 'logo')"
                  :alt="project.name"/>
-            <p v-else
+            <h4 v-else
                class="text-4xl font-bold text-center lining-nums">
               {{project.name}}
-            </p>
+            </h4>
             <p class="text-xl text-center lining-nums ml-4 opacity-80 -mb-2">
               {{prettyDate}}
             </p>
