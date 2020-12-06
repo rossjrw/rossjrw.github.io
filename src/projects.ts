@@ -41,8 +41,8 @@ export const projects: Project[] = [
     back: [[40, 40, 40], [191, 144, 0], [40, 40, 40], [40, 40, 40]],
     fore: "light",
     links: [
-      { name: "board", colour: "green", href: "https://docs.google.com/spreadsheets/d/1G0XCT7KVrhxvwK1Tv-7TBZiYjiwX9NlSijeQNuWlEec/edit?usp=sharing" },
-      { name: "rules", colour: "blue", href: "https://docs.google.com/document/d/1Dwu1WJfo7OCM7y66ucyw6y37SK-96s2T4UIwTDTBZaQ/edit?usp=sharing" }
+      { name: "board", href: "https://docs.google.com/spreadsheets/d/1G0XCT7KVrhxvwK1Tv-7TBZiYjiwX9NlSijeQNuWlEec/edit?usp=sharing" },
+      { name: "rules", href: "https://docs.google.com/document/d/1Dwu1WJfo7OCM7y66ucyw6y37SK-96s2T4UIwTDTBZaQ/edit?usp=sharing" }
     ],
     images: [
       { func: "main", href: "pipeworks/game.webm" },
@@ -111,7 +111,7 @@ export const projects: Project[] = [
     back: [[100, 46, 44], [100, 3, 15], [66, 66, 72], [66, 66, 72]],
     fore: "light",
     links: [
-      { name: "GitHub", colour: "black", href: "https://github.com/Nu-SCPTheme/Black-Highlighter" }
+      { name: "GitHub", href: "https://github.com/Nu-SCPTheme/Black-Highlighter" }
     ],
     images: [
       { func: "main", href: "scp/bhl/desktop.png" },
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     `,
     links: [
       { name: "check it out", href: "/series-replace" },
-      { name: "GitHub", colour: "black", href: "https://github.com/rossjrw/series-replace" }
+      { name: "GitHub", href: "https://github.com/rossjrw/series-replace" }
     ],
     images: [
       { func: "main", href: "regex-series-replace.png" }
@@ -193,7 +193,7 @@ export const projects: Project[] = [
     `,
     links: [
       { name: "check it out", href: "/tars/help" },
-      { name: "GitHub", colour: "black", href: "https://github.com/rossjrw/tars" }
+      { name: "GitHub", href: "https://github.com/rossjrw/tars" }
     ]
   },
   {
@@ -207,7 +207,7 @@ export const projects: Project[] = [
     `,
     links: [
       { name: "check it out", href: "/gallifreyo" },
-      { name: "GitHub", colour: "black", href: "https://github.com/rossjrw/gallifreyo" }
+      { name: "GitHub", href: "https://github.com/rossjrw/gallifreyo" }
     ],
     images: [
       { func: "main", href: "gallifreyo.png" }
@@ -228,7 +228,7 @@ export const projects: Project[] = [
     fore: "light",
     links: [
       { name: "check it out", href: "https://rossjrw.com" },
-      { name: "GitHub", colour: "black", href: "https://github.com/rossjrw/rossjrw.github.io" }
+      { name: "GitHub", href: "https://github.com/rossjrw/rossjrw.github.io" }
     ],
     images: [
       { func: "main", href: "website.png" }
@@ -250,7 +250,7 @@ export const projects: Project[] = [
     fore: "light",
     links: [
       { name: "check it out", href: "/maitreya" },
-      { name: "GitHub", colour: "black", href: "https://github.com/rossjrw/maitreya" }
+      { name: "GitHub", href: "https://github.com/rossjrw/maitreya" }
     ],
     images: [
       { func: "main", href: "scp/maitreya/maitreya.png" },

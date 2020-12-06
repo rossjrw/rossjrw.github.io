@@ -6,12 +6,15 @@ import "fontsource-aileron/latin-700.css"
 import "fontsource-aileron/latin-800.css"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import {
+  faPython, faGithub, faGoogleDrive
+} from "@fortawesome/free-brands-svg-icons"
 
 import '@/root.css'
 import App from '@/components/App.vue'
 import store from '@/store'
 
-library.add(faArrowRight)
+library.add(faArrowRight, faGoogleDrive, faPython, faGithub)
 
 new Vue({
   el: '#app',

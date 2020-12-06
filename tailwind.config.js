@@ -5,6 +5,7 @@ module.exports = {
       inset: ['group-hover'],
       textOpacity: ['group-hover'],
       translate: ['group-hover'],
+      transitionDuration: ['group-hover'],
       transitionTimingFunction: ['group-hover'],
       width: ['group-hover']
     }
