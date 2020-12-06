@@ -77,6 +77,9 @@
                       'hover:from-gray-500 hover:to-gray-700' : '',
                      ]"
              :href="link.href">
+            <span>
+              <FontAwesomeIcon icon="arrow-right"/>
+            </span>
             {{link.name}}
           </a>
         </div>
@@ -88,6 +91,7 @@
 <script lang="ts">
 import Vue from "vue"
 import marked from "marked"
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 
 import PolyBullet from "@/components/PolyBullet.vue"
 import ProjectMedia from "@/components/ProjectMedia.vue"
@@ -99,7 +103,7 @@ import { Technology } from "@/types"
 export default Vue.extend({
   name: "Project",
   props: ["project"],
-  components: { PolyBullet, ProjectMedia },
+  components: { PolyBullet, ProjectMedia, FontAwesomeIcon },
   computed: {
     colouredTech() {
       return this.project.tech.map((tech: Technology) => {
