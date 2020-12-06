@@ -1,7 +1,10 @@
 module.exports = {
   variants: {
     extend: {
-      zIndex: ['hover']
+      gradientColorStops: ['group-hover'],
+      inset: ['group-hover'],
+      translate: ['group-hover'],
+      width: ['group-hover']
     }
   },
   theme: {

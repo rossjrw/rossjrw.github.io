@@ -3,6 +3,7 @@ import "fontsource-lora/latin-400.css"
 import "fontsource-aileron/latin-400.css"
 import "fontsource-aileron/latin-600.css"
 import "fontsource-aileron/latin-700.css"
+import "fontsource-aileron/latin-800.css"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 

@@ -58,29 +58,28 @@
         </div>
       </div>
       <div class="my-2 md:ml-8 flex-initial w-full md:w-48">
-        <div class="flex justify-center">
+        <div class="space-y-2 flex flex-col items-start">
           <a v-for="link in project.links"
+             class="group flex items-center relative whitespace-nowrap h-12
+                    text-blue-700 hover:text-white"
              :key="link.href"
-             class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                    bg-gradient-to-r from-white to-white
-                    text-blue-700 whitespace-nowrap
-                    transform transition-all
-                    hover:text-white hover:scale-125 hover:z-10"
-             :class="[
-                      !('colour' in link) ?
-                      'hover:from-pink-600 hover:to-indigo-600' : '',
-                      link.colour === 'blue' ?
-                      'hover:from-blue-500 hover:to-indigo-600' : '',
-                      link.colour === 'green' ?
-                      'hover:from-green-500 hover:to-green-600' : '',
-                      link.colour === 'black' ?
-                      'hover:from-gray-500 hover:to-gray-700' : '',
-                     ]"
              :href="link.href">
-            <span>
-              <FontAwesomeIcon icon="arrow-right"/>
-            </span>
-            {{link.name}}
+            <div class="rounded-full shadow-md w-12 h-12 z-0
+                        flex justify-start items-center
+                        absolute inset-y-0 left-0
+                        bg-gradient-to-r from-white to-white
+                        transform transition-all
+                        group-hover:w-full group-hover:right-0"
+                  :class="linkGradient(link)">
+              <FontAwesomeIcon icon="arrow-right"
+                               size="lg"
+                               class="transform transition-all translate-x-3.5
+                                      group-hover:translate-x-6"/>
+            </div>
+            <div class="relative pl-14 z-10 pr-5
+                        text-3xl font-extrabold tracking-tight">
+              {{link.name}}
+            </div>
           </a>
         </div>
       </div>
@@ -98,7 +97,7 @@ import ProjectMedia from "@/components/ProjectMedia.vue"
 import { hasImage, getImage } from "@/functions/images"
 import { techColour } from "@/functions/techColours"
 import { gradientMesh } from "@/functions/gradientMesh"
-import { Technology } from "@/types"
+import { Technology, ProjectLink } from "@/types"
 
 export default Vue.extend({
   name: "Project",
@@ -135,6 +134,23 @@ export default Vue.extend({
       return marked(this.project.desc)
     },
   },
-  methods: { hasImage, getImage },
+  methods: {
+    hasImage,
+    getImage,
+    linkGradient (link: ProjectLink): string {
+      if (!('colour' in link) ){
+        return 'group-hover:from-pink-600 group-hover:to-indigo-600'
+      }
+      if(link.colour === 'blue') {
+        return 'group-hover:from-blue-500 group-hover:to-indigo-600'
+      }
+      if(link.colour === 'green') {
+        return 'group-hover:from-green-500 group-hover:to-green-600'
+      }
+      if(link.colour === 'black') {
+        return 'group-hover:from-gray-500 group-hover:to-gray-700'
+      }
+    }
+  },
 })
 </script>

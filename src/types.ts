@@ -15,7 +15,7 @@ export type Project =  {
   images?: ProjectImage[]
 }
 
-type ProjectLink = {
+export type ProjectLink = {
   name: string
   href: string
   colour?: 'green' | 'blue' | 'black'
