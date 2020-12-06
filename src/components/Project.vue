@@ -61,14 +61,18 @@
         <div class="space-y-2 flex flex-col items-start">
           <a v-for="link in project.links"
              class="group flex items-center relative whitespace-nowrap h-12
-                    text-blue-700 hover:text-white"
+                    hover:text-white"
+             :class="project.fore === 'light' ?
+                      'text-gray-100' : 'text-gray-700'"
              :key="link.href"
              :href="link.href">
             <div class="rounded-full shadow-md w-12 h-12 z-0
                         flex justify-start items-center
                         absolute inset-y-0 left-0
+                        text-blue-700 group-hover:text-white
                         bg-gradient-to-r from-white to-white
-                        transform transition-all
+                        transform transition-all duration-200
+                        ease-out group-hover:ease-in
                         group-hover:w-full group-hover:right-0"
                   :class="linkGradient(link)">
               <FontAwesomeIcon icon="arrow-right"
@@ -77,7 +81,8 @@
                                       group-hover:translate-x-6"/>
             </div>
             <div class="relative pl-14 z-10 pr-5
-                        text-3xl font-extrabold tracking-tight">
+                        text-3xl font-extrabold tracking-tight
+                        text-opacity-80 group-hover:text-opacity-100">
               {{link.name}}
             </div>
           </a>

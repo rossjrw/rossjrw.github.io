@@ -3,7 +3,9 @@ module.exports = {
     extend: {
       gradientColorStops: ['group-hover'],
       inset: ['group-hover'],
+      textOpacity: ['group-hover'],
       translate: ['group-hover'],
+      transitionTimingFunction: ['group-hover'],
       width: ['group-hover']
     }
   },
