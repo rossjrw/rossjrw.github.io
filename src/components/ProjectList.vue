@@ -17,7 +17,6 @@ import Vue from "vue"
 import { includes, pickBy } from "lodash"
 
 import Project from '@/components/Project.vue'
-import { ProjectList } from '@/types'
 
 export default Vue.extend({
   name: "ProjectList",
@@ -27,7 +26,7 @@ export default Vue.extend({
   props: ["title", "subtitle", "filterByTag"],
   computed: {
     selectedProjects: {
-      get(): ProjectList {
+      get(): unknown {
         return pickBy(this.$store.state.projects,
           value => {
             return includes(value.tags, this.filterByTag)
