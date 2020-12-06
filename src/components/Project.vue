@@ -8,7 +8,8 @@
                ]"
        :style="{ backgroundImage: projectBackground }">
     <div class="container flex items-center justify-center mx-auto
-                flex-wrap lg:flex-nowrap">
+                flex-wrap lg:flex-nowrap"
+         :class="project.size === 'small' ? 'flex-col' : ''">
       <div class="p-0 my-2 flex-initial flex-shrink-1 md:flex-shrink-0"
            :class="project.size === 'big' ? 'w-big' : 'w-72'"
            v-if="hasImage(project, 'main')">
