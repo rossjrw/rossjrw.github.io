@@ -59,33 +59,10 @@
       </div>
       <div class="my-2 md:ml-8 flex-initial w-full md:w-48">
         <div class="space-y-2 flex flex-col items-start">
-          <a v-for="link in project.links"
-             class="group flex items-center relative whitespace-nowrap h-12
-                    hover:text-white"
-             :class="project.fore === 'light' ?
-                      'text-gray-100' : 'text-gray-700'"
-             :key="link.href"
-             :href="link.href">
-            <div class="rounded-full shadow-md w-12 h-12 z-0
-                        flex justify-start items-center
-                        absolute inset-y-0 left-0
-                        text-blue-700 group-hover:text-white
-                        bg-gradient-to-r from-white to-white
-                        transform transition-all duration-200
-                        ease-out group-hover:ease-in
-                        group-hover:w-full group-hover:right-0"
-                  :class="linkGradient(link)">
-              <FontAwesomeIcon icon="arrow-right"
-                               size="lg"
-                               class="transform transition-all translate-x-3.5
-                                      group-hover:translate-x-6"/>
-            </div>
-            <div class="relative pl-14 z-10 pr-5
-                        text-3xl font-extrabold tracking-tight
-                        text-opacity-80 group-hover:text-opacity-100">
-              {{link.name}}
-            </div>
-          </a>
+          <ProjectLink v-for="link in project.links"
+                       :key="link.href"
+                       :link="link"
+                       :fore="project.fore"/>
         </div>
       </div>
     </div>
@@ -95,19 +72,19 @@
 <script lang="ts">
 import Vue from "vue"
 import marked from "marked"
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 
 import PolyBullet from "@/components/PolyBullet.vue"
 import ProjectMedia from "@/components/ProjectMedia.vue"
+import ProjectLink from "@/components/ProjectLink.vue"
 import { hasImage, getImage } from "@/functions/images"
 import { techColour } from "@/functions/techColours"
 import { gradientMesh } from "@/functions/gradientMesh"
-import { Technology, ProjectLink } from "@/types"
+import { Technology } from "@/types"
 
 export default Vue.extend({
   name: "Project",
   props: ["project"],
-  components: { PolyBullet, ProjectMedia, FontAwesomeIcon },
+  components: { PolyBullet, ProjectMedia, ProjectLink },
   computed: {
     colouredTech() {
       return this.project.tech.map((tech: Technology) => {
@@ -139,23 +116,6 @@ export default Vue.extend({
       return marked(this.project.desc)
     },
   },
-  methods: {
-    hasImage,
-    getImage,
-    linkGradient (link: ProjectLink): string {
-      if (!('colour' in link) ){
-        return 'group-hover:from-pink-600 group-hover:to-indigo-600'
-      }
-      if(link.colour === 'blue') {
-        return 'group-hover:from-blue-500 group-hover:to-indigo-600'
-      }
-      if(link.colour === 'green') {
-        return 'group-hover:from-green-500 group-hover:to-green-600'
-      }
-      if(link.colour === 'black') {
-        return 'group-hover:from-gray-500 group-hover:to-gray-700'
-      }
-    }
-  },
+  methods: { hasImage, getImage },
 })
 </script>
