@@ -6,9 +6,11 @@
     <h3 class="text-xl text-center mt-1 px-8">
       {{subtitle}}
     </h3>
-    <Project v-for="(project, projectId) in selectedProjects"
-             :key="projectId"
-             :project="project"/>
+    <div class="grid grid-cols-2">
+      <Project v-for="(project, projectId) in selectedProjects"
+               :key="projectId"
+               :project="project"/>
+    </div>
   </section>
 </template>
 
