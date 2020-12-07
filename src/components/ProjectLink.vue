@@ -1,22 +1,23 @@
 <template>
   <a class="group flex items-center relative whitespace-nowrap h-12
+            transition-all duration-300
             hover:text-white"
      :class="fore === 'light' ? 'text-gray-100' : 'text-gray-700'"
      :key="link.href"
      :href="link.href">
-    <div class="rounded-full shadow-md w-12 h-12 z-0
+    <div class="rounded-full shadow-md
                 flex justify-start items-center
-                absolute inset-y-0 left-0
-                text-blue-700 group-hover:text-white
+                w-12 group-hover:w-full
+                absolute inset-y-0 left-0 h-12 z-0
                 bg-gradient-to-r from-white to-white
-                transform transition-all duration-500 group-hover:duration-200
-                ease-out group-hover:ease-in
-                group-hover:w-full group-hover:right-0"
-          :class="linkGradient()">
+                transition-all duration-500 group-hover:duration-200
+                ease-out group-hover:ease-in"
+         :class="linkGradient()">
       <FontAwesomeIcon :icon="linkIcon()"
                        size="lg"
-                       class="transform transition-all translate-x-3.5
-                              group-hover:translate-x-6"/>
+                       class="transform transition-all
+                              translate-x-3.5 group-hover:translate-x-6
+                              text-blue-700 group-hover:text-white"/>
     </div>
     <div class="relative pl-14 z-10 pr-5
                 text-3xl font-extrabold tracking-tight
