@@ -1,6 +1,8 @@
 module.exports = {
   variants: {
     extend: {
+      justifySelf: ['odd', 'even'],
+      translate: ['odd', 'even'],
       zIndex: ['hover']
     }
   },
