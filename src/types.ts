@@ -21,7 +21,7 @@ type ProjectLink = {
   colour?: 'green' | 'blue' | 'black'
 }
 
-export type ProjectImageFunc = 'main' | 'logo' | 'mobile' | 'back'
+export type ProjectImageFunc = 'main' | 'logo' | 'mobile' | 'back' | 'oblique'
 
 export type ProjectImage = {
   func: ProjectImageFunc
