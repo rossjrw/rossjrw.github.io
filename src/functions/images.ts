@@ -27,14 +27,30 @@ export function hasImage (project: Project, func: ProjectImageFunc): boolean {
 export function getImage (
   project: Project,
   func: ProjectImageFunc,
-  wantsFallback = false
-): string | undefined {
+  wantsFallback: boolean,
+  returnAllImages: true
+): string[] | undefined
+export function getImage (
+  project: Project,
+  func: ProjectImageFunc,
+  wantsFallback: boolean,
+  returnAllImages: false
+): string | undefined
+export function getImage (
+  project: Project,
+  func: ProjectImageFunc,
+  wantsFallback: boolean,
+  returnAllImages = false
+): string[] | string | undefined {
   /**
    * Get the image of a project that serves the desired function.
    */
   const images = matchingImages(project, func, wantsFallback)
   if (images.length === 0) {
     return undefined
+  }
+  if (returnAllImages) {
+    return images.map(image => require('@/assets/projects/' + image.href))
   }
   return require('@/assets/projects/' + images[0].href)
 }
