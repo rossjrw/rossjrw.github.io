@@ -29,7 +29,7 @@ export type ProjectImage = {
   fallback?: boolean
 }
 
-type Tag =
+export type Tag =
   // Project status - must have exactly 1
   | "completed"
   | "working"

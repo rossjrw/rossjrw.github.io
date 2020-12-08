@@ -16,21 +16,30 @@
 
 <script lang="ts">
 import Vue from "vue"
-import { includes, pickBy } from "lodash"
 
 import Project from '@/components/Project.vue'
+import { Project as ProjectType, Tag } from "@/types"
+
+// TODO There must be a better way of doing this
+type ThisVue = {
+  $store: {
+    state: {
+      projects: ProjectType[]
+    }
+  }
+  filterByTag: Tag
+  selectedProjects: ProjectType[]
+}
 
 export default Vue.extend({
   name: "ProjectList",
-  components: {
-    Project
-  },
-  props: ["title", "subtitle", "filterByTag"],
+  components: { Project },
+  props: [ "title", "subtitle", "filterByTag" ],
   computed: {
     selectedProjects: {
-      get(): unknown {
-        return pickBy(this.$store.state.projects, value => {
-          return includes(value.tags, this.filterByTag)
+      get (this: ThisVue): ProjectType[] {
+        return this.$store.state.projects.filter(project => {
+          return project.tags.includes(this.filterByTag)
         })
       }
     }
