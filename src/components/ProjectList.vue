@@ -6,7 +6,7 @@
     <h3 class="text-xl text-center mt-1 px-8">
       {{subtitle}}
     </h3>
-    <div class="grid grid-cols-2 gap-y-16 my-16">
+    <div class="grid grid-cols-2 items-start gap-y-16 my-16">
       <Project v-for="(project, projectId) in selectedProjects"
                :key="projectId"
                :project="project"/>
@@ -29,11 +29,9 @@ export default Vue.extend({
   computed: {
     selectedProjects: {
       get(): unknown {
-        return pickBy(this.$store.state.projects,
-          value => {
-            return includes(value.tags, this.filterByTag)
-          }
-        )
+        return pickBy(this.$store.state.projects, value => {
+          return includes(value.tags, this.filterByTag)
+        })
       }
     }
   }

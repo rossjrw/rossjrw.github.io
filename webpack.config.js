@@ -44,7 +44,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|svg|webm)$/,
+        test: /\.(png|svg|web[mp])$/,
         use: {
           loader: 'file-loader',
           options: {

@@ -3,13 +3,15 @@
        :class="[
                 project.size === 'big' ? 'py-8' : 'py-4',
                 project.size === 'small' ?
-                  'col-span-1 rounded-lg shadow-lg m-4' :
+                  `col-span-1 rounded-lg shadow-lg m-8 transform
+                   even:translate-y-8 odd:-translate-y-8
+                   even:justify-self-start odd:justify-self-end` :
                   'col-span-2'
                ]"
        :style="{ backgroundImage: projectBackground }">
     <div class="container flex items-center justify-center mx-auto
                 flex-wrap lg:flex-nowrap"
-         :class="project.size === 'small' ? 'flex-col' : ''">
+         :class="project.size === 'small' ? 'flex-col max-w-text' : ''">
       <div class="p-0 my-2 flex-initial flex-shrink-1 md:flex-shrink-0"
            :class="project.size === 'big' ? 'w-big' : 'w-72'"
            v-if="hasImage(project, 'main')">
@@ -45,13 +47,17 @@
               {{prettyDate}}
             </p>
           </div>
-          <div class="max-w-text oldstyle-nums space-y-2 text-xl"
-               :class="project.tech.includes('Fiction') ? 'font-serif' : ''"
+          <div class="oldstyle-nums space-y-2 text-xl"
+               :class="[
+                        project.tech.includes('Fiction') ? 'font-serif' : '',
+                        project.size === 'small' ? '' : 'max-w-text'
+                       ]"
                v-html="description"/>
         </div>
-        <div class="hidden md:flex space-x-3 ml-2"
-             :class="project.size === 'big' ? 'mt-8' : 'mt-4'">
-          <p class="whitespace-nowrap rounded-full bg-white pl-2 pr-3 pb-0.5"
+        <div class="hidden md:flex flex-wrap items-center"
+             :class="project.size === 'big' ? 'mt-6' : 'mt-2'">
+          <p class="whitespace-nowrap rounded-full bg-white
+                    pl-2 pr-3 pb-0.5 mx-1.5 my-1"
              v-for="(tech, index) in colouredTech"
              :key="tech.name">
             <span class="w-4 h-6 inline-flex justify-center items-center">

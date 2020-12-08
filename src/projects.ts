@@ -90,10 +90,14 @@ export const projects: Project[] = [
     back: [[250, 250, 250], [245, 245, 245], [240, 240, 240], [243, 87, 87]],
     fore: "dark",
     links: [
-      { name: "check it out", href: "http://scp-wiki.net/scp-3211" }
+      { name: "check it out", href: "https://scp-wiki.wikidot.com/scp-3211" }
     ],
     images: [
-      { func: "main", href: "scp/3211.png" }
+      { func: "oblique", href: "scp/3211/cube.webp" },
+      { func: "oblique", href: "scp/3211/coin.webp" },
+      { func: "oblique", href: "scp/3211/putty.webp" },
+      { func: "oblique", href: "scp/3211/gloves.webp" },
+      { func: "oblique", href: "scp/3211/matches.webp" },
     ]
   },
   {
