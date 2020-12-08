@@ -20,11 +20,18 @@ function matchingImages (
   })
 }
 
-export function hasImage (project: Project, func: ProjectImageFunc): boolean {
+export function hasImage (
+  project: Project,
+  func: ProjectImageFunc,
+  minimumAmount = 1
+): boolean {
   /**
    * Check if a given project has an image that serves the desired function.
    */
-  return 'images' in project && matchingImages(project, func).length > 0
+  return (
+    'images' in project &&
+    matchingImages(project, func).length >= minimumAmount
+  )
 }
 
 export function getImage (
