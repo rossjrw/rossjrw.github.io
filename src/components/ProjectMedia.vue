@@ -1,13 +1,13 @@
 <template>
-  <div class="relative">
+  <div class="relative overflow-hidden">
     <div :class="aspectRatio"/>
     <video v-if="imageType(project, func) === 'webm'"
-           class="absolute inset-0 rounded-lg shadow-lg bg-cover w-full h-full"
+           class="absolute inset-0 bg-cover w-full h-full"
            :src="getImage(project, func)"
            :style="{ backgroundImage: `url(${fallbackImage})` }"
            autoplay muted loop controls/>
     <img v-else
-         class="absolute inset-0 rounded-lg shadow-lg"
+         class="absolute inset-0"
          :src="getImage(project, func)"/>
   </div>
 </template>

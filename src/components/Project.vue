@@ -16,7 +16,8 @@
            :class="project.size === 'big' ? 'w-big' : 'w-72'"
            v-if="hasImage(project, 'main')">
         <ProjectMedia :project="project"
-                      :func="'main'"/>
+                      :func="'main'"
+                      class="rounded-lg shadow-lg"/>
       </div>
       <div class="ml-4 flex-initial w-36
                   hidden xl:block flex-shrink-1 md:flex-shrink-0"
