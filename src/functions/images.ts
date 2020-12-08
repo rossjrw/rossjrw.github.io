@@ -5,6 +5,9 @@ function matchingImages (
   func: ProjectImageFunc,
   wantsFallback = false
 ): ProjectImage[] {
+  if (!('images' in project)) {
+    return []
+  }
   return project.images.filter(image => {
     if (wantsFallback) {
       return (
