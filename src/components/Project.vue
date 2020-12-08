@@ -3,10 +3,10 @@
        :class="[
                 project.size === 'big' ? 'py-8' : 'py-4',
                 project.size === 'small' ?
-                  `col-span-1 rounded-lg shadow-lg m-8 transform
-                   even:translate-y-8 odd:-translate-y-8
-                   even:justify-self-start odd:justify-self-end` :
-                  'col-span-2'
+                  'col-span-1 rounded-lg shadow-lg m-8 transform' :
+                  'col-span-2',
+                side === 'left' ? '-translate-y-8 justify-self-end' : '',
+                side === 'right' ? 'translate-y-8 justify-self-start' : ''
                ]"
        :style="{ backgroundImage: projectBackground }">
     <div class="container flex items-center justify-center mx-auto
@@ -111,7 +111,7 @@ import { Technology } from "@/types"
 
 export default Vue.extend({
   name: "Project",
-  props: ["project"],
+  props: [ "project", "side" ],
   components: { PolyBullet, ProjectMedia },
   computed: {
     colouredTech() {

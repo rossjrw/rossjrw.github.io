@@ -6,10 +6,12 @@
     <h3 class="text-xl text-center mt-1 px-8">
       {{subtitle}}
     </h3>
-    <div class="grid grid-cols-2 items-start gap-y-16 my-16">
+    <div class="grid grid-cols-2 items-start gap-y-16 grid-flow-row-dense
+                my-16">
       <Project v-for="(project, projectId) in selectedProjects"
                :key="projectId"
-               :project="project"/>
+               :project="project"
+               :side="projectSide(projectId)"/>
     </div>
   </section>
 </template>
@@ -42,6 +44,21 @@ export default Vue.extend({
           return project.tags.includes(this.filterByTag)
         })
       }
+    }
+  },
+  methods: {
+    projectSide (this: ThisVue, projectId: number): 'left' | 'right' | null {
+      // If this is a small project, which side of the screen should it be on?
+      if (this.selectedProjects[projectId].size !== 'small') {
+        return null
+      }
+      if (this.selectedProjects.slice(0, projectId + 1).reduce(
+        (sum, project) => {
+          if (project.size === 'small') return sum + 1
+          return sum + 2
+        }, 0
+      ) % 2 === 0) return 'right'
+      return 'left'
     }
   }
 })
