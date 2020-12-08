@@ -31,7 +31,7 @@ export default Vue.extend({
         // Initial state
         gsap.set(
           swipeImage,
-          { clipPath: "polygon(50% -50%, -50% 50%, -150% -50%, -50% -150%)" }
+          { clipPath: "polygon(50% -50%, -50% 50%, -160% -60%, -60% -160%)" }
         )
         const timeline = gsap.timeline({
           delay: (holdDuration + swipeDuration) * index - swipeDuration / 2,
@@ -45,17 +45,17 @@ export default Vue.extend({
         // Set clip to top left
         timeline.set(
           swipeImage,
-          { clipPath: "polygon(50% -50%, -50% 50%, -150% -50%, -50% -150%)" }
+          { clipPath: "polygon(50% -50%, -50% 50%, -140% -40%, -40% -140%)" }
         )
         // Move clip to centre
         timeline.to(
           swipeImage,
-          { clipPath: "polygon(150% 50%, 50% 150%, -50% 50%, 50% -50%)" }
+          { clipPath: "polygon(150% 50%, 50% 150%, -40% 60%, 60% -40%)" }
         )
         // Hold, then move clip to bottom left
         timeline.to(
           swipeImage,
-          { clipPath: "polygon(250% 150%, 150% 250%, 50% 150%, 150% 50%)" },
+          { clipPath: "polygon(250% 150%, 150% 250%, 60% 160%, 160% 60%)" },
           `+=${holdDuration}`
         )
         // Attach this element's timeline to the start of the master timeline
