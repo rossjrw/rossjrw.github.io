@@ -61,7 +61,7 @@ export const projects: Project[] = [
       and 19,000 words long. Although the end is always the same, there are
       many paths leading there. You are a disgraced researcher trapped in a
       hell of your own making, trying to find your way out.
-
+      \n\n
       Written on a spreadsheet and compiled into a web-ready format.
     `,
     links: [
