@@ -68,7 +68,7 @@ export const projects: Project[] = [
       { name: "check it out", href: "http://scp-wiki.net/scp-3939" }
     ],
     images: [
-      { func: "main", href: "scp/3939.png" }
+      { func: "oblique", href: "scp/3939.webp" }
     ]
   },
   {
