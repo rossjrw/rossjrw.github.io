@@ -14,6 +14,8 @@ import gsap, { Circ } from "gsap"
 
 import { getImage } from "@/functions/images"
 
+// TODO The space between clips could be configurable
+
 export default Vue.extend({
   name: "SwipeImage",
   props: [ "project", "func" ],
