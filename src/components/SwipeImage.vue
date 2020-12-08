@@ -42,7 +42,7 @@ export default Vue.extend({
             (holdDuration + swipeDuration) * count -
             holdDuration - 2 * swipeDuration
           ),
-          defaults: { duration: swipeDuration, ease: Circ }
+          defaults: { duration: swipeDuration, ease: Circ.easeInOut }
         })
         // Set clip to top left
         timeline.set(
