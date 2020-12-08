@@ -30,19 +30,19 @@ export function hasImage (project: Project, func: ProjectImageFunc): boolean {
 export function getImage (
   project: Project,
   func: ProjectImageFunc,
-  wantsFallback: boolean,
-  returnAllImages: true
+  wantsFallback?: boolean,
+  returnAllImages?: true
 ): string[] | undefined
 export function getImage (
   project: Project,
   func: ProjectImageFunc,
-  wantsFallback: boolean,
-  returnAllImages: false
+  wantsFallback?: boolean,
+  returnAllImages?: false
 ): string | undefined
 export function getImage (
   project: Project,
   func: ProjectImageFunc,
-  wantsFallback: boolean,
+  wantsFallback = false,
   returnAllImages = false
 ): string[] | string | undefined {
   /**
