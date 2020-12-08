@@ -1,11 +1,14 @@
 <template>
-  <div class="relative overflow-hidden">
+  <div class="relative w-full h-full overflow-hidden">
     <div :class="aspectRatio"/>
     <video v-if="imageType(project, func) === 'webm'"
            class="absolute inset-0 bg-cover w-full h-full"
            :src="getImage(project, func)"
            :style="{ backgroundImage: `url(${fallbackImage})` }"
            autoplay muted loop controls/>
+    <SwipeImage v-else-if="hasImage(project, func, 2)"
+                :project="project"
+                :func="func"/>
     <img v-else
          class="absolute inset-0"
          :src="getImage(project, func)"/>
@@ -15,10 +18,12 @@
 <script lang="ts">
 import Vue from "vue"
 
+import SwipeImage from "@/components/SwipeImage.vue"
 import { hasImage, getImage, imageType } from "@/functions/images"
 
 export default Vue.extend({
   props: [ 'project', 'func' ],
+  components: { SwipeImage },
   computed: {
     fallbackImage () { return getImage(this.project, this.func, true) },
     aspectRatio () {
