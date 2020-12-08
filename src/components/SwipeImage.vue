@@ -1,7 +1,7 @@
 <template>
-  <div class="relative">
+  <div>
     <img v-for="(image, index) in getImage(project, func, false, true)"
-         class="absolute"
+         class="absolute w-full h-full object-contain"
          :key="image"
          :src="image"
          :ref="`image-${index}`"/>

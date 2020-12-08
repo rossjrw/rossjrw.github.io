@@ -8,9 +8,10 @@
            autoplay muted loop controls/>
     <SwipeImage v-else-if="hasImage(project, func, 2)"
                 :project="project"
-                :func="func"/>
+                :func="func"
+                class="absolute inset-0 w-full h-full"/>
     <img v-else
-         class="absolute inset-0"
+         class="absolute inset-0 w-full h-full object-contain"
          :src="getImage(project, func)"/>
   </div>
 </template>
@@ -31,6 +32,8 @@ export default Vue.extend({
         return "aspect-ratio-1/1"
       } else if (this.func === "mobile") {
         return "aspect-ratio-1/2"
+      } else if (this.func === "oblique") {
+        return "aspect-ratio-1/1"
       }
       return "aspect-ratio-none"
     }
