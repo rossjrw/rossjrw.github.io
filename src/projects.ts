@@ -95,9 +95,9 @@ export const projects: Project[] = [
     images: [
       { func: "oblique", href: "scp/3211/cube.webp" },
       { func: "oblique", href: "scp/3211/coin.webp" },
-      { func: "oblique", href: "scp/3211/matches.webp" },
       { func: "oblique", href: "scp/3211/putty.webp" },
       { func: "oblique", href: "scp/3211/gloves.webp" },
+      { func: "oblique", href: "scp/3211/matches.webp" },
     ]
   },
   {
