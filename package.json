@@ -52,6 +52,7 @@
     "style-loader": "^1.2.1",
     "tailwindcss": "^2.0.1",
     "tailwindcss-aspect-ratio": "^3.0.0",
+    "tailwindcss-filters": "^3.0.0",
     "typescript": "^3.9.3",
     "vue": "^2.6.11",
     "vue-gh-corners": "^3.0.1",

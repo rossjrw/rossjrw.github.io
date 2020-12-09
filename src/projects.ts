@@ -58,14 +58,11 @@ export const projects: Project[] = [
     tech: ["Fiction", "Spreadsheets"],
     desc: compress`
       A story published on the SCP Wiki. A multiple-choice adventure 65 pages
-      and 19,000 words long. Although the end is always the same, there are
-      many paths leading there. You are a disgraced researcher trapped in a
-      hell of your own making, trying to find your way out.
-      \n\n
-      Written on a spreadsheet and compiled into a web-ready format.
+      and 19,000 words long. You are a disgraced researcher trapped in a
+      hell of your own making. #12 top-rated article of 2018 (of >1800).
     `,
     links: [
-      { name: "check it out", href: "http://scp-wiki.net/scp-3939" }
+      { name: "check it out", href: "https://scp-wiki.wikidot.com/scp-3939" }
     ],
     images: [
       { func: "oblique", href: "scp/3939.webp" }
@@ -78,14 +75,9 @@ export const projects: Project[] = [
     tags: ["completed"],
     tech: ["Fiction", "JavaScript", "jQuery", "Spreadsheets"],
     desc: compress`
-      An article published on the SCP Wiki. Details a fictional entity that
-      appears differently for each person who sees it: to emulate this for
-      readers, I wrote many versions of the same article and present a random
-      one to each reader. I use cookies to ensure that while every reader sees
-      a different version, a single reader will only ever see one. The
-      article can also only be read once.
-      \n\n
-      Written on a spreadsheet and compiled to JavaScript.
+      An article published on the SCP Wiki. Details an entity that appears
+      differently for each person who sees it. Readers will see one variant
+      of many, and they can only read it once. #19 top-rated article of 2018.
     `,
     back: [[250, 250, 250], [245, 245, 245], [240, 240, 240], [243, 87, 87]],
     fore: "dark",

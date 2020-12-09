@@ -1,15 +1,24 @@
 <template>
-  <div class="px-6"
+  <div class="px-6 relative"
        :class="[
                 project.size === 'big' ? 'py-8' : 'py-4',
                 project.size === 'small' ?
-                  'col-span-1 rounded-lg shadow-lg m-8 transform' :
+                  'col-span-1 rounded-lg shadow-lg mx-8' :
                   'col-span-2',
-                side === 'left' ? '-translate-y-8 justify-self-end' : '',
-                side === 'right' ? 'translate-y-8 justify-self-start' : ''
+                project.size === 'small' && hasImage(project, 'oblique') ?
+                  'mt-48' : '',
+                side === 'left' ? 'justify-self-end' : '',
+                side === 'right' ? 'justify-self-start' : ''
                ]"
        :style="{ backgroundImage: projectBackground }">
+    <div class="w-full h-72 relative z-0 -mt-56 -mb-16"
+         v-if="project.size === 'small' && hasImage(project, 'oblique')">
+      <ProjectMedia :project='project'
+                    :func="'oblique'"
+                    class="filter-desat"/>
+    </div>
     <div class="container flex items-center justify-center mx-auto
+                relative z-10
                 flex-wrap lg:flex-nowrap"
          :class="project.size === 'small' ? 'flex-col max-w-text' : ''">
       <div class="p-0 my-2 flex-initial flex-shrink-1 md:flex-shrink-0"
@@ -28,13 +37,14 @@
       <div class="my-2 order-first basis-none flex justify-center flex-col
                   md:ml-8 lg:order-none">
         <div :class="[
-                      project.size === 'normal' && 'back' in project ?
-                        'bg-white rounded-lg shadow-lg p-6' : 'p-3',
+                      project.size === 'normal' && 'back' in project ||
+                      project.size === 'small' && hasImage(project, 'oblique')
+                        ? 'bg-white rounded-lg shadow-lg p-6' : 'p-3',
                       project.size === 'big' && project.fore === 'light' ?
                         'text-gray-100' : ''
                      ]">
           <div class="flex items-center"
-               :class="project.size === 'big' ? 'mb-4' : 'mb-2'">
+               :class="{ big:'mb-4', normal:'mb-2', small:'' }[project.size]">
             <img v-if="hasImage(project, 'logo')"
                  class="max-h-32 min-h-8"
                  :class="project.size === 'big' ? 'max-w-sm' : 'max-w-xs'"
@@ -48,10 +58,10 @@
               {{prettyDate}}
             </p>
           </div>
-          <div class="oldstyle-nums space-y-2 text-xl"
+          <div class="oldstyle-nums space-y-2"
                :class="[
                         project.tech.includes('Fiction') ? 'font-serif' : '',
-                        project.size === 'small' ? '' : 'max-w-text'
+                        project.size === 'small' ? '' : 'max-w-text text-xl'
                        ]"
                v-html="description"/>
         </div>
@@ -99,7 +109,7 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType} from "vue"
+import Vue, { PropType } from "vue"
 import marked from "marked"
 
 import PolyBullet from "@/components/PolyBullet.vue"
