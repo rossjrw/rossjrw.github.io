@@ -1,7 +1,6 @@
 <template>
   <div class="h-screen">
-    <GithubCorner url="https://github.com/rossjrw/rossjrw.github.io"
-                  colorScheme="black"/>
+    <github-corners repo="rossjrw/rossjrw.github.io"/>
     <div class="py-12 px-6">
       <div class="container mx-auto max-w-screen-lg">
         <div class="flex items-center justify-evenly">
@@ -40,14 +39,13 @@
 
 <script lang="ts">
 import Vue from "vue"
-import GithubCorner from "vue-github-corners"
 
 import LogoGeneratorColour from "@/components/LogoGeneratorColour.vue"
 import logoSvg from "!!raw-loader!@/assets/logos/rossjrw.2020.inkscape.svg"
 
 export default Vue.extend({
   name: "LogoGenerator",
-  components: { LogoGeneratorColour, GithubCorner },
+  components: { LogoGeneratorColour },
   data() {
     return {
       colours: {

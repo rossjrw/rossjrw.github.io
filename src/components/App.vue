@@ -1,8 +1,7 @@
 <template>
   <div id="app"
        class="text-gray-800">
-    <GithubCorner url="https://github.com/rossjrw/rossjrw.github.io"
-                  colorScheme="black"/>
+    <github-corners repo="rossjrw/rossjrw.github.io"/>
     <Header/>
     <ProjectList v-for="category in categories"
                  :key="category.tag"
@@ -15,7 +14,6 @@
 
 <script lang="ts">
 import Vue from "vue"
-import GithubCorner from "vue-github-corners"
 
 import Header from '@/components/Header.vue'
 import ProjectList from '@/components/ProjectList.vue'
@@ -24,7 +22,7 @@ import Footer from '@/components/Footer.vue'
 export default Vue.extend({
   name: "App",
   components: {
-    GithubCorner, Header, ProjectList, Footer
+    Header, ProjectList, Footer
   },
   data() {
     return {
