@@ -99,7 +99,7 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import Vue, { PropType} from "vue"
 import marked from "marked"
 
 import PolyBullet from "@/components/PolyBullet.vue"
@@ -107,32 +107,35 @@ import ProjectMedia from "@/components/ProjectMedia.vue"
 import { hasImage, getImage } from "@/functions/images"
 import { techColour } from "@/functions/techColours"
 import { gradientMesh } from "@/functions/gradientMesh"
-import { Technology } from "@/types"
+import { Project, Technology } from "@/types"
 
 export default Vue.extend({
   name: "Project",
-  props: [ "project", "side" ],
+  props: {
+    "project": Object as PropType<Project>,
+    "side": String as PropType<'left' | 'right' | null>
+  },
   components: { PolyBullet, ProjectMedia },
   computed: {
-    colouredTech() {
+    colouredTech(): unknown {
       return this.project.tech.map((tech: Technology) => {
         return { name: tech, colour: techColour(tech) }
       })
     },
-    prettyDate() {
+    prettyDate(): string {
       let date = (
         this.project.date as number[][]
       ).map(date => date.join("–")).join(", ")
       if (this.project.tags.includes("working")) date += "–"
       return date
     },
-    projectBackground() {
+    projectBackground(): string {
       let colours = this.project.back
       if (!colours) colours = [
-        new Array(3).fill(250),
-        new Array(3).fill(245),
-        new Array(3).fill(240),
-        new Array(3).fill(200),
+        [250, 250, 250],
+        [245, 245, 245],
+        [240, 240, 240],
+        [200, 200, 200],
       ]
       let background = gradientMesh(colours)
       if (this.hasImage(this.project, 'back')) {
@@ -140,7 +143,7 @@ export default Vue.extend({
       }
       return background
     },
-    description() {
+    description(): string {
       return marked(this.project.desc)
     },
   },

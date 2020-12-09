@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import Vue, { PropType } from "vue"
 
 import Project from '@/components/Project.vue'
 import { Project as ProjectType, Tag } from "@/types"
@@ -36,7 +36,11 @@ type ThisVue = {
 export default Vue.extend({
   name: "ProjectList",
   components: { Project },
-  props: [ "title", "subtitle", "filterByTag" ],
+  props: {
+    "title": String as PropType<string>,
+    "subtitle": String as PropType<string>,
+    "filterByTag": String as PropType<Tag>
+  },
   computed: {
     selectedProjects: {
       get (this: ThisVue): ProjectType[] {

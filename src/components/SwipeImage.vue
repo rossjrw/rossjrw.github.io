@@ -9,16 +9,20 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import Vue, { PropType } from "vue"
 import gsap, { Circ } from "gsap"
 
 import { getImage } from "@/functions/images"
+import { Project, ProjectImageFunc } from "@/types"
 
 // TODO The space between clips could be configurable
 
 export default Vue.extend({
   name: "SwipeImage",
-  props: [ "project", "func" ],
+  props: {
+    "project": Object as PropType<Project>,
+    "func": String as PropType<ProjectImageFunc>
+  },
   methods: { getImage },
   mounted: function (this: Vue) {
     this.$nextTick(() => {

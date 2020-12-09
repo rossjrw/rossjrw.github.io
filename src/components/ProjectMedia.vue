@@ -17,17 +17,23 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import Vue, { PropType } from "vue"
 
 import SwipeImage from "@/components/SwipeImage.vue"
 import { hasImage, getImage, imageType } from "@/functions/images"
+import { Project, ProjectImageFunc } from "@/types"
 
 export default Vue.extend({
-  props: [ 'project', 'func' ],
+  props: {
+    "project": Object as PropType<Project>,
+    "func": String as PropType<ProjectImageFunc>
+  },
   components: { SwipeImage },
   computed: {
-    fallbackImage () { return getImage(this.project, this.func, true) },
-    aspectRatio () {
+    fallbackImage (): string | undefined {
+      return getImage(this.project, this.func, true, false)
+    },
+    aspectRatio (): string {
       if (this.func === "main") {
         return "aspect-ratio-1/1"
       } else if (this.func === "mobile") {

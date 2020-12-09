@@ -12,17 +12,23 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import Vue, { PropType } from "vue"
 import { range } from "lodash"
+
+import { TechnologyColours } from "@/types"
 
 const SVG_SIZE = 100
 const BORDER_WIDTH = 10
 
 export default Vue.extend({
   name: "PolyBullet",
-  props: ["shape", "colour", "hasStroke"],
+  props: {
+    "shape": Number as PropType<number>,
+    "colour": String as PropType<TechnologyColours[keyof TechnologyColours]>,
+    "hasStroke": Boolean as PropType<boolean>,
+  },
   computed: {
-    points() {
+    points(): string {
       return polyPoints(this.shape)
     }
   },

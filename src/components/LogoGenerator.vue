@@ -10,11 +10,11 @@
           <img :src="svgData" class="h-8">
         </div>
         <form>
-          <LogoGeneratorColour v-for="(colour, name) in colours"
-                               :key="name"
-                               :name="name"
-                               v-model="colours[name]"
-                               @randomise="setRandomColour(name)"/>
+          <LogoGeneratorColour v-for="(colour, index) in colours"
+                               :key="colour"
+                               :name="colour"
+                               v-model="hexes[index]"
+                               @randomise="setRandomColour(colour)"/>
           <div>
             <div class="flex justify-center">
               <button type="button"
@@ -48,22 +48,31 @@ export default Vue.extend({
   components: { LogoGeneratorColour },
   data() {
     return {
-      colours: {
-        'cover-fill-grey':    "#757575",
-        'cover-border-grey':  "#000000",
-        'radiation-lightest': "#ffd687",
-        'radiation-lighter':  "#f6c25b",
-        'radiation':          "#e1a634",
-        'radiation-darker':   "#bd8416",
-        'radiation-darkest':  "#b2780b",
-      }
+      colours: [
+        'cover-fill-grey',
+        'cover-border-grey',
+        'radiation-lightest',
+        'radiation-lighter',
+        'radiation',
+        'radiation-darker',
+        'radiation-darkest',
+      ],
+      hexes: [
+        "#757575",
+        "#000000",
+        "#ffd687",
+        "#f6c25b",
+        "#e1a634",
+        "#bd8416",
+        "#b2780b",
+      ],
     }
   },
   computed: {
-    svgData: function () {
+    svgData () {
       let svgData = logoSvg
       Object.entries(this.colours).forEach(
-        ([name, colour]: [string, string]) => {
+        ([name, colour]) => {
           svgData = svgData.replace(
             new RegExp(`(id="${name}"[\\s\\S]+?stop-color:)#[0-9a-f]{6}`),
             `$1${colour}`
@@ -76,17 +85,16 @@ export default Vue.extend({
     }
   },
   methods: {
-    setRandomColour: function (name?: string) {
-      if (name) {
-        this.colours[name] = this.getRandomColour()
+    setRandomColour: function (colour?: string) {
+      if (colour) {
+        this.hexes[this.colours.indexOf(colour)] = this.getRandomColour()
       } else {
-        Object.keys(this.colours).forEach(
-          (name: string) => { this.colours[name] = this.getRandomColour() }
-        )
+        this.hexes = Array.from({ length: 6 }, this.getRandomColour)
       }
     },
     getRandomColour: function () {
-      return `#${(Math.floor(Math.random()*2**24)).toString(16).padStart(6, 0)}`
+      const hex = Math.floor(Math.random()*2**24)
+      return `#${hex.toString(16).padStart(6, "0")}`
     }
   }
 })
