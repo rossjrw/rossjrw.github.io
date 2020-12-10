@@ -1,13 +1,13 @@
 <template>
-  <div class="relative"
+  <div class="relative col-span-2"
        :class="[
                 project.size === 'big' ? 'p-8' : 'p-6',
                 project.size === 'small' ?
-                  'col-span-1 mx-8' : 'col-span-2',
+                  'justify-self-center lg:col-span-1 lg:mx-8' : '',
                 project.size === 'small' && hasImage(project, 'oblique') ?
                   'mt-48' : '',
-                side === 'left' ? 'justify-self-end' : '',
-                side === 'right' ? 'justify-self-start' : '',
+                side === 'left' ? 'lg:justify-self-end' : '',
+                side === 'right' ? 'lg:justify-self-start' : '',
                 {
                  big: `3xl:max-w-screen-3xl 3xl:mx-4 3xl:justify-self-center
                        3xl:rounded-2xl 3xl:shadow-2xl`,
@@ -68,10 +68,10 @@
               {{prettyDate}}
             </p>
           </div>
-          <div class="oldstyle-nums space-y-2"
+          <div class="oldstyle-nums space-y-2 max-w-text"
                :class="[
                         project.tech.includes('Fiction') ? 'font-serif' : '',
-                        project.size === 'small' ? '' : 'max-w-text text-xl'
+                        project.size === 'small' ?  '' : 'text-xl'
                        ]"
                v-html="description"/>
         </div>
