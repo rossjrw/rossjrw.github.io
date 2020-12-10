@@ -1,7 +1,7 @@
 <template>
   <div class="px-6 relative"
        :class="[
-                project.size === 'big' ? 'py-8' : 'py-4',
+                project.size === 'big' ? 'py-8' : 'py-6',
                 project.size === 'small' ?
                   'col-span-1 rounded-lg shadow-lg mx-8' :
                   'col-span-2',
@@ -18,40 +18,44 @@
                     class="filter-desat"/>
     </div>
     <div class="container flex items-center justify-center mx-auto
-                relative z-10
-                flex-wrap lg:flex-nowrap"
-         :class="project.size === 'small' ? 'flex-col max-w-text' : ''">
-      <div class="p-0 my-2 flex-initial flex-shrink-1 md:flex-shrink-0"
-           :class="project.size === 'big' ? 'w-big' : 'w-72'"
-           v-if="hasImage(project, 'main')">
-        <ProjectMedia :project="project"
-                      :func="'main'"
-                      class="rounded-lg shadow-lg"/>
+                relative z-10"
+         :class="project.size === 'small' ?
+                   'flex-col space-y-2 max-w-prose' :
+                   'space-x-8 flex-wrap lg:flex-nowrap'">
+      <div class="flex space-x-4">
+        <div class="flex-initial flex-shrink-1 md:flex-shrink-0"
+             :class="project.size === 'big' ? 'w-big' : 'w-72'"
+             v-if="hasImage(project, 'main')">
+          <ProjectMedia :project="project"
+                        :func="'main'"
+                        class="rounded-lg shadow-lg"/>
+        </div>
+        <div class="flex-initial w-36
+                    hidden xl:block flex-shrink-1 md:flex-shrink-0"
+             v-if="hasImage(project, 'mobile')">
+          <img class="block rounded-lg shadow-lg"
+               :src="getImage(project, 'mobile')"/>
+        </div>
       </div>
-      <div class="ml-4 flex-initial w-36
-                  hidden xl:block flex-shrink-1 md:flex-shrink-0"
-           v-if="hasImage(project, 'mobile')">
-        <img class="block rounded-lg shadow-lg"
-             :src="getImage(project, 'mobile')"/>
-      </div>
-      <div class="my-2 order-first basis-none flex justify-center flex-col
-                  md:ml-8 lg:order-none">
+      <div class="order-first basis-none flex justify-center flex-col
+                  lg:order-none"
+           :class="project.size === 'big' ? 'space-y-6' : 'space-y-2'">
         <div :class="[
                       project.size === 'normal' && 'back' in project ||
                       project.size === 'small' && hasImage(project, 'oblique')
-                        ? 'bg-white rounded-lg shadow-lg p-6' : 'p-3',
+                        ? 'bg-white rounded-lg shadow-lg p-6' : 'p-2',
                       project.size === 'big' && project.fore === 'light' ?
                         'text-gray-100' : ''
                      ]">
           <div class="flex items-center"
-               :class="{ big:'mb-4', normal:'mb-2', small:'' }[project.size]">
+               :class="project.size === 'big' ? 'mb-2' : 'mb-1'">
             <img v-if="hasImage(project, 'logo')"
                  class="max-h-32 min-h-8"
                  :class="project.size === 'big' ? 'max-w-sm' : 'max-w-xs'"
                  :src="getImage(project, 'logo')"
                  :alt="project.name"/>
             <h4 v-else
-               class="text-4xl font-bold text-center lining-nums">
+                class="text-4xl font-bold lining-nums">
               {{project.name}}
             </h4>
             <p class="text-xl text-center lining-nums ml-4 opacity-80 -mb-2">
@@ -65,8 +69,7 @@
                        ]"
                v-html="description"/>
         </div>
-        <div class="hidden md:flex flex-wrap items-center"
-             :class="project.size === 'big' ? 'mt-6' : 'mt-2'">
+        <div class="hidden md:flex flex-wrap items-center">
           <p class="whitespace-nowrap rounded-full bg-white
                     pl-2 pr-3 pb-0.5 mx-1.5 my-1"
              v-for="(tech, index) in colouredTech"
@@ -80,7 +83,7 @@
           </p>
         </div>
       </div>
-      <div class="my-2 md:ml-8 flex-initial w-full md:w-48">
+      <div class="flex-initial w-full md:w-48">
         <div class="flex justify-center">
           <a v-for="link in project.links"
              :key="link.href"
