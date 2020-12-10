@@ -6,8 +6,9 @@
     <h3 class="text-xl text-center mt-1 px-8">
       {{subtitle}}
     </h3>
-    <div class="grid grid-cols-2 items-start gap-y-16 grid-flow-row-dense
-                my-16">
+    <div class="grid grid-cols-2 gap-y-16 grid-flow-row-dense
+                justify-items-stretch items-start
+                my-24">
       <Project v-for="(project, projectId) in selectedProjects"
                :key="projectId"
                :project="project"

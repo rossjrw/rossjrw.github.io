@@ -1,14 +1,20 @@
 <template>
-  <div class="px-6 relative"
+  <div class="relative"
        :class="[
-                project.size === 'big' ? 'py-8' : 'py-6',
+                project.size === 'big' ? 'p-8' : 'p-6',
                 project.size === 'small' ?
-                  'col-span-1 rounded-lg shadow-lg mx-8' :
-                  'col-span-2',
+                  'col-span-1 mx-8' : 'col-span-2',
                 project.size === 'small' && hasImage(project, 'oblique') ?
                   'mt-48' : '',
                 side === 'left' ? 'justify-self-end' : '',
-                side === 'right' ? 'justify-self-start' : ''
+                side === 'right' ? 'justify-self-start' : '',
+                {
+                 big: `3xl:max-w-screen-3xl 3xl:mx-4 3xl:justify-self-center
+                       3xl:rounded-2xl 3xl:shadow-2xl`,
+                 normal: `xl:max-w-screen-2xl xl:mx-4 xl:justify-self-center
+                          xl:rounded-xl xl:shadow-xl`,
+                 small: 'rounded-lg shadow-lg'
+                }[project.size]
                ]"
        :style="{ backgroundImage: projectBackground }">
     <div class="w-full h-72 relative z-0 -mt-56 -mb-16"

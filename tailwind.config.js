@@ -15,7 +15,8 @@ module.exports = {
       fontFamily: {
         sans: ['Aileron', 'sans-serif'],
         serif: ['Lora', 'serif']
-      }
+      },
+      screens: { '3xl': '1920px' }
     },
   },
   plugins: [
