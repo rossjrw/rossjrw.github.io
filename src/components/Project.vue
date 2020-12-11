@@ -114,6 +114,12 @@
         </div>
       </div>
     </div>
+    <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm"
+         :class="[
+                  attributionText ? '' : 'hidden',
+                  project.fore === 'light' ? 'text-gray-100' : ''
+                 ]"
+         v-html="attributionText"/>
   </div>
 </template>
 
@@ -165,6 +171,23 @@ export default Vue.extend({
     description(): string {
       return marked(this.project.desc)
     },
+    attributionText(): string | null {
+      const attributions = this.project.images
+        .map(image => image.source).filter(Boolean)
+      if (attributions.length === 0) return null
+      if (attributions.length === 1) {
+        return `<p>
+          <a class="font-bold" href="${attributions[0]}">Image attribution</a>
+        </p>`
+      }
+      return `<p>
+        Image attribution: ${
+          attributions.map((link, index) => {
+            return `<a class="font-bold" href="${link}">${index + 1}</a>`
+          }).join(" · ")
+        }
+      </p>`
+    }
   },
   methods: { hasImage, getImage },
 })

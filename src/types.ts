@@ -27,6 +27,7 @@ export type ProjectImage = {
   func: ProjectImageFunc
   href: string
   fallback?: boolean
+  source?: string
 }
 
 export type Tag =

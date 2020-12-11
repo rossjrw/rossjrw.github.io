@@ -65,7 +65,10 @@ export const projects: Project[] = [
       { name: "check it out", href: "https://scp-wiki.wikidot.com/scp-3939" }
     ],
     images: [
-      { func: "oblique", href: "scp/3939.webp" }
+      {
+        func: "oblique", href: "scp/3939.webp",
+        source: "https://pixabay.com/photos/gramophone-turntable-shellac-disc-1790007"
+      }
     ]
   },
   {
@@ -85,11 +88,26 @@ export const projects: Project[] = [
       { name: "check it out", href: "https://scp-wiki.wikidot.com/scp-3211" }
     ],
     images: [
-      { func: "oblique", href: "scp/3211/cube.webp" },
-      { func: "oblique", href: "scp/3211/coin.webp" },
-      { func: "oblique", href: "scp/3211/putty.webp" },
-      { func: "oblique", href: "scp/3211/gloves.webp" },
-      { func: "oblique", href: "scp/3211/matches.webp" },
+      {
+        func: "oblique", href: "scp/3211/cube.webp",
+        source: "https://commons.wikimedia.org/wiki/File:Uniform_polyhedron-43-t0.png"
+      },
+      {
+        func: "oblique", href: "scp/3211/coin.webp",
+        source: "https://www.flickr.com/photos/47445767@N05/34624018555"
+      },
+      {
+        func: "oblique", href: "scp/3211/putty.webp",
+        source: "https://www.flickr.com/photos/85659491@N00/458381711"
+      },
+      {
+        func: "oblique", href: "scp/3211/gloves.webp",
+        source: "https://www.flickr.com/photos/el_cajon_yacht_club/28096590309"
+      },
+      {
+        func: "oblique", href: "scp/3211/matches.webp",
+        source: "https://www.flickr.com/photos/evaekeblad/8314435089"
+      },
     ]
   },
   {
