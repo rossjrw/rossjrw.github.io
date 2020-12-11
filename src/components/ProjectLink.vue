@@ -28,20 +28,20 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import Vue, { PropType } from "vue"
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 
 import { ProjectLink } from "@/types"
 
 export default Vue.extend({
   name: "ProjectLink",
-  props: [ "link", "fore" ],
+  props: {
+    "link": Object as PropType<ProjectLink>,
+    "fore": String as PropType<'light' | 'dark' | undefined>,
+  },
   components: { FontAwesomeIcon },
   methods: {
     linkGradient (this: { link: ProjectLink }): string {
-      if (!('colour' in this.link) ){
-        return 'group-hover:from-pink-600 group-hover:to-indigo-600'
-      }
       if (this.link.href.includes("docs.google.com/document")) {
         return 'group-hover:from-blue-500 group-hover:to-indigo-600'
       }
@@ -51,6 +51,7 @@ export default Vue.extend({
       if (this.link.href.includes("github.com")) {
         return 'group-hover:from-gray-500 group-hover:to-gray-700'
       }
+      return 'group-hover:from-pink-600 group-hover:to-indigo-600'
     },
     linkIcon (this: { link: ProjectLink }): [string, string] {
       if (this.link.href.includes("github.com")) {

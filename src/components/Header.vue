@@ -3,9 +3,9 @@
     <img class="max-h-48"
          src="@/assets/logos/rossjrw.png"/>
     <div>
-      <p class="text-7xl font-semibold text-center tracking-tight">
+      <h1 class="text-7xl font-semibold text-center tracking-tight">
         rossjrw
-      </p>
+      </h1>
       <p class="text-3xl mt-1 text-center tracking-tight">
         Ross Williams
       </p>

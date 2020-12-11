@@ -1,4 +1,5 @@
 import Vue from "vue"
+import VueGithubCorners from "vue-gh-corners"
 import "fontsource-lora/latin-400.css"
 import "fontsource-aileron/latin-400.css"
 import "fontsource-aileron/latin-600.css"
@@ -15,6 +16,8 @@ import App from '@/components/App.vue'
 import store from '@/store'
 
 library.add(faArrowRight, faGoogleDrive, faPython, faGithub)
+
+Vue.use(VueGithubCorners)
 
 new Vue({
   el: '#app',

@@ -4,7 +4,7 @@ import { Project } from "@/types"
 export const projects: Project[] = [
   {
     name: "Faux Coffee Shop",
-    size: "small",
+    size: "normal",
     date: [[2017]],
     tags: ["completed"],
     tech: ["JavaScript", "AngularJS"],
@@ -52,48 +52,62 @@ export const projects: Project[] = [
   },
   {
     name: "SCP-3939",
-    size: "normal",
+    size: "small",
     date: [[2018]],
     tags: ["completed"],
     tech: ["Fiction", "Spreadsheets"],
     desc: compress`
       A story published on the SCP Wiki. A multiple-choice adventure 65 pages
-      and 19,000 words long. Although the end is always the same, there are
-      many paths leading there. You are a disgraced researcher trapped in a
-      hell of your own making, trying to find your way out.
-
-      Written on a spreadsheet and compiled into a web-ready format.
+      and 19,000 words long. You are a disgraced researcher trapped in a
+      hell of your own making. #12 top-rated article of 2018 (of >1800).
     `,
     links: [
-      { name: "check it out", href: "http://scp-wiki.net/scp-3939" }
+      { name: "check it out", href: "https://scp-wiki.wikidot.com/scp-3939" }
     ],
     images: [
-      { func: "main", href: "scp/3939.png" }
+      {
+        func: "oblique", href: "scp/3939.webp",
+        source: "https://pixabay.com/photos/gramophone-turntable-shellac-disc-1790007"
+      }
     ]
   },
   {
     name: "SCP-3211",
-    size: "normal",
+    size: "small",
     date: [[2018]],
     tags: ["completed"],
     tech: ["Fiction", "JavaScript", "jQuery", "Spreadsheets"],
     desc: compress`
-      An article published on the SCP Wiki. Details a fictional entity that
-      appears differently for each person who sees it: to emulate this for
-      readers, I wrote many versions of the same article and present a random
-      one to each reader. I use cookies to ensure that while every reader sees
-      a different version, a single reader will only ever see one. The
-      article can also only be read once.
-      \n\n
-      Written on a spreadsheet and compiled to JavaScript.
+      An article published on the SCP Wiki. Details an entity that appears
+      differently for each person who sees it. Readers will see one variant
+      of many, and they can only read it once. #19 top-rated article of 2018.
     `,
     back: [[250, 250, 250], [245, 245, 245], [240, 240, 240], [243, 87, 87]],
     fore: "dark",
     links: [
-      { name: "check it out", href: "http://scp-wiki.net/scp-3211" }
+      { name: "check it out", href: "https://scp-wiki.wikidot.com/scp-3211" }
     ],
     images: [
-      { func: "main", href: "scp/3211.png" }
+      {
+        func: "oblique", href: "scp/3211/cube.webp",
+        source: "https://commons.wikimedia.org/wiki/File:Uniform_polyhedron-43-t0.png"
+      },
+      {
+        func: "oblique", href: "scp/3211/coin.webp",
+        source: "https://www.flickr.com/photos/47445767@N05/34624018555"
+      },
+      {
+        func: "oblique", href: "scp/3211/putty.webp",
+        source: "https://www.flickr.com/photos/85659491@N00/458381711"
+      },
+      {
+        func: "oblique", href: "scp/3211/gloves.webp",
+        source: "https://www.flickr.com/photos/el_cajon_yacht_club/28096590309"
+      },
+      {
+        func: "oblique", href: "scp/3211/matches.webp",
+        source: "https://www.flickr.com/photos/evaekeblad/8314435089"
+      },
     ]
   },
   {
@@ -121,7 +135,7 @@ export const projects: Project[] = [
   },
   {
     name: "Regex Series Replace",
-    size: "small",
+    size: "normal",
     date: [[2020]],
     tags: ["completed", "utility"],
     tech: ["TypeScript", "Vue.js", "Webpack"],
@@ -144,7 +158,7 @@ export const projects: Project[] = [
   },
   {
     name: "SCUTTLE API wrapper",
-    size: "normal",
+    size: "small",
     date: [[2020]],
     tags: ["completed", "utility"],
     tech: ["Python"],
@@ -182,7 +196,7 @@ export const projects: Project[] = [
   },
   {
     name: "TARS",
-    size: "normal",
+    size: "small",
     date: [[2019]],
     tags: ["working"],
     tech: ["Python"],
@@ -198,7 +212,7 @@ export const projects: Project[] = [
   },
   {
     name: "Gallifreyo",
-    size: "normal",
+    size: "small",
     date: [[2017, 2018], [2020]],
     tags: ["working"],
     tech: ["TypeScript", "Vue.js", "Webpack", "SVG"],

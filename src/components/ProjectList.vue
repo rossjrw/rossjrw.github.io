@@ -1,39 +1,69 @@
 <template>
-  <div>
-    <p class="text-5xl font-semibold text-center px-8">
+  <section>
+    <h2 class="text-5xl font-semibold text-center px-8">
       {{title}}
-    </p>
-    <p class="text-xl text-center mt-1 px-8">
+    </h2>
+    <h3 class="text-xl text-center mt-1 px-8">
       {{subtitle}}
-    </p>
-    <Project v-for="(project, projectId) in selectedProjects"
-             :key="projectId"
-             :project="project"/>
-  </div>
+    </h3>
+    <div class="grid grid-cols-2 gap-y-16 grid-flow-row-dense
+                justify-items-stretch items-start
+                my-24">
+      <Project v-for="(project, projectId) in selectedProjects"
+               :key="projectId"
+               :project="project"
+               :side="projectSide(projectId)"/>
+    </div>
+  </section>
 </template>
 
 <script lang="ts">
-import Vue from "vue"
-import { includes, pickBy } from "lodash"
+import Vue, { PropType } from "vue"
 
 import Project from '@/components/Project.vue'
-import { ProjectList } from '@/types'
+import { Project as ProjectType, Tag } from "@/types"
+
+// TODO There must be a better way of doing this
+type ThisVue = {
+  $store: {
+    state: {
+      projects: ProjectType[]
+    }
+  }
+  filterByTag: Tag
+  selectedProjects: ProjectType[]
+}
 
 export default Vue.extend({
   name: "ProjectList",
-  components: {
-    Project
+  components: { Project },
+  props: {
+    "title": String as PropType<string>,
+    "subtitle": String as PropType<string>,
+    "filterByTag": String as PropType<Tag>
   },
-  props: ["title", "subtitle", "filterByTag"],
   computed: {
     selectedProjects: {
-      get(): ProjectList {
-        return pickBy(this.$store.state.projects,
-          value => {
-            return includes(value.tags, this.filterByTag)
-          }
-        )
+      get (this: ThisVue): ProjectType[] {
+        return this.$store.state.projects.filter(project => {
+          return project.tags.includes(this.filterByTag)
+        })
       }
+    }
+  },
+  methods: {
+    projectSide (this: ThisVue, projectId: number): 'left' | 'right' | null {
+      // If this is a small project, which side of the screen should it be on?
+      if (this.selectedProjects[projectId].size !== 'small') {
+        return null
+      }
+      if (this.selectedProjects.slice(0, projectId + 1).reduce(
+        (sum, project) => {
+          if (project.size === 'small') return sum + 1
+          return sum + 2
+        }, 0
+      ) % 2 === 0) return 'right'
+      return 'left'
     }
   }
 })

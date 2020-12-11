@@ -20,15 +20,16 @@ export type ProjectLink = {
   href: string
 }
 
-export type ProjectImageFunc = 'main' | 'logo' | 'mobile' | 'back'
+export type ProjectImageFunc = 'main' | 'logo' | 'mobile' | 'back' | 'oblique'
 
 export type ProjectImage = {
   func: ProjectImageFunc
   href: string
   fallback?: boolean
+  source?: string
 }
 
-type Tag =
+export type Tag =
   // Project status - must have exactly 1
   | "completed"
   | "working"
