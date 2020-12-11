@@ -1,8 +1,7 @@
 const path = require('path');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const CnameWebpackPlugin = require('cname-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -67,9 +66,6 @@ module.exports = {
       filename: 'logo/index.html',
       chunks: ['logo'],
       meta: { viewport: "width=device-width, initial-scale=1" },
-    }),
-    new CnameWebpackPlugin({
-      domain: "rossjrw.com",
     }),
   ],
 };
