@@ -13,7 +13,6 @@
 
 <script lang="ts">
 import Vue from "vue"
-import { range } from "lodash"
 
 const SVG_SIZE = 100
 const BORDER_WIDTH = 10
@@ -33,7 +32,7 @@ function polyPoints (shape: number): string {
    * Takes a shape count and converts to polygon coordinates, relative to a
    * 100x100 viewBox.
    */
-  const points: [number, number][] = range(0, shape).map(index => {
+  const points: [number, number][] = [...new Array(shape)].map((_, index) => {
     const angle = index * 2 * Math.PI / shape - Math.PI / 2
     return [
       Math.cos(angle) * (SVG_SIZE/2 - BORDER_WIDTH) + SVG_SIZE/2,

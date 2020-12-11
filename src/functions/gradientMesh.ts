@@ -1,5 +1,3 @@
-import { zip } from "lodash"
-
 import { Colours } from '@/types'
 
 export function gradientMesh (
@@ -18,7 +16,9 @@ export function gradientMesh (
     }
     return colour
   }) as Colours
-  const gradients = zip(colours, points).map(([colour, point]) => {
+  const gradients = colours.map(
+    (colour, index) => [colour, points[index]]
+  ).map(([colour, point]) => {
     const ellipse = `ellipse farthest-side at ${point}, ${colour}, transparent`
     return `radial-gradient(${ellipse})`
   })
