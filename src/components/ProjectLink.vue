@@ -19,8 +19,8 @@
                               translate-x-3.5 group-hover:translate-x-6
                               text-blue-700 group-hover:text-white"/>
     </div>
-    <div class="relative pl-14 z-10 pr-5
-                text-3xl font-extrabold tracking-tight
+    <div class="relative pl-14 z-10 pr-5 text-3xl font-extrabold tracking-tight
+                link-line group-hover:no-underline
                 text-opacity-80 group-hover:text-opacity-100">
       {{link.name}}
     </div>

@@ -1,7 +1,10 @@
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   variants: {
     extend: {
       gradientColorStops: ['group-hover'],
+      textDecoration: ['group-hover'],
       textOpacity: ['group-hover'],
       translate: ['group-hover'],
       transitionDuration: ['group-hover'],
@@ -24,6 +27,22 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-aspect-ratio"),
-    require("tailwindcss-filters")
+    require("tailwindcss-filters"),
+    plugin(({ addUtilities }) => {
+      addUtilities({
+        '.basis-full': {
+          'flex-basis': '100%'
+        },
+        '.basis-none': {
+          'flex-basis': 'auto'
+        },
+        '.link-line': {
+          'display': 'inline-block',
+          'text-decoration': 'underline',
+          'text-decoration-style': 'dotted',
+          'text-decoration-thickness': '1px'
+        }
+      })
+    })
   ]
 }

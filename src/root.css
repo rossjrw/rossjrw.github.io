@@ -2,11 +2,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@layer utilities {
-  .basis-full {
-    flex-basis: 100%;
-  }
-  .basis-none {
-    flex-basis: auto;
-  }
+.project-description a {
+  @apply link-line;
+  @apply font-extrabold;
+  @apply hover:no-underline;
 }

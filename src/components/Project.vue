@@ -68,7 +68,7 @@
               {{prettyDate}}
             </p>
           </div>
-          <div class="oldstyle-nums space-y-2 max-w-text"
+          <div class="project-description oldstyle-nums space-y-2 max-w-text"
                :class="[
                         project.tech.includes('Fiction') ? 'font-serif' : '',
                         project.size === 'small' ?  '' : 'text-xl'
@@ -90,7 +90,7 @@
         </div>
       </div>
       <div class="flex-initial">
-        <div class="space-y-2 flex flex-col items-start">
+        <div class="space-y-2 m-3 flex flex-col items-start">
           <ProjectLink v-for="link in project.links"
                        :key="link.href"
                        :link="link"
@@ -164,13 +164,21 @@ export default Vue.extend({
       if (attributions.length === 0) return null
       if (attributions.length === 1) {
         return `<p>
-          <a class="font-bold" href="${attributions[0]}">Image attribution</a>
+          <a class="link-line hover:no-underline font-extrabold tracking-tight"
+             href="${attributions[0]}">
+            Image attribution
+          </a>
         </p>`
       }
       return `<p>
         Image attribution: ${
           attributions.map((link, index) => {
-            return `<a class="font-bold" href="${link}">${index + 1}</a>`
+            return `
+              <a class="link-line hover:no-underline font-extrabold"
+                 href="${link}">
+                ${index + 1}
+              </a>
+            `
           }).join(" · ")
         }
       </p>`
