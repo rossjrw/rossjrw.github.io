@@ -9,14 +9,14 @@ import "fontsource-metropolis/all-400-normal.css"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import {
-  faPython, faGithub, faGoogleDrive
+  faPython, faGithub, faGoogleDrive, faLinkedinIn
 } from "@fortawesome/free-brands-svg-icons"
 
 import '@/root.css'
 import App from '@/components/App.vue'
 import store from '@/store'
 
-library.add(faArrowRight, faGoogleDrive, faPython, faGithub)
+library.add(faArrowRight, faGoogleDrive, faPython, faGithub, faLinkedinIn)
 
 Vue.use(VueGithubCorners)
 

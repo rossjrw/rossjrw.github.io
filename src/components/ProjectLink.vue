@@ -52,6 +52,9 @@ export default Vue.extend({
       if (this.link.href.includes("github.com")) {
         return 'group-hover:from-gray-500 group-hover:to-gray-700'
       }
+      if (this.link.href.includes("linkedin.com")) {
+        return 'group-hover:from-blue-500 group-hover:to-blue-700'
+      }
       return 'group-hover:from-pink-600 group-hover:to-indigo-600'
     },
     linkIcon (this: { link: ProjectLink }): [string, string] {
@@ -63,6 +66,9 @@ export default Vue.extend({
       }
       if (this.link.href.includes("pypi.org")) {
         return ["fab", "python"]
+      }
+      if (this.link.href.includes("linkedin.com")) {
+        return ["fab", "linkedin-in"]
       }
       return ["fas", "arrow-right"]
     }
