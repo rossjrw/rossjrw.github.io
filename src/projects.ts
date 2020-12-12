@@ -222,9 +222,6 @@ export const projects: Project[] = [
     links: [
       { name: "check it out", href: "/gallifreyo" },
       { name: "GitHub", href: "https://github.com/rossjrw/gallifreyo" }
-    ],
-    images: [
-      { func: "main", href: "gallifreyo.png" }
     ]
   },
   {
