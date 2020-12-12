@@ -1,7 +1,9 @@
 <template>
   <div class="relative col-span-2"
        :class="[
-                project.size === 'big' ? 'p-8' : 'p-6',
+                project.size === 'big' ?
+                  'p-8' :
+                  projectBackground === 'none' ? 'p-2' : 'p-6',
                 project.size === 'small' ?
                   'justify-self-center lg:col-span-1 lg:mx-8' : '',
                 project.size === 'small' && hasImage(project, 'oblique') ?
@@ -10,10 +12,13 @@
                 side === 'right' ? 'lg:justify-self-start' : '',
                 {
                  big: `3xl:max-w-screen-3xl 3xl:mx-4 3xl:justify-self-center
-                       3xl:rounded-2xl 3xl:shadow-2xl`,
+                       ${projectBackground === 'none'?
+                         '' : '3xl:rounded-2xl 3xl:shadow-2xl'}`,
                  normal: `xl:max-w-screen-2xl xl:mx-4 xl:justify-self-center
-                          xl:rounded-xl xl:shadow-xl`,
-                 small: 'rounded-lg shadow-lg'
+                          ${projectBackground === 'none' ?
+                            '' : 'xl:rounded-xl xl:shadow-xl'}`,
+                 small: `${projectBackground === 'none'?
+                           '' : 'rounded-lg shadow-lg'}`
                 }[project.size]
                ]"
        :style="{ backgroundImage: projectBackground }">
@@ -140,6 +145,12 @@ export default Vue.extend({
       return date
     },
     projectBackground(): string {
+      if (
+        this.project.size !== 'big' && !('back' in this.project) &&
+        (this.project.size !== 'small' || !hasImage(this.project, 'oblique'))
+      ) {
+        return "none"
+      }
       let colours = this.project.back
       if (!colours) colours = [
         [250, 250, 250],
