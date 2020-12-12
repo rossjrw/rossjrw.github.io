@@ -4,6 +4,7 @@
 
 .project-description a {
   @apply link-line;
+  @apply font-display;
   @apply font-extrabold;
   @apply hover:no-underline;
 }

@@ -19,9 +19,11 @@ module.exports = {
       width: { 'big': '30rem' },
       maxWidth: { 'text': '50ch' },
       fontFamily: {
-        sans: ['Aileron', 'sans-serif'],
+        display: ['Aileron', 'sans-serif'],
+        sans: ['Metropolis', 'sans-serif'],
         serif: ['Lora', 'serif']
       },
+      fontSize: { 'lg': ['1.125rem', '1.5rem' ] },
       screens: { '3xl': '1920px' }
     },
   },

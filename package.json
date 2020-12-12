@@ -42,7 +42,9 @@
     "eslint": "^7.13.0",
     "eslint-plugin-vue": "^6.2.2",
     "file-loader": "^6.0.0",
+    "fontsource-aileron": "^3.1.5",
     "fontsource-lora": "^3.0.5",
+    "fontsource-metropolis": "^3.1.5",
     "gsap": "^3.5.1",
     "html-webpack-plugin": "^4.3.0",
     "lodash": "^4.17.19",
@@ -79,7 +81,5 @@
       "babel-preset-typescript-vue"
     ]
   },
-  "dependencies": {
-    "fontsource-aileron": "^3.0.1"
-  }
+  "dependencies": {}
 }

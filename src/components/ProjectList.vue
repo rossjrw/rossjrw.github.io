@@ -1,9 +1,9 @@
 <template>
   <section>
-    <h2 class="text-5xl font-semibold text-center px-8">
+    <h2 class="text-5xl font-display font-bold text-center px-8 tracking-tight">
       {{title}}
     </h2>
-    <h3 class="text-xl text-center mt-1 px-8">
+    <h3 class="text-xl font-display text-center mt-1 px-8 opacity-80">
       {{subtitle}}
     </h3>
     <div class="grid grid-cols-2 gap-y-16 grid-flow-row-dense

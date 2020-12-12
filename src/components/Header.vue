@@ -2,11 +2,11 @@
   <header class="p-12 mb-8 flex flex-col items-center">
     <img class="max-h-48"
          src="@/assets/logos/rossjrw.png"/>
-    <div>
-      <h1 class="text-7xl font-semibold text-center tracking-tight">
+    <div class="text-center">
+      <h1 class="text-7xl font-display font-semibold tracking-tight">
         rossjrw
       </h1>
-      <p class="text-3xl mt-1 text-center tracking-tight">
+      <p class="text-3xl font-display mt-1 text-center tracking-tight">
         Ross Williams
       </p>
     </div>

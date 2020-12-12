@@ -66,17 +66,19 @@
                  :src="getImage(project, 'logo')"
                  :alt="project.name"/>
             <h4 v-else
-                class="text-4xl font-bold lining-nums">
+                class="text-4xl font-display font-bold">
               {{project.name}}
             </h4>
-            <p class="text-xl text-center lining-nums ml-4 opacity-80 -mb-2">
+            <p class="text-xl font-display text-center ml-4 opacity-80 -mb-2">
               {{prettyDate}}
             </p>
           </div>
-          <div class="project-description oldstyle-nums space-y-2 max-w-text"
+          <div class="project-description space-y-2 max-w-text"
                :class="[
                         project.tech.includes('Fiction') ? 'font-serif' : '',
-                        project.size === 'small' ?  '' : 'text-xl'
+                        {
+                          small: '', normal: 'text-lg', big: 'text-xl'
+                        }[project.size]
                        ]"
                v-html="description"/>
         </div>
@@ -103,7 +105,7 @@
         </div>
       </div>
     </div>
-    <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm"
+    <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display"
          :class="[
                   attributionText ? '' : 'hidden',
                   project.fore === 'light' ? 'text-gray-100' : ''
