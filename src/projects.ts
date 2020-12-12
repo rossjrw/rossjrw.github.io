@@ -163,12 +163,12 @@ export const projects: Project[] = [
     tags: ["completed", "utility"],
     tech: ["Python"],
     desc: compress`
-      Python wrapper around the API for SCUTTLE, which is a web service that
-      scrapes information from Wikidot, primarily for backing up the SCP Wiki.
+      Python wrapper around the API for
+      [SCUTTLE](https://github.com/scuttle/scuttle), a web service that
+      backs up Wikidot sites. I use it for TARS.
     `,
     links: [
-      { name: "check it out", href: "https://pypi.org/project/python-scuttle" },
-      { name: "SCUTTLE", href: "https://github.com/scuttle/scuttle" }
+      { name: "check it out", href: "https://pypi.org/project/python-scuttle" }
     ]
   },
   {
