@@ -4,5 +4,5 @@ module.exports = {
       zIndex: ['hover']
     }
   },
-  purge: [ './src/**/*.vue' ]
+  purge: [ './src/**/*.vue', './src/**/*.css' ]
 }
