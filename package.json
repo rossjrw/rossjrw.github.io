@@ -23,6 +23,11 @@
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
+    "@types/lodash": "^4.14.155",
     "@types/marked": "^1.1.0",
     "@typescript-eslint/eslint-plugin": "^3.1.0",
     "@typescript-eslint/parser": "^3.1.0",
@@ -38,6 +43,10 @@
     "eslint": "^7.13.0",
     "eslint-plugin-vue": "^6.2.2",
     "file-loader": "^6.0.0",
+    "fontsource-aileron": "^3.1.5",
+    "fontsource-lora": "^3.0.5",
+    "fontsource-metropolis": "^3.1.5",
+    "gsap": "^3.5.1",
     "html-webpack-plugin": "^4.3.0",
     "marked": "^1.1.1",
     "node-sass": "^4.14.1",
@@ -49,13 +58,14 @@
     "sass": "^1.26.7",
     "style-loader": "^1.2.1",
     "tailwindcss": "^2.0.1",
+    "tailwindcss-aspect-ratio": "^3.0.0",
+    "tailwindcss-filters": "^3.0.0",
     "typescript": "^3.9.3",
     "vue": "^2.6.11",
-    "vue-github-corners": "^1.2.3",
+    "vue-gh-corners": "^3.0.1",
     "vue-loader": "^15.9.2",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.11",
-    "vuex": "^3.4.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0",
@@ -72,5 +82,6 @@
       ],
       "babel-preset-typescript-vue"
     ]
-  }
+  },
+  "dependencies": {}
 }

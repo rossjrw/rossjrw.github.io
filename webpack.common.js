@@ -25,16 +25,21 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [
-                  'postcss-import', 'tailwindcss', 'autoprefixer'
-                ]
+                plugins: [ 'postcss-import', 'tailwindcss', 'autoprefixer' ]
               }
             }
           }
         ]
       },
       {
-        test: /\.(png|svg|webm)$/,
+        test: /\.woff2?$/,
+        use: {
+          loader: 'file-loader',
+          options: { name: "[name].[ext]", }
+        },
+      },
+      {
+        test: /\.(png|svg|web[mp])$/,
         use: {
           loader: 'file-loader',
           options: {
@@ -44,10 +49,11 @@ module.exports = {
           }
         },
       },
+      { test: /\.mjs$/, include: /node_modules/, type: "javascript/auto" }
     ],
   },
   resolve: {
-    extensions: ['.ts', '.js', '.vue'],
+    extensions: ['.ts', '.js', '.vue', '.mjs'],
     alias: { '@': path.resolve(__dirname, 'src') },
   },
   plugins: [

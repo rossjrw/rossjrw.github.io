@@ -4,30 +4,32 @@ export type State = {
 
 export type Project =  {
   name: string
+  size: 'small' | 'normal' | 'big'
   date: number[][]
   tags: Tag[]
   tech?: Technology[]
   desc: string
   back?: Colours
+  fore?: 'light' | 'dark'
   links: ProjectLink[]
   images?: ProjectImage[]
 }
 
-type ProjectLink = {
+export type ProjectLink = {
   name: string
   href: string
-  colour?: 'green' | 'blue' | 'black'
 }
 
-export type ProjectImageFunc = 'main' | 'logo' | 'mobile'
+export type ProjectImageFunc = 'main' | 'logo' | 'mobile' | 'back' | 'oblique'
 
 export type ProjectImage = {
   func: ProjectImageFunc
   href: string
   fallback?: boolean
+  source?: string
 }
 
-type Tag =
+export type Tag =
   // Project status - must have exactly 1
   | "completed"
   | "working"
