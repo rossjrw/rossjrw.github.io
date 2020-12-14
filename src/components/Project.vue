@@ -36,7 +36,7 @@
                     flex-wrap lg:flex-nowrap`">
       <div class="flex space-x-4">
         <div class="flex-initial flex-shrink-1 md:flex-shrink-0"
-             :class="project.size === 'big' ? 'w-big' : 'w-72'"
+             :class="project.size === 'big' ? 'w-72 md:w-big' : 'w-72'"
              v-if="hasImage(project, 'main')">
           <ProjectMedia :project="project"
                         :func="'main'"
@@ -58,10 +58,10 @@
                       project.size === 'big' && project.fore === 'light' ?
                         'text-gray-100' : ''
                      ]">
-          <div class="flex items-center"
+          <div class="flex flex-col md:flex-row items-center"
                :class="project.size === 'big' ? 'mb-2' : 'mb-1'">
             <img v-if="hasImage(project, 'logo')"
-                 class="max-h-32 min-h-8"
+                 class="max-h-32 min-h-8 w-full md:w-auto"
                  :class="project.size === 'big' ? 'max-w-sm' : 'max-w-xs'"
                  :src="getImage(project, 'logo')"
                  :alt="project.name"/>
@@ -69,7 +69,7 @@
                 class="text-4xl font-display font-bold">
               {{project.name}}
             </h4>
-            <p class="text-xl font-display text-center ml-4 opacity-80 -mb-2">
+            <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
               {{prettyDate}}
             </p>
           </div>
