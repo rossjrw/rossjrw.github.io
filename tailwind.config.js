@@ -4,6 +4,7 @@ module.exports = {
   variants: {
     extend: {
       gradientColorStops: ['group-hover'],
+      justifySelf: ['odd', 'even'],
       textDecoration: ['group-hover'],
       textOpacity: ['group-hover'],
       translate: ['group-hover'],
@@ -45,6 +46,15 @@ module.exports = {
           'text-decoration-thickness': '1px'
         }
       })
+      addUtilities(
+        {
+          '.link-line-hover': {
+            'text-decoration-style': 'solid',
+            'text-decoration-thickness': '2px',
+          }
+        },
+        { variants: ['hover'] }
+      )
     })
   ]
 }

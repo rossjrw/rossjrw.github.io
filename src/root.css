@@ -2,9 +2,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.project-description a {
+.inline-links a {
   @apply link-line;
   @apply font-display;
-  @apply font-extrabold;
-  @apply hover:no-underline;
+  @apply font-bold;
+  @apply hover:link-line-hover;
 }

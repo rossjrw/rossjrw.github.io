@@ -73,7 +73,7 @@
               {{prettyDate}}
             </p>
           </div>
-          <div class="project-description space-y-2 max-w-text"
+          <div class="inline-links space-y-2 max-w-text"
                :class="[
                         project.tech.includes('Fiction') ? 'font-serif' : '',
                         {
@@ -167,7 +167,7 @@ export default Vue.extend({
       return background
     },
     description(): string {
-      return marked(this.project.desc)
+      return marked(this.project.desc).replace(/--/g, "—")
     },
     attributionText(): string | null {
       if (!('images' in this.project)) return null

@@ -3,6 +3,7 @@
        class="text-gray-800">
     <github-corners repo="rossjrw/rossjrw.github.io"/>
     <Header/>
+    <Bio/>
     <ProjectList v-for="category in categories"
                  :key="category.tag"
                  :title="category.title"
@@ -16,14 +17,13 @@
 import Vue from "vue"
 
 import Header from '@/components/Header.vue'
+import Bio from '@/components/Bio.vue'
 import ProjectList from '@/components/ProjectList.vue'
 import Footer from '@/components/Footer.vue'
 
 export default Vue.extend({
   name: "App",
-  components: {
-    Header, ProjectList, Footer
-  },
+  components: { Header, Bio, ProjectList, Footer },
   data() {
     return {
       categories: [

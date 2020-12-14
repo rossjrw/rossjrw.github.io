@@ -1,7 +1,7 @@
 <template>
   <header class="p-12 md:my-12 grid grid-cols-1 md:grid-cols-3 gap-8
                  justify-evenly items-center justify-items-center
-                 container mx-auto">
+                 max-w-screen-lg mx-auto">
     <div>
       <img class="max-h-48"
            src="@/assets/logos/rossjrw.png"/>
