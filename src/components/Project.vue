@@ -32,7 +32,8 @@
                 relative z-10"
          :class="project.size === 'small' ?
                    'flex-col space-y-2 max-w-prose' :
-                   'space-x-8 flex-wrap lg:flex-nowrap'">
+                   `space-y-4 lg:space-y-0 lg:space-x-8
+                    flex-wrap lg:flex-nowrap`">
       <div class="flex space-x-4">
         <div class="flex-initial flex-shrink-1 md:flex-shrink-0"
              :class="project.size === 'big' ? 'w-big' : 'w-72'"
@@ -48,8 +49,7 @@
                :src="getImage(project, 'mobile')"/>
         </div>
       </div>
-      <div class="order-first basis-none flex justify-center flex-col
-                  lg:order-none"
+      <div class="basis-none flex justify-center flex-col"
            :class="project.size === 'big' ? 'space-y-6' : 'space-y-2'">
         <div :class="[
                       project.size === 'normal' && 'back' in project ||
@@ -82,7 +82,7 @@
                        ]"
                v-html="description"/>
         </div>
-        <div class="hidden md:flex flex-wrap items-center">
+        <div class="flex flex-wrap items-center">
           <p class="whitespace-nowrap rounded-full bg-white
                     pl-2 pr-3 pb-0.5 mx-1.5 my-1"
              v-for="(tech, index) in colouredTech"
@@ -97,7 +97,7 @@
         </div>
       </div>
       <div class="flex-initial">
-        <div class="space-y-2 m-3 flex flex-col items-start">
+        <div class="space-y-2 flex flex-col items-start">
           <ProjectLink v-for="link in project.links"
                        :key="link.href"
                        :link="link"
