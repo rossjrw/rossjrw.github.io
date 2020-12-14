@@ -1,6 +1,7 @@
 <template>
-  <header class="p-12 md:p-24 mb-8 grid grid-cols-1 md:grid-cols-3
-                 justify-evenly items-center justify-items-center">
+  <header class="p-12 md:my-12 grid grid-cols-1 md:grid-cols-3 gap-8
+                 justify-evenly items-center justify-items-center
+                 container mx-auto">
     <div>
       <img class="max-h-48"
            src="@/assets/logos/rossjrw.png"/>

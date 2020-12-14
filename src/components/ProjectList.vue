@@ -1,16 +1,18 @@
 <template>
   <section>
-    <h2 class="text-5xl font-display font-bold text-center px-8 tracking-tight
-               flex justify-around items-center">
-      <span class="hidden md:block h-0 flex-grow flex-shrink
-                   border-b-4 border-dotted border-current mx-16 mt-2"/>
-      <span class="block">{{title}}</span>
-      <span class="hidden md:block h-0 flex-grow flex-shrink
-                   border-b-4 border-dotted border-current mx-16 mt-2"/>
-    </h2>
-    <h3 class="text-xl font-display text-center mt-1 px-8 opacity-80">
-      {{subtitle}}
-    </h3>
+    <div class="my-24">
+      <h2 class="text-5xl font-display font-bold text-center px-8 tracking-tight
+                 flex justify-around items-center">
+        <span class="hidden md:block h-0 flex-grow flex-shrink
+                     border-b-4 border-dotted border-current mx-16 mt-2"/>
+        <span class="block">{{title}}</span>
+        <span class="hidden md:block h-0 flex-grow flex-shrink
+                     border-b-4 border-dotted border-current mx-16 mt-2"/>
+      </h2>
+      <h3 class="text-xl font-display text-center mt-1 px-8 opacity-80">
+        {{subtitle}}
+      </h3>
+    </div>
     <div class="grid grid-cols-2 gap-y-16 grid-flow-row-dense
                 justify-items-stretch items-start
                 my-24">
