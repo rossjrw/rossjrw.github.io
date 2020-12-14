@@ -1,4 +1,561 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>rossjrw</title><meta name="viewport" content="width=device-width,initial-scale=1"><style type="text/css">/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>rossjrw</title><meta name="viewport" content="width=device-width,initial-scale=1"><style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><style type="text/css">/* lora-latin-400-italic*/
+
+@font-face {
+  font-family: 'Lora';
+
+  font-style: italic;
+
+  font-display: swap;
+
+  font-weight: 400;
+
+  src: 
+    url(lora-latin-400-italic.woff2) format('woff2'), 
+    url(lora-latin-400-italic.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lora-latin-400-normal*/
+
+@font-face {
+  font-family: 'Lora';
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-weight: 400;
+
+  src: 
+    url(lora-latin-400-normal.woff2) format('woff2'), 
+    url(lora-latin-400-normal.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+</style><style type="text/css">/* aileron-latin-400-normal*/
+
+@font-face {
+  font-family: 'Aileron';
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-weight: 400;
+
+  src:
+    url(aileron-latin-400-normal.woff2) format('woff2'), 
+    url(aileron-latin-400-normal.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+</style><style type="text/css">/* aileron-latin-600-normal*/
+
+@font-face {
+  font-family: 'Aileron';
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-weight: 600;
+
+  src:
+    url(aileron-latin-600-normal.woff2) format('woff2'), 
+    url(aileron-latin-600-normal.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+</style><style type="text/css">/* aileron-latin-700-normal*/
+
+@font-face {
+  font-family: 'Aileron';
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-weight: 700;
+
+  src:
+    url(aileron-latin-700-normal.woff2) format('woff2'), 
+    url(aileron-latin-700-normal.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+</style><style type="text/css">/* aileron-latin-800-normal*/
+
+@font-face {
+  font-family: 'Aileron';
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-weight: 800;
+
+  src:
+    url(aileron-latin-800-normal.woff2) format('woff2'), 
+    url(aileron-latin-800-normal.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+</style><style type="text/css">/* metropolis-all-400-normal*/
+
+@font-face {
+  font-family: 'Metropolis';
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-weight: 400;
+
+  src:
+    url(metropolis-all-400-normal.woff2) format('woff2'), 
+    url(metropolis-all-400-normal.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+</style><style type="text/css">/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
 Document
@@ -333,7 +890,7 @@ ul {
  */
 
 html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Metropolis, sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -558,6 +1115,12 @@ video {
   }
 }
 
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: -webkit-calc(0.5rem * -webkit-calc(1 - var(--tw-space-y-reverse)));
@@ -566,6 +1129,36 @@ video {
   margin-bottom: -webkit-calc(0.5rem * var(--tw-space-y-reverse));
   margin-bottom: -moz-calc(0.5rem * var(--tw-space-y-reverse));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: -webkit-calc(1rem * -webkit-calc(1 - var(--tw-space-y-reverse)));
+  margin-top: -moz-calc(1rem * -moz-calc(1 - var(--tw-space-y-reverse)));
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: -webkit-calc(1rem * var(--tw-space-y-reverse));
+  margin-bottom: -moz-calc(1rem * var(--tw-space-y-reverse));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: -webkit-calc(1rem * var(--tw-space-x-reverse));
+  margin-right: -moz-calc(1rem * var(--tw-space-x-reverse));
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: -webkit-calc(1rem * -webkit-calc(1 - var(--tw-space-x-reverse)));
+  margin-left: -moz-calc(1rem * -moz-calc(1 - var(--tw-space-x-reverse)));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: -webkit-calc(1.5rem * -webkit-calc(1 - var(--tw-space-y-reverse)));
+  margin-top: -moz-calc(1.5rem * -moz-calc(1 - var(--tw-space-y-reverse)));
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: -webkit-calc(1.5rem * var(--tw-space-y-reverse));
+  margin-bottom: -moz-calc(1.5rem * var(--tw-space-y-reverse));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .bg-white {
@@ -590,45 +1183,49 @@ video {
   --tw-gradient-to: #fff;
 }
 
-.hover\:from-gray-500:hover {
+.group:hover .group-hover\:from-gray-500 {
   --tw-gradient-from: #6b7280;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(107, 114, 128, 0));
 }
 
-.hover\:from-green-500:hover {
+.group:hover .group-hover\:from-green-500 {
   --tw-gradient-from: #10b981;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(16, 185, 129, 0));
 }
 
-.hover\:from-blue-500:hover {
+.group:hover .group-hover\:from-blue-500 {
   --tw-gradient-from: #3b82f6;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(59, 130, 246, 0));
 }
 
-.hover\:from-pink-600:hover {
+.group:hover .group-hover\:from-pink-600 {
   --tw-gradient-from: #db2777;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(219, 39, 119, 0));
 }
 
-.hover\:to-gray-700:hover {
+.group:hover .group-hover\:to-gray-700 {
   --tw-gradient-to: #374151;
 }
 
-.hover\:to-green-600:hover {
+.group:hover .group-hover\:to-green-600 {
   --tw-gradient-to: #059669;
 }
 
-.hover\:to-indigo-600:hover {
-  --tw-gradient-to: #4f46e5;
+.group:hover .group-hover\:to-blue-700 {
+  --tw-gradient-to: #1d4ed8;
 }
 
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
+.group:hover .group-hover\:to-indigo-600 {
+  --tw-gradient-to: #4f46e5;
 }
 
 .bg-cover {
   -moz-background-size: cover;
        background-size: cover;
+}
+
+.border-current {
+  border-color: currentColor;
 }
 
 .border-gray-200 {
@@ -664,8 +1261,16 @@ video {
           border-radius: 9999px;
 }
 
+.border-dotted {
+  border-style: dotted;
+}
+
 .border {
   border-width: 1px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
 }
 
 .block {
@@ -692,6 +1297,10 @@ video {
   display: table;
 }
 
+.grid {
+  display: grid;
+}
+
 .hidden {
   display: none;
 }
@@ -712,12 +1321,36 @@ video {
           flex-wrap: wrap;
 }
 
+.items-start {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .items-center {
   -webkit-box-align: center;
   -webkit-align-items: center;
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.justify-items-stretch {
+  justify-items: stretch;
+}
+
+.justify-start {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .justify-center {
@@ -728,6 +1361,12 @@ video {
           justify-content: center;
 }
 
+.justify-around {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
 .justify-evenly {
   -webkit-box-pack: space-evenly;
   -webkit-justify-content: space-evenly;
@@ -736,12 +1375,8 @@ video {
           justify-content: space-evenly;
 }
 
-.flex-1 {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 0%;
-     -moz-box-flex: 1;
-      -ms-flex: 1 1 0%;
-          flex: 1 1 0%;
+.justify-self-center {
+  justify-self: center;
 }
 
 .flex-initial {
@@ -768,12 +1403,18 @@ video {
           flex-grow: 1;
 }
 
-.order-first {
-  -webkit-box-ordinal-group: -9998;
-  -webkit-order: -9999;
-     -moz-box-ordinal-group: -9998;
-      -ms-flex-order: -9999;
-          order: -9999;
+.flex-shrink {
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+}
+
+.font-serif {
+  font-family: Lora, serif;
+}
+
+.font-display {
+  font-family: Aileron, sans-serif;
 }
 
 .font-semibold {
@@ -782,6 +1423,14 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.h-0 {
+  height: 0px;
 }
 
 .h-4 {
@@ -800,6 +1449,10 @@ video {
   height: 2.5rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-14 {
   height: 3.5rem;
 }
@@ -812,8 +1465,26 @@ video {
   height: 12rem;
 }
 
+.h-72 {
+  height: 18rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
 }
 
 .text-xl {
@@ -836,18 +1507,51 @@ video {
   line-height: 1;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .m-1 {
   margin: 0.25rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.m-2 {
+  margin: 0.5rem;
 }
 
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.m-3 {
+  margin: 0.75rem;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .mx-auto {
@@ -855,24 +1559,41 @@ video {
   margin-right: auto;
 }
 
+.mx-1\.5 {
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .ml-4 {
   margin-left: 1rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
+.mt-48 {
+  margin-top: 12rem;
 }
 
-.-ml-2 {
-  margin-left: -0.5rem;
+.-mb-16 {
+  margin-bottom: -4rem;
+}
+
+.-mt-56 {
+  margin-top: -14rem;
 }
 
 .max-h-32 {
@@ -887,20 +1608,45 @@ video {
   max-width: 20rem;
 }
 
-.max-w-4xl {
-  max-width: 56rem;
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.max-w-prose {
+  max-width: 65ch;
 }
 
 .max-w-screen-lg {
   max-width: 1024px;
 }
 
-.p-0 {
-  padding: 0px;
+.max-w-text {
+  max-width: 50ch;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .p-12 {
@@ -910,11 +1656,6 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .px-5 {
@@ -942,12 +1683,64 @@ video {
   padding-bottom: 4rem;
 }
 
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
+.pl-14 {
+  padding-left: 3.5rem;
+}
+
+.pb-0\.5 {
+  padding-bottom: 0.125rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
 
+.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .top-0\.5 {
@@ -985,6 +1778,16 @@ video {
   text-align: center;
 }
 
+.text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgba(31, 41, 55, var(--tw-text-opacity));
@@ -1000,17 +1803,46 @@ video {
   color: rgba(29, 78, 216, var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.text-opacity-80 {
+  --tw-text-opacity: 0.8;
+}
+
+.group:hover .group-hover\:text-opacity-100 {
+  --tw-text-opacity: 1;
+}
+
+.group:hover .group-hover\:no-underline {
+  text-decoration: none;
+}
+
+.hover\:no-underline:hover {
+  text-decoration: none;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
 }
 
 .whitespace-nowrap {
   white-space: nowrap;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-4 {
+  width: 1rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-36 {
@@ -1029,12 +1861,44 @@ video {
   width: 100%;
 }
 
+.group:hover .group-hover\:w-full {
+  width: 100%;
+}
+
 .z-0 {
   z-index: 0;
 }
 
-.hover\:z-10:hover {
+.z-10 {
   z-index: 10;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
+.grid-flow-row-dense {
+  grid-auto-flow: row dense;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 
 .transform {
@@ -1052,9 +1916,16 @@ video {
           transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:scale-125:hover {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
+.translate-x-3 {
+  --tw-translate-x: 0.75rem;
+}
+
+.translate-x-3\.5 {
+  --tw-translate-x: 0.875rem;
+}
+
+.group:hover .group-hover\:translate-x-6 {
+  --tw-translate-x: 1.5rem;
 }
 
 .transition-all {
@@ -1070,6 +1941,41 @@ video {
      -moz-transition-duration: 150ms;
        -o-transition-duration: 150ms;
           transition-duration: 150ms;
+}
+
+.ease-out {
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+     -moz-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+       -o-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.group:hover .group-hover\:ease-in {
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+     -moz-transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+       -o-transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.duration-300 {
+  -webkit-transition-duration: 300ms;
+     -moz-transition-duration: 300ms;
+       -o-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.duration-500 {
+  -webkit-transition-duration: 500ms;
+     -moz-transition-duration: 500ms;
+       -o-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.group:hover .group-hover\:duration-200 {
+  -webkit-transition-duration: 200ms;
+     -moz-transition-duration: 200ms;
+       -o-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 @-webkit-keyframes spin {
@@ -1193,10 +2099,21 @@ video {
   }
 }
 
-.basis-full {
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
+.aspect-ratio-none {
+  padding-bottom: 0;
+}
+
+.aspect-ratio-1\/1 {
+  padding-bottom: 100%;
+}
+
+.aspect-ratio-1\/2 {
+  padding-bottom: 200%;
+}
+
+.filter-desat {
+  -webkit-filter: saturate(0.75) brightness(1.2);
+          filter: saturate(0.75) brightness(1.2);
 }
 
 .basis-none {
@@ -1205,12 +2122,58 @@ video {
           flex-basis: auto;
 }
 
+.link-line {
+  display: inline-block;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+     -moz-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+}
+
+.inline-links a {
+  display: inline-block;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+     -moz-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  font-family: Aileron, sans-serif;
+  font-weight: 700;
+}
+
+.inline-links a:hover {
+  -webkit-text-decoration-style: solid;
+     -moz-text-decoration-style: solid;
+          text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+}
+
 @media (min-width: 640px) {
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .sm\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:block {
     display: block;
+  }
+
+  .md\:flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   .md\:flex-shrink-0 {
@@ -1219,23 +2182,60 @@ video {
             flex-shrink: 0;
   }
 
-  .md\:ml-8 {
-    margin-left: 2rem;
+  .md\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
-  .md\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  .md\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
-  .md\:w-48 {
-    width: 12rem;
+  .md\:mr-7 {
+    margin-right: 1.75rem;
+  }
+
+  .md\:ml-9 {
+    margin-left: 2.25rem;
+  }
+
+  .md\:-mb-2 {
+    margin-bottom: -0.5rem;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:w-big {
+    width: 30rem;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:block {
-    display: block;
+  .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: -webkit-calc(0px * -webkit-calc(1 - var(--tw-space-y-reverse)));
+    margin-top: -moz-calc(0px * -moz-calc(1 - var(--tw-space-y-reverse)));
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: -webkit-calc(0px * var(--tw-space-y-reverse));
+    margin-bottom: -moz-calc(0px * var(--tw-space-y-reverse));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: -webkit-calc(2rem * var(--tw-space-x-reverse));
+    margin-right: -moz-calc(2rem * var(--tw-space-x-reverse));
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: -webkit-calc(2rem * -webkit-calc(1 - var(--tw-space-x-reverse)));
+    margin-left: -moz-calc(2rem * -moz-calc(1 - var(--tw-space-x-reverse)));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:flex-nowrap {
@@ -1244,415 +2244,673 @@ video {
             flex-wrap: nowrap;
   }
 
-  .lg\:order-none {
-    -webkit-box-ordinal-group: 1;
-    -webkit-order: 0;
-       -moz-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
+  .lg\:justify-self-start {
+    justify-self: start;
+  }
+
+  .lg\:justify-self-end {
+    justify-self: end;
+  }
+
+  .lg\:odd\:justify-self-end:nth-child(odd) {
+    justify-self: end;
+  }
+
+  .lg\:even\:justify-self-start:nth-child(even) {
+    justify-self: start;
+  }
+
+  .lg\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
   }
 }
 
 @media (min-width: 1280px) {
+  .xl\:rounded-xl {
+    -webkit-border-radius: 0.75rem;
+       -moz-border-radius: 0.75rem;
+            border-radius: 0.75rem;
+  }
+
   .xl\:block {
     display: block;
+  }
+
+  .xl\:justify-self-center {
+    justify-self: center;
+  }
+
+  .xl\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .xl\:max-w-screen-2xl {
+    max-width: 1536px;
+  }
+
+  .xl\:shadow-xl {
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+       -moz-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
 
 @media (min-width: 1536px) {
 }
-</style><style type="text/css">#github-corner .octo-arm {
-  -webkit-transform-origin: 130px 106px;
-     -moz-transform-origin: 130px 106px;
-      -ms-transform-origin: 130px 106px;
-       -o-transform-origin: 130px 106px;
-          transform-origin: 130px 106px
+
+@media (min-width: 1920px) {
+  .\33xl\:rounded-2xl {
+    -webkit-border-radius: 1rem;
+       -moz-border-radius: 1rem;
+            border-radius: 1rem;
+  }
+
+  .\33xl\:justify-self-center {
+    justify-self: center;
+  }
+
+  .\33xl\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .\33xl\:max-w-screen-3xl {
+    max-width: 1920px;
+  }
+
+  .\33xl\:shadow-2xl {
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+       -moz-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
 }
-#github-corner:hover .octo-arm {
-  -webkit-animation: octocat-wave 560ms ease-in-out;
-     -moz-animation: octocat-wave 560ms ease-in-out;
-          animation: octocat-wave 560ms ease-in-out;
-}
-@-webkit-keyframes octocat-wave {
-0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);
-}
-20% { -webkit-transform: rotate(-25deg); transform: rotate(-25deg);
-}
-40% { -webkit-transform: rotate(10deg); transform: rotate(10deg);
-}
-60% { -webkit-transform: rotate(-25deg); transform: rotate(-25deg);
-}
-80% { -webkit-transform: rotate(10deg); transform: rotate(10deg);
-}
-100% { -webkit-transform: rotate(0deg); transform: rotate(0deg);
-}
-}
-@-moz-keyframes octocat-wave {
-0% { -moz-transform: rotate(0deg); transform: rotate(0deg);
-}
-20% { -moz-transform: rotate(-25deg); transform: rotate(-25deg);
-}
-40% { -moz-transform: rotate(10deg); transform: rotate(10deg);
-}
-60% { -moz-transform: rotate(-25deg); transform: rotate(-25deg);
-}
-80% { -moz-transform: rotate(10deg); transform: rotate(10deg);
-}
-100% { -moz-transform: rotate(0deg); transform: rotate(0deg);
-}
-}
-@keyframes octocat-wave {
-0% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);
-}
-20% { -webkit-transform: rotate(-25deg); -moz-transform: rotate(-25deg); -o-transform: rotate(-25deg); transform: rotate(-25deg);
-}
-40% { -webkit-transform: rotate(10deg); -moz-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);
-}
-60% { -webkit-transform: rotate(-25deg); -moz-transform: rotate(-25deg); -o-transform: rotate(-25deg); transform: rotate(-25deg);
-}
-80% { -webkit-transform: rotate(10deg); -moz-transform: rotate(10deg); -o-transform: rotate(10deg); transform: rotate(10deg);
-}
-100% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg);
-}
-}
-#github-corner-svg {
-  color: #fff;
-  position: absolute;
-  top: 0;
-  border: 0;
-}
-#github-corner-svg, #github-corner-svg .octo-arm, #github-corner-svg .octo-body {
-  -webkit-transition: fill 1s ease;
-  -o-transition: fill 1s ease;
-  -moz-transition: fill 1s ease;
-  transition: fill 1s ease;
-}
-</style><style type="text/css">.card {
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  -webkit-border-radius: 0.5rem;
-     -moz-border-radius: 0.5rem;
-          border-radius: 0.5rem;
-  padding: 1.5rem;
-  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-     -moz-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
-}
-</style></head><body><div id="app" class="text-gray-800"><div id="vue-github-corner"><a href="https://github.com/rossjrw/rossjrw.github.io" id="github-corner" aria-label="View source on Github"><svg id="github-corner-svg" aria-hidden="true" viewBox="0 0 250 250" width="80" height="80" style="fill: rgb(21, 21, 19); right: 0px; left: auto; transform: none;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path> <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" class="octo-arm" style="fill: rgb(255, 255, 255);"></path> <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" class="octo-body" style="fill: rgb(255, 255, 255);"></path></svg></a></div> <header class="p-12 mb-8 flex flex-col items-center"><img src="logos/rossjrw.png?de1b4" class="max-h-48"> <p class="text-4xl font-semibold text-center">
-    rossjrw
-  </p> <p class="text-xl mt-1 text-center">
-    Ross Williams
-  </p></header> <div><p class="text-5xl font-semibold text-center px-8">
-    completed projects
-  </p> <p class="text-xl text-center mt-1 px-8">
-    finished projects, ready for you and the world
-  </p> <div class="my-16 py-4 md:py-2 px-6" style="background-image: radial-gradient(farthest-side at left top, rgb(250, 250, 250), transparent), radial-gradient(farthest-side at right top, rgb(245, 245, 245), transparent), radial-gradient(farthest-side at left bottom, rgb(240, 240, 240), transparent), radial-gradient(farthest-side at right bottom, rgb(200, 200, 200), transparent), linear-gradient(white, rgb(250, 250, 250));"><div class="container flex items-center justify-center mx-auto
-              flex-wrap lg:flex-nowrap"><div class="p-0 my-2 flex-initial w-72
-                flex-shrink-1 md:flex-shrink-0"><div><img src="projects/neograph.png?d954f" class="rounded-lg shadow-lg"></div></div> <!----> <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                order-first basis-full flex justify-center
-                lg:order-none lg:basis-none lg:block"><div class="card"><p class="text-3xl font-semibold text-center">
-          Faux Coffee Shop
-        </p> <p class="text-xl text-center">
-          2017
-        </p> <div><p>A tool and font I use to help me remember a handwritten neograph I designed, which was visually inspired by the <a href="https://redd.it/5rzi22">Coffee Shop Code</a>.  I use it for writing notes, when it's something personal that I don't want others to read. So why is it open source?</p>
-</div></div></div> <div class="my-2 md:ml-8 flex-initial w-full md:w-48"><div class="card bg-opacity-90 is-inset mb-3 hidden md:block"><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#f1e05a" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          JavaScript
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#e42939" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          AngularJS
-        </p></div> <div class="flex justify-center"><a href="/neograph" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-pink-600 hover:to-indigo-600">
-          check it out
-        </a></div></div></div></div><div class="my-16 py-4 md:py-2 px-6" style="background-image: radial-gradient(farthest-side at left top, rgb(40, 40, 40), transparent), radial-gradient(farthest-side at right top, rgb(191, 144, 0), transparent), radial-gradient(farthest-side at left bottom, rgb(40, 40, 40), transparent), radial-gradient(farthest-side at right bottom, rgb(40, 40, 40), transparent), linear-gradient(white, rgb(40, 40, 40));"><div class="container flex items-center justify-center mx-auto
-              flex-wrap lg:flex-nowrap"><div class="p-0 my-2 flex-initial w-72
-                flex-shrink-1 md:flex-shrink-0"><div><video src="projects/pipeworks/game.webm?7e46d" autoplay="autoplay" muted="muted" loop="loop" class="rounded-lg shadow-lg bg-cover" style="background-image: url(&quot;projects/pipeworks/board.png?99d15&quot;);"></video></div></div> <!----> <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                order-first basis-full flex justify-center
-                lg:order-none lg:basis-none lg:block"><div class="card"><img src="projects/pipeworks/logo.png?27def" alt="The Pipeworks" class="max-w-xs max-h-32 min-h-8 mx-auto"> <p class="text-xl text-center">
-          2016, 2017
-        </p> <div><p>A multiplayer board game hosted on Google Sheets. Played with 11 players and lasted for a month, once in 2016 and again in 2017, though it could handle more. Players are split into teams, with some players embedded into other teams as spies. Betrayal is encouraged. Could be played either team-vs-team or cooperatively against the board and host, depending on how player-player relations develop.</p>
-</div></div></div> <div class="my-2 md:ml-8 flex-initial w-full md:w-48"><div class="card bg-opacity-90 is-inset mb-3 hidden md:block"><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#0f9d58" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Spreadsheets
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="mediumpurple" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Fiction
-        </p></div> <div class="flex justify-center"><a href="https://docs.google.com/spreadsheets/d/1G0XCT7KVrhxvwK1Tv-7TBZiYjiwX9NlSijeQNuWlEec/edit?usp=sharing" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-green-500 hover:to-green-600">
-          board
-        </a><a href="https://docs.google.com/document/d/1Dwu1WJfo7OCM7y66ucyw6y37SK-96s2T4UIwTDTBZaQ/edit?usp=sharing" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-blue-500 hover:to-indigo-600">
-          rules
-        </a></div></div></div></div><div class="my-16 py-4 md:py-2 px-6" style="background-image: radial-gradient(farthest-side at left top, rgb(250, 250, 250), transparent), radial-gradient(farthest-side at right top, rgb(245, 245, 245), transparent), radial-gradient(farthest-side at left bottom, rgb(240, 240, 240), transparent), radial-gradient(farthest-side at right bottom, rgb(200, 200, 200), transparent), linear-gradient(white, rgb(250, 250, 250));"><div class="container flex items-center justify-center mx-auto
-              flex-wrap lg:flex-nowrap"><div class="p-0 my-2 flex-initial w-72
-                flex-shrink-1 md:flex-shrink-0"><div><img src="projects/scp/3939.png?21c91" class="rounded-lg shadow-lg"></div></div> <!----> <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                order-first basis-full flex justify-center
-                lg:order-none lg:basis-none lg:block"><div class="card"><p class="text-3xl font-semibold text-center">
-          SCP-3939
-        </p> <p class="text-xl text-center">
-          2018
-        </p> <div><p>A story published on the SCP Wiki. A multiple-choice adventure 65 pages and 19,000 words long. Although the end is always the same, there are many paths leading there. You are a disgraced researcher trapped in a hell of your own making, trying to find your way out. Written on a spreadsheet and compiled into a web-ready format.</p>
-</div></div></div> <div class="my-2 md:ml-8 flex-initial w-full md:w-48"><div class="card bg-opacity-90 is-inset mb-3 hidden md:block"><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="mediumpurple" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Fiction
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#0f9d58" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Spreadsheets
-        </p></div> <div class="flex justify-center"><a href="http://scp-wiki.net/scp-3939" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-pink-600 hover:to-indigo-600">
-          check it out
-        </a></div></div></div></div><div class="my-16 py-4 md:py-2 px-6" style="background-image: radial-gradient(farthest-side at left top, rgb(250, 250, 250), transparent), radial-gradient(farthest-side at right top, rgb(245, 245, 245), transparent), radial-gradient(farthest-side at left bottom, rgb(240, 240, 240), transparent), radial-gradient(farthest-side at right bottom, rgb(243, 87, 87), transparent), linear-gradient(white, rgb(250, 250, 250));"><div class="container flex items-center justify-center mx-auto
-              flex-wrap lg:flex-nowrap"><div class="p-0 my-2 flex-initial w-72
-                flex-shrink-1 md:flex-shrink-0"><div><img src="projects/scp/3211.png?9c110" class="rounded-lg shadow-lg"></div></div> <!----> <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                order-first basis-full flex justify-center
-                lg:order-none lg:basis-none lg:block"><div class="card"><p class="text-3xl font-semibold text-center">
-          SCP-3211
-        </p> <p class="text-xl text-center">
-          2018
-        </p> <div><p>An article published on the SCP Wiki. Details a fictional entity that appears differently for each person who sees it: to emulate this for readers, I wrote many versions of the same article and present a random one to each reader. I use cookies to ensure that while every reader sees a different version, a single reader will only ever see one. The article can also only be read once. Written on a spreadsheet and compiled to JavaScript.</p>
-</div></div></div> <div class="my-2 md:ml-8 flex-initial w-full md:w-48"><div class="card bg-opacity-90 is-inset mb-3 hidden md:block"><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="mediumpurple" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Fiction
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#f1e05a" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          JavaScript
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 88.04226065180615,37.6393202250021 73.51141009169893,82.36067977499789 26.48858990830108,82.36067977499789 11.957739348193854,37.63932022500211" fill="#7acef4" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          jQuery
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137754,30 84.64101615137756,70 50,90 15.358983848622458,70.00000000000001 15.358983848622458,29.999999999999996" fill="#0f9d58" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Spreadsheets
-        </p></div> <div class="flex justify-center"><a href="http://scp-wiki.net/scp-3211" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-pink-600 hover:to-indigo-600">
-          check it out
-        </a></div></div></div></div><div class="my-16 py-4 md:py-2 px-6" style="background-image: radial-gradient(farthest-side at left top, rgb(100, 46, 44), transparent), radial-gradient(farthest-side at right top, rgb(100, 3, 15), transparent), radial-gradient(farthest-side at left bottom, rgb(66, 66, 72), transparent), radial-gradient(farthest-side at right bottom, rgb(66, 66, 72), transparent), linear-gradient(white, rgb(100, 46, 44));"><div class="container flex items-center justify-center mx-auto
-              flex-wrap lg:flex-nowrap"><div class="p-0 my-2 flex-initial w-72
-                flex-shrink-1 md:flex-shrink-0"><div><img src="projects/scp/bhl/desktop.png?71dac" class="rounded-lg shadow-lg"></div></div> <div class="ml-4 flex-initial w-36
-                hidden xl:block flex-shrink-1 md:flex-shrink-0"><img src="projects/scp/bhl/mobile.png?7384c" class="block rounded-lg shadow-lg"></div> <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                order-first basis-full flex justify-center
-                lg:order-none lg:basis-none lg:block"><div class="card"><img src="projects/scp/bhl/logo.svg?127c0" alt="Black Highlighter" class="max-w-xs max-h-32 min-h-8 mx-auto"> <p class="text-xl text-center">
-          2019
-        </p> <div><p>A CSS theme built to replace the dated theme used by the SCP Wiki, using modern web standards and accessibility guidelines. While it was never officially adopted, it is currently used on thousands of articles and stories across the international SCP community.</p>
-</div></div></div> <div class="my-2 md:ml-8 flex-initial w-full md:w-48"><div class="card bg-opacity-90 is-inset mb-3 hidden md:block"><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#563d7c" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          CSS
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#cf4647" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Gulp.js
-        </p></div> <div class="flex justify-center"><a href="https://github.com/Nu-SCPTheme/Black-Highlighter" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-gray-500 hover:to-gray-700">
-          GitHub
-        </a></div></div></div></div><div class="my-16 py-4 md:py-2 px-6" style="background-image: radial-gradient(farthest-side at left top, rgb(250, 250, 250), transparent), radial-gradient(farthest-side at right top, rgb(245, 245, 245), transparent), radial-gradient(farthest-side at left bottom, rgb(240, 240, 240), transparent), radial-gradient(farthest-side at right bottom, rgb(200, 200, 200), transparent), linear-gradient(white, rgb(250, 250, 250));"><div class="container flex items-center justify-center mx-auto
-              flex-wrap lg:flex-nowrap"><div class="p-0 my-2 flex-initial w-72
-                flex-shrink-1 md:flex-shrink-0"><div><img src="projects/regex-series-replace.png?7584a" class="rounded-lg shadow-lg"></div></div> <!----> <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                order-first basis-full flex justify-center
-                lg:order-none lg:basis-none lg:block"><div class="card"><p class="text-3xl font-semibold text-center">
-          Regex Series Replace
-        </p> <p class="text-xl text-center">
-          2020
-        </p> <div><p>A tool for applying a series of regex find-and-replace rules to a block of text. Configured rules can be exported and imported with URL arguments. Made because I got sick of having to type out the same rules again and again when I have to make a series of replacements that I've already made before.</p>
-</div></div></div> <div class="my-2 md:ml-8 flex-initial w-full md:w-48"><div class="card bg-opacity-90 is-inset mb-3 hidden md:block"><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#2b7489" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          TypeScript
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#2c3e50" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Vue.js
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 88.04226065180615,37.6393202250021 73.51141009169893,82.36067977499789 26.48858990830108,82.36067977499789 11.957739348193854,37.63932022500211" fill="#8ed6fb" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Webpack
-        </p></div> <div class="flex justify-center"><a href="/series-replace" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-pink-600 hover:to-indigo-600">
-          check it out
-        </a><a href="https://github.com/rossjrw/series-replace" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-gray-500 hover:to-gray-700">
-          GitHub
-        </a></div></div></div></div><div class="my-16 py-4 md:py-2 px-6" style="background-image: radial-gradient(farthest-side at left top, rgb(250, 250, 250), transparent), radial-gradient(farthest-side at right top, rgb(245, 245, 245), transparent), radial-gradient(farthest-side at left bottom, rgb(240, 240, 240), transparent), radial-gradient(farthest-side at right bottom, rgb(200, 200, 200), transparent), linear-gradient(white, rgb(250, 250, 250));"><div class="container flex items-center justify-center mx-auto
-              flex-wrap lg:flex-nowrap"><!----> <!----> <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                order-first basis-full flex justify-center
-                lg:order-none lg:basis-none lg:block"><div class="card"><p class="text-3xl font-semibold text-center">
-          SCUTTLE API wrapper
-        </p> <p class="text-xl text-center">
-          2020
-        </p> <div><p>Python wrapper around the API for SCUTTLE, which is a web service that scrapes information from Wikidot, primarily for backing up the SCP Wiki.</p>
-</div></div></div> <div class="my-2 md:ml-8 flex-initial w-full md:w-48"><div class="card bg-opacity-90 is-inset mb-3 hidden md:block"><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#3572a5" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Python
-        </p></div> <div class="flex justify-center"><a href="https://pypi.org/project/python-scuttle" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-pink-600 hover:to-indigo-600">
-          check it out
-        </a><a href="https://github.com/scuttle/scuttle" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-pink-600 hover:to-indigo-600">
-          SCUTTLE
-        </a></div></div></div></div><div class="my-16 py-4 md:py-2 px-6" style="background-image: radial-gradient(farthest-side at left top, rgb(243, 186, 124), transparent), radial-gradient(farthest-side at right top, rgb(206, 143, 75), transparent), radial-gradient(farthest-side at left bottom, rgb(175, 111, 43), transparent), radial-gradient(farthest-side at right bottom, rgb(106, 58, 0), transparent), linear-gradient(white, rgb(243, 186, 124));"><div class="container flex items-center justify-center mx-auto
-              flex-wrap lg:flex-nowrap"><div class="p-0 my-2 flex-initial w-72
-                flex-shrink-1 md:flex-shrink-0"><div><img src="projects/ur.png?c1cdd" class="rounded-lg shadow-lg"></div></div> <!----> <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                order-first basis-full flex justify-center
-                lg:order-none lg:basis-none lg:block"><div class="card"><p class="text-3xl font-semibold text-center">
-          Ur
-        </p> <p class="text-xl text-center">
-          2020
-        </p> <div><p>A massively-multiplayer, asynchronous Royal Game of Ur that anyone with a GitHub account can play. The board is the README of the repository. Entirely automated with GitHub actions. Players make their moves by clicking links on the README, which creates an Issue in the repository, which triggers a GitHub action to make the move and update the board state. You can play!</p>
-</div></div></div> <div class="my-2 md:ml-8 flex-initial w-full md:w-48"><div class="card bg-opacity-90 is-inset mb-3 hidden md:block"><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#2b7489" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          TypeScript
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#ffb13b" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          SVG
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 88.04226065180615,37.6393202250021 73.51141009169893,82.36067977499789 26.48858990830108,82.36067977499789 11.957739348193854,37.63932022500211" fill="#2088ff" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          GitHub Actions
-        </p></div> <div class="flex justify-center"><a href="https://github.com/rossjrw/rossjrw" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-pink-600 hover:to-indigo-600">
-          check it out
-        </a></div></div></div></div></div><div><p class="text-5xl font-semibold text-center px-8">
-    working projects
-  </p> <p class="text-xl text-center mt-1 px-8">
-    stuff I'm still working on — shhh tell no one
-  </p> <div class="my-16 py-4 md:py-2 px-6" style="background-image: radial-gradient(farthest-side at left top, rgb(250, 250, 250), transparent), radial-gradient(farthest-side at right top, rgb(245, 245, 245), transparent), radial-gradient(farthest-side at left bottom, rgb(240, 240, 240), transparent), radial-gradient(farthest-side at right bottom, rgb(200, 200, 200), transparent), linear-gradient(white, rgb(250, 250, 250));"><div class="container flex items-center justify-center mx-auto
-              flex-wrap lg:flex-nowrap"><!----> <!----> <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                order-first basis-full flex justify-center
-                lg:order-none lg:basis-none lg:block"><div class="card"><p class="text-3xl font-semibold text-center">
-          TARS
-        </p> <p class="text-xl text-center">
-          2019–
-        </p> <div><p>An IRC bot originally built for automating social media posts for SCP Wiki staff, but mostly used as a Markov Chain generator for making almost-real sentences.</p>
-</div></div></div> <div class="my-2 md:ml-8 flex-initial w-full md:w-48"><div class="card bg-opacity-90 is-inset mb-3 hidden md:block"><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#3572a5" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Python
-        </p></div> <div class="flex justify-center"><a href="/tars/help" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-pink-600 hover:to-indigo-600">
-          check it out
-        </a><a href="https://github.com/rossjrw/tars" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-gray-500 hover:to-gray-700">
-          GitHub
-        </a></div></div></div></div><div class="my-16 py-4 md:py-2 px-6" style="background-image: radial-gradient(farthest-side at left top, rgb(250, 250, 250), transparent), radial-gradient(farthest-side at right top, rgb(245, 245, 245), transparent), radial-gradient(farthest-side at left bottom, rgb(240, 240, 240), transparent), radial-gradient(farthest-side at right bottom, rgb(200, 200, 200), transparent), linear-gradient(white, rgb(250, 250, 250));"><div class="container flex items-center justify-center mx-auto
-              flex-wrap lg:flex-nowrap"><div class="p-0 my-2 flex-initial w-72
-                flex-shrink-1 md:flex-shrink-0"><div><img src="projects/gallifreyo.png?15241" class="rounded-lg shadow-lg"></div></div> <!----> <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                order-first basis-full flex justify-center
-                lg:order-none lg:basis-none lg:block"><div class="card"><p class="text-3xl font-semibold text-center">
-          Gallifreyo
-        </p> <p class="text-xl text-center">
-          2017–2018, 2020–
-        </p> <div><p>A Gallifreyan translator, based on a language made by fans of Doctor Who.</p>
-</div></div></div> <div class="my-2 md:ml-8 flex-initial w-full md:w-48"><div class="card bg-opacity-90 is-inset mb-3 hidden md:block"><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#2b7489" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          TypeScript
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#2c3e50" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Vue.js
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 88.04226065180615,37.6393202250021 73.51141009169893,82.36067977499789 26.48858990830108,82.36067977499789 11.957739348193854,37.63932022500211" fill="#8ed6fb" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Webpack
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137754,30 84.64101615137756,70 50,90 15.358983848622458,70.00000000000001 15.358983848622458,29.999999999999996" fill="#ffb13b" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          SVG
-        </p></div> <div class="flex justify-center"><a href="/gallifreyo" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-pink-600 hover:to-indigo-600">
-          check it out
-        </a><a href="https://github.com/rossjrw/gallifreyo" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-gray-500 hover:to-gray-700">
-          GitHub
-        </a></div></div></div></div><div class="my-16 py-4 md:py-2 px-6" style="background-image: radial-gradient(farthest-side at left top, rgb(224, 166, 52), transparent), radial-gradient(farthest-side at right top, rgb(223, 190, 106), transparent), radial-gradient(farthest-side at left bottom, rgb(131, 131, 131), transparent), radial-gradient(farthest-side at right bottom, rgb(0, 0, 0), transparent), linear-gradient(white, rgb(224, 166, 52));"><div class="container flex items-center justify-center mx-auto
-              flex-wrap lg:flex-nowrap"><div class="p-0 my-2 flex-initial w-72
-                flex-shrink-1 md:flex-shrink-0"><div><img src="projects/website.png?1ef09" class="rounded-lg shadow-lg"></div></div> <!----> <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                order-first basis-full flex justify-center
-                lg:order-none lg:basis-none lg:block"><div class="card"><p class="text-3xl font-semibold text-center">
-          rossjrw.com
-        </p> <p class="text-xl text-center">
-          2020–
-        </p> <div><p>A place where all of my projects are listed, and little else. There's also no semblance of personal information or contact details. Overall, a very useful site.</p>
-</div></div></div> <div class="my-2 md:ml-8 flex-initial w-full md:w-48"><div class="card bg-opacity-90 is-inset mb-3 hidden md:block"><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#2c3e50" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Vue.js
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#2b7489" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          TypeScript
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 88.04226065180615,37.6393202250021 73.51141009169893,82.36067977499789 26.48858990830108,82.36067977499789 11.957739348193854,37.63932022500211" fill="#8ed6fb" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Webpack
-        </p></div> <div class="flex justify-center"><a href="https://rossjrw.com" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-pink-600 hover:to-indigo-600">
-          check it out
-        </a><a href="https://github.com/rossjrw/rossjrw.github.io" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-gray-500 hover:to-gray-700">
-          GitHub
-        </a></div></div></div></div></div><div><p class="text-5xl font-semibold text-center px-8">
-    unfinished projects
-  </p> <p class="text-xl text-center mt-1 px-8">
-    these were never finished, but I may return to them
-  </p> <div class="my-16 py-4 md:py-2 px-6" style="background-image: radial-gradient(farthest-side at left top, rgb(20, 136, 204), transparent), radial-gradient(farthest-side at right top, rgb(26, 115, 198), transparent), radial-gradient(farthest-side at left bottom, rgb(32, 93, 191), transparent), radial-gradient(farthest-side at right bottom, rgb(43, 50, 178), transparent), linear-gradient(white, rgb(20, 136, 204));"><div class="container flex items-center justify-center mx-auto
-              flex-wrap lg:flex-nowrap"><div class="p-0 my-2 flex-initial w-72
-                flex-shrink-1 md:flex-shrink-0"><div><img src="projects/scp/maitreya/maitreya.png?7263b" class="rounded-lg shadow-lg"></div></div> <!----> <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                order-first basis-full flex justify-center
-                lg:order-none lg:basis-none lg:block"><div class="card"><img src="projects/scp/maitreya/logo.png?b83d8" alt="Maitreya.aic" class="max-w-xs max-h-32 min-h-8 mx-auto"> <p class="text-xl text-center">
-          2018–2019
-        </p> <div><p>A text adventure game, with vast scope for player agency. You are an artificial intelligence built to study a creature that lies beyond human comprehension.  How you go about that, and perhaps what exactly you discover, is up to you.</p>
-</div></div></div> <div class="my-2 md:ml-8 flex-initial w-full md:w-48"><div class="card bg-opacity-90 is-inset mb-3 hidden md:block"><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="mediumpurple" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Fiction
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#244776" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          CoffeeScript
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 88.04226065180615,37.6393202250021 73.51141009169893,82.36067977499789 26.48858990830108,82.36067977499789 11.957739348193854,37.63932022500211" fill="#e42939" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          AngularJS
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137754,30 84.64101615137756,70 50,90 15.358983848622458,70.00000000000001 15.358983848622458,29.999999999999996" fill="#cf4647" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          Gulp.js
-        </p></div> <div class="flex justify-center"><a href="/maitreya" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-pink-600 hover:to-indigo-600">
-          check it out
-        </a><a href="https://github.com/rossjrw/maitreya" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-gray-500 hover:to-gray-700">
-          GitHub
-        </a></div></div></div></div></div><div><p class="text-5xl font-semibold text-center px-8">
-    the graveyard
-  </p> <p class="text-xl text-center mt-1 px-8">
-    abandoned projects that I will never touch again
-  </p> <div class="my-16 py-4 md:py-2 px-6" style="background-image: radial-gradient(farthest-side at left top, rgb(250, 250, 250), transparent), radial-gradient(farthest-side at right top, rgb(245, 245, 245), transparent), radial-gradient(farthest-side at left bottom, rgb(240, 240, 240), transparent), radial-gradient(farthest-side at right bottom, rgb(200, 200, 200), transparent), linear-gradient(white, rgb(250, 250, 250));"><div class="container flex items-center justify-center mx-auto
-              flex-wrap lg:flex-nowrap"><div class="p-0 my-2 flex-initial w-72
-                flex-shrink-1 md:flex-shrink-0"><div><img src="projects/automafia.png?1298b" class="rounded-lg shadow-lg"></div></div> <!----> <div class="my-2 md:ml-8 flex-1 max-w-4xl
-                order-first basis-full flex justify-center
-                lg:order-none lg:basis-none lg:block"><div class="card"><p class="text-3xl font-semibold text-center">
-          Automafia
-        </p> <p class="text-xl text-center">
-          2016
-        </p> <div><p>An attempt to automate Mafia, the social game of lies and betrayal. My first ever programming project. Began on a spreadsheet, but quickly grew too complex; it was this limitation that prompted me to begin learning JavaScript. It doesn't work and was never really a good idea, but the code contains fond memories.</p>
-</div></div></div> <div class="my-2 md:ml-8 flex-initial w-full md:w-48"><div class="card bg-opacity-90 is-inset mb-3 hidden md:block"><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#f1e05a" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          JavaScript
-        </p><p class="whitespace-nowrap -ml-2"><span class="w-6 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#e42939" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
-          AngularJS
-        </p></div> <div class="flex justify-center"><a href="https://theyrecoming.neocities.org/mafia/automafia.html" class="rounded-full px-5 py-2 m-1 shadow-md z-0
-                  bg-gradient-to-r from-white to-white
-                  text-blue-700 whitespace-nowrap
-                  transform transition-all
-                  hover:text-white hover:scale-125 hover:z-10 hover:from-pink-600 hover:to-indigo-600">
-          check it out
-        </a></div></div></div></div></div> <footer class="flex flex-col items-center py-16 space-y-2"><p>the end</p> <a href="https://ko-fi.com/I3I41R5OU" target="_blank"><img height="36" src="https://cdn.ko-fi.com/cdn/kofi5.png?v=2" border="0" alt="Buy Me a Coffee at ko-fi.com" style="border: 0px; height: 36px;"></a></footer></div><script src="bundle.6303b.js"></script></body></html>
+</style></head><body><div id="app" class="text-gray-800"><a href="https://github.com/rossjrw/rossjrw.github.io" target="_blank" rel="noopener noreferrer" aria-label="View source on GitHub" class="github-corner"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true" style="fill: rgb(21, 21, 19); color: rgb(255, 255, 255); position: absolute; border: 0px; top: 0px; right: 0px;"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path> <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" class="octo-arm" style="transform-origin: 130px 106px;"></path> <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a> <header class="p-12 md:my-12 grid grid-cols-1 md:grid-cols-3 gap-8
+               justify-evenly items-center justify-items-center
+               max-w-screen-lg mx-auto"><div><img src="logos/rossjrw.png?de1b4" class="max-h-48"></div> <div class="text-center"><h1 class="text-7xl font-display font-semibold tracking-tight">
+      rossjrw
+    </h1> <p class="text-3xl font-display mt-1 text-center tracking-tight">
+      Ross Williams
+    </p></div> <div class="space-y-2 m-3 flex flex-col items-start"><a href="https://github.com/rossjrw" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-700"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-gray-500 group-hover:to-gray-700"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-github fa-w-16 fa-lg"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    GitHub
+  </div></a> <a href="https://www.linkedin.com/in/rossjrw/" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-700"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-blue-500 group-hover:to-blue-700"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-linkedin-in fa-w-14 fa-lg"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    LinkedIn
+  </div></a></div></header> <section class="px-6 sm:px-12 my-12 md:my-16
+                grid grid-cols-1 lg:grid-cols-2 gap-y-12
+                justify-items-center items-start"><div class="sm:text-lg inline-links
+              max-w-text mx-4 md:ml-9 md:mr-7
+              lg:odd:justify-self-end lg:even:justify-self-start"><h2 class="text-3xl font-display font-bold mb-1">
+      Who I am
+    </h2> <div><p>I'm a web developer in the UK. I work mostly on the frontend, and I'm familiar with TypeScript and modern JavaScript build processes; however, I'm working towards full-stack development. I also have a Master's degree in computational chemistry from Cardiff University. I'm currently looking for a job — if you're hiring, consider reaching out to me via LinkedIn.</p>
+</div></div><div class="sm:text-lg inline-links
+              max-w-text mx-4 md:ml-9 md:mr-7
+              lg:odd:justify-self-end lg:even:justify-self-start"><h2 class="text-3xl font-display font-bold mb-1">
+      What I do
+    </h2> <div><p>I make things you can see and play with — tools you can touch. I also write experimental and/or interactive fiction, which I contribute to the <a href="https://scp-wiki.wikidot.com/">SCP Wiki</a>. My work wants to be seen or used or read or played: it wants to be memorable; it pushes the limits of its medium. You can see some of my projects below, including the technologies I used to create them.</p>
+</div></div></section> <section><div class="my-24"><h2 class="text-5xl font-display font-bold text-center px-8 tracking-tight
+               flex justify-around items-center"><span class="hidden md:block h-0 flex-grow flex-shrink
+                   border-b-4 border-dotted border-current mx-16 mt-2"></span> <span class="block">completed projects</span> <span class="hidden md:block h-0 flex-grow flex-shrink
+                   border-b-4 border-dotted border-current mx-16 mt-2"></span></h2> <h3 class="text-xl font-display text-center mt-1 px-8 opacity-80">
+      finished projects, ready for you and the world
+    </h3></div> <div class="grid grid-cols-2 gap-y-16 grid-flow-row-dense
+              justify-items-stretch items-start
+              my-24"><div class="relative col-span-2 p-2 xl:max-w-screen-2xl xl:mx-4 xl:justify-self-center
+                        " style="background-image: none;"><!----> <div class="container flex items-center justify-center mx-auto
+              relative z-10 space-y-4 lg:space-y-0 lg:space-x-8
+                  flex-wrap lg:flex-nowrap"><div class="flex space-x-4"><div class="flex-initial flex-shrink-1 md:flex-shrink-0 w-72"><div class="relative w-full h-full overflow-hidden rounded-lg shadow-lg"><div class="aspect-ratio-1/1"></div> <img src="projects/neograph.png?d954f" class="absolute inset-0 w-full h-full object-contain"></div></div> <!----></div> <div class="basis-none flex justify-center flex-col space-y-2"><div class="p-2"><div class="flex flex-col md:flex-row items-center mb-1"><h4 class="text-4xl font-display font-bold">
+            Faux Coffee Shop
+          </h4> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+            2017
+          </p></div> <div class="inline-links space-y-2 max-w-text text-lg"><p>A tool and font I use to help me remember a handwritten neograph I designed, which was visually inspired by the <a href="https://redd.it/5rzi22">Coffee Shop Code</a>. I use it for writing notes, when it's something personal that I don't want others to read. So why is it open source?</p>
+</div></div> <div class="flex flex-wrap items-center"><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#f1e05a" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            JavaScript
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#e42939" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            AngularJS
+        </p></div></div> <div class="flex-initial"><div class="space-y-2 flex flex-col items-start"><a href="/neograph" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-700"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-pink-600 group-hover:to-indigo-600"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-arrow-right fa-w-14 fa-lg"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    check it out
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden"></div></div><div class="relative col-span-2 p-8 3xl:max-w-screen-3xl 3xl:mx-4 3xl:justify-self-center
+                     3xl:rounded-2xl 3xl:shadow-2xl" style="background-image: radial-gradient(farthest-side at left top, rgb(40, 40, 40), transparent), radial-gradient(farthest-side at right top, rgb(191, 144, 0), transparent), radial-gradient(farthest-side at left bottom, rgb(40, 40, 40), transparent), radial-gradient(farthest-side at right bottom, rgb(40, 40, 40), transparent), linear-gradient(white, rgb(40, 40, 40));"><!----> <div class="container flex items-center justify-center mx-auto
+              relative z-10 space-y-4 lg:space-y-0 lg:space-x-8
+                  flex-wrap lg:flex-nowrap"><div class="flex space-x-4"><div class="flex-initial flex-shrink-1 md:flex-shrink-0 w-72 md:w-big"><div class="relative w-full h-full overflow-hidden rounded-lg shadow-lg"><div class="aspect-ratio-1/1"></div> <video src="projects/pipeworks/game.webm?7e46d" autoplay="autoplay" muted="muted" loop="loop" controls="controls" class="absolute inset-0 bg-cover w-full h-full" style="background-image: url(&quot;projects/pipeworks/board.png?99d15&quot;);"></video></div></div> <!----></div> <div class="basis-none flex justify-center flex-col space-y-6"><div class="p-2 text-gray-100"><div class="flex flex-col md:flex-row items-center mb-2"><img src="projects/pipeworks/logo.svg?fe81e" alt="The Pipeworks" class="max-h-32 min-h-8 w-full md:w-auto max-w-sm"> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+            2016, 2017
+          </p></div> <div class="inline-links space-y-2 max-w-text font-serif text-xl"><p>A multiplayer board game hosted on Google Sheets. Played with 11 players and lasted for a month, once in 2016 and again in 2017, though it could handle more. </p>
+<p> Players are split into teams, with some players embedded into other teams as spies. Betrayal is encouraged. Could be played either team-vs-team or cooperatively against the board and host, depending on how player-player relations develop.</p>
+</div></div> <div class="flex flex-wrap items-center"><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#0f9d58" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Spreadsheets
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="mediumpurple" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Fiction
+        </p></div></div> <div class="flex-initial"><div class="space-y-2 flex flex-col items-start"><a href="https://docs.google.com/spreadsheets/d/1G0XCT7KVrhxvwK1Tv-7TBZiYjiwX9NlSijeQNuWlEec/edit?usp=sharing" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-100"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-green-500 group-hover:to-green-600"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-drive" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-google-drive fa-w-16 fa-lg"><path fill="currentColor" d="M339 314.9L175.4 32h161.2l163.6 282.9H339zm-137.5 23.6L120.9 480h310.5L512 338.5H201.5zM154.1 67.4L0 338.5 80.6 480 237 208.8 154.1 67.4z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    board
+  </div></a><a href="https://docs.google.com/document/d/1Dwu1WJfo7OCM7y66ucyw6y37SK-96s2T4UIwTDTBZaQ/edit?usp=sharing" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-100"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-blue-500 group-hover:to-indigo-600"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-drive" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-google-drive fa-w-16 fa-lg"><path fill="currentColor" d="M339 314.9L175.4 32h161.2l163.6 282.9H339zm-137.5 23.6L120.9 480h310.5L512 338.5H201.5zM154.1 67.4L0 338.5 80.6 480 237 208.8 154.1 67.4z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    rules
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden text-gray-100"></div></div><div class="relative col-span-2 p-6 justify-self-center lg:col-span-1 lg:mx-8 mt-48 lg:justify-self-end rounded-lg shadow-lg" style="background-image: radial-gradient(farthest-side at left top, rgb(250, 250, 250), transparent), radial-gradient(farthest-side at right top, rgb(245, 245, 245), transparent), radial-gradient(farthest-side at left bottom, rgb(240, 240, 240), transparent), radial-gradient(farthest-side at right bottom, rgb(200, 200, 200), transparent), linear-gradient(white, rgb(250, 250, 250));"><div class="w-full h-72 relative z-0 -mt-56 -mb-16"><div class="relative w-full h-full overflow-hidden filter-desat"><div class="aspect-ratio-1/1"></div> <img src="projects/scp/3939.webp?14347" class="absolute inset-0 w-full h-full object-contain"></div></div> <div class="container flex items-center justify-center mx-auto
+              relative z-10 flex-col space-y-2 max-w-prose"><div class="flex space-x-4"><!----> <!----></div> <div class="basis-none flex justify-center flex-col space-y-2"><div class="bg-white rounded-lg shadow-lg p-6"><div class="flex flex-col md:flex-row items-center mb-1"><h4 class="text-4xl font-display font-bold">
+            SCP-3939
+          </h4> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+            2018
+          </p></div> <div class="inline-links space-y-2 max-w-text font-serif"><p>A story published on the SCP Wiki. A multiple-choice adventure 65 pages and 19,000 words long. You are a disgraced researcher trapped in a hell of your own making. #12 top-rated article of 2018 (of &gt;1800).</p>
+</div></div> <div class="flex flex-wrap items-center"><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="mediumpurple" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Fiction
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#0f9d58" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Spreadsheets
+        </p></div></div> <div class="flex-initial"><div class="space-y-2 flex flex-col items-start"><a href="https://scp-wiki.wikidot.com/scp-3939" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-700"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-pink-600 group-hover:to-indigo-600"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-arrow-right fa-w-14 fa-lg"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    check it out
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display"><p>
+          <a class="link-line hover:no-underline font-extrabold tracking-tight" href="https://pixabay.com/photos/gramophone-turntable-shellac-disc-1790007">
+            Image attribution
+          </a>
+        </p></div></div><div class="relative col-span-2 p-6 justify-self-center lg:col-span-1 lg:mx-8 mt-48 lg:justify-self-start rounded-lg shadow-lg" style="background-image: radial-gradient(farthest-side at left top, rgb(250, 250, 250), transparent), radial-gradient(farthest-side at right top, rgb(245, 245, 245), transparent), radial-gradient(farthest-side at left bottom, rgb(240, 240, 240), transparent), radial-gradient(farthest-side at right bottom, rgb(243, 87, 87), transparent), linear-gradient(white, rgb(250, 250, 250));"><div class="w-full h-72 relative z-0 -mt-56 -mb-16"><div class="relative w-full h-full overflow-hidden filter-desat"><div class="aspect-ratio-1/1"></div> <div class="absolute inset-0 w-full h-full"><img src="projects/scp/3211/cube.webp?2cb4a" class="absolute w-full h-full object-contain" style="clip-path: polygon(140.695% 40.6952%, 40.6952% 140.695%, -49.3048% 50.6952%, 50.6952% -49.3048%);"><img src="projects/scp/3211/coin.webp?57474" class="absolute w-full h-full object-contain" style="clip-path: polygon(50% -50%, -50% 50%, -160% -60%, -60% -160%);"><img src="projects/scp/3211/putty.webp?dee3c" class="absolute w-full h-full object-contain" style="clip-path: polygon(50% -50%, -50% 50%, -160% -60%, -60% -160%);"><img src="projects/scp/3211/gloves.webp?487e1" class="absolute w-full h-full object-contain" style="clip-path: polygon(50% -50%, -50% 50%, -160% -60%, -60% -160%);"><img src="projects/scp/3211/matches.webp?2b9c3" class="absolute w-full h-full object-contain" style="clip-path: polygon(50% -50%, -50% 50%, -160% -60%, -60% -160%);"></div></div></div> <div class="container flex items-center justify-center mx-auto
+              relative z-10 flex-col space-y-2 max-w-prose"><div class="flex space-x-4"><!----> <!----></div> <div class="basis-none flex justify-center flex-col space-y-2"><div class="bg-white rounded-lg shadow-lg p-6"><div class="flex flex-col md:flex-row items-center mb-1"><h4 class="text-4xl font-display font-bold">
+            SCP-3211
+          </h4> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+            2018
+          </p></div> <div class="inline-links space-y-2 max-w-text font-serif"><p>An article published on the SCP Wiki. Details an entity that appears differently for each person who sees it. Readers will see one variant of many, and they can only read it once. #19 top-rated article of 2018.</p>
+</div></div> <div class="flex flex-wrap items-center"><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="mediumpurple" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Fiction
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#f1e05a" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            JavaScript
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 88.04226065180615,37.6393202250021 73.51141009169893,82.36067977499789 26.48858990830108,82.36067977499789 11.957739348193854,37.63932022500211" fill="#7acef4" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            jQuery
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137754,30 84.64101615137756,70 50,90 15.358983848622458,70.00000000000001 15.358983848622458,29.999999999999996" fill="#0f9d58" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Spreadsheets
+        </p></div></div> <div class="flex-initial"><div class="space-y-2 flex flex-col items-start"><a href="https://scp-wiki.wikidot.com/scp-3211" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-700"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-pink-600 group-hover:to-indigo-600"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-arrow-right fa-w-14 fa-lg"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    check it out
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display"><p>
+        Image attribution: 
+              <a class="link-line hover:no-underline font-extrabold" href="https://commons.wikimedia.org/wiki/File:Uniform_polyhedron-43-t0.png">
+                1
+              </a>
+             · 
+              <a class="link-line hover:no-underline font-extrabold" href="https://www.flickr.com/photos/47445767@N05/34624018555">
+                2
+              </a>
+             · 
+              <a class="link-line hover:no-underline font-extrabold" href="https://www.flickr.com/photos/85659491@N00/458381711">
+                3
+              </a>
+             · 
+              <a class="link-line hover:no-underline font-extrabold" href="https://www.flickr.com/photos/el_cajon_yacht_club/28096590309">
+                4
+              </a>
+             · 
+              <a class="link-line hover:no-underline font-extrabold" href="https://www.flickr.com/photos/evaekeblad/8314435089">
+                5
+              </a>
+            
+      </p></div></div><div class="relative col-span-2 p-6 xl:max-w-screen-2xl xl:mx-4 xl:justify-self-center
+                        xl:rounded-xl xl:shadow-xl" style="background-image: radial-gradient(farthest-side at left top, rgb(100, 46, 44), transparent), radial-gradient(farthest-side at right top, rgb(100, 3, 15), transparent), radial-gradient(farthest-side at left bottom, rgb(66, 66, 72), transparent), radial-gradient(farthest-side at right bottom, rgb(66, 66, 72), transparent), linear-gradient(white, rgb(100, 46, 44));"><!----> <div class="container flex items-center justify-center mx-auto
+              relative z-10 space-y-4 lg:space-y-0 lg:space-x-8
+                  flex-wrap lg:flex-nowrap"><div class="flex space-x-4"><div class="flex-initial flex-shrink-1 md:flex-shrink-0 w-72"><div class="relative w-full h-full overflow-hidden rounded-lg shadow-lg"><div class="aspect-ratio-1/1"></div> <img src="projects/scp/bhl/desktop.png?71dac" class="absolute inset-0 w-full h-full object-contain"></div></div> <div class="flex-initial w-36
+                  hidden xl:block flex-shrink-1 md:flex-shrink-0"><img src="projects/scp/bhl/mobile.png?7384c" class="block rounded-lg shadow-lg"></div></div> <div class="basis-none flex justify-center flex-col space-y-2"><div class="bg-white rounded-lg shadow-lg p-6"><div class="flex flex-col md:flex-row items-center mb-1"><img src="projects/scp/bhl/logo.svg?127c0" alt="Black Highlighter" class="max-h-32 min-h-8 w-full md:w-auto max-w-xs"> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+            2019
+          </p></div> <div class="inline-links space-y-2 max-w-text text-lg"><p>A CSS theme built to replace the dated theme used by the SCP Wiki, using modern web standards and accessibility guidelines. While it was never officially adopted, it is currently used on thousands of articles and stories across the international SCP community.</p>
+</div></div> <div class="flex flex-wrap items-center"><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#563d7c" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            CSS
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#cf4647" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Gulp.js
+        </p></div></div> <div class="flex-initial"><div class="space-y-2 flex flex-col items-start"><a href="https://github.com/Nu-SCPTheme/Black-Highlighter" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-100"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-gray-500 group-hover:to-gray-700"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-github fa-w-16 fa-lg"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    GitHub
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden text-gray-100"></div></div><div class="relative col-span-2 p-2 xl:max-w-screen-2xl xl:mx-4 xl:justify-self-center
+                        " style="background-image: none;"><!----> <div class="container flex items-center justify-center mx-auto
+              relative z-10 space-y-4 lg:space-y-0 lg:space-x-8
+                  flex-wrap lg:flex-nowrap"><div class="flex space-x-4"><div class="flex-initial flex-shrink-1 md:flex-shrink-0 w-72"><div class="relative w-full h-full overflow-hidden rounded-lg shadow-lg"><div class="aspect-ratio-1/1"></div> <img src="projects/regex-series-replace.png?7584a" class="absolute inset-0 w-full h-full object-contain"></div></div> <!----></div> <div class="basis-none flex justify-center flex-col space-y-2"><div class="p-2"><div class="flex flex-col md:flex-row items-center mb-1"><h4 class="text-4xl font-display font-bold">
+            Regex Series Replace
+          </h4> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+            2020
+          </p></div> <div class="inline-links space-y-2 max-w-text text-lg"><p>A tool for applying a series of regex find-and-replace rules to a block of text. Configured rules can be exported and imported with URL arguments. </p>
+<p> Made because I got sick of having to type out the same rules again and again when I have to make a series of replacements that I've already made before.</p>
+</div></div> <div class="flex flex-wrap items-center"><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#2b7489" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            TypeScript
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#2c3e50" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Vue.js
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 88.04226065180615,37.6393202250021 73.51141009169893,82.36067977499789 26.48858990830108,82.36067977499789 11.957739348193854,37.63932022500211" fill="#8ed6fb" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Webpack
+        </p></div></div> <div class="flex-initial"><div class="space-y-2 flex flex-col items-start"><a href="/series-replace" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-700"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-pink-600 group-hover:to-indigo-600"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-arrow-right fa-w-14 fa-lg"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    check it out
+  </div></a><a href="https://github.com/rossjrw/series-replace" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-700"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-gray-500 group-hover:to-gray-700"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-github fa-w-16 fa-lg"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    GitHub
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden"></div></div><div class="relative col-span-2 p-2 justify-self-center lg:col-span-1 lg:mx-8 lg:justify-self-end" style="background-image: none;"><!----> <div class="container flex items-center justify-center mx-auto
+              relative z-10 flex-col space-y-2 max-w-prose"><div class="flex space-x-4"><!----> <!----></div> <div class="basis-none flex justify-center flex-col space-y-2"><div class="p-2"><div class="flex flex-col md:flex-row items-center mb-1"><h4 class="text-4xl font-display font-bold">
+            SCUTTLE API wrapper
+          </h4> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+            2020
+          </p></div> <div class="inline-links space-y-2 max-w-text"><p>Python wrapper around the API for <a href="https://github.com/scuttle/scuttle">SCUTTLE</a>, a web service that backs up Wikidot sites. I use it for TARS.</p>
+</div></div> <div class="flex flex-wrap items-center"><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#3572a5" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Python
+        </p></div></div> <div class="flex-initial"><div class="space-y-2 flex flex-col items-start"><a href="https://pypi.org/project/python-scuttle" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-700"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-pink-600 group-hover:to-indigo-600"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="python" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-python fa-w-14 fa-lg"><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    check it out
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden"></div></div><div class="relative col-span-2 p-6 xl:max-w-screen-2xl xl:mx-4 xl:justify-self-center
+                        xl:rounded-xl xl:shadow-xl" style="background-image: radial-gradient(farthest-side at left top, rgb(243, 186, 124), transparent), radial-gradient(farthest-side at right top, rgb(206, 143, 75), transparent), radial-gradient(farthest-side at left bottom, rgb(175, 111, 43), transparent), radial-gradient(farthest-side at right bottom, rgb(106, 58, 0), transparent), linear-gradient(white, rgb(243, 186, 124));"><!----> <div class="container flex items-center justify-center mx-auto
+              relative z-10 space-y-4 lg:space-y-0 lg:space-x-8
+                  flex-wrap lg:flex-nowrap"><div class="flex space-x-4"><div class="flex-initial flex-shrink-1 md:flex-shrink-0 w-72"><div class="relative w-full h-full overflow-hidden rounded-lg shadow-lg"><div class="aspect-ratio-1/1"></div> <img src="projects/ur.png?c1cdd" class="absolute inset-0 w-full h-full object-contain"></div></div> <!----></div> <div class="basis-none flex justify-center flex-col space-y-2"><div class="bg-white rounded-lg shadow-lg p-6"><div class="flex flex-col md:flex-row items-center mb-1"><h4 class="text-4xl font-display font-bold">
+            Ur
+          </h4> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+            2020
+          </p></div> <div class="inline-links space-y-2 max-w-text text-lg"><p>A massively-multiplayer, asynchronous Royal Game of Ur that anyone with a GitHub account can play. The board is the README of the repository. Entirely automated with GitHub actions. Players make their moves by clicking links on the README, which creates an Issue in the repository, which triggers a GitHub action to make the move and update the board state. You can play!</p>
+</div></div> <div class="flex flex-wrap items-center"><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#2b7489" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            TypeScript
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#ffb13b" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            SVG
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 88.04226065180615,37.6393202250021 73.51141009169893,82.36067977499789 26.48858990830108,82.36067977499789 11.957739348193854,37.63932022500211" fill="#2088ff" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            GitHub Actions
+        </p></div></div> <div class="flex-initial"><div class="space-y-2 flex flex-col items-start"><a href="https://github.com/rossjrw/rossjrw" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-100"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-gray-500 group-hover:to-gray-700"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-github fa-w-16 fa-lg"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    check it out
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden text-gray-100"></div></div></div></section><section><div class="my-24"><h2 class="text-5xl font-display font-bold text-center px-8 tracking-tight
+               flex justify-around items-center"><span class="hidden md:block h-0 flex-grow flex-shrink
+                   border-b-4 border-dotted border-current mx-16 mt-2"></span> <span class="block">working projects</span> <span class="hidden md:block h-0 flex-grow flex-shrink
+                   border-b-4 border-dotted border-current mx-16 mt-2"></span></h2> <h3 class="text-xl font-display text-center mt-1 px-8 opacity-80">
+      stuff I'm still working on — shhh tell no one
+    </h3></div> <div class="grid grid-cols-2 gap-y-16 grid-flow-row-dense
+              justify-items-stretch items-start
+              my-24"><div class="relative col-span-2 p-2 justify-self-center lg:col-span-1 lg:mx-8 lg:justify-self-end" style="background-image: none;"><!----> <div class="container flex items-center justify-center mx-auto
+              relative z-10 flex-col space-y-2 max-w-prose"><div class="flex space-x-4"><!----> <!----></div> <div class="basis-none flex justify-center flex-col space-y-2"><div class="p-2"><div class="flex flex-col md:flex-row items-center mb-1"><h4 class="text-4xl font-display font-bold">
+            TARS
+          </h4> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+            2019–
+          </p></div> <div class="inline-links space-y-2 max-w-text"><p>An IRC bot originally built for automating social media posts for SCP Wiki staff, but mostly used as a Markov Chain generator for making almost-real sentences.</p>
+</div></div> <div class="flex flex-wrap items-center"><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#3572a5" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Python
+        </p></div></div> <div class="flex-initial"><div class="space-y-2 flex flex-col items-start"><a href="/tars/help" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-700"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-pink-600 group-hover:to-indigo-600"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-arrow-right fa-w-14 fa-lg"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    check it out
+  </div></a><a href="https://github.com/rossjrw/tars" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-700"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-gray-500 group-hover:to-gray-700"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-github fa-w-16 fa-lg"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    GitHub
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden"></div></div><div class="relative col-span-2 p-2 justify-self-center lg:col-span-1 lg:mx-8 lg:justify-self-start" style="background-image: none;"><!----> <div class="container flex items-center justify-center mx-auto
+              relative z-10 flex-col space-y-2 max-w-prose"><div class="flex space-x-4"><!----> <!----></div> <div class="basis-none flex justify-center flex-col space-y-2"><div class="p-2"><div class="flex flex-col md:flex-row items-center mb-1"><h4 class="text-4xl font-display font-bold">
+            Gallifreyo
+          </h4> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+            2017–2018, 2020–
+          </p></div> <div class="inline-links space-y-2 max-w-text"><p>A Gallifreyan translator, based on a language made by fans of Doctor Who.</p>
+</div></div> <div class="flex flex-wrap items-center"><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#2b7489" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            TypeScript
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#2c3e50" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Vue.js
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 88.04226065180615,37.6393202250021 73.51141009169893,82.36067977499789 26.48858990830108,82.36067977499789 11.957739348193854,37.63932022500211" fill="#8ed6fb" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Webpack
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137754,30 84.64101615137756,70 50,90 15.358983848622458,70.00000000000001 15.358983848622458,29.999999999999996" fill="#ffb13b" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            SVG
+        </p></div></div> <div class="flex-initial"><div class="space-y-2 flex flex-col items-start"><a href="/gallifreyo" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-700"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-pink-600 group-hover:to-indigo-600"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-arrow-right fa-w-14 fa-lg"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    check it out
+  </div></a><a href="https://github.com/rossjrw/gallifreyo" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-700"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-gray-500 group-hover:to-gray-700"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-github fa-w-16 fa-lg"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    GitHub
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden"></div></div><div class="relative col-span-2 p-6 xl:max-w-screen-2xl xl:mx-4 xl:justify-self-center
+                        xl:rounded-xl xl:shadow-xl" style="background-image: radial-gradient(farthest-side at left top, rgb(224, 166, 52), transparent), radial-gradient(farthest-side at right top, rgb(223, 190, 106), transparent), radial-gradient(farthest-side at left bottom, rgb(131, 131, 131), transparent), radial-gradient(farthest-side at right bottom, rgb(0, 0, 0), transparent), linear-gradient(white, rgb(224, 166, 52));"><!----> <div class="container flex items-center justify-center mx-auto
+              relative z-10 space-y-4 lg:space-y-0 lg:space-x-8
+                  flex-wrap lg:flex-nowrap"><div class="flex space-x-4"><div class="flex-initial flex-shrink-1 md:flex-shrink-0 w-72"><div class="relative w-full h-full overflow-hidden rounded-lg shadow-lg"><div class="aspect-ratio-1/1"></div> <img src="projects/website.png?1ef09" class="absolute inset-0 w-full h-full object-contain"></div></div> <!----></div> <div class="basis-none flex justify-center flex-col space-y-2"><div class="bg-white rounded-lg shadow-lg p-6"><div class="flex flex-col md:flex-row items-center mb-1"><h4 class="text-4xl font-display font-bold">
+            rossjrw.com
+          </h4> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+            2020–
+          </p></div> <div class="inline-links space-y-2 max-w-text text-lg"><p>A place where all of my projects are listed, and little else. There's also no semblance of personal information or contact details. Overall, a very useful site.</p>
+</div></div> <div class="flex flex-wrap items-center"><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#2c3e50" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Vue.js
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#2b7489" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            TypeScript
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 88.04226065180615,37.6393202250021 73.51141009169893,82.36067977499789 26.48858990830108,82.36067977499789 11.957739348193854,37.63932022500211" fill="#8ed6fb" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Webpack
+        </p></div></div> <div class="flex-initial"><div class="space-y-2 flex flex-col items-start"><a href="https://rossjrw.com" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-100"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-pink-600 group-hover:to-indigo-600"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-arrow-right fa-w-14 fa-lg"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    check it out
+  </div></a><a href="https://github.com/rossjrw/rossjrw.github.io" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-100"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-gray-500 group-hover:to-gray-700"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-github fa-w-16 fa-lg"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    GitHub
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden text-gray-100"></div></div></div></section><section><div class="my-24"><h2 class="text-5xl font-display font-bold text-center px-8 tracking-tight
+               flex justify-around items-center"><span class="hidden md:block h-0 flex-grow flex-shrink
+                   border-b-4 border-dotted border-current mx-16 mt-2"></span> <span class="block">unfinished projects</span> <span class="hidden md:block h-0 flex-grow flex-shrink
+                   border-b-4 border-dotted border-current mx-16 mt-2"></span></h2> <h3 class="text-xl font-display text-center mt-1 px-8 opacity-80">
+      these were never finished, but I may return to them
+    </h3></div> <div class="grid grid-cols-2 gap-y-16 grid-flow-row-dense
+              justify-items-stretch items-start
+              my-24"><div class="relative col-span-2 p-8 3xl:max-w-screen-3xl 3xl:mx-4 3xl:justify-self-center
+                     3xl:rounded-2xl 3xl:shadow-2xl" style="background-image: radial-gradient(farthest-side at left top, rgb(20, 136, 204), transparent), radial-gradient(farthest-side at right top, rgb(26, 115, 198), transparent), radial-gradient(farthest-side at left bottom, rgb(32, 93, 191), transparent), radial-gradient(farthest-side at right bottom, rgb(43, 50, 178), transparent), linear-gradient(white, rgb(20, 136, 204));"><!----> <div class="container flex items-center justify-center mx-auto
+              relative z-10 space-y-4 lg:space-y-0 lg:space-x-8
+                  flex-wrap lg:flex-nowrap"><div class="flex space-x-4"><div class="flex-initial flex-shrink-1 md:flex-shrink-0 w-72 md:w-big"><div class="relative w-full h-full overflow-hidden rounded-lg shadow-lg"><div class="aspect-ratio-1/1"></div> <img src="projects/scp/maitreya/maitreya.png?7263b" class="absolute inset-0 w-full h-full object-contain"></div></div> <!----></div> <div class="basis-none flex justify-center flex-col space-y-6"><div class="p-2 text-gray-100"><div class="flex flex-col md:flex-row items-center mb-2"><img src="projects/scp/maitreya/logo.png?b83d8" alt="Maitreya.aic" class="max-h-32 min-h-8 w-full md:w-auto max-w-sm"> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+            2018–2019
+          </p></div> <div class="inline-links space-y-2 max-w-text font-serif text-xl"><p>A text adventure game, with vast scope for player agency. You are an artificial intelligence built to study a creature that lies beyond human comprehension.  How you go about that, and perhaps what exactly you discover, is up to you.</p>
+</div></div> <div class="flex flex-wrap items-center"><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="mediumpurple" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Fiction
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#244776" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            CoffeeScript
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 88.04226065180615,37.6393202250021 73.51141009169893,82.36067977499789 26.48858990830108,82.36067977499789 11.957739348193854,37.63932022500211" fill="#e42939" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            AngularJS
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137754,30 84.64101615137756,70 50,90 15.358983848622458,70.00000000000001 15.358983848622458,29.999999999999996" fill="#cf4647" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            Gulp.js
+        </p></div></div> <div class="flex-initial"><div class="space-y-2 flex flex-col items-start"><a href="/maitreya" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-100"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-pink-600 group-hover:to-indigo-600"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-arrow-right fa-w-14 fa-lg"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    check it out
+  </div></a><a href="https://github.com/rossjrw/maitreya" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-100"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-gray-500 group-hover:to-gray-700"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-github fa-w-16 fa-lg"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    GitHub
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden text-gray-100"></div></div></div></section><section><div class="my-24"><h2 class="text-5xl font-display font-bold text-center px-8 tracking-tight
+               flex justify-around items-center"><span class="hidden md:block h-0 flex-grow flex-shrink
+                   border-b-4 border-dotted border-current mx-16 mt-2"></span> <span class="block">the graveyard</span> <span class="hidden md:block h-0 flex-grow flex-shrink
+                   border-b-4 border-dotted border-current mx-16 mt-2"></span></h2> <h3 class="text-xl font-display text-center mt-1 px-8 opacity-80">
+      abandoned projects that I will never touch again
+    </h3></div> <div class="grid grid-cols-2 gap-y-16 grid-flow-row-dense
+              justify-items-stretch items-start
+              my-24"><div class="relative col-span-2 p-2 xl:max-w-screen-2xl xl:mx-4 xl:justify-self-center
+                        " style="background-image: none;"><!----> <div class="container flex items-center justify-center mx-auto
+              relative z-10 space-y-4 lg:space-y-0 lg:space-x-8
+                  flex-wrap lg:flex-nowrap"><div class="flex space-x-4"><div class="flex-initial flex-shrink-1 md:flex-shrink-0 w-72"><div class="relative w-full h-full overflow-hidden rounded-lg shadow-lg"><div class="aspect-ratio-1/1"></div> <img src="projects/automafia.png?1298b" class="absolute inset-0 w-full h-full object-contain"></div></div> <!----></div> <div class="basis-none flex justify-center flex-col space-y-2"><div class="p-2"><div class="flex flex-col md:flex-row items-center mb-1"><h4 class="text-4xl font-display font-bold">
+            Automafia
+          </h4> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+            2016
+          </p></div> <div class="inline-links space-y-2 max-w-text text-lg"><p>An attempt to automate Mafia, the social game of lies and betrayal. My first ever programming project. Began on a spreadsheet, but quickly grew too complex; it was this limitation that prompted me to begin learning JavaScript. It doesn't work and was never really a good idea, but the code contains fond memories.</p>
+</div></div> <div class="flex flex-wrap items-center"><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 84.64101615137756,70 15.358983848622458,70.00000000000001" fill="#f1e05a" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            JavaScript
+        </p><p class="whitespace-nowrap rounded-full bg-white
+                  pl-2 pr-3 pb-0.5 mx-1.5 my-1"><span class="w-4 h-6 inline-flex justify-center items-center"><svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-4 relative top-0.5"><polygon points="50,10 90,50 50,90 10,50.00000000000001" fill="#e42939" stroke="white" stroke-width="20" stroke-linejoin="round" style="paint-order: stroke;"></polygon></svg></span>
+            AngularJS
+        </p></div></div> <div class="flex-initial"><div class="space-y-2 flex flex-col items-start"><a href="https://theyrecoming.neocities.org/mafia/automafia.html" class="group flex items-center relative whitespace-nowrap h-12
+          transition-all duration-300
+          hover:text-white text-gray-700"><div class="rounded-full shadow-md
+              flex justify-start items-center
+              w-12 group-hover:w-full
+              absolute inset-y-0 left-0 h-12 z-0
+              bg-gradient-to-r from-white to-white
+              transition-all duration-500 group-hover:duration-200
+              ease-out group-hover:ease-in group-hover:from-pink-600 group-hover:to-indigo-600"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="transform transition-all
+                            translate-x-3.5 group-hover:translate-x-6
+                            text-blue-700 group-hover:text-white svg-inline--fa fa-arrow-right fa-w-14 fa-lg"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" class=""></path></svg></div> <div class="relative pl-14 z-10 pr-5
+              text-3xl font-display font-extrabold tracking-tight
+              link-line group-hover:no-underline
+              text-opacity-80 group-hover:text-opacity-100">
+    check it out
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden"></div></div></div></section> <footer class="flex flex-col items-center py-16 space-y-2"><p>the end</p> <a href="https://ko-fi.com/I3I41R5OU" target="_blank"><img height="36" src="https://cdn.ko-fi.com/cdn/kofi5.png?v=2" border="0" alt="Buy Me a Coffee at ko-fi.com" style="border: 0px; height: 36px;"></a></footer></div><script src="bundle.a40d5.js"></script></body></html>
