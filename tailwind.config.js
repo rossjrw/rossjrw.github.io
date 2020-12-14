@@ -3,5 +3,6 @@ module.exports = {
     extend: {
       zIndex: ['hover']
     }
-  }
+  },
+  purge: [ './src/**/*.vue' ]
 }
