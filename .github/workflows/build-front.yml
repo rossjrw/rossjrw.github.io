@@ -1,4 +1,4 @@
-name: build
+name: frontend build
 on:
   push:
     branches: [master]
@@ -7,12 +7,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./front
     steps:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Install
+      working-directory: ${{env.working-directory}}
       run: npm install
     - name: Build
+      working-directory: ${{env.working-directory}}
       run: npm run build-production
     - name: Deploy
       if: github.ref == 'refs/heads/master'
@@ -20,4 +24,4 @@ jobs:
       with:
         ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
         BRANCH: gh-pages
-        FOLDER: dist
+        FOLDER: ./${{env.working-directory}}/dist
