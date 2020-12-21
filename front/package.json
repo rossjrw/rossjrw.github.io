@@ -1,10 +1,7 @@
 {
   "name": "rossjrw.github.io",
-  "version": "1.0.0",
-  "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.dev.js",
     "start": "webpack-dev-server --mode development --config webpack.dev.js --open",
     "build-production": "NODE_ENV=production webpack --config webpack.prod.js"
@@ -13,12 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/rossjrw/rossjrw.github.io.git"
   },
-  "author": "Ross Williams",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rossjrw/rossjrw.github.io/issues"
-  },
-  "homepage": "https://github.com/rossjrw/rossjrw.github.io#readme",
   "browserslist": "cover 99.5%",
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -82,6 +73,5 @@
       ],
       "babel-preset-typescript-vue"
     ]
-  },
-  "dependencies": {}
+  }
 }
