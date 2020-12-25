@@ -9,6 +9,7 @@ export type Project =  {
   tags: Tag[]
   tech?: Technology[]
   desc: string
+  git?: { repo: string, branch: string }
   back?: Colours
   fore?: 'light' | 'dark'
   links: ProjectLink[]

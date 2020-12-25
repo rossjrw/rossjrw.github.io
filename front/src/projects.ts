@@ -15,6 +15,7 @@ export const projects: Project[] = [
       something personal that I don't want others to read. So why is it
       open source?
     `,
+    git: { repo: "rossjrw/neograph", branch: "master" },
     links: [
       { name: "check it out", href: "/neograph" }
     ],
@@ -122,6 +123,7 @@ export const projects: Project[] = [
       officially adopted, it is currently used on thousands of articles and
       stories across the international SCP community.
     `,
+    git: { repo: "Nu-SCPTheme/Black-Highlighter", branch: "master" },
     back: [[100, 46, 44], [100, 3, 15], [66, 66, 72], [66, 66, 72]],
     fore: "light",
     links: [
@@ -148,6 +150,7 @@ export const projects: Project[] = [
       again when I have to make a series of replacements that I've already made
       before.
     `,
+    git: { repo: "rossjrw/series-replace", branch: "master" },
     links: [
       { name: "check it out", href: "/series-replace" },
       { name: "GitHub", href: "https://github.com/rossjrw/series-replace" }
@@ -167,6 +170,7 @@ export const projects: Project[] = [
       [SCUTTLE](https://github.com/scuttle/scuttle), a web service that
       backs up Wikidot sites. I use it for TARS.
     `,
+    git: { repo: "scuttle/python-scuttle", branch: "master" },
     links: [
       { name: "check it out", href: "https://pypi.org/project/python-scuttle" }
     ]
@@ -185,6 +189,7 @@ export const projects: Project[] = [
       which triggers a GitHub action to make the move and update the board
       state. You can play!
     `,
+    git: { repo: "rossjrw/rossjrw", branch: "source" },
     back: [[243, 186, 124], [206, 143, 75], [175, 111, 43], [106, 58, 0]],
     fore: "light",
     links: [
@@ -205,6 +210,7 @@ export const projects: Project[] = [
       Wiki staff, but mostly used as a Markov Chain generator for making
       almost-real sentences.
     `,
+    git: { repo: "rossjrw/tars", branch: "master" },
     links: [
       { name: "check it out", href: "/tars/help" },
       { name: "GitHub", href: "https://github.com/rossjrw/tars" }
@@ -219,6 +225,7 @@ export const projects: Project[] = [
     desc: compress`
       A Gallifreyan translator, based on a language made by fans of Doctor Who.
     `,
+    git: { repo: "rossjrw/gallifreyo", branch: "master" },
     links: [
       { name: "check it out", href: "/gallifreyo" },
       { name: "GitHub", href: "https://github.com/rossjrw/gallifreyo" }
@@ -235,6 +242,7 @@ export const projects: Project[] = [
       also no semblance of personal information or contact details. Overall,
       a very useful site.
     `,
+    git: { repo: "rossjrw/rossjrw.github.io", branch: "master" },
     back: [[224, 166, 52], [223, 190, 106], [131, 131, 131], [0, 0, 0]],
     fore: "light",
     links: [
@@ -257,6 +265,7 @@ export const projects: Project[] = [
       human comprehension.  How you go about that, and perhaps what exactly you
       discover, is up to you.
     `,
+    git: { repo: "rossjrw/maitreya", branch: "master" },
     back: ["#1488cc", "#1a73c6", "#205dbf", "#2b32b2"],
     fore: "light",
     links: [
