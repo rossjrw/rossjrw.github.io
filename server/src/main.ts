@@ -1,4 +1,5 @@
 import fetch, { Response } from "node-fetch"
+import { projects } from "../../front/src/projects"
 
 const TOKEN = process.env.GITHUB_GRAPHQL_TOKEN
 
@@ -13,8 +14,9 @@ async function gql (query: string): Promise<Response> {
 }
 
 export async function main (): Promise<void> {
-  const repos: string[] = listTopRepos()
-  repos.forEach
+  // const repos: string[] = listTopRepos()
+  projects
+  // repos.forEach
 
-  console.log(response)
+  // console.log(response)
 }

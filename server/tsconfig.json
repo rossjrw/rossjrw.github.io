@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/",
+    "strict": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "lib": [ "es2020" ]
+  },
+  "include": [ "src/**/*.ts" ],
+  "types": [ "node" ],
+  "references": [ { "path": "../shared" } ]
+}
