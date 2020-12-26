@@ -5,7 +5,7 @@
     "rootDir": "./src/",
     "tsBuildInfoFile": "./dist/.tsbuildinfo",
     "strict": true,
-    "module": "es6",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "lib": [ "es2020" ],
