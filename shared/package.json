@@ -9,9 +9,11 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.10.0",
     "@typescript-eslint/parser": "^4.10.0",
-    "compress-tag": "^2.0.0",
     "eslint": "^7.16.0",
     "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "compress-tag": "^2.0.0"
   },
   "gitHead": "d0e0809ed67781a3513281a019ba75b989d271ed"
 }
