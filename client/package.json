@@ -1,11 +1,14 @@
 {
   "name": "@rossjrw/rossjrw.com-client",
   "main": "index.ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "build": "webpack --config webpack.dev.js",
     "start": "webpack-dev-server --mode development --config webpack.dev.js --open",
     "build-production": "NODE_ENV=production webpack --config webpack.prod.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "browserslist": "cover 99.5%",
   "devDependencies": {
@@ -70,5 +73,6 @@
       ],
       "babel-preset-typescript-vue"
     ]
-  }
+  },
+  "gitHead": "d0e0809ed67781a3513281a019ba75b989d271ed"
 }
