@@ -1,12 +1,9 @@
 {
-  "name": "rossjrw.com",
+  "name": "@rossjrw/rossjrw.com-server",
   "main": "main.ts",
+  "version": "0.0.0",
   "scripts": {
     "build": "webpack --config webpack.config.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rossjrw/rossjrw.github.io.git"
   },
   "devDependencies": {
     "@types/node-fetch": "^2.5.7",
