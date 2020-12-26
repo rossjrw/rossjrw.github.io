@@ -27,9 +27,10 @@
 <script lang="ts">
 import Vue, { PropType } from "vue"
 
-import { projects } from "@/projects"
 import Project from '@/components/Project.vue'
-import { Project as ProjectType, Tag } from "@/types"
+import {
+  projects, Project as ProjectType, Tag
+} from "@rossjrw/rossjrw.com-shared"
 
 export default Vue.extend({
   name: "ProjectList",

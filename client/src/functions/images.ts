@@ -1,4 +1,6 @@
-import { Project, ProjectImageFunc, ProjectImage } from  "@/types"
+import {
+  Project, ProjectImageFunc, ProjectImage
+} from "@rossjrw/rossjrw.com-shared"
 
 function matchingImages (
   project: Project,

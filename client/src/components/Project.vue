@@ -124,7 +124,7 @@ import ProjectLink from "@/components/ProjectLink.vue"
 import { hasImage, getImage } from "@/functions/images"
 import { techColour } from "@/functions/techColours"
 import { gradientMesh } from "@/functions/gradientMesh"
-import { Project, Technology } from "@/types"
+import { Project, Technology } from "@rossjrw/rossjrw.com-shared"
 
 export default Vue.extend({
   name: "Project",
