@@ -1,5 +1,5 @@
 import fetch, { Response } from "node-fetch"
-import { projects } from "../../front/src/projects"
+import { projects } from "@rossjrw/rossjrw.com-shared"
 
 const TOKEN = process.env.GITHUB_GRAPHQL_TOKEN
 

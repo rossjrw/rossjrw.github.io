@@ -9,6 +9,7 @@
     "access": "public"
   },
   "devDependencies": {
+    "@rossjrw/rossjrw.com-shared": "latest",
     "@types/node-fetch": "^2.5.7",
     "@typescript-eslint/eslint-plugin": "^4.10.0",
     "@typescript-eslint/parser": "^4.10.0",
