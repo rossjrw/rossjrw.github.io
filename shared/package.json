@@ -2,7 +2,7 @@
   "name": "@rossjrw/rossjrw.com-shared",
   "main": "index.ts",
   "types": "dist/types.d.ts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.10.0",
     "@typescript-eslint/parser": "^4.10.0",
