@@ -3,6 +3,7 @@
   "main": "index.ts",
   "version": "0.0.4",
   "scripts": {
+    "typecheck": "tsc ; vti diagnostics",
     "build": "webpack --config webpack.dev.js",
     "start": "webpack-dev-server --mode development --config webpack.dev.js --open",
     "build-production": "NODE_ENV=production webpack --config webpack.prod.js"
@@ -53,11 +54,12 @@
     "tailwindcss-aspect-ratio": "^3.0.0",
     "tailwindcss-filters": "^3.0.0",
     "typescript": "^3.9.3",
-    "vue": "^2.6.11",
+    "vti": "0.0.23",
+    "vue": "^2.6.12",
     "vue-gh-corners": "^3.0.1",
-    "vue-loader": "^15.9.2",
+    "vue-loader": "^15.9.6",
     "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.11",
+    "vue-template-compiler": "^2.6.12",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0",

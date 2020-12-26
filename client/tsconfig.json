@@ -2,22 +2,13 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/",
-    "noImplicitAny": true,
-    "noImplicitThis": true,
+    "strict": true,
     "module": "es6",
     "target": "es5",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "lib": [
-      "es2020",
-      "dom"
-    ],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-    "composite": true
+    "lib": [ "es2020", "dom" ],
+    "paths": { "@/*": [ "src/*" ] }
   },
   "include": [
     "src/**/*.ts",
@@ -27,9 +18,7 @@
     "node_modules"
   ],
   "types": [
-    "node",
     "src/shims-vue.d.ts",
     "src/shims-raw-loader.d.ts"
-  ],
-  "references": [ { "path": "../shared" } ]
+  ]
 }
