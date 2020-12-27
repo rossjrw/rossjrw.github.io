@@ -21,7 +21,7 @@ import Vue, { PropType } from "vue"
 
 import SwipeImage from "@/components/SwipeImage.vue"
 import { hasImage, getImage, imageType } from "@/functions/images"
-import { Project, ProjectImageFunc } from "@/types"
+import { Project, ProjectImageFunc } from "@rossjrw/rossjrw.com-shared"
 
 export default Vue.extend({
   props: {

@@ -1,4 +1,6 @@
-import { Project, ProjectImageFunc, ProjectImage } from  "@/types"
+import {
+  Project, ProjectImageFunc, ProjectImage
+} from "@rossjrw/rossjrw.com-shared"
 
 function matchingImages (
   project: Project,
@@ -8,7 +10,7 @@ function matchingImages (
   if (!('images' in project)) {
     return []
   }
-  return project.images.filter(image => {
+  return project.images!.filter(image => {
     if (wantsFallback) {
       return (
         image.func === func &&
@@ -69,6 +71,6 @@ export function imageType (project: Project, func: ProjectImageFunc): string {
   /**
    * Get the filetype of an image.
    */
-  const url = project.images.filter(image => image.func === func)[0].href
+  const url = project.images!.filter(image => image.func === func)[0].href
   return url.split(".").slice(-1)[0]
 }

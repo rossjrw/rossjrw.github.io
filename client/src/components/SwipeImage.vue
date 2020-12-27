@@ -13,7 +13,7 @@ import Vue, { PropType } from "vue"
 import gsap, { Circ } from "gsap"
 
 import { getImage } from "@/functions/images"
-import { Project, ProjectImageFunc } from "@/types"
+import { Project, ProjectImageFunc } from "@rossjrw/rossjrw.com-shared"
 
 // TODO The space between clips could be configurable
 

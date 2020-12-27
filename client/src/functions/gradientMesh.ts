@@ -1,4 +1,4 @@
-import { Colours } from '@/types'
+import { Colours } from "@rossjrw/rossjrw.com-shared"
 
 export function gradientMesh (
   colours: Colours,

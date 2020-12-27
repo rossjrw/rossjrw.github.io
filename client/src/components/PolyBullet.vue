@@ -14,7 +14,7 @@
 <script lang="ts">
 import Vue, { PropType } from "vue"
 
-import { TechnologyColours } from "@/types"
+import { TechnologyColours } from "@rossjrw/rossjrw.com-shared"
 
 const SVG_SIZE = 100
 const BORDER_WIDTH = 10

@@ -1,4 +1,4 @@
-import { Technology, TechnologyColours } from '@/types'
+import { Technology, TechnologyColours } from "@rossjrw/rossjrw.com-shared"
 
 const techColours: TechnologyColours = {
   Python: "#3572a5",

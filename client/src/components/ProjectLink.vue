@@ -32,7 +32,7 @@
 import Vue, { PropType } from "vue"
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 
-import { ProjectLink } from "@/types"
+import { ProjectLink } from "@rossjrw/rossjrw.com-shared"
 
 export default Vue.extend({
   name: "ProjectLink",
