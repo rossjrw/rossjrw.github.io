@@ -179,17 +179,18 @@ export const projects: Project[] = [
     tags: ["completed"],
     tech: ["TypeScript", "SVG", "GitHub Actions"],
     desc: compress`
-      A massively-multiplayer, asynchronous Royal Game of Ur that anyone with a
-      GitHub account can play. The board is the README of the repository.
-      Entirely automated with GitHub actions. Players make their moves by
-      clicking links on the README, which creates an Issue in the repository,
-      which triggers a GitHub action to make the move and update the board
-      state. You can play!
+      A massively-multiplayer, asynchronous
+      [Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur)
+      that anyone with a GitHub account can play. The board is the README of
+      the repository. Entirely automated with GitHub actions. Players make
+      their moves by clicking links on the README, which creates an Issue in
+      the repository, which triggers a GitHub action to make the move and
+      update the board state. You can play!
     `,
     back: [[243, 186, 124], [206, 143, 75], [175, 111, 43], [106, 58, 0]],
     fore: "light",
     links: [
-      { name: "check it out", href: "https://github.com/rossjrw/rossjrw" }
+      { name: "your turn!", href: "https://github.com/rossjrw/rossjrw" }
     ],
     images: [
       { func: "main", href: "ur.png" }
