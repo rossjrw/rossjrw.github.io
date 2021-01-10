@@ -135,7 +135,7 @@ export const projects: Project[] = [
   },
   {
     name: "Regex Series Replace",
-    size: "normal",
+    size: "small",
     date: [[2020]],
     tags: ["completed", "utility"],
     tech: ["TypeScript", "Vue.js", "Webpack"],
@@ -143,18 +143,11 @@ export const projects: Project[] = [
       A tool for applying a series of regex find-and-replace rules to a block
       of text. Configured rules can be exported and imported with URL
       arguments.
-      \n\n
-      Made because I got sick of having to type out the same rules again and
-      again when I have to make a series of replacements that I've already made
-      before.
     `,
     links: [
       { name: "check it out", href: "/series-replace" },
       { name: "GitHub", href: "https://github.com/rossjrw/series-replace" }
     ],
-    images: [
-      { func: "main", href: "regex-series-replace.png" }
-    ]
   },
   {
     name: "SCUTTLE API wrapper",
