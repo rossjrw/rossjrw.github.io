@@ -4,6 +4,7 @@ export type State = {
 
 export type Project =  {
   name: string
+  interestingness: number
   size: 'small' | 'normal' | 'big'
   date: number[][]
   tags: Tag[]

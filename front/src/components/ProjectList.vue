@@ -44,7 +44,7 @@ export default Vue.extend({
       get(): ProjectType[] {
         return projects.filter(project => {
           return project.tags.includes(this.filterByTag)
-        })
+        }).sort((a, b) => b.interestingness - a.interestingness)
       }
     }
   },

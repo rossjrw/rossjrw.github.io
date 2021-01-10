@@ -4,6 +4,7 @@ import { Project } from "@/types"
 export const projects: Project[] = [
   {
     name: "Faux Coffee Shop",
+    interestingness: 50,
     size: "normal",
     date: [[2017]],
     tags: ["completed"],
@@ -24,6 +25,7 @@ export const projects: Project[] = [
   },
   {
     name: "The Pipeworks",
+    interestingness: 70,
     size: "big",
     date: [[2016], [2017]],
     tags: ["completed"],
@@ -52,6 +54,7 @@ export const projects: Project[] = [
   },
   {
     name: "SCP-3939",
+    interestingness: 70,
     size: "small",
     date: [[2018]],
     tags: ["completed"],
@@ -73,6 +76,7 @@ export const projects: Project[] = [
   },
   {
     name: "SCP-3211",
+    interestingness: 90,
     size: "small",
     date: [[2018]],
     tags: ["completed"],
@@ -112,6 +116,7 @@ export const projects: Project[] = [
   },
   {
     name: "Black Highlighter",
+    interestingness: 40,
     size: "normal",
     date: [[2019]],
     tags: ["completed"],
@@ -135,6 +140,7 @@ export const projects: Project[] = [
   },
   {
     name: "Regex Series Replace",
+    interestingness: 10,
     size: "small",
     date: [[2020]],
     tags: ["completed", "utility"],
@@ -151,6 +157,7 @@ export const projects: Project[] = [
   },
   {
     name: "SCUTTLE API wrapper",
+    interestingness: 0,
     size: "small",
     date: [[2020]],
     tags: ["completed", "utility"],
@@ -166,6 +173,7 @@ export const projects: Project[] = [
   },
   {
     name: "Ur",
+    interestingness: 80,
     size: "normal",
     date: [[2020]],
     tags: ["completed"],
@@ -189,6 +197,7 @@ export const projects: Project[] = [
   },
   {
     name: "TARS",
+    interestingness: 60,
     size: "small",
     date: [[2019]],
     tags: ["unfinished"],
@@ -206,6 +215,7 @@ export const projects: Project[] = [
   },
   {
     name: "Gallifreyo",
+    interestingness: 80,
     size: "small",
     date: [[2017, 2018], [2020]],
     tags: ["working"],
@@ -220,6 +230,7 @@ export const projects: Project[] = [
   },
   {
     name: "rossjrw.com",
+    interestingness: 60,
     size: "normal",
     date: [[2020]],
     tags: ["working"],
@@ -241,6 +252,7 @@ export const projects: Project[] = [
   },
   {
     name: "Maitreya.aic",
+    interestingness: 40,
     size: "big",
     date: [[2018, 2019]],
     tags: ["unfinished"],
@@ -264,6 +276,7 @@ export const projects: Project[] = [
   },
   {
     name: "Automafia",
+    interestingness: 0,
     size: "normal",
     date: [[2016]],
     tags: ["abandoned"],
