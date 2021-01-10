@@ -22,7 +22,7 @@ module.exports = {
       maxWidth: { 'text': '50ch' },
       fontFamily: {
         display: ['Aileron', 'sans-serif'],
-        sans: ['Metropolis', 'sans-serif'],
+        sans: ['"Libre Franklin"', 'sans-serif'],
         serif: ['Lora', 'serif']
       },
       fontSize: { 'lg': ['1.125rem', '1.5rem' ] },
