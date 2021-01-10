@@ -10,5 +10,5 @@ This is the monorepo for my website, [rossjrw.com](https://rossjrw.com).
   frontend.
 * **[shared](shared)**: Files used by both the frontend and the backend.
 
-You may find the site's [full tech stack](https://rossjrw.com/stack)
-interesting.
+<!--You may find the site's [full tech stack](https://rossjrw.com/stack)
+interesting.-->
