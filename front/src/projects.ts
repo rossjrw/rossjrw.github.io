@@ -40,7 +40,7 @@ export const projects: Project[] = [
       cooperatively against the board and host, depending on how player-player
       relations develop.
     `,
-    back: [[40, 40, 40], [191, 144, 0], [40, 40, 40], [40, 40, 40]],
+    back: [[30, 30, 50], [191, 144, 0], [30, 30, 50], [30, 40, 60]],
     fore: "light",
     links: [
       { name: "board", href: "https://docs.google.com/spreadsheets/d/1G0XCT7KVrhxvwK1Tv-7TBZiYjiwX9NlSijeQNuWlEec/edit?usp=sharing" },
