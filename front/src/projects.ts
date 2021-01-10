@@ -201,13 +201,12 @@ export const projects: Project[] = [
     interestingness: 60,
     size: "small",
     date: [[2019]],
-    tags: ["unfinished"],
+    tags: ["working"],
     tech: ["Python"],
     desc: compress`
       An IRC bot originally built for automating social media posts for SCP
       Wiki staff, but mostly used as a Markov Chain generator for making
-      almost-real sentences. Needs a reliable data API before I can resume work
-      -- i.e. Wikijump.
+      almost-real sentences.
     `,
     links: [
       { name: "check it out", href: "/tars/help" },
