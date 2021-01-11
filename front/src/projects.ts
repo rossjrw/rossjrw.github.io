@@ -76,7 +76,7 @@ export const projects: Project[] = [
   },
   {
     name: "SCP-3211",
-    interestingness: 90,
+    interestingness: 80,
     size: "small",
     date: [[2018]],
     tags: ["completed"],
@@ -89,7 +89,8 @@ export const projects: Project[] = [
     back: [[250, 250, 250], [245, 245, 245], [240, 240, 240], [243, 87, 87]],
     fore: "dark",
     links: [
-      { name: "check it out", href: "https://scp-wiki.wikidot.com/scp-3211" }
+      { name: "check it out", href: "https://scp-wiki.wikidot.com/scp-3211" },
+      { name: "GitHub", href: "https://github.com/rossjrw/scp/tree/main/articles/scp-3211" }
     ],
     images: [
       {
@@ -173,7 +174,7 @@ export const projects: Project[] = [
   },
   {
     name: "Ur",
-    interestingness: 80,
+    interestingness: 90,
     size: "normal",
     date: [[2020]],
     tags: ["completed"],
@@ -293,6 +294,25 @@ export const projects: Project[] = [
     ],
     images: [
       { func: "main", href: "automafia.png" }
+    ]
+  },
+  {
+    name: "Wikijump",
+    interestingness: 20,
+    size: "small",
+    date: [[2020]],
+    tags: ["working"],
+    tech: ["PHP", "Terraform", "TypeScript", "Webpack"],
+    desc: compress`
+      The English-speaking [SCP Wiki](https://scp-wiki.wikidot.com/) branch's
+      proposal for resurrecting [Wikidot](https://www.wikidot.com) by
+      breathing a modern spirit into an old open-source release.
+    `,
+    links: [
+      { name: "check it out", href: "https://github.com/scpwiki/wikijump" }
+    ],
+    images: [
+      { func: "logo", href: "wikijump.svg" }
     ]
   }
 ]

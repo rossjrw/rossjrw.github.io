@@ -46,7 +46,7 @@ export type Technology =
   // Frameworks
   | "Vue.js" | "AngularJS" | "jQuery"
   // Build tools
-  | "Gulp.js" | "Webpack" | "GitHub Actions"
+  | "Gulp.js" | "Webpack" | "GitHub Actions" | "Terraform"
   // Miscellaneous
   | "CSS" | "SVG" | "Regex" | "Spreadsheets"
   // Even more miscellaneous
