@@ -232,24 +232,22 @@ export const projects: Project[] = [
   {
     name: "rossjrw.com",
     interestingness: 60,
-    size: "normal",
+    size: "small",
     date: [[2020]],
     tags: ["working"],
     tech: ["Vue.js", "TypeScript", "Webpack"],
     desc: compress`
-      A place where all of my projects are listed, and little else. There's
-      also no semblance of personal information or contact details. Overall,
-      a very useful site.
+      👋
     `,
-    back: [[224, 166, 52], [223, 190, 106], [131, 131, 131], [0, 0, 0]],
-    fore: "light",
+    // back: [[224, 166, 52], [223, 190, 106], [131, 131, 131], [0, 0, 0]],
+    // fore: "light",
     links: [
       { name: "check it out", href: "https://rossjrw.com" },
       { name: "GitHub", href: "https://github.com/rossjrw/rossjrw.github.io" }
     ],
-    images: [
-      { func: "main", href: "website.png" }
-    ]
+    // images: [
+    //   { func: "main", href: "website.png" }
+    // ]
   },
   {
     name: "Maitreya.aic",
