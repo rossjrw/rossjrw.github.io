@@ -19,6 +19,7 @@ const techColours: TechnologyColours = {
   Regex: "black",
   Spreadsheets: "#0f9d58",
   Fiction: "mediumpurple",
+  Terraform: "#623ce4",
 }
 
 export function techColour (

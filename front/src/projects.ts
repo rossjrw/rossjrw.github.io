@@ -4,6 +4,7 @@ import { Project } from "@/types"
 export const projects: Project[] = [
   {
     name: "Faux Coffee Shop",
+    interestingness: 50,
     size: "normal",
     date: [[2017]],
     tags: ["completed"],
@@ -24,6 +25,7 @@ export const projects: Project[] = [
   },
   {
     name: "The Pipeworks",
+    interestingness: 70,
     size: "big",
     date: [[2016], [2017]],
     tags: ["completed"],
@@ -38,7 +40,7 @@ export const projects: Project[] = [
       cooperatively against the board and host, depending on how player-player
       relations develop.
     `,
-    back: [[40, 40, 40], [191, 144, 0], [40, 40, 40], [40, 40, 40]],
+    back: [[30, 30, 50], [191, 144, 0], [30, 30, 50], [30, 40, 60]],
     fore: "light",
     links: [
       { name: "board", href: "https://docs.google.com/spreadsheets/d/1G0XCT7KVrhxvwK1Tv-7TBZiYjiwX9NlSijeQNuWlEec/edit?usp=sharing" },
@@ -52,6 +54,7 @@ export const projects: Project[] = [
   },
   {
     name: "SCP-3939",
+    interestingness: 70,
     size: "small",
     date: [[2018]],
     tags: ["completed"],
@@ -73,6 +76,7 @@ export const projects: Project[] = [
   },
   {
     name: "SCP-3211",
+    interestingness: 80,
     size: "small",
     date: [[2018]],
     tags: ["completed"],
@@ -85,7 +89,8 @@ export const projects: Project[] = [
     back: [[250, 250, 250], [245, 245, 245], [240, 240, 240], [243, 87, 87]],
     fore: "dark",
     links: [
-      { name: "check it out", href: "https://scp-wiki.wikidot.com/scp-3211" }
+      { name: "check it out", href: "https://scp-wiki.wikidot.com/scp-3211" },
+      { name: "GitHub", href: "https://github.com/rossjrw/scp/tree/main/articles/scp-3211" }
     ],
     images: [
       {
@@ -112,6 +117,7 @@ export const projects: Project[] = [
   },
   {
     name: "Black Highlighter",
+    interestingness: 40,
     size: "normal",
     date: [[2019]],
     tags: ["completed"],
@@ -135,7 +141,8 @@ export const projects: Project[] = [
   },
   {
     name: "Regex Series Replace",
-    size: "normal",
+    interestingness: 10,
+    size: "small",
     date: [[2020]],
     tags: ["completed", "utility"],
     tech: ["TypeScript", "Vue.js", "Webpack"],
@@ -143,21 +150,15 @@ export const projects: Project[] = [
       A tool for applying a series of regex find-and-replace rules to a block
       of text. Configured rules can be exported and imported with URL
       arguments.
-      \n\n
-      Made because I got sick of having to type out the same rules again and
-      again when I have to make a series of replacements that I've already made
-      before.
     `,
     links: [
       { name: "check it out", href: "/series-replace" },
       { name: "GitHub", href: "https://github.com/rossjrw/series-replace" }
     ],
-    images: [
-      { func: "main", href: "regex-series-replace.png" }
-    ]
   },
   {
     name: "SCUTTLE API wrapper",
+    interestingness: 0,
     size: "small",
     date: [[2020]],
     tags: ["completed", "utility"],
@@ -173,22 +174,24 @@ export const projects: Project[] = [
   },
   {
     name: "Ur",
+    interestingness: 90,
     size: "normal",
     date: [[2020]],
     tags: ["completed"],
     tech: ["TypeScript", "SVG", "GitHub Actions"],
     desc: compress`
-      A massively-multiplayer, asynchronous Royal Game of Ur that anyone with a
-      GitHub account can play. The board is the README of the repository.
-      Entirely automated with GitHub actions. Players make their moves by
-      clicking links on the README, which creates an Issue in the repository,
-      which triggers a GitHub action to make the move and update the board
-      state. You can play!
+      A massively-multiplayer, asynchronous
+      [Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur)
+      that anyone with a GitHub account can play. The board is the README of
+      the repository. Entirely automated with GitHub actions. Players make
+      their moves by clicking links on the README, which creates an Issue in
+      the repository, which triggers a GitHub action to make the move and
+      update the board state. You can play!
     `,
     back: [[243, 186, 124], [206, 143, 75], [175, 111, 43], [106, 58, 0]],
     fore: "light",
     links: [
-      { name: "check it out", href: "https://github.com/rossjrw/rossjrw" }
+      { name: "your turn!", href: "https://github.com/rossjrw/rossjrw" }
     ],
     images: [
       { func: "main", href: "ur.png" }
@@ -196,6 +199,7 @@ export const projects: Project[] = [
   },
   {
     name: "TARS",
+    interestingness: 60,
     size: "small",
     date: [[2019]],
     tags: ["working"],
@@ -212,6 +216,7 @@ export const projects: Project[] = [
   },
   {
     name: "Gallifreyo",
+    interestingness: 80,
     size: "small",
     date: [[2017, 2018], [2020]],
     tags: ["working"],
@@ -226,27 +231,27 @@ export const projects: Project[] = [
   },
   {
     name: "rossjrw.com",
-    size: "normal",
+    interestingness: 60,
+    size: "small",
     date: [[2020]],
     tags: ["working"],
     tech: ["Vue.js", "TypeScript", "Webpack"],
     desc: compress`
-      A place where all of my projects are listed, and little else. There's
-      also no semblance of personal information or contact details. Overall,
-      a very useful site.
+      👋
     `,
-    back: [[224, 166, 52], [223, 190, 106], [131, 131, 131], [0, 0, 0]],
-    fore: "light",
+    // back: [[224, 166, 52], [223, 190, 106], [131, 131, 131], [0, 0, 0]],
+    // fore: "light",
     links: [
       { name: "check it out", href: "https://rossjrw.com" },
       { name: "GitHub", href: "https://github.com/rossjrw/rossjrw.github.io" }
     ],
-    images: [
-      { func: "main", href: "website.png" }
-    ]
+    // images: [
+    //   { func: "main", href: "website.png" }
+    // ]
   },
   {
     name: "Maitreya.aic",
+    interestingness: 40,
     size: "big",
     date: [[2018, 2019]],
     tags: ["unfinished"],
@@ -270,6 +275,7 @@ export const projects: Project[] = [
   },
   {
     name: "Automafia",
+    interestingness: 0,
     size: "normal",
     date: [[2016]],
     tags: ["abandoned"],
@@ -286,6 +292,25 @@ export const projects: Project[] = [
     ],
     images: [
       { func: "main", href: "automafia.png" }
+    ]
+  },
+  {
+    name: "Wikijump",
+    interestingness: 20,
+    size: "small",
+    date: [[2020]],
+    tags: ["working"],
+    tech: ["PHP", "Terraform", "TypeScript", "Webpack"],
+    desc: compress`
+      The English-speaking [SCP Wiki](https://scp-wiki.wikidot.com/) branch's
+      proposal for resurrecting [Wikidot](https://www.wikidot.com) by
+      breathing a modern spirit into an old open-source release.
+    `,
+    links: [
+      { name: "check it out", href: "https://github.com/scpwiki/wikijump" }
+    ],
+    images: [
+      { func: "logo", href: "wikijump.svg" }
     ]
   }
 ]

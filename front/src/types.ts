@@ -4,6 +4,7 @@ export type State = {
 
 export type Project =  {
   name: string
+  interestingness: number
   size: 'small' | 'normal' | 'big'
   date: number[][]
   tags: Tag[]
@@ -45,7 +46,7 @@ export type Technology =
   // Frameworks
   | "Vue.js" | "AngularJS" | "jQuery"
   // Build tools
-  | "Gulp.js" | "Webpack" | "GitHub Actions"
+  | "Gulp.js" | "Webpack" | "GitHub Actions" | "Terraform"
   // Miscellaneous
   | "CSS" | "SVG" | "Regex" | "Spreadsheets"
   // Even more miscellaneous
