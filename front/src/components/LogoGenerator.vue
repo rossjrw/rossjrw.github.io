@@ -71,11 +71,11 @@ export default Vue.extend({
   computed: {
     svgData () {
       let svgData = logoSvg
-      Object.entries(this.colours).forEach(
-        ([name, colour]) => {
+      this.colours.forEach(
+        (name, index) => {
           svgData = svgData.replace(
             new RegExp(`(id="${name}"[\\s\\S]+?stop-color:)#[0-9a-f]{6}`),
-            `$1${colour}`
+            `$1${this.hexes[index]}`
           )
         }
       )
@@ -87,9 +87,13 @@ export default Vue.extend({
   methods: {
     setRandomColour: function (colour?: string) {
       if (colour) {
-        this.hexes[this.colours.indexOf(colour)] = this.getRandomColour()
+        this.hexes.splice(
+          this.colours.indexOf(colour),
+          1,
+          this.getRandomColour()
+        )
       } else {
-        this.hexes = Array.from({ length: 6 }, this.getRandomColour)
+        this.hexes = Array.from({ length: 7 }, this.getRandomColour)
       }
     },
     getRandomColour: function () {
