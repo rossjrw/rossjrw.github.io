@@ -4,7 +4,8 @@
   "scripts": {
     "build": "webpack --config webpack.dev.js",
     "start": "webpack-dev-server --mode development --config webpack.dev.js --open",
-    "build-production": "NODE_ENV=production webpack --config webpack.prod.js"
+    "build-production": "NODE_ENV=production webpack --config webpack.prod.js",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -46,7 +47,7 @@
     "postcss-import": "^13.0.0",
     "postcss-loader": "^4.1.0",
     "prerender-spa-plugin": "^3.4.0",
-    "prettier": "1.19.1",
+    "prettier": "2.4.1",
     "raw-loader": "^4.0.1",
     "sass": "^1.26.7",
     "style-loader": "^1.2.1",
