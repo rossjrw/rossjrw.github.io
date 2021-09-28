@@ -1,25 +1,26 @@
 <template>
-  <div id="app"
-       class="text-gray-800">
-    <github-corners repo="rossjrw/rossjrw.github.io"/>
-    <Header/>
-    <Bio/>
-    <ProjectList v-for="category in categories"
-                 :key="category.tag"
-                 :title="category.title"
-                 :subtitle="category.subtitle"
-                 :filter-by-tag="category.tag"/>
-    <Footer/>
+  <div id="app" class="text-gray-800">
+    <github-corners repo="rossjrw/rossjrw.github.io" />
+    <Header />
+    <Bio />
+    <ProjectList
+      v-for="category in categories"
+      :key="category.tag"
+      :title="category.title"
+      :subtitle="category.subtitle"
+      :filter-by-tag="category.tag"
+    />
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue"
 
-import Header from '@/components/Header.vue'
-import Bio from '@/components/Bio.vue'
-import ProjectList from '@/components/ProjectList.vue'
-import Footer from '@/components/Footer.vue'
+import Header from "@/components/Header.vue"
+import Bio from "@/components/Bio.vue"
+import ProjectList from "@/components/ProjectList.vue"
+import Footer from "@/components/Footer.vue"
 
 export default Vue.extend({
   name: "App",
@@ -47,8 +48,8 @@ export default Vue.extend({
           title: "the graveyard",
           subtitle: "abandoned projects that I will never touch again",
         },
-      ]
+      ],
     }
-  }
+  },
 })
 </script>

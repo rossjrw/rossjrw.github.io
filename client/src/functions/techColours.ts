@@ -1,4 +1,4 @@
-import { Technology, TechnologyColours } from '@/types'
+import { Technology, TechnologyColours } from "@/types"
 
 const techColours: TechnologyColours = {
   Python: "#3572a5",
@@ -8,12 +8,12 @@ const techColours: TechnologyColours = {
   JavaScript: "#f1e05a",
   TypeScript: "#2b7489",
   CoffeeScript: "#244776",
-  'Vue.js': "#2c3e50",
+  "Vue.js": "#2c3e50",
   AngularJS: "#e42939",
   jQuery: "#7acef4",
-  'Gulp.js': "#cf4647",
+  "Gulp.js": "#cf4647",
   Webpack: "#8ed6fb",
-  'GitHub Actions': "#2088ff",
+  "GitHub Actions": "#2088ff",
   CSS: "#563d7c",
   SVG: "#ffb13b",
   Regex: "black",
@@ -22,8 +22,6 @@ const techColours: TechnologyColours = {
   Terraform: "#623ce4",
 }
 
-export function techColour (
-  tech: Technology,
-): string {
+export function techColour(tech: Technology): string {
   return techColours[tech]
 }

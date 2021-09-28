@@ -8,26 +8,12 @@
     "target": "es5",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "lib": [
-      "es2020",
-      "dom"
-    ],
+    "lib": ["es2020", "dom"],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.vue"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
-  "types": [
-    "node",
-    "src/shims-vue.d.ts",
-    "src/shims-raw-loader.d.ts"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.vue"],
+  "exclude": ["node_modules"],
+  "types": ["node", "src/shims-vue.d.ts", "src/shims-raw-loader.d.ts"]
 }
