@@ -2,8 +2,8 @@
   "name": "rossjrw.github.io",
   "main": "index.ts",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "start": "webpack-dev-server --mode development --config webpack.config.js --open",
+    "build": "NODE_ENV=development webpack --config webpack.config.js",
+    "start": "NODE_ENV=development webpack-dev-server --mode development --config webpack.config.js --open",
     "build-production": "NODE_ENV=production webpack --config webpack.config.js",
     "format": "prettier --write ."
   },
