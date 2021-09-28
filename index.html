@@ -943,6 +943,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #9ca3af;
 }
 
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #9ca3af;
+}
+
 input::-moz-placeholder, textarea::-moz-placeholder {
   color: #9ca3af;
 }
@@ -1193,6 +1197,7 @@ video {
 
 .bg-cover {
   -moz-background-size: cover;
+    -o-background-size: cover;
        background-size: cover;
 }
 
@@ -1964,6 +1969,13 @@ video {
   }
 }
 
+@-o-keyframes spin {
+  to {
+    -o-transform: rotate(360deg);
+       transform: rotate(360deg);
+  }
+}
+
 @keyframes spin {
   to {
     -webkit-transform: rotate(360deg);
@@ -1989,6 +2001,14 @@ video {
   }
 }
 
+@-o-keyframes ping {
+  75%, 100% {
+    -o-transform: scale(2);
+       transform: scale(2);
+    opacity: 0;
+  }
+}
+
 @keyframes ping {
   75%, 100% {
     -webkit-transform: scale(2);
@@ -2006,6 +2026,12 @@ video {
 }
 
 @-moz-keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+@-o-keyframes pulse {
   50% {
     opacity: .5;
   }
@@ -2049,6 +2075,22 @@ video {
   }
 }
 
+@-o-keyframes bounce {
+  0%, 100% {
+    -o-transform: translateY(-25%);
+       transform: translateY(-25%);
+    -o-animation-timing-function: cubic-bezier(0.8,0,1,1);
+       animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    -o-transform: none;
+       transform: none;
+    -o-animation-timing-function: cubic-bezier(0,0,0.2,1);
+       animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
 @keyframes bounce {
   0%, 100% {
     -webkit-transform: translateY(-25%);
@@ -2057,6 +2099,7 @@ video {
             transform: translateY(-25%);
     -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
        -moz-animation-timing-function: cubic-bezier(0.8,0,1,1);
+         -o-animation-timing-function: cubic-bezier(0.8,0,1,1);
             animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
 
@@ -2067,6 +2110,7 @@ video {
             transform: none;
     -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
        -moz-animation-timing-function: cubic-bezier(0,0,0.2,1);
+         -o-animation-timing-function: cubic-bezier(0,0,0.2,1);
             animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
@@ -2395,7 +2439,7 @@ video {
               link-line group-hover:no-underline
               text-opacity-80 group-hover:text-opacity-100">
     your turn!
-  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden text-gray-100"></div></div><div class="relative col-span-2 p-6 justify-self-center lg:col-span-1 lg:mx-8 mt-48 lg:justify-self-end rounded-lg shadow-lg" style="background-image: radial-gradient(farthest-side at left top, rgb(250, 250, 250), transparent), radial-gradient(farthest-side at right top, rgb(245, 245, 245), transparent), radial-gradient(farthest-side at left bottom, rgb(240, 240, 240), transparent), radial-gradient(farthest-side at right bottom, rgb(243, 87, 87), transparent), linear-gradient(white, rgb(250, 250, 250));"><div class="w-full h-72 relative z-0 -mt-56 -mb-16"><div class="relative w-full h-full overflow-hidden filter-desat"><div class="aspect-ratio-1/1"></div> <div class="absolute inset-0 w-full h-full"><img src="projects/scp/3211/cube.webp?2cb4a" class="absolute w-full h-full object-contain" style="clip-path: polygon(135.26% 35.2604%, 35.2604% 135.26%, -54.7396% 45.2604%, 45.2604% -54.7396%);"><img src="projects/scp/3211/coin.webp?57474" class="absolute w-full h-full object-contain" style="clip-path: polygon(50% -50%, -50% 50%, -160% -60%, -60% -160%);"><img src="projects/scp/3211/putty.webp?dee3c" class="absolute w-full h-full object-contain" style="clip-path: polygon(50% -50%, -50% 50%, -160% -60%, -60% -160%);"><img src="projects/scp/3211/gloves.webp?487e1" class="absolute w-full h-full object-contain" style="clip-path: polygon(50% -50%, -50% 50%, -160% -60%, -60% -160%);"><img src="projects/scp/3211/matches.webp?2b9c3" class="absolute w-full h-full object-contain" style="clip-path: polygon(50% -50%, -50% 50%, -160% -60%, -60% -160%);"></div></div></div> <div class="container flex items-center justify-center mx-auto
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden text-gray-100"></div></div><div class="relative col-span-2 p-6 justify-self-center lg:col-span-1 lg:mx-8 mt-48 lg:justify-self-end rounded-lg shadow-lg" style="background-image: radial-gradient(farthest-side at left top, rgb(250, 250, 250), transparent), radial-gradient(farthest-side at right top, rgb(245, 245, 245), transparent), radial-gradient(farthest-side at left bottom, rgb(240, 240, 240), transparent), radial-gradient(farthest-side at right bottom, rgb(243, 87, 87), transparent), linear-gradient(white, rgb(250, 250, 250));"><div class="w-full h-72 relative z-0 -mt-56 -mb-16"><div class="relative w-full h-full overflow-hidden filter-desat"><div class="aspect-ratio-1/1"></div> <div class="absolute inset-0 w-full h-full"><img src="projects/scp/3211/cube.webp?2cb4a" class="absolute w-full h-full object-contain" style="clip-path: polygon(141.857% 41.8566%, 41.8566% 141.857%, -48.1434% 51.8566%, 51.8566% -48.1434%);"><img src="projects/scp/3211/coin.webp?57474" class="absolute w-full h-full object-contain" style="clip-path: polygon(50% -50%, -50% 50%, -160% -60%, -60% -160%);"><img src="projects/scp/3211/putty.webp?dee3c" class="absolute w-full h-full object-contain" style="clip-path: polygon(50% -50%, -50% 50%, -160% -60%, -60% -160%);"><img src="projects/scp/3211/gloves.webp?487e1" class="absolute w-full h-full object-contain" style="clip-path: polygon(50% -50%, -50% 50%, -160% -60%, -60% -160%);"><img src="projects/scp/3211/matches.webp?2b9c3" class="absolute w-full h-full object-contain" style="clip-path: polygon(50% -50%, -50% 50%, -160% -60%, -60% -160%);"></div></div></div> <div class="container flex items-center justify-center mx-auto
               relative z-10 flex-col space-y-2 max-w-prose"><div class="flex space-x-4"><!----> <!----></div> <div class="basis-none flex justify-center flex-col space-y-2"><div class="bg-white rounded-lg shadow-lg p-6"><div class="flex flex-col md:flex-row items-center mb-1"><h4 class="text-4xl font-display font-bold">
             SCP-3211
           </h4> <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
@@ -2926,4 +2970,4 @@ video {
               link-line group-hover:no-underline
               text-opacity-80 group-hover:text-opacity-100">
     check it out
-  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden"></div></div></div></section> <footer class="flex flex-col items-center py-16 space-y-2"><p>the end</p> <a href="https://ko-fi.com/I3I41R5OU" target="_blank"><img height="36" src="https://cdn.ko-fi.com/cdn/kofi5.png?v=2" border="0" alt="Buy Me a Coffee at ko-fi.com" style="border: 0px; height: 36px;"></a></footer></div><script src="bundle.cc4a8.js"></script></body></html>
+  </div></a></div></div></div> <div class="absolute bottom-0 right-0 m-2 opacity-80 text-sm font-display hidden"></div></div></div></section> <footer class="flex flex-col items-center py-16 space-y-2"><p>the end</p> <a href="https://ko-fi.com/I3I41R5OU" target="_blank"><img height="36" src="https://cdn.ko-fi.com/cdn/kofi5.png?v=2" border="0" alt="Buy Me a Coffee at ko-fi.com" style="border: 0px; height: 36px;"></a></footer></div><script src="bundle.d21fa.js"></script></body></html>
