@@ -1,18 +1,18 @@
-import { Project, ProjectImageFunc, ProjectImage } from  "@/types"
+import { Project, ProjectImageFunc, ProjectImage } from "@/types"
 
-function matchingImages (
+function matchingImages(
   project: Project,
   func: ProjectImageFunc,
   wantsFallback = false
 ): ProjectImage[] {
-  if (!('images' in project)) {
+  if (!("images" in project)) {
     return []
   }
-  return project.images.filter(image => {
+  return project.images.filter((image) => {
     if (wantsFallback) {
       return (
         image.func === func &&
-        'fallback' in image &&
+        "fallback" in image &&
         image.fallback === wantsFallback
       )
     }
@@ -20,7 +20,7 @@ function matchingImages (
   })
 }
 
-export function hasImage (
+export function hasImage(
   project: Project,
   func: ProjectImageFunc,
   minimumAmount = 1
@@ -29,24 +29,24 @@ export function hasImage (
    * Check if a given project has an image that serves the desired function.
    */
   return (
-    'images' in project &&
+    "images" in project &&
     matchingImages(project, func).length >= minimumAmount
   )
 }
 
-export function getImage (
+export function getImage(
   project: Project,
   func: ProjectImageFunc,
   wantsFallback?: boolean,
   returnAllImages?: true
 ): string[] | undefined
-export function getImage (
+export function getImage(
   project: Project,
   func: ProjectImageFunc,
   wantsFallback?: boolean,
   returnAllImages?: false
 ): string | undefined
-export function getImage (
+export function getImage(
   project: Project,
   func: ProjectImageFunc,
   wantsFallback = false,
@@ -60,15 +60,20 @@ export function getImage (
     return undefined
   }
   if (returnAllImages) {
-    return images.map(image => require('@/assets/projects/' + image.href))
+    return images.map((image) =>
+      require("@/assets/projects/" + image.href)
+    )
   }
-  return require('@/assets/projects/' + images[0].href)
+  return require("@/assets/projects/" + images[0].href)
 }
 
-export function imageType (project: Project, func: ProjectImageFunc): string {
+export function imageType(
+  project: Project,
+  func: ProjectImageFunc
+): string {
   /**
    * Get the filetype of an image.
    */
-  const url = project.images.filter(image => image.func === func)[0].href
+  const url = project.images.filter((image) => image.func === func)[0].href
   return url.split(".").slice(-1)[0]
 }

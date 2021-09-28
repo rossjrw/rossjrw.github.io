@@ -1,16 +1,33 @@
 <template>
-  <section class="px-6 sm:px-12 my-12 md:my-16
-                  grid grid-cols-1 lg:grid-cols-2 gap-y-12
-                  justify-items-center items-start">
-    <div v-for="bio in bios"
-         :key="bio.title"
-         class="sm:text-lg inline-links
-                max-w-text mx-4 md:ml-9 md:mr-7
-                lg:odd:justify-self-end lg:even:justify-self-start">
+  <section
+    class="
+      px-6
+      sm:px-12
+      my-12
+      md:my-16
+      grid grid-cols-1
+      lg:grid-cols-2
+      gap-y-12
+      justify-items-center
+      items-start
+    "
+  >
+    <div
+      v-for="bio in bios"
+      :key="bio.title"
+      class="
+        sm:text-lg
+        inline-links
+        max-w-text
+        mx-4
+        md:ml-9 md:mr-7
+        lg:odd:justify-self-end lg:even:justify-self-start
+      "
+    >
       <h2 class="text-3xl font-display font-bold mb-1">
         {{ bio.title }}
       </h2>
-      <div v-html="bio.bio"/>
+      <div v-html="bio.bio" />
     </div>
   </section>
 </template>
@@ -49,9 +66,9 @@ export default Vue.extend({
             You can see some of my projects below, including the technologies I
             used to create them.
           `).replace(/--/g, "—"),
-        }
-      ]
+        },
+      ],
     }
-  }
+  },
 })
 </script>

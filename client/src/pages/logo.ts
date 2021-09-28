@@ -10,5 +10,5 @@ new Vue({
   el: "#app",
   template: "<LogoGenerator/>",
   components: { LogoGenerator },
-  render: h => h(LogoGenerator),
+  render: (h) => h(LogoGenerator),
 })

@@ -2,16 +2,16 @@ export type State = {
   projects: Project[]
 }
 
-export type Project =  {
+export type Project = {
   name: string
   interestingness: number
-  size: 'small' | 'normal' | 'big'
+  size: "small" | "normal" | "big"
   date: number[][]
   tags: Tag[]
   tech?: Technology[]
   desc: string
   back?: Colours
-  fore?: 'light' | 'dark'
+  fore?: "light" | "dark"
   links: ProjectLink[]
   images?: ProjectImage[]
 }
@@ -21,7 +21,12 @@ export type ProjectLink = {
   href: string
 }
 
-export type ProjectImageFunc = 'main' | 'logo' | 'mobile' | 'back' | 'oblique'
+export type ProjectImageFunc =
+  | "main"
+  | "logo"
+  | "mobile"
+  | "back"
+  | "oblique"
 
 export type ProjectImage = {
   func: ProjectImageFunc
@@ -41,14 +46,27 @@ export type Tag =
 
 export type Technology =
   // Language
-  | "Python" | "PHP" | "VimScript" | "FORTRAN"
-  | "JavaScript" | "TypeScript" | "CoffeeScript"
+  | "Python"
+  | "PHP"
+  | "VimScript"
+  | "FORTRAN"
+  | "JavaScript"
+  | "TypeScript"
+  | "CoffeeScript"
   // Frameworks
-  | "Vue.js" | "AngularJS" | "jQuery"
+  | "Vue.js"
+  | "AngularJS"
+  | "jQuery"
   // Build tools
-  | "Gulp.js" | "Webpack" | "GitHub Actions" | "Terraform"
+  | "Gulp.js"
+  | "Webpack"
+  | "GitHub Actions"
+  | "Terraform"
   // Miscellaneous
-  | "CSS" | "SVG" | "Regex" | "Spreadsheets"
+  | "CSS"
+  | "SVG"
+  | "Regex"
+  | "Spreadsheets"
   // Even more miscellaneous
   | "Fiction"
 
