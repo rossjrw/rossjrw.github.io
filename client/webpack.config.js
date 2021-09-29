@@ -106,6 +106,23 @@ module.exports = {
             renderer: new JsDomRenderer({
               renderAfterElementExists: "#app",
             }),
+            postProcess(context) {
+              context.html = context.html.replace(
+                'id="app"',
+                'id="app" data-server-rendered="true"'
+              )
+              return context
+            },
+            minify: {
+              collapseWhitespace: true,
+              customAttrCollapse: /class$/,
+              keepClosingSlash: true,
+              minifyCSS: true,
+              removeComments: true,
+              removeTagWhitespace: true,
+              sortAttributes: true,
+              sortClassName: true,
+            },
           }),
         ]),
   ],
