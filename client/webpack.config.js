@@ -5,6 +5,7 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin")
 const TerserPlugin = require("terser-webpack-plugin")
 const CnameWebpackPlugin = require("cname-webpack-plugin")
 const PrerenderSPAPlugin = require("prerender-spa-plugin")
+const JsDomRenderer = require("@prerenderer/renderer-jsdom")
 
 const dev = process.env.NODE_ENV === "development"
 
@@ -13,11 +14,11 @@ module.exports = {
   ...(dev ? { devtool: "eval-source-map" } : {}),
   entry: {
     main: "./src/pages/index.ts",
-    logo: "./src/pages/logo.ts"
+    logo: "./src/pages/logo.ts",
   },
   output: {
     filename: "bundle.[contenthash:5].js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
   },
   module: {
     rules: [
@@ -32,18 +33,18 @@ module.exports = {
             loader: "postcss-loader",
             options: {
               postcssOptions: {
-                plugins: ["postcss-import", "tailwindcss", "autoprefixer"]
-              }
-            }
-          }
-        ]
+                plugins: ["postcss-import", "tailwindcss", "autoprefixer"],
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.woff2?$/,
         use: {
           loader: "file-loader",
-          options: { name: "[name].[ext]" }
-        }
+          options: { name: "[name].[ext]" },
+        },
       },
       {
         test: /\.(png|svg|web[mp])$/,
@@ -52,12 +53,12 @@ module.exports = {
           options: {
             esModule: false,
             name: "[path][name].[ext]?[hash:5]",
-            context: "src/assets"
-          }
-        }
+            context: "src/assets",
+          },
+        },
       },
-      { test: /\.mjs$/, include: /node_modules/, type: "javascript/auto" }
-    ]
+      { test: /\.mjs$/, include: /node_modules/, type: "javascript/auto" },
+    ],
   },
   ...(dev
     ? {}
@@ -67,14 +68,14 @@ module.exports = {
           minimizer: [
             new TerserPlugin({
               extractComments: false,
-              terserOptions: { format: { comments: false } }
-            })
-          ]
-        }
+              terserOptions: { format: { comments: false } },
+            }),
+          ],
+        },
       }),
   resolve: {
     extensions: [".ts", ".js", ".vue", ".mjs"],
-    alias: { "@": path.resolve(__dirname, "src") }
+    alias: { "@": path.resolve(__dirname, "src") },
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -84,25 +85,28 @@ module.exports = {
       template: "./src/template.ejs",
       filename: "index.html",
       chunks: ["main"],
-      meta: { viewport: "width=device-width, initial-scale=1" }
+      meta: { viewport: "width=device-width, initial-scale=1" },
     }),
     new HtmlWebpackPlugin({
       title: "rossjrw · Logo Recolour Tool",
       template: "./src/template.ejs",
       filename: "logo/index.html",
       chunks: ["logo"],
-      meta: { viewport: "width=device-width, initial-scale=1" }
+      meta: { viewport: "width=device-width, initial-scale=1" },
     }),
     ...(dev
       ? []
       : [
           new CnameWebpackPlugin({
-            domain: "rossjrw.com"
+            domain: "rossjrw.com",
           }),
           new PrerenderSPAPlugin({
             staticDir: path.join(__dirname, "dist"),
-            routes: ["/"]
-          })
-        ])
-  ]
+            routes: ["/"],
+            renderer: new JsDomRenderer({
+              renderAfterElementExists: "#app",
+            }),
+          }),
+        ]),
+  ],
 }
