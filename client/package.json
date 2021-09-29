@@ -2,9 +2,9 @@
   "name": "rossjrw.github.io",
   "main": "index.ts",
   "scripts": {
-    "build": "webpack --config webpack.dev.js",
-    "start": "webpack-dev-server --mode development --config webpack.dev.js --open",
-    "build-production": "NODE_ENV=production webpack --config webpack.prod.js",
+    "build": "NODE_ENV=development webpack --config webpack.config.js",
+    "start": "NODE_ENV=development webpack-dev-server --mode development --config webpack.config.js --open",
+    "build-production": "NODE_ENV=production webpack --config webpack.config.js",
     "format": "prettier --write ."
   },
   "repository": {
@@ -22,6 +22,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/vue-fontawesome": "^2.0.0",
+    "@prerenderer/renderer-jsdom": "^0.2.0",
     "@types/lodash": "^4.14.155",
     "@types/marked": "^1.1.0",
     "@typescript-eslint/eslint-plugin": "^3.1.0",
@@ -36,8 +37,8 @@
     "compress-tag": "^2.0.0",
     "core-js": "^3.6.5",
     "css-loader": "^3.5.3",
-    "eslint": "^7.13.0",
-    "eslint-plugin-vue": "^6.2.2",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^7.18.0",
     "file-loader": "^6.0.0",
     "gsap": "^3.6.0",
     "html-webpack-plugin": "^4.3.0",
@@ -62,8 +63,7 @@
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^4.3.0",
-    "webpack-merge": "^5.5.0"
+    "webpack-dev-server": "^4.3.0"
   },
   "babel": {
     "presets": [
