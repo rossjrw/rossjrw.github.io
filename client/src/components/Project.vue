@@ -186,7 +186,7 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType } from "vue"
 import marked from "marked"
 
 import PolyBullet from "@/components/PolyBullet.vue"
@@ -197,7 +197,7 @@ import { techColour } from "@/functions/techColours"
 import { gradientMesh } from "@/functions/gradientMesh"
 import { Project, Technology } from "@/types"
 
-export default Vue.extend({
+export default defineComponent({
   name: "Project",
   props: {
     project: Object as PropType<Project>,

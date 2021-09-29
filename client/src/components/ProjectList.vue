@@ -62,13 +62,13 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType } from "vue"
 
 import { projects } from "@/projects"
 import Project from "@/components/Project.vue"
 import { Project as ProjectType, Tag } from "@/types"
 
-export default Vue.extend({
+export default defineComponent({
   name: "ProjectList",
   components: { Project },
   props: {

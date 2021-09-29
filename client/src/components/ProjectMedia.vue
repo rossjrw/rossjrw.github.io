@@ -26,13 +26,13 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType } from "vue"
 
 import SwipeImage from "@/components/SwipeImage.vue"
 import { hasImage, getImage, imageType } from "@/functions/images"
 import { Project, ProjectImageFunc } from "@/types"
 
-export default Vue.extend({
+export default defineComponent({
   props: {
     project: Object as PropType<Project>,
     func: String as PropType<ProjectImageFunc>,

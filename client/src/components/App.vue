@@ -15,14 +15,14 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import { defineComponent } from "vue"
 
 import Header from "@/components/Header.vue"
 import Bio from "@/components/Bio.vue"
 import ProjectList from "@/components/ProjectList.vue"
 import Footer from "@/components/Footer.vue"
 
-export default Vue.extend({
+export default defineComponent({
   name: "App",
   components: { Header, Bio, ProjectList, Footer },
   data() {

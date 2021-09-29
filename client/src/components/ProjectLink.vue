@@ -74,12 +74,12 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType } from "vue"
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 
 import { ProjectLink } from "@/types"
 
-export default Vue.extend({
+export default defineComponent({
   name: "ProjectLink",
   props: {
     link: Object as PropType<ProjectLink>,
