@@ -1,4 +1,4 @@
-import Vue from "vue"
+import { createApp } from "vue"
 import "@fontsource/lora/latin-400.css"
 import "@fontsource/aileron/latin-400.css"
 import "@fontsource/aileron/latin-600.css"
@@ -13,15 +13,13 @@ import {
   faGoogleDrive,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 
 import "@/root.css"
-import App from "@/components/App.vue"
+import App from "../components/App.vue"
 
 library.add(faArrowRight, faGoogleDrive, faPython, faGithub, faLinkedinIn)
 
-new Vue({
-  el: "#app",
-  template: "<App/>",
-  components: { App },
-  render: (h) => h(App),
-})
+const app = createApp(App)
+app.component("FontAwesomeIcon", FontAwesomeIcon)
+app.mount("#app")
