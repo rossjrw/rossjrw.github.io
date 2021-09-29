@@ -1,7 +1,8 @@
 const path = require("path")
+const webpack = require("webpack")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-const VueLoaderPlugin = require("vue-loader/lib/plugin")
+const { VueLoaderPlugin } = require("vue-loader")
 const TerserPlugin = require("terser-webpack-plugin")
 const CnameWebpackPlugin = require("cname-webpack-plugin")
 const PrerenderSPAPlugin = require("prerender-spa-plugin")
@@ -78,6 +79,10 @@ module.exports = {
     alias: { "@": path.resolve(__dirname, "src") },
   },
   plugins: [
+    new webpack.DefinePlugin({
+      __VUE_OPTIONS_API__: true,
+      __VUE_PROD_DEVTOOLS__: false,
+    }),
     new CleanWebpackPlugin(),
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
