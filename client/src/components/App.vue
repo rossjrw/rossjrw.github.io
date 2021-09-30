@@ -20,11 +20,14 @@ import Header from "@/components/Header.vue"
 import Bio from "@/components/Bio.vue"
 import ProjectList from "@/components/ProjectList.vue"
 import Footer from "@/components/Footer.vue"
+import { Tag } from "../types"
+
+type Category = { tag: Tag; title: string; subtitle: string }
 
 export default defineComponent({
   name: "App",
   components: { Header, Bio, ProjectList, Footer },
-  data() {
+  data(): { categories: Category[] } {
     return {
       categories: [
         {
