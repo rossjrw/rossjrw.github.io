@@ -66,7 +66,7 @@ import { defineComponent, PropType } from "vue"
 
 import { projects } from "@/projects"
 import Project from "@/components/Project.vue"
-import { Project as ProjectType, Tag } from "@/types"
+import { Tag } from "@/types"
 
 export default defineComponent({
   name: "ProjectList",
@@ -77,14 +77,12 @@ export default defineComponent({
     filterByTag: String as PropType<Tag>,
   },
   computed: {
-    selectedProjects: {
-      get(): ProjectType[] {
-        return projects
-          .filter((project) => {
-            return project.tags.includes(this.filterByTag)
-          })
-          .sort((a, b) => b.interestingness - a.interestingness)
-      },
+    selectedProjects() {
+      return projects
+        .filter((project) => {
+          return project.tags.includes(this.filterByTag)
+        })
+        .sort((a, b) => b.interestingness - a.interestingness)
     },
   },
   methods: {
