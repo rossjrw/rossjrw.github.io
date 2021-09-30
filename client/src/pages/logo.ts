@@ -1,11 +1,6 @@
-import Vue from "vue"
+import { createApp } from "vue"
 
 import "@/root.css"
 import LogoGenerator from "@/components/LogoGenerator.vue"
 
-new Vue({
-  el: "#app",
-  template: "<LogoGenerator/>",
-  components: { LogoGenerator },
-  render: (h) => h(LogoGenerator),
-})
+createApp(LogoGenerator).mount("#app")
