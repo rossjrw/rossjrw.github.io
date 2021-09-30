@@ -30,13 +30,13 @@
           name: 'GitHub',
           href: 'https://github.com/rossjrw',
         }"
-      />
+      ></ProjectLink>
       <ProjectLink
         :link="{
           name: 'LinkedIn',
           href: 'https://www.linkedin.com/in/rossjrw/',
         }"
-      />
+      ></ProjectLink>
     </div>
   </header>
 </template>

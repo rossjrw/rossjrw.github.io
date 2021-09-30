@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full h-full overflow-hidden">
-    <div :class="aspectRatio" />
+    <div :class="aspectRatio"></div>
     <video
       v-if="imageType(project, func) === 'webm'"
       class="absolute inset-0 bg-cover w-full h-full"
@@ -10,13 +10,13 @@
       muted
       loop
       controls
-    />
+    ></video>
     <SwipeImage
       v-else-if="hasImage(project, func, 2)"
       :project="project"
       :func="func"
       class="absolute inset-0 w-full h-full"
-    />
+    ></SwipeImage>
     <img
       v-else
       class="absolute inset-0 w-full h-full object-contain"

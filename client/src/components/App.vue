@@ -1,16 +1,15 @@
 <template>
   <div id="app" class="text-gray-800">
-    <github-corners repo="rossjrw/rossjrw.github.io" />
-    <Header />
-    <Bio />
+    <Header></Header>
+    <Bio></Bio>
     <ProjectList
       v-for="category in categories"
       :key="category.tag"
       :title="category.title"
       :subtitle="category.subtitle"
       :filter-by-tag="category.tag"
-    />
-    <Footer />
+    ></ProjectList>
+    <Footer></Footer>
   </div>
 </template>
 

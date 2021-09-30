@@ -1,6 +1,5 @@
 <template>
   <div class="h-screen">
-    <github-corners repo="rossjrw/rossjrw.github.io" />
     <div class="py-12 px-6">
       <div class="container mx-auto max-w-screen-lg">
         <div class="flex items-center justify-evenly">
@@ -16,7 +15,7 @@
             :name="colour"
             v-model="hexes[index]"
             @randomise="setRandomColour(colour)"
-          />
+          ></LogoGeneratorColour>
           <div>
             <div class="flex justify-center">
               <button

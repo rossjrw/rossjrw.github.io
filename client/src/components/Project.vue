@@ -43,7 +43,7 @@
         :project="project"
         :func="'oblique'"
         class="filter-desat"
-      />
+      ></ProjectMedia>
     </div>
     <div
       class="
@@ -72,7 +72,7 @@
             :project="project"
             :func="'main'"
             class="rounded-lg shadow-lg"
-          />
+          ></ProjectMedia>
         </div>
         <div
           class="
@@ -135,7 +135,7 @@
               }[project.size],
             ]"
             v-html="description"
-          />
+          ></div>
         </div>
         <div class="flex flex-wrap items-center">
           <p
@@ -157,7 +157,7 @@
                 :shape="index + 3"
                 :colour="tech.colour"
                 :hasStroke="true"
-              />
+              ></PolyBullet>
             </span>
             {{ tech.name }}
           </p>
@@ -170,7 +170,7 @@
             :key="link.href"
             :link="link"
             :fore="project.fore"
-          />
+          ></ProjectLink>
         </div>
       </div>
     </div>
@@ -181,7 +181,7 @@
         project.fore === 'light' ? 'text-gray-100' : '',
       ]"
       v-html="attributionText"
-    />
+    ></div>
   </div>
 </template>
 

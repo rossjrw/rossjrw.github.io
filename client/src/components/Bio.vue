@@ -27,7 +27,7 @@
       <h2 class="text-3xl font-display font-bold mb-1">
         {{ bio.title }}
       </h2>
-      <div v-html="bio.bio" />
+      <div v-html="bio.bio"></div>
     </div>
   </section>
 </template>
