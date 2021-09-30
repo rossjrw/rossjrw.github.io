@@ -4,7 +4,7 @@
     <video
       v-if="imageType(project, func) === 'webm'"
       class="absolute inset-0 bg-cover w-full h-full"
-      :src="getImage(project, func)"
+      :src="getImage(project, func, false, false)"
       :style="{ backgroundImage: `url(${fallbackImage})` }"
       autoplay
       muted
@@ -20,7 +20,7 @@
     <img
       v-else
       class="absolute inset-0 w-full h-full object-contain"
-      :src="getImage(project, func)"
+      :src="getImage(project, func, false, false)"
     />
   </div>
 </template>

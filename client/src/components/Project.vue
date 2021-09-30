@@ -87,7 +87,7 @@
         >
           <img
             class="block rounded-lg shadow-lg"
-            :src="getImage(project, 'mobile')"
+            :src="getImage(project, 'mobile', false, false)"
           />
         </div>
       </div>
@@ -114,7 +114,7 @@
               v-if="hasImage(project, 'logo')"
               class="max-h-32 min-h-8 w-full md:w-auto"
               :class="project.size === 'big' ? 'max-w-sm' : 'max-w-xs'"
-              :src="getImage(project, 'logo')"
+              :src="getImage(project, 'logo', false, false)"
               :alt="project.name"
             />
             <h4 v-else class="text-4xl font-display font-bold">
@@ -205,7 +205,7 @@ export default defineComponent({
   },
   components: { PolyBullet, ProjectMedia, ProjectLink },
   computed: {
-    colouredTech(): unknown {
+    colouredTech() {
       return this.project.tech.map((tech: Technology) => {
         return { name: tech, colour: techColour(tech) }
       })
@@ -236,7 +236,12 @@ export default defineComponent({
         ]
       let background = gradientMesh(colours)
       if (this.hasImage(this.project, "back")) {
-        background += `, url(${this.getImage(this.project, "back")})`
+        background += `, url(${this.getImage(
+          this.project,
+          "back",
+          false,
+          false
+        )})`
       }
       return background
     },
