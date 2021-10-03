@@ -5,8 +5,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { VueLoaderPlugin } = require("vue-loader")
 const TerserPlugin = require("terser-webpack-plugin")
 const CnameWebpackPlugin = require("cname-webpack-plugin")
-const PrerenderSPAPlugin = require("prerender-spa-plugin")
-const JsDomRenderer = require("@prerenderer/renderer-jsdom")
 
 const dev = process.env.NODE_ENV === "development"
 
@@ -99,36 +97,6 @@ module.exports = {
       chunks: ["logo"],
       meta: { viewport: "width=device-width, initial-scale=1" },
     }),
-    ...(dev
-      ? []
-      : [
-          new CnameWebpackPlugin({
-            domain: "rossjrw.com",
-          }),
-          new PrerenderSPAPlugin({
-            staticDir: path.join(__dirname, "dist"),
-            routes: ["/"],
-            renderer: new JsDomRenderer({
-              renderAfterElementExists: "#app",
-            }),
-            postProcess(context) {
-              context.html = context.html.replace(
-                'id="app"',
-                'id="app" data-server-rendered="true"'
-              )
-              return context
-            },
-            minify: {
-              collapseWhitespace: true,
-              customAttrCollapse: /class$/,
-              keepClosingSlash: true,
-              minifyCSS: true,
-              removeComments: true,
-              removeTagWhitespace: true,
-              sortAttributes: true,
-              sortClassName: true,
-            },
-          }),
-        ]),
+    ...(dev ? [] : [new CnameWebpackPlugin({ domain: "rossjrw.com" })]),
   ],
 }
