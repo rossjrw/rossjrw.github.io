@@ -22,5 +22,5 @@
     "sourceType": "module"
   },
   "plugins": ["vue", "@typescript-eslint"],
-  "rules": {}
+  "ignorePatterns": ["webpack.config.js"]
 }
