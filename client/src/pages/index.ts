@@ -23,7 +23,6 @@ import App from "../components/App.vue"
 // we are not prerendering (during development)
 declare let _PRERENDERED_: boolean | undefined
 const prerendered = "_PRERENDERED_" in window && _PRERENDERED_
-console.log("Prerendered:", prerendered)
 
 const app = createSSRApp(App)
 
