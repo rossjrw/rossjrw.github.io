@@ -17,7 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 import { renderToString } from "@vue/server-renderer"
 
 import "@/root.css"
-import App from "../components/App.vue"
+import App from "./components/App.vue"
 
 // Prerendered marker is set during the prerender script, or undefined if
 // we are not prerendering (during development)
