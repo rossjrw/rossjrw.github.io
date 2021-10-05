@@ -1,8 +1,7 @@
 import * as path from "path"
-import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
 
-export default defineConfig({
+export default {
   root: "./src/",
   define: {
     __VUE_OPTIONS_API__: true,
@@ -19,9 +18,13 @@ export default defineConfig({
         main: "src/index.html",
         logo: "src/logo/index.html",
       },
+      output: {
+        inlineDynamicImports: false,
+      },
     },
     outDir: "../dist",
     emptyOutDir: true,
   },
   plugins: [vue()],
-})
+  ssgOptions: { formatting: "minify" },
+}

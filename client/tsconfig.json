@@ -9,7 +9,7 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "lib": ["es2020", "dom"],
-    "isolatedModules": true,
+    "isolatedModules": false,
     "paths": {
       "@/*": ["src/*"]
     },
