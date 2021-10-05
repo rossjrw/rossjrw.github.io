@@ -2,8 +2,13 @@ name: frontend build
 on:
   push:
     branches: [master]
+    paths:
+      - .github/workflows/build-client.yml
+      - client/**
   pull_request:
-    branches: [master]
+    paths:
+      - .github/workflows/build-client.yml
+      - client/**
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,6 +24,7 @@ jobs:
       working-directory: ${{env.working-directory}}
       run: npm run build
     - name: Add CNAME
+      if: github.ref == 'refs/heads/master'
       working-directory: ${{env.working-directory}}
       run: echo "rossjrw.com" > dist/CNAME
     - name: Deploy
