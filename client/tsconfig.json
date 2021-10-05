@@ -4,15 +4,16 @@
     "outDir": "./dist/",
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "module": "es6",
+    "module": "ES2020",
     "target": "es5",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "lib": ["es2020", "dom"],
+    "isolatedModules": false,
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "types": ["vite/client"]
   },
-  "include": ["src/**/*.ts", "src/**/*.vue"],
-  "types": ["node", "src/shims-vue.d.ts", "src/shims-raw-loader.d.ts"]
+  "include": ["src/**/*.ts", "src/**/*.vue"]
 }

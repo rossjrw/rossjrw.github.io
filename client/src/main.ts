@@ -1,4 +1,4 @@
-import { createApp } from "vue"
+import { ViteSSG } from "vite-ssg/single-page"
 import "@fontsource/lora/latin-400.css"
 import "@fontsource/aileron/latin-400.css"
 import "@fontsource/aileron/latin-600.css"
@@ -16,10 +16,20 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 
 import "@/root.css"
-import App from "../components/App.vue"
+import App from "./components/App.vue"
 
-library.add(faArrowRight, faGoogleDrive, faPython, faGithub, faLinkedinIn)
-
-const app = createApp(App)
-app.component("FontAwesomeIcon", FontAwesomeIcon)
-app.mount("#app")
+module.exports = {
+  createApp: ViteSSG(
+    App,
+    ({ app, router, routes, isClient, initialState }) => {
+      library.add(
+        faArrowRight,
+        faGoogleDrive,
+        faPython,
+        faGithub,
+        faLinkedinIn
+      )
+      app.component("FontAwesomeIcon", FontAwesomeIcon)
+    }
+  ),
+}

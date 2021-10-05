@@ -2,8 +2,13 @@ name: frontend build
 on:
   push:
     branches: [master]
+    paths:
+      - .github/workflows/build-client.yml
+      - client/**
   pull_request:
-    branches: [master]
+    paths:
+      - .github/workflows/build-client.yml
+      - client/**
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,12 +17,22 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+    - name: Setup Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '15'
+        cache: 'npm'
+        cache-dependency-path: ${{env.working-directory}}/package-lock.json
     - name: Install
       working-directory: ${{env.working-directory}}
       run: npm install
     - name: Build
       working-directory: ${{env.working-directory}}
-      run: npm run build-production
+      run: npm run build
+    - name: Add CNAME
+      if: github.ref == 'refs/heads/master'
+      working-directory: ${{env.working-directory}}
+      run: echo "rossjrw.com" > dist/CNAME
     - name: Deploy
       if: github.ref == 'refs/heads/master'
       uses: JamesIves/github-pages-deploy-action@releases/v3
