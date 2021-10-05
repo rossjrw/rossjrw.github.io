@@ -1,0 +1,455 @@
+{
+  "../node_modules/@fontsource/lora/latin-400.css": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "../node_modules/@fontsource/aileron/latin-400.css": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "../node_modules/@fontsource/aileron/latin-600.css": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "../node_modules/@fontsource/aileron/latin-700.css": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "../node_modules/@fontsource/aileron/latin-800.css": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "../node_modules/@fontsource/libre-franklin/latin-400.css": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "components/ProjectLink.vue": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "assets/logos/rossjrw.png": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "components/Header.vue": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "components/Bio.vue": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "projects.ts": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "components/PolyBullet.vue": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "functions/images.ts": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "components/SwipeImage.vue": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "components/ProjectMedia.vue": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "functions/techColours.ts": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "functions/gradientMesh.ts": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "components/Project.vue": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "components/ProjectList.vue": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "components/Footer.vue": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "components/App.vue": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "main.ts": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "index.html": [
+    "/assets/rossjrw.75b7250e.png",
+    "/assets/lora-latin-400-normal.4b874445.woff2",
+    "/assets/lora-latin-400-normal.5fd9a5be.woff",
+    "/assets/aileron-latin-400-normal.28fe877c.woff2",
+    "/assets/aileron-latin-400-normal.6d6ec731.woff",
+    "/assets/aileron-latin-600-normal.ce40e6fc.woff2",
+    "/assets/aileron-latin-600-normal.f4c04354.woff",
+    "/assets/aileron-latin-700-normal.ae42e2a9.woff2",
+    "/assets/aileron-latin-700-normal.ac249b9a.woff",
+    "/assets/aileron-latin-800-normal.b48d698e.woff2",
+    "/assets/aileron-latin-800-normal.67bb015a.woff",
+    "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
+    "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
+  ],
+  "components/LogoGeneratorColour.vue": [
+    "/assets/rossjrw.2020.inkscape.e9257d13.svg"
+  ],
+  "assets/logos/rossjrw.2020.inkscape.svg": [
+    "/assets/rossjrw.2020.inkscape.e9257d13.svg"
+  ],
+  "components/LogoGenerator.vue": [
+    "/assets/rossjrw.2020.inkscape.e9257d13.svg"
+  ],
+  "logo/logo.ts": [
+    "/assets/rossjrw.2020.inkscape.e9257d13.svg"
+  ],
+  "logo/index.html": [
+    "/assets/rossjrw.2020.inkscape.e9257d13.svg"
+  ],
+  "../node_modules/@vue/shared/dist/shared.esm-bundler.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/vue/dist/vue.runtime.esm-bundler.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/vite-ssg/dist/chunk-YPUM4SRK.mjs": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/vite-ssg/dist/chunk-BQV5QOZL.mjs": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/@vueuse/head/dist/index.mjs": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/vite-ssg/dist/client/single-page.mjs": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/@fortawesome/fontawesome-svg-core/index.es.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/@fortawesome/free-solid-svg-icons/index.es.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/@fortawesome/free-brands-svg-icons/index.es.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/@fortawesome/vue-fontawesome/index.es.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../\u0000commonjsHelpers.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../\u0000/home/runner/work/rossjrw.github.io/rossjrw.github.io/client/node_modules/marked/lib/marked.js?commonjs-module": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/marked/lib/marked.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../\u0000/home/runner/work/rossjrw.github.io/rossjrw.github.io/client/node_modules/compress-tag/dist/index.js?commonjs-exports": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../\u0000/home/runner/work/rossjrw.github.io/rossjrw.github.io/client/node_modules/unraw/dist/index.js?commonjs-exports": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../\u0000/home/runner/work/rossjrw.github.io/rossjrw.github.io/client/node_modules/unraw/dist/errors.js?commonjs-exports": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/unraw/dist/errors.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../\u0000/home/runner/work/rossjrw.github.io/rossjrw.github.io/client/node_modules/unraw/dist/errors.js?commonjs-proxy": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/unraw/dist/index.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../\u0000/home/runner/work/rossjrw.github.io/rossjrw.github.io/client/node_modules/unraw/dist/index.js?commonjs-proxy": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/compress-tag/dist/index.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/gsap/gsap-core.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/gsap/CSSPlugin.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../node_modules/gsap/index.js": [
+    "/assets/vendor.3b36f000.js"
+  ],
+  "../vite/modulepreload-polyfill": [
+    "/assets/plugin-vue_export-helper.553fc193.js",
+    "/assets/plugin-vue_export-helper.4532475d.css"
+  ],
+  "root.css": [
+    "/assets/plugin-vue_export-helper.553fc193.js",
+    "/assets/plugin-vue_export-helper.4532475d.css"
+  ],
+  "../plugin-vue:export-helper": [
+    "/assets/plugin-vue_export-helper.553fc193.js",
+    "/assets/plugin-vue_export-helper.4532475d.css"
+  ]
+}
