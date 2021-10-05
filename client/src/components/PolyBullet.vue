@@ -16,14 +16,14 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType } from "vue"
 
 import { TechnologyColours } from "@/types"
 
 const SVG_SIZE = 100
 const BORDER_WIDTH = 10
 
-export default Vue.extend({
+export default defineComponent({
   name: "PolyBullet",
   props: {
     shape: Number as PropType<number>,

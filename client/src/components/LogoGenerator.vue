@@ -1,6 +1,5 @@
 <template>
   <div class="h-screen">
-    <github-corners repo="rossjrw/rossjrw.github.io" />
     <div class="py-12 px-6">
       <div class="container mx-auto max-w-screen-lg">
         <div class="flex items-center justify-evenly">
@@ -16,7 +15,7 @@
             :name="colour"
             v-model="hexes[index]"
             @randomise="setRandomColour(colour)"
-          />
+          ></LogoGeneratorColour>
           <div>
             <div class="flex justify-center">
               <button
@@ -56,12 +55,12 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import { defineComponent } from "vue"
 
 import LogoGeneratorColour from "@/components/LogoGeneratorColour.vue"
-import logoSvg from "!!raw-loader!@/assets/logos/rossjrw.2020.inkscape.svg"
+import logoSvg from "@/assets/logos/rossjrw.2020.inkscape.svg"
 
-export default Vue.extend({
+export default defineComponent({
   name: "LogoGenerator",
   components: { LogoGeneratorColour },
   data() {

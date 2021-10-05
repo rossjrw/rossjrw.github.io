@@ -4,14 +4,12 @@
     <input
       type="color"
       class="flex-grow border border-gray-200 rounded px-5 py-2 h-10 m-1"
-      :value="value"
-      @change="$emit('input', $event.target.value)"
+      v-model="colorValue"
     />
     <input
       type="text"
       class="flex-none border border-gray-200 rounded px-5 py-2 h-10 m-1"
-      :value="value"
-      @input="$emit('input', $event.target.value)"
+      v-model="colorValue"
     />
     <div class="flex-none">
       <button
@@ -34,12 +32,22 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import { defineComponent } from "vue"
 
-export default Vue.extend({
+export default defineComponent({
   props: {
     name: String,
     value: String,
+  },
+  computed: {
+    colorValue: {
+      get(): string {
+        return this.value
+      },
+      set(input: string) {
+        this.$emit("input", input)
+      },
+    },
   },
 })
 </script>

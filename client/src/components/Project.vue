@@ -43,7 +43,7 @@
         :project="project"
         :func="'oblique'"
         class="filter-desat"
-      />
+      ></ProjectMedia>
     </div>
     <div
       class="
@@ -72,7 +72,7 @@
             :project="project"
             :func="'main'"
             class="rounded-lg shadow-lg"
-          />
+          ></ProjectMedia>
         </div>
         <div
           class="
@@ -87,7 +87,7 @@
         >
           <img
             class="block rounded-lg shadow-lg"
-            :src="getImage(project, 'mobile')"
+            :src="getImage(project, 'mobile', false, false)"
           />
         </div>
       </div>
@@ -114,7 +114,7 @@
               v-if="hasImage(project, 'logo')"
               class="max-h-32 min-h-8 w-full md:w-auto"
               :class="project.size === 'big' ? 'max-w-sm' : 'max-w-xs'"
-              :src="getImage(project, 'logo')"
+              :src="getImage(project, 'logo', false, false)"
               :alt="project.name"
             />
             <h4 v-else class="text-4xl font-display font-bold">
@@ -135,7 +135,7 @@
               }[project.size],
             ]"
             v-html="description"
-          />
+          ></div>
         </div>
         <div class="flex flex-wrap items-center">
           <p
@@ -157,7 +157,7 @@
                 :shape="index + 3"
                 :colour="tech.colour"
                 :hasStroke="true"
-              />
+              ></PolyBullet>
             </span>
             {{ tech.name }}
           </p>
@@ -170,7 +170,7 @@
             :key="link.href"
             :link="link"
             :fore="project.fore"
-          />
+          ></ProjectLink>
         </div>
       </div>
     </div>
@@ -181,12 +181,12 @@
         project.fore === 'light' ? 'text-gray-100' : '',
       ]"
       v-html="attributionText"
-    />
+    ></div>
   </div>
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType } from "vue"
 import marked from "marked"
 
 import PolyBullet from "@/components/PolyBullet.vue"
@@ -197,7 +197,7 @@ import { techColour } from "@/functions/techColours"
 import { gradientMesh } from "@/functions/gradientMesh"
 import { Project, Technology } from "@/types"
 
-export default Vue.extend({
+export default defineComponent({
   name: "Project",
   props: {
     project: Object as PropType<Project>,
@@ -205,7 +205,7 @@ export default Vue.extend({
   },
   components: { PolyBullet, ProjectMedia, ProjectLink },
   computed: {
-    colouredTech(): unknown {
+    colouredTech() {
       return this.project.tech.map((tech: Technology) => {
         return { name: tech, colour: techColour(tech) }
       })
@@ -236,7 +236,12 @@ export default Vue.extend({
         ]
       let background = gradientMesh(colours)
       if (this.hasImage(this.project, "back")) {
-        background += `, url(${this.getImage(this.project, "back")})`
+        background += `, url(${this.getImage(
+          this.project,
+          "back",
+          false,
+          false
+        )})`
       }
       return background
     },

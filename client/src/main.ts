@@ -1,5 +1,4 @@
-import Vue from "vue"
-import VueGithubCorners from "vue-gh-corners"
+import { ViteSSG } from "vite-ssg/single-page"
 import "@fontsource/lora/latin-400.css"
 import "@fontsource/aileron/latin-400.css"
 import "@fontsource/aileron/latin-600.css"
@@ -14,17 +13,23 @@ import {
   faGoogleDrive,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 
 import "@/root.css"
-import App from "@/components/App.vue"
+import App from "./components/App.vue"
 
-library.add(faArrowRight, faGoogleDrive, faPython, faGithub, faLinkedinIn)
-
-Vue.use(VueGithubCorners)
-
-new Vue({
-  el: "#app",
-  template: "<App/>",
-  components: { App },
-  render: (h) => h(App),
-})
+module.exports = {
+  createApp: ViteSSG(
+    App,
+    ({ app, router, routes, isClient, initialState }) => {
+      library.add(
+        faArrowRight,
+        faGoogleDrive,
+        faPython,
+        faGithub,
+        faLinkedinIn
+      )
+      app.component("FontAwesomeIcon", FontAwesomeIcon)
+    }
+  ),
+}

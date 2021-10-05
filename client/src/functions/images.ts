@@ -37,14 +37,14 @@ export function hasImage(
 export function getImage(
   project: Project,
   func: ProjectImageFunc,
-  wantsFallback?: boolean,
-  returnAllImages?: true
+  wantsFallback: boolean,
+  returnAllImages: true
 ): string[] | undefined
 export function getImage(
   project: Project,
   func: ProjectImageFunc,
-  wantsFallback?: boolean,
-  returnAllImages?: false
+  wantsFallback: boolean,
+  returnAllImages: false
 ): string | undefined
 export function getImage(
   project: Project,
@@ -60,11 +60,9 @@ export function getImage(
     return undefined
   }
   if (returnAllImages) {
-    return images.map((image) =>
-      require("@/assets/projects/" + image.href)
-    )
+    return images.map((image) => "/projects/" + image.href)
   }
-  return require("@/assets/projects/" + images[0].href)
+  return "/projects/" + images[0].href
 }
 
 export function imageType(

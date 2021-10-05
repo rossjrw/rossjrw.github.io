@@ -51,7 +51,7 @@
           text-blue-700
           group-hover:text-white
         "
-      />
+      ></FontAwesomeIcon>
     </div>
     <div
       class="
@@ -74,20 +74,18 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
+import { defineComponent, PropType } from "vue"
 
 import { ProjectLink } from "@/types"
 
-export default Vue.extend({
+export default defineComponent({
   name: "ProjectLink",
   props: {
     link: Object as PropType<ProjectLink>,
     fore: String as PropType<"light" | "dark" | undefined>,
   },
-  components: { FontAwesomeIcon },
   methods: {
-    linkGradient(this: { link: ProjectLink }): string {
+    linkGradient(): string {
       if (this.link.href.includes("docs.google.com/document")) {
         return "group-hover:from-blue-500 group-hover:to-indigo-600"
       }
@@ -102,7 +100,7 @@ export default Vue.extend({
       }
       return "group-hover:from-pink-600 group-hover:to-indigo-600"
     },
-    linkIcon(this: { link: ProjectLink }): [string, string] {
+    linkIcon(): [string, string] {
       if (this.link.href.includes("github.com")) {
         return ["fab", "github"]
       }

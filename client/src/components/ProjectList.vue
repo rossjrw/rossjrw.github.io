@@ -23,7 +23,7 @@
             mx-16
             mt-2
           "
-        />
+        ></span>
         <span class="block">{{ title }}</span>
         <span
           class="
@@ -35,7 +35,7 @@
             mx-16
             mt-2
           "
-        />
+        ></span>
       </h2>
       <h3 class="text-xl font-display text-center mt-1 px-8 opacity-80">
         {{ subtitle }}
@@ -56,19 +56,19 @@
         :key="projectId"
         :project="project"
         :side="projectSide(projectId)"
-      />
+      ></Project>
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType } from "vue"
 
 import { projects } from "@/projects"
 import Project from "@/components/Project.vue"
-import { Project as ProjectType, Tag } from "@/types"
+import { Tag } from "@/types"
 
-export default Vue.extend({
+export default defineComponent({
   name: "ProjectList",
   components: { Project },
   props: {
@@ -77,14 +77,12 @@ export default Vue.extend({
     filterByTag: String as PropType<Tag>,
   },
   computed: {
-    selectedProjects: {
-      get(): ProjectType[] {
-        return projects
-          .filter((project) => {
-            return project.tags.includes(this.filterByTag)
-          })
-          .sort((a, b) => b.interestingness - a.interestingness)
-      },
+    selectedProjects() {
+      return projects
+        .filter((project) => {
+          return project.tags.includes(this.filterByTag)
+        })
+        .sort((a, b) => b.interestingness - a.interestingness)
     },
   },
   methods: {

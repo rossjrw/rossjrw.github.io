@@ -27,17 +27,17 @@
       <h2 class="text-3xl font-display font-bold mb-1">
         {{ bio.title }}
       </h2>
-      <div v-html="bio.bio" />
+      <div v-html="bio.bio"></div>
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import { defineComponent } from "vue"
 import marked from "marked"
 import { compress } from "compress-tag"
 
-export default Vue.extend({
+export default defineComponent({
   name: "Bio",
   data() {
     return {
