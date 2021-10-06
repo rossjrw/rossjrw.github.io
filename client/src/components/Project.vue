@@ -96,7 +96,8 @@
             (project.size === 'small' && hasImage(project, 'oblique'))
               ? 'bg-white rounded-lg shadow-lg p-6'
               : 'p-2',
-            project.size === 'big' && project.fore === 'light'
+            !(project.size === 'normal' && 'back' in project) &&
+            project.fore === 'light'
               ? 'text-gray-100'
               : '',
           ]"
