@@ -13,6 +13,7 @@ export default {
     alias: { "@": path.resolve(__dirname, "src") },
   },
   build: {
+    target: "es2019",
     rollupOptions: {
       input: {
         main: "src/index.html",
@@ -20,7 +21,15 @@ export default {
       },
       output: {
         inlineDynamicImports: false,
+        ...(process.env.VITE_SSG
+          ? {
+              footer:
+                "if (typeof createApp !== 'undefined')" +
+                "module.exports = { createApp }",
+            }
+          : {}),
       },
+      ...(process.env.VITE_SSG ? { treeshake: false } : {}),
     },
     outDir: "../dist",
     emptyOutDir: true,

@@ -18,18 +18,16 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 import "@/root.css"
 import App from "./components/App.vue"
 
-module.exports = {
-  createApp: ViteSSG(
-    App,
-    ({ app, router, routes, isClient, initialState }) => {
-      library.add(
-        faArrowRight,
-        faGoogleDrive,
-        faPython,
-        faGithub,
-        faLinkedinIn
-      )
-      app.component("FontAwesomeIcon", FontAwesomeIcon)
-    }
-  ),
-}
+export const createApp = ViteSSG(
+  App,
+  ({ app, router, routes, isClient, initialState }) => {
+    library.add(
+      faArrowRight,
+      faGoogleDrive,
+      faPython,
+      faGithub,
+      faLinkedinIn
+    )
+    app.component("FontAwesomeIcon", FontAwesomeIcon)
+  }
+)
