@@ -197,25 +197,25 @@ export const projects: Project[] = [
       },
     ],
   },
-  {
-    name: "SCUTTLE API wrapper",
-    interestingness: 0,
-    size: "small",
-    date: [[2020]],
-    tags: ["completed", "utility"],
-    tech: ["Python"],
-    desc: compress`
-      Python wrapper around the API for
-      [SCUTTLE](https://github.com/scuttle/scuttle), a web service that
-      backs up Wikidot sites. I use it for TARS.
-    `,
-    links: [
-      {
-        name: "check it out",
-        href: "https://pypi.org/project/python-scuttle",
-      },
-    ],
-  },
+  // {
+  //   name: "SCUTTLE API wrapper",
+  //   interestingness: 0,
+  //   size: "small",
+  //   date: [[2020]],
+  //   tags: ["completed", "utility"],
+  //   tech: ["Python"],
+  //   desc: compress`
+  //     Python wrapper around the API for
+  //     [SCUTTLE](https://github.com/scuttle/scuttle), a web service that
+  //     backs up Wikidot sites. I use it for TARS.
+  //   `,
+  //   links: [
+  //     {
+  //       name: "check it out",
+  //       href: "https://pypi.org/project/python-scuttle",
+  //     },
+  //   ],
+  // },
   {
     name: "Ur",
     interestingness: 90,
