@@ -185,8 +185,8 @@ export const projects: Project[] = [
     tags: ["completed", "utility"],
     tech: ["TypeScript", "Vue.js", "Webpack"],
     desc: compress`
-      A tool for applying a series of regex find-and-replace rules to a block
-      of text. Configured rules can be exported and imported with URL
+      A web tool for applying a series of regex find-and-replace rules to a
+      block of text. Configured rules can be exported and imported with URL
       arguments.
     `,
     links: [
@@ -248,18 +248,21 @@ export const projects: Project[] = [
     name: "TARS",
     interestingness: 60,
     size: "small",
-    date: [[2019]],
-    tags: ["working"],
+    date: [[2019, 2021]],
+    tags: ["completed"],
     tech: ["Python"],
     desc: compress`
       An IRC bot originally built for automating social media posts for SCP
       Wiki staff, but mostly used as a Markov Chain generator for making
       almost-real sentences.
     `,
+    back: ["#29453e", "#40654f", "#7ca77f", "#7ca77f"],
+    fore: "light",
     links: [
-      { name: "check it out", href: "/tars/help" },
+      { name: "check it out", href: "/tars/" },
       { name: "GitHub", href: "https://github.com/rossjrw/tars" },
     ],
+    images: [{ func: "logo", href: "scp/tars/logo.svg" }],
   },
   {
     name: "Gallifreyo",
