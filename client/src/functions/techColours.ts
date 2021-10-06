@@ -20,6 +20,8 @@ const techColours: TechnologyColours = {
   Spreadsheets: "#0f9d58",
   Fiction: "mediumpurple",
   Terraform: "#623ce4",
+  AWS: "#ec912d",
+  MySQL: "#4479a1",
 }
 
 export function techColour(tech: Technology): string {

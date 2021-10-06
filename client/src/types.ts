@@ -57,6 +57,7 @@ export type Technology =
   | "Vue.js"
   | "AngularJS"
   | "jQuery"
+  | "AWS"
   // Build tools
   | "Gulp.js"
   | "Webpack"
@@ -67,6 +68,7 @@ export type Technology =
   | "SVG"
   | "Regex"
   | "Spreadsheets"
+  | "MySQL"
   // Even more miscellaneous
   | "Fiction"
 

@@ -365,4 +365,20 @@ export const projects: Project[] = [
     ],
     images: [{ func: "logo", href: "wikijump.svg" }],
   },
+  {
+    name: "Wikidot Notifier",
+    interestingness: 60,
+    size: "small",
+    date: [[2021]],
+    tags: ["completed"],
+    tech: ["Python", "AWS", "MySQL"],
+    desc: compress`
+      A service powered by AWS Lambda that collects, compiles and delivers
+      forum notifications for users of Wikidot.
+    `,
+    links: [
+      { name: "check it out", href: "http://notifications.wikidot.com/" },
+      { name: "GitHub", href: "https://github.com/croque-scp/notifier" },
+    ],
+  },
 ]
