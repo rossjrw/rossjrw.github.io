@@ -16,18 +16,14 @@
       side === 'left' ? 'lg:justify-self-end' : '',
       side === 'right' ? 'lg:justify-self-start' : '',
       {
-        big: `3xl:max-w-screen-3xl 3xl:mx-4 3xl:justify-self-center
-                       ${
-                         projectBackground === 'none'
-                           ? ''
-                           : '3xl:rounded-2xl 3xl:shadow-2xl'
-                       }`,
-        normal: `xl:max-w-screen-2xl xl:mx-4 xl:justify-self-center
-                          ${
-                            projectBackground === 'none'
-                              ? ''
-                              : 'xl:rounded-xl xl:shadow-xl'
-                          }`,
+        big: `3xl:max-w-screen-3xl 3xl:mx-4 3xl:justify-self-center ${
+          projectBackground === 'none'
+            ? ''
+            : '3xl:rounded-2xl 3xl:shadow-2xl'
+        }`,
+        normal: `xl:max-w-screen-2xl xl:mx-4 xl:justify-self-center ${
+          projectBackground === 'none' ? '' : 'xl:rounded-xl xl:shadow-xl'
+        }`,
         small: `${
           projectBackground === 'none' ? '' : 'rounded-lg shadow-lg'
         }`,
@@ -58,8 +54,7 @@
       :class="
         project.size === 'small'
           ? 'flex-col space-y-2 max-w-prose'
-          : `space-y-4 lg:space-y-0 lg:space-x-8
-                    flex-wrap lg:flex-nowrap`
+          : `space-y-4 lg:space-y-0 lg:space-x-8 flex-wrap lg:flex-nowrap`
       "
     >
       <div class="flex space-x-4">
