@@ -360,96 +360,78 @@
     "/assets/rossjrw.2020.inkscape.e9257d13.svg"
   ],
   "../node_modules/@vue/shared/dist/shared.esm-bundler.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/vue/dist/vue.runtime.esm-bundler.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/vite-ssg/dist/chunk-YPUM4SRK.mjs": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/vite-ssg/dist/chunk-BQV5QOZL.mjs": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/@vueuse/head/dist/index.mjs": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/vite-ssg/dist/client/single-page.mjs": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/@fortawesome/fontawesome-svg-core/index.es.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/@fortawesome/free-solid-svg-icons/index.es.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/@fortawesome/free-brands-svg-icons/index.es.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/@fortawesome/vue-fontawesome/index.es.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../\u0000commonjsHelpers.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../\u0000/home/runner/work/rossjrw.github.io/rossjrw.github.io/client/node_modules/marked/lib/marked.js?commonjs-module": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/marked/lib/marked.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
-  "../\u0000/home/runner/work/rossjrw.github.io/rossjrw.github.io/client/node_modules/compress-tag/dist/index.js?commonjs-exports": [
-    "/assets/vendor.3b36f000.js"
+  "../\u0000/home/runner/work/rossjrw.github.io/rossjrw.github.io/client/node_modules/dedent/dist/dedent.js?commonjs-module": [
+    "/assets/vendor.85709702.js"
   ],
-  "../\u0000/home/runner/work/rossjrw.github.io/rossjrw.github.io/client/node_modules/unraw/dist/index.js?commonjs-exports": [
-    "/assets/vendor.3b36f000.js"
-  ],
-  "../\u0000/home/runner/work/rossjrw.github.io/rossjrw.github.io/client/node_modules/unraw/dist/errors.js?commonjs-exports": [
-    "/assets/vendor.3b36f000.js"
-  ],
-  "../node_modules/unraw/dist/errors.js": [
-    "/assets/vendor.3b36f000.js"
-  ],
-  "../\u0000/home/runner/work/rossjrw.github.io/rossjrw.github.io/client/node_modules/unraw/dist/errors.js?commonjs-proxy": [
-    "/assets/vendor.3b36f000.js"
-  ],
-  "../node_modules/unraw/dist/index.js": [
-    "/assets/vendor.3b36f000.js"
-  ],
-  "../\u0000/home/runner/work/rossjrw.github.io/rossjrw.github.io/client/node_modules/unraw/dist/index.js?commonjs-proxy": [
-    "/assets/vendor.3b36f000.js"
-  ],
-  "../node_modules/compress-tag/dist/index.js": [
-    "/assets/vendor.3b36f000.js"
+  "../node_modules/dedent/dist/dedent.js": [
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/gsap/gsap-core.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/gsap/CSSPlugin.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../node_modules/gsap/index.js": [
-    "/assets/vendor.3b36f000.js"
+    "/assets/vendor.85709702.js"
   ],
   "../vite/modulepreload-polyfill": [
     "/assets/plugin-vue_export-helper.553fc193.js",
-    "/assets/plugin-vue_export-helper.4532475d.css"
+    "/assets/plugin-vue_export-helper.97681ed0.css"
   ],
   "root.css": [
     "/assets/plugin-vue_export-helper.553fc193.js",
-    "/assets/plugin-vue_export-helper.4532475d.css"
+    "/assets/plugin-vue_export-helper.97681ed0.css"
   ],
   "../plugin-vue:export-helper": [
     "/assets/plugin-vue_export-helper.553fc193.js",
-    "/assets/plugin-vue_export-helper.4532475d.css"
+    "/assets/plugin-vue_export-helper.97681ed0.css"
   ]
 }
