@@ -184,6 +184,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue"
 import marked from "marked"
+import dedent from "dedent"
 
 import PolyBullet from "@/components/PolyBullet.vue"
 import ProjectMedia from "@/components/ProjectMedia.vue"
@@ -242,7 +243,7 @@ export default defineComponent({
       return background
     },
     description(): string {
-      return marked(this.project.desc).replace(/--/g, "—")
+      return marked(dedent(this.project.desc)).replace(/--/g, "—")
     },
     attributionText(): string | null {
       if (!("images" in this.project)) return null

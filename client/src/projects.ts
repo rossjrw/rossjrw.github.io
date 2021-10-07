@@ -1,4 +1,3 @@
-import { compress } from "compress-tag"
 import { Project } from "@/types"
 
 export const projects: Project[] = [
@@ -9,7 +8,7 @@ export const projects: Project[] = [
     date: [[2017]],
     tags: ["completed"],
     tech: ["JavaScript", "AngularJS"],
-    desc: compress`
+    desc: `
       A tool and font I use to help me remember a handwritten neograph I
       designed, which was visually inspired by the [Coffee Shop
       Code](https://redd.it/5rzi22). I use it for writing notes, when it's
@@ -26,7 +25,7 @@ export const projects: Project[] = [
     date: [[2016], [2017]],
     tags: ["completed"],
     tech: ["Spreadsheets", "Fiction"],
-    desc: compress`
+    desc: `
       A multiplayer board game hosted on Google Sheets. Played with 11 players
       and lasted for a month, once in 2016 and again in 2017, though it could
       handle more.
@@ -66,7 +65,7 @@ export const projects: Project[] = [
     date: [[2018]],
     tags: ["completed"],
     tech: ["Fiction", "Spreadsheets"],
-    desc: compress`
+    desc: `
       A story published on the SCP Wiki. A multiple-choice adventure 65 pages
       and 19,000 words long. You are a disgraced researcher trapped in a
       hell of your own making. #12 top-rated article of 2018 (of >1800).
@@ -93,7 +92,7 @@ export const projects: Project[] = [
     date: [[2018]],
     tags: ["completed"],
     tech: ["Fiction", "JavaScript", "jQuery", "Spreadsheets"],
-    desc: compress`
+    desc: `
       An article published on the SCP Wiki. Details an entity that appears
       differently for each person who sees it. Readers will see one variant
       of many, and they can only read it once. #19 top-rated article of 2018.
@@ -152,7 +151,7 @@ export const projects: Project[] = [
     date: [[2019]],
     tags: ["completed"],
     tech: ["CSS", "Gulp.js"],
-    desc: compress`
+    desc: `
       A CSS theme built to replace the dated theme used by the SCP Wiki, using
       modern web standards and accessibility guidelines. While it was never
       officially adopted, it is currently used on thousands of articles and
@@ -184,7 +183,7 @@ export const projects: Project[] = [
     date: [[2020]],
     tags: ["completed", "utility"],
     tech: ["TypeScript", "Vue.js", "Webpack"],
-    desc: compress`
+    desc: `
       A web tool for applying a series of regex find-and-replace rules to a
       block of text. Configured rules can be exported and imported with URL
       arguments.
@@ -204,7 +203,7 @@ export const projects: Project[] = [
   //   date: [[2020]],
   //   tags: ["completed", "utility"],
   //   tech: ["Python"],
-  //   desc: compress`
+  //   desc: `
   //     Python wrapper around the API for
   //     [SCUTTLE](https://github.com/scuttle/scuttle), a web service that
   //     backs up Wikidot sites. I use it for TARS.
@@ -223,7 +222,7 @@ export const projects: Project[] = [
     date: [[2020]],
     tags: ["completed"],
     tech: ["TypeScript", "SVG", "GitHub Actions"],
-    desc: compress`
+    desc: `
       A massively-multiplayer, asynchronous
       [Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur)
       that anyone with a GitHub account can play. The board is the README of
@@ -251,7 +250,7 @@ export const projects: Project[] = [
     date: [[2019, 2021]],
     tags: ["completed"],
     tech: ["Python"],
-    desc: compress`
+    desc: `
       An IRC bot originally built for automating social media posts for SCP
       Wiki staff, but mostly used as a Markov Chain generator for making
       almost-real sentences.
@@ -271,7 +270,7 @@ export const projects: Project[] = [
     date: [[2017, 2018], [2020]],
     tags: ["unfinished"],
     tech: ["TypeScript", "Vue.js", "Webpack", "SVG"],
-    desc: compress`
+    desc: `
       A Gallifreyan translator, based on a language made by fans of Doctor Who.
     `,
     links: [
@@ -286,7 +285,7 @@ export const projects: Project[] = [
     date: [[2020]],
     tags: ["working"],
     tech: ["Vue.js", "TypeScript", "Webpack"],
-    desc: compress`
+    desc: `
       👋
     `,
     // back: [[224, 166, 52], [223, 190, 106], [131, 131, 131], [0, 0, 0]],
@@ -309,7 +308,7 @@ export const projects: Project[] = [
     date: [[2018, 2019]],
     tags: ["unfinished"],
     tech: ["Fiction", "CoffeeScript", "AngularJS", "Gulp.js"],
-    desc: compress`
+    desc: `
       A text adventure game, with vast scope for player agency. You are an
       artificial intelligence built to study a creature that lies beyond
       human comprehension.  How you go about that, and perhaps what exactly you
@@ -333,7 +332,7 @@ export const projects: Project[] = [
     date: [[2016]],
     tags: ["abandoned"],
     tech: ["JavaScript", "AngularJS"],
-    desc: compress`
+    desc: `
       An attempt to automate Mafia, the social game of lies and betrayal. My
       first ever programming project. Began on a spreadsheet, but quickly grew
       too complex; it was this limitation that prompted me to begin learning
@@ -355,7 +354,7 @@ export const projects: Project[] = [
     date: [[2020]],
     tags: ["working"],
     tech: ["PHP", "Terraform", "TypeScript", "Webpack"],
-    desc: compress`
+    desc: `
       The English-speaking [SCP Wiki](https://scp-wiki.wikidot.com/) branch's
       proposal for resurrecting [Wikidot](https://www.wikidot.com) by
       breathing a modern spirit into an old open-source release.
@@ -375,7 +374,7 @@ export const projects: Project[] = [
     date: [[2021]],
     tags: ["working"],
     tech: ["TypeScript", "Vue.js", "Electron"],
-    desc: compress`
+    desc: `
       A framework, UI and game engine for authoring conversation-driven
       narratives with an emphasis on rich player choice, advanced
       introspection and temporal control.
@@ -391,7 +390,7 @@ export const projects: Project[] = [
     date: [[2021]],
     tags: ["completed"],
     tech: ["Python", "AWS", "MySQL"],
-    desc: compress`
+    desc: `
       A service powered by AWS Lambda that collects, compiles and delivers
       forum notifications for users of Wikidot.
     `,

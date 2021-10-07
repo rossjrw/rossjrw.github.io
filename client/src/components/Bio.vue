@@ -35,7 +35,7 @@
 <script lang="ts">
 import { defineComponent } from "vue"
 import marked from "marked"
-import { compress } from "compress-tag"
+import dedent from "dedent"
 
 export default defineComponent({
   name: "Bio",
@@ -44,7 +44,7 @@ export default defineComponent({
       bios: [
         {
           title: "Who I am",
-          bio: marked(compress`
+          bio: marked(dedent`
             I'm a web developer in the UK.
             I work mostly on the frontend, and I'm familiar with TypeScript and
             modern JavaScript build processes;
@@ -57,7 +57,7 @@ export default defineComponent({
         },
         {
           title: "What I do",
-          bio: marked(compress`
+          bio: marked(dedent`
             I make things you can see and play with -- tools you can touch.
             I also write experimental and/or interactive fiction,
             which I contribute to the [SCP Wiki](https://scp-wiki.wikidot.com/).
