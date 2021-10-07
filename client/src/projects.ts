@@ -269,7 +269,7 @@ export const projects: Project[] = [
     interestingness: 80,
     size: "small",
     date: [[2017, 2018], [2020]],
-    tags: ["working"],
+    tags: ["unfinished"],
     tech: ["TypeScript", "Vue.js", "Webpack", "SVG"],
     desc: compress`
       A Gallifreyan translator, based on a language made by fans of Doctor Who.
@@ -305,7 +305,7 @@ export const projects: Project[] = [
   {
     name: "Maitreya.aic",
     interestingness: 40,
-    size: "big",
+    size: "small",
     date: [[2018, 2019]],
     tags: ["unfinished"],
     tech: ["Fiction", "CoffeeScript", "AngularJS", "Gulp.js"],
@@ -322,7 +322,7 @@ export const projects: Project[] = [
       { name: "GitHub", href: "https://github.com/rossjrw/maitreya" },
     ],
     images: [
-      { func: "main", href: "scp/maitreya/maitreya.png" },
+      // { func: "main", href: "scp/maitreya/maitreya.png" },
       { func: "logo", href: "scp/maitreya/logo.png" },
     ],
   },
@@ -351,7 +351,7 @@ export const projects: Project[] = [
   {
     name: "Wikijump",
     interestingness: 20,
-    size: "small",
+    size: "normal",
     date: [[2020]],
     tags: ["working"],
     tech: ["PHP", "Terraform", "TypeScript", "Webpack"],
@@ -367,6 +367,22 @@ export const projects: Project[] = [
       },
     ],
     images: [{ func: "logo", href: "wikijump.svg" }],
+  },
+  {
+    name: "Convomap",
+    interestingness: 30,
+    size: "small",
+    date: [[2021]],
+    tags: ["working"],
+    tech: ["TypeScript", "Vue.js", "Electron"],
+    desc: compress`
+      A framework, UI and game engine for authoring conversation-driven
+      narratives with an emphasis on rich player choice, advanced
+      introspection and temporal control.
+    `,
+    links: [
+      { name: "GitHub", href: "https://github.com/rossjrw/convomap" },
+    ],
   },
   {
     name: "Wikidot Notifier",

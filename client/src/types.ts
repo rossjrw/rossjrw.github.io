@@ -58,6 +58,7 @@ export type Technology =
   | "AngularJS"
   | "jQuery"
   | "AWS"
+  | "Electron"
   // Build tools
   | "Gulp.js"
   | "Webpack"
