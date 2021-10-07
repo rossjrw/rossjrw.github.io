@@ -16,18 +16,14 @@
       side === 'left' ? 'lg:justify-self-end' : '',
       side === 'right' ? 'lg:justify-self-start' : '',
       {
-        big: `3xl:max-w-screen-3xl 3xl:mx-4 3xl:justify-self-center
-                       ${
-                         projectBackground === 'none'
-                           ? ''
-                           : '3xl:rounded-2xl 3xl:shadow-2xl'
-                       }`,
-        normal: `xl:max-w-screen-2xl xl:mx-4 xl:justify-self-center
-                          ${
-                            projectBackground === 'none'
-                              ? ''
-                              : 'xl:rounded-xl xl:shadow-xl'
-                          }`,
+        big: `3xl:max-w-screen-3xl 3xl:mx-4 3xl:justify-self-center ${
+          projectBackground === 'none'
+            ? ''
+            : '3xl:rounded-2xl 3xl:shadow-2xl'
+        }`,
+        normal: `xl:max-w-screen-2xl xl:mx-4 xl:justify-self-center ${
+          projectBackground === 'none' ? '' : 'xl:rounded-xl xl:shadow-xl'
+        }`,
         small: `${
           projectBackground === 'none' ? '' : 'rounded-lg shadow-lg'
         }`,
@@ -58,8 +54,7 @@
       :class="
         project.size === 'small'
           ? 'flex-col space-y-2 max-w-prose'
-          : `space-y-4 lg:space-y-0 lg:space-x-8
-                    flex-wrap lg:flex-nowrap`
+          : `space-y-4 lg:space-y-0 lg:space-x-8 flex-wrap lg:flex-nowrap`
       "
     >
       <div class="flex space-x-4">
@@ -101,7 +96,8 @@
             (project.size === 'small' && hasImage(project, 'oblique'))
               ? 'bg-white rounded-lg shadow-lg p-6'
               : 'p-2',
-            project.size === 'big' && project.fore === 'light'
+            !(project.size === 'normal' && 'back' in project) &&
+            project.fore === 'light'
               ? 'text-gray-100'
               : '',
           ]"
@@ -121,6 +117,9 @@
               {{ project.name }}
             </h4>
             <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+              <span v-if="project.role === 'contributor'">
+                contributor &middot;
+              </span>
               {{ prettyDate }}
             </p>
           </div>
@@ -188,6 +187,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue"
 import marked from "marked"
+import dedent from "dedent"
 
 import PolyBullet from "@/components/PolyBullet.vue"
 import ProjectMedia from "@/components/ProjectMedia.vue"
@@ -206,6 +206,7 @@ export default defineComponent({
   components: { PolyBullet, ProjectMedia, ProjectLink },
   computed: {
     colouredTech() {
+      if (!this.project.tech) return []
       return this.project.tech.map((tech: Technology) => {
         return { name: tech, colour: techColour(tech) }
       })
@@ -246,7 +247,7 @@ export default defineComponent({
       return background
     },
     description(): string {
-      return marked(this.project.desc).replace(/--/g, "—")
+      return marked(dedent(this.project.desc)).replace(/--/g, "—")
     },
     attributionText(): string | null {
       if (!("images" in this.project)) return null

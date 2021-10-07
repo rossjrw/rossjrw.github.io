@@ -4,6 +4,7 @@ export type State = {
 
 export type Project = {
   name: string
+  role?: "author" | "contributor"
   interestingness: number
   size: "small" | "normal" | "big"
   date: number[][]
@@ -57,6 +58,8 @@ export type Technology =
   | "Vue.js"
   | "AngularJS"
   | "jQuery"
+  | "AWS"
+  | "Electron"
   // Build tools
   | "Gulp.js"
   | "Webpack"
@@ -67,6 +70,7 @@ export type Technology =
   | "SVG"
   | "Regex"
   | "Spreadsheets"
+  | "MySQL"
   // Even more miscellaneous
   | "Fiction"
 
