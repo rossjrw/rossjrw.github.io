@@ -146,6 +146,7 @@ export const projects: Project[] = [
   },
   {
     name: "Black Highlighter",
+    role: "contributor",
     interestingness: 40,
     size: "normal",
     date: [[2019]],
@@ -349,6 +350,7 @@ export const projects: Project[] = [
   },
   {
     name: "Wikijump",
+    role: "contributor",
     interestingness: 20,
     size: "normal",
     date: [[2020]],

@@ -117,6 +117,9 @@
               {{ project.name }}
             </h4>
             <p class="text-xl font-display ml-4 opacity-80 md:-mb-2">
+              <span v-if="project.role === 'contributor'">
+                contributor &middot;
+              </span>
               {{ prettyDate }}
             </p>
           </div>
@@ -203,6 +206,7 @@ export default defineComponent({
   components: { PolyBullet, ProjectMedia, ProjectLink },
   computed: {
     colouredTech() {
+      if (!this.project.tech) return []
       return this.project.tech.map((tech: Technology) => {
         return { name: tech, colour: techColour(tech) }
       })

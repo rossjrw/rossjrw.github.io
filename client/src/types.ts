@@ -4,6 +4,7 @@ export type State = {
 
 export type Project = {
   name: string
+  role?: "author" | "contributor"
   interestingness: number
   size: "small" | "normal" | "big"
   date: number[][]
