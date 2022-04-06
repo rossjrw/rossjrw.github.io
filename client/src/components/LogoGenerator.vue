@@ -58,7 +58,7 @@
 import { defineComponent } from "vue"
 
 import LogoGeneratorColour from "@/components/LogoGeneratorColour.vue"
-import logoSvg from "@/assets/logos/rossjrw.2020.inkscape.svg"
+import logoSvg from "@/logos/rossjrw.2020.inkscape.svg?raw"
 
 export default defineComponent({
   name: "LogoGenerator",

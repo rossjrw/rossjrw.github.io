@@ -37,15 +37,15 @@ import { defineComponent } from "vue"
 export default defineComponent({
   props: {
     name: String,
-    value: String,
+    modelValue: String,
   },
   computed: {
     colorValue: {
       get(): string {
-        return this.value
+        return this.modelValue
       },
       set(input: string) {
-        this.$emit("input", input)
+        this.$emit("update:modelValue", input)
       },
     },
   },
