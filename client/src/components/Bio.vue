@@ -51,8 +51,6 @@ export default defineComponent({
             however, I'm working towards full-stack development.
             I also have a Master's degree in computational chemistry from
             Cardiff University.
-            I'm currently looking for a job -- if you're hiring, consider
-            reaching out to me via LinkedIn.
           `).replace(/--/g, "—"),
         },
         {
