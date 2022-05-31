@@ -5,8 +5,6 @@ import{_ as h}from"./plugin-vue_export-helper.553fc193.js";import{d,r as u,c as 
             however, I'm working towards full-stack development.
             I also have a Master's degree in computational chemistry from
             Cardiff University.
-            I'm currently looking for a job -- if you're hiring, consider
-            reaching out to me via LinkedIn.
           `).replace(/--/g,"\u2014")},{title:"What I do",bio:x(I`
             I make things you can see and play with -- tools you can touch.
             I also write experimental and/or interactive fiction,

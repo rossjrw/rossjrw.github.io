@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+import{_ as c}from"./plugin-vue_export-helper.553fc193.js";import{d as p,c as o,a as e,t as u,x as f,y as g,o as s,r as y,F as x,f as v,i as F,z as b}from"./vendor.85709702.js";const w=p({props:{name:String,modelValue:String},computed:{colorValue:{get(){return this.modelValue},set(n){this.$emit("update:modelValue",n)}}}}),G={class:"flex items-center"},j={class:"font-bold w-40"},D={class:"flex-none"};function M(n,t,r,m,h,k){return s(),o("div",G,[e("p",j,u(n.name),1),f(e("input",{type:"color",class:"flex-grow border border-gray-200 rounded px-5 py-2 h-10 m-1","onUpdate:modelValue":t[0]||(t[0]=i=>n.colorValue=i)},null,512),[[g,n.colorValue]]),f(e("input",{type:"text",class:"flex-none border border-gray-200 rounded px-5 py-2 h-10 m-1","onUpdate:modelValue":t[1]||(t[1]=i=>n.colorValue=i)},null,512),[[g,n.colorValue]]),e("div",D,[e("button",{type:"button",class:"border border-blue-700 rounded px-5 py-2 h-10 m-1 text-blue-700",onClick:t[2]||(t[2]=i=>n.$emit("randomise"))}," Randomise ")])])}var O=c(w,[["render",M]]),H=`<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -11,7 +11,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:export-ydpi="96"
    inkscape:export-xdpi="96"
-   inkscape:export-filename="C:\Users\Ross\Downloads\new_logo.png"
+   inkscape:export-filename="C:\\Users\\Ross\\Downloads\\new_logo.png"
    sodipodi:docname="new_logo.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg8"
@@ -675,3 +675,4 @@
     </g>
   </g>
 </svg>
+`;const A=p({name:"LogoGenerator",components:{LogoGeneratorColour:O},data(){return{colours:["cover-fill-grey","cover-border-grey","radiation-lightest","radiation-lighter","radiation","radiation-darker","radiation-darkest"],hexes:["#757575","#000000","#ffd687","#f6c25b","#e1a634","#bd8416","#b2780b"]}},computed:{svgData(){let n=H;return this.colours.forEach((t,r)=>{n=n.replace(new RegExp(`(id="${t}"[\\s\\S]+?stop-color:)#[0-9a-f]{6}`),`$1${this.hexes[r]}`)}),URL.createObjectURL(new Blob([n],{type:"image/svg+xml"}))}},methods:{setRandomColour:function(n){n?this.hexes.splice(this.colours.indexOf(n),1,this.getRandomColour()):this.hexes=Array.from({length:7},this.getRandomColour)},getRandomColour:function(){return`#${Math.floor(Math.random()*2**24).toString(16).padStart(6,"0")}`}}}),K={class:"h-screen"},L={class:"py-12 px-6"},z={class:"container mx-auto max-w-screen-lg"},P={class:"flex items-center justify-evenly"},U=["src"],V=["src"],C=["src"],B=["src"],R={class:"flex justify-center"},N=["href"];function Q(n,t,r,m,h,k){const i=y("LogoGeneratorColour");return s(),o("div",K,[e("div",L,[e("div",z,[e("div",P,[e("img",{src:n.svgData,class:"h-48"},null,8,U),e("img",{src:n.svgData,class:"h-28"},null,8,V),e("img",{src:n.svgData,class:"h-14"},null,8,C),e("img",{src:n.svgData,class:"h-8"},null,8,B)]),e("form",null,[(s(!0),o(x,null,v(n.colours,(a,l)=>(s(),F(i,{key:a,name:a,modelValue:n.hexes[l],"onUpdate:modelValue":d=>n.hexes[l]=d,onRandomise:d=>n.setRandomColour(a)},null,8,["name","modelValue","onUpdate:modelValue","onRandomise"]))),128)),e("div",null,[e("div",R,[e("button",{type:"button",class:"border border-blue-700 rounded px-5 py-2 m-1 text-blue-700",onClick:t[0]||(t[0]=a=>n.setRandomColour())}," Randomise All "),e("a",{class:"border border-green-500 rounded px-5 py-2 m-1 text-green-500",href:n.svgData,download:""}," Download SVG ",8,N)])])])])])])}var I=c(A,[["render",Q]]);b(I).mount("#app");

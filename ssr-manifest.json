@@ -344,21 +344,11 @@
     "/assets/libre-franklin-latin-400-normal.4e9ff60e.woff2",
     "/assets/libre-franklin-latin-400-normal.9dcf988c.woff"
   ],
-  "components/LogoGeneratorColour.vue": [
-    "/assets/rossjrw.2020.inkscape.e9257d13.svg"
-  ],
-  "assets/logos/rossjrw.2020.inkscape.svg": [
-    "/assets/rossjrw.2020.inkscape.e9257d13.svg"
-  ],
-  "components/LogoGenerator.vue": [
-    "/assets/rossjrw.2020.inkscape.e9257d13.svg"
-  ],
-  "logo/logo.ts": [
-    "/assets/rossjrw.2020.inkscape.e9257d13.svg"
-  ],
-  "logo/index.html": [
-    "/assets/rossjrw.2020.inkscape.e9257d13.svg"
-  ],
+  "components/LogoGeneratorColour.vue": [],
+  "assets/logos/rossjrw.2020.inkscape.svg?raw": [],
+  "components/LogoGenerator.vue": [],
+  "logo/logo.ts": [],
+  "logo/index.html": [],
   "../node_modules/@vue/shared/dist/shared.esm-bundler.js": [
     "/assets/vendor.85709702.js"
   ],
